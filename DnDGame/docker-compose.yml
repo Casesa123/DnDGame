@@ -1,0 +1,42 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      - PORT=3000
+      - HOST=0.0.0.0
+      - ALLOWED_ORIGIN=${ALLOWED_ORIGIN:-*}
+      - TURN_URLS=${TURN_URLS:-}
+      - TURN_USERNAME=${TURN_USERNAME:-}
+      - TURN_CREDENTIAL=${TURN_CREDENTIAL:-}
+    volumes:
+      - dnd-data:/app/server/data
+      - dnd-homebrew:/app/server/rules-engine/content-packs/homebrew
+    ports:
+      # Direct access for LAN play, or if you're not using the Caddy proxy below.
+      - "3000:3000"
+
+  # Optional: reverse proxy that gets you free automatic HTTPS via Let's
+  # Encrypt. Voice/video (getUserMedia) is blocked by browsers on plain HTTP
+  # for anyone not on localhost, so this (or an equivalent) is what makes the
+  # video call actually work once you're not just on your own LAN. Point
+  # your domain's DNS A record at this machine's public IP before starting,
+  # and set DOMAIN in a .env file next to this compose file.
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      - DOMAIN=${DOMAIN:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy-data:/data
+    depends_on:
+      - app
+
+volumes:
+  dnd-data:
+  dnd-homebrew:
+  caddy-data:

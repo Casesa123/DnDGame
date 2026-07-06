@@ -1,0 +1,4921 @@
+{
+  "fire-bolt": {
+    "id": "fire-bolt",
+    "name": "Fire Bolt",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "damage": "1d10 fire, +1d10 at levels 5/11/17",
+    "description": "A ranged spell attack hurls a mote of fire at a creature or object.",
+    "classes": [
+      "wizard"
+    ],
+    "source": "core"
+  },
+  "magic-missile": {
+    "id": "magic-missile",
+    "name": "Magic Missile",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "damage": "3 darts, 1d4+1 force each, automatically hit",
+    "description": "Creates three glowing darts of magical force that strike unerringly.",
+    "classes": [
+      "wizard"
+    ],
+    "source": "core"
+  },
+  "shield": {
+    "id": "shield",
+    "name": "Shield",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 reaction",
+    "range": "Self",
+    "damage": null,
+    "description": "An invisible barrier grants +5 AC until the start of the next turn, including against the triggering attack.",
+    "classes": [
+      "wizard"
+    ],
+    "source": "core"
+  },
+  "cure-wounds": {
+    "id": "cure-wounds",
+    "name": "Cure Wounds",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "healing": "1d8 + spellcasting modifier",
+    "description": "A touched creature regains a number of hit points.",
+    "classes": [
+      "cleric"
+    ],
+    "source": "core"
+  },
+  "guidance": {
+    "id": "guidance",
+    "name": "Guidance",
+    "level": 0,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "description": "A touched creature may add 1d4 to one ability check before the spell ends.",
+    "classes": [
+      "cleric"
+    ],
+    "source": "core"
+  },
+  "ray-of-frost": {
+    "id": "ray-of-frost",
+    "name": "Ray of Frost",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A beam of freezing air streaks toward a creature, chilling it and slowing its movement.",
+    "damage": "1d8 cold, +1d8 at levels 5/11/17",
+    "source": "core"
+  },
+  "acid-splash": {
+    "id": "acid-splash",
+    "name": "Acid Splash",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Hurls a bubble of acid at one or two creatures within 5 feet of each other, splattering them with caustic liquid.",
+    "damage": "1d6 acid, +1d6 at levels 5/11/17",
+    "source": "core"
+  },
+  "poison-spray": {
+    "id": "poison-spray",
+    "name": "Poison Spray",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "10 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "druid"
+    ],
+    "description": "Projects a puff of noxious gas at a creature, causing it to choke and retch.",
+    "damage": "1d12 poison, +1d12 at levels 5/11/17",
+    "source": "core"
+  },
+  "chill-touch": {
+    "id": "chill-touch",
+    "name": "Chill Touch",
+    "level": 0,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "A ghostly, skeletal hand reaches out to grasp a creature, dealing necrotic damage and preventing it from healing until the start of the caster's next turn. If the target is undead it also flees in fear.",
+    "damage": "1d8 necrotic, +1d8 at levels 5/11/17",
+    "source": "core"
+  },
+  "mage-hand": {
+    "id": "mage-hand",
+    "name": "Mage Hand",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Creates a spectral, floating hand that can manipulate objects, open doors, and carry small items at the caster's direction.",
+    "source": "core"
+  },
+  "prestidigitation": {
+    "id": "prestidigitation",
+    "name": "Prestidigitation",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "10 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "A minor magical trick: create a small sensory effect, light or snuff a small flame, clean or soil an object, or similar trivial feats of magic.",
+    "source": "core"
+  },
+  "minor-illusion": {
+    "id": "minor-illusion",
+    "name": "Minor Illusion",
+    "level": 0,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "S",
+      "M"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Creates a harmless illusory sound or image within range that persists for the duration, convincing enough to fool a casual glance.",
+    "source": "core"
+  },
+  "message": {
+    "id": "message",
+    "name": "Message",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "A whispered word travels directly to a chosen creature's ear, and it may reply in a whisper only the caster hears.",
+    "source": "core"
+  },
+  "light": {
+    "id": "light",
+    "name": "Light",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "cleric"
+    ],
+    "description": "Causes an object to shed bright light in a 20-foot radius, and dim light for an additional 20 feet.",
+    "source": "core"
+  },
+  "dancing-lights": {
+    "id": "dancing-lights",
+    "name": "Dancing Lights",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "Creates up to four torch-sized lights that can be shaped into glowing spheres, flames, or humanoid shapes and moved about the area.",
+    "source": "core"
+  },
+  "sacred-flame": {
+    "id": "sacred-flame",
+    "name": "Sacred Flame",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Flame-like radiance descends on a creature that must succeed on a Dexterity save or be seared, ignoring cover.",
+    "damage": "1d8 radiant, +1d8 at levels 5/11/17",
+    "source": "core"
+  },
+  "thaumaturgy": {
+    "id": "thaumaturgy",
+    "name": "Thaumaturgy",
+    "level": 0,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Manifests a minor wonder such as a booming voice, flickering flames, tremoring ground, or a door swinging open, as a sign of supernatural power.",
+    "source": "core"
+  },
+  "spare-the-dying": {
+    "id": "spare-the-dying",
+    "name": "Spare the Dying",
+    "level": 0,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "A touched creature with 0 hit points becomes stable, staving off death without restoring consciousness.",
+    "source": "core"
+  },
+  "resistance": {
+    "id": "resistance",
+    "name": "Resistance",
+    "level": 0,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "description": "A touched creature may add 1d4 to one saving throw of its choice before the spell ends.",
+    "source": "core"
+  },
+  "druidcraft": {
+    "id": "druidcraft",
+    "name": "Druidcraft",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "A minor bit of nature magic: predict the weather, make a flower bloom, create a harmless sensory effect, or snuff a small flame.",
+    "source": "core"
+  },
+  "produce-flame": {
+    "id": "produce-flame",
+    "name": "Produce Flame",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "10 minutes",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "A flickering flame appears in the caster's hand, sheds light, and can be hurled at a creature within 30 feet.",
+    "damage": "1d8 fire, +1d8 at levels 5/11/17",
+    "source": "core"
+  },
+  "shillelagh": {
+    "id": "shillelagh",
+    "name": "Shillelagh",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "Imbues a club or quarterstaff with nature magic, letting the wielder use Wisdom for its attack and damage rolls, dealing 1d8 damage.",
+    "source": "core"
+  },
+  "vicious-mockery": {
+    "id": "vicious-mockery",
+    "name": "Vicious Mockery",
+    "level": 0,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard"
+    ],
+    "description": "Unleashes a string of withering insults laced with subtle magic at a creature, rattling its confidence if it fails a save.",
+    "damage": "1d6 psychic, +1d6 at levels 5/11/17",
+    "source": "core"
+  },
+  "true-strike": {
+    "id": "true-strike",
+    "name": "True Strike",
+    "level": 0,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "S"
+    ],
+    "duration": "Up to 1 round",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "The caster briefly glimpses a target's defenses, granting advantage on the next attack roll against it before the end of the caster's next turn.",
+    "source": "core"
+  },
+  "eldritch-blast": {
+    "id": "eldritch-blast",
+    "name": "Eldritch Blast",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "warlock"
+    ],
+    "description": "A beam of crackling energy streaks toward a creature. The caster gains an additional beam at levels 5, 11, and 17, each requiring a separate attack roll.",
+    "damage": "1d10 force per beam",
+    "source": "core"
+  },
+  "blade-ward": {
+    "id": "blade-ward",
+    "name": "Blade Ward",
+    "level": 0,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Traces a warding sign that grants resistance to bludgeoning, piercing, and slashing damage from weapon attacks until the caster's next turn.",
+    "source": "core"
+  },
+  "friends": {
+    "id": "friends",
+    "name": "Friends",
+    "level": 0,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Grants advantage on Charisma checks toward one non-hostile creature for the duration, though it becomes suspicious once the spell ends.",
+    "source": "core"
+  },
+  "control-flames": {
+    "id": "control-flames",
+    "name": "Control Flames",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "S"
+    ],
+    "duration": "Instantaneous or up to 1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "druid"
+    ],
+    "description": "Manipulates a nonmagical flame, expanding, shrinking, changing its color, or shaping it into a harmless form for up to an hour.",
+    "source": "core"
+  },
+  "gust": {
+    "id": "gust",
+    "name": "Gust",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "druid"
+    ],
+    "description": "Conjures a small gust of wind that can push a creature back 5 feet, snuff small flames, or disperse light gases.",
+    "source": "core"
+  },
+  "mold-earth": {
+    "id": "mold-earth",
+    "name": "Mold Earth",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "S"
+    ],
+    "duration": "Instantaneous or up to 1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "druid"
+    ],
+    "description": "Reshapes a section of loose earth, digging a small pit, smoothing rubble, or causing a minor tremor of dirt.",
+    "source": "core"
+  },
+  "shape-water": {
+    "id": "shape-water",
+    "name": "Shape Water",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "S"
+    ],
+    "duration": "Instantaneous or up to 1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "druid"
+    ],
+    "description": "Molds a body of unattended water, changing its color, freezing it, forming it into simple shapes, or making it flow in a chosen direction.",
+    "source": "core"
+  },
+  "mending": {
+    "id": "mending",
+    "name": "Mending",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "cleric",
+      "druid"
+    ],
+    "description": "Repairs a single break or tear in an object, mending it completely as long as the missing piece is no larger than the object allows.",
+    "source": "core"
+  },
+  "create-bonfire": {
+    "id": "create-bonfire",
+    "name": "Create Bonfire",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "druid"
+    ],
+    "description": "Creates a small bonfire on the ground that burns anything standing in its space and can be sustained for the duration.",
+    "damage": "1d8 fire, +1d8 at levels 5/11/17",
+    "source": "core"
+  },
+  "frostbite": {
+    "id": "frostbite",
+    "name": "Frostbite",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Numbing frost seizes a creature that fails a save, dealing cold damage and giving it disadvantage on its next weapon attack roll.",
+    "damage": "1d6 cold, +1d6 at levels 5/11/17",
+    "source": "core"
+  },
+  "infestation": {
+    "id": "infestation",
+    "name": "Infestation",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A cloud of stinging insects briefly swarms a creature, and if it fails a save it takes poison damage and may be forced to shuffle a few feet.",
+    "damage": "1d6 poison, +1d6 at levels 5/11/17",
+    "source": "core"
+  },
+  "lightning-lure": {
+    "id": "lightning-lure",
+    "name": "Lightning Lure",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A crackling whip of lightning lashes out at a nearby creature, damaging it and, if it fails a save, yanking it up to 10 feet closer.",
+    "damage": "1d8 lightning, +1d8 at levels 5/11/17",
+    "source": "core"
+  },
+  "sword-burst": {
+    "id": "sword-burst",
+    "name": "Sword Burst",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "Self (5-foot radius)",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A ring of spectral blades erupts around the caster, slashing at every creature nearby that fails a Dexterity save.",
+    "damage": "1d6 force, +1d6 at levels 5/11/17",
+    "source": "core"
+  },
+  "toll-the-dead": {
+    "id": "toll-the-dead",
+    "name": "Toll the Dead",
+    "level": 0,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "cleric",
+      "warlock"
+    ],
+    "description": "A sepulchral bell tolls in the mind of a creature that fails a Wisdom save, dealing more damage if the target is already wounded.",
+    "damage": "1d8 or 1d12 necrotic (if target is missing hp), scaling with level",
+    "source": "core"
+  },
+  "word-of-radiance": {
+    "id": "word-of-radiance",
+    "name": "Word of Radiance",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (5-foot radius)",
+    "components": [
+      "V",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Speaking a holy word sears every creature of the caster's choice within range that fails a Constitution save.",
+    "damage": "1d6 radiant, +1d6 at levels 5/11/17",
+    "source": "core"
+  },
+  "green-flame-blade": {
+    "id": "green-flame-blade",
+    "name": "Green-Flame Blade",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A melee weapon attack is wreathed in green fire; on a hit, a tongue of flame leaps to a second nearby creature.",
+    "damage": "Weapon damage plus 1d8 fire (leaping damage scales with level)",
+    "source": "core"
+  },
+  "booming-blade": {
+    "id": "booming-blade",
+    "name": "Booming Blade",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A melee weapon attack is sheathed in a thunderous echo; if the target moves before the caster's next turn, it takes an extra burst of thunder damage.",
+    "damage": "Weapon damage plus 1d8 thunder if the target moves",
+    "source": "core"
+  },
+  "healing-word": {
+    "id": "healing-word",
+    "name": "Healing Word",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid",
+      "bard"
+    ],
+    "description": "A creature of the caster's choice within range regains hit points, quickly spoken as a word of restorative magic.",
+    "healing": "1d4 + spellcasting modifier",
+    "higherLevels": "Healing increases by 1d4 for each slot level above 1st.",
+    "source": "core"
+  },
+  "bless": {
+    "id": "bless",
+    "name": "Bless",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "Up to three chosen creatures within range add 1d4 to attack rolls and saving throws for the duration.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 1st.",
+    "source": "core"
+  },
+  "guiding-bolt": {
+    "id": "guiding-bolt",
+    "name": "Guiding Bolt",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "A flash of light streaks toward a creature and explodes on impact, and the next attack made against it before the end of the caster's next turn has advantage.",
+    "damage": "4d6 radiant",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 1st.",
+    "source": "core"
+  },
+  "faerie-fire": {
+    "id": "faerie-fire",
+    "name": "Faerie Fire",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "Outlines every creature in a chosen area with glowing light unless it succeeds on a save, removing the benefit of invisibility and granting attackers advantage against it.",
+    "source": "core"
+  },
+  "sleep": {
+    "id": "sleep",
+    "name": "Sleep",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "A wave of magical drowsiness spreads through an area, dropping weaker creatures into unconsciousness starting with the lowest current hit points.",
+    "higherLevels": "The pool of affected hit points increases by 2d8 for each slot level above 1st.",
+    "source": "core"
+  },
+  "detect-magic": {
+    "id": "detect-magic",
+    "name": "Detect Magic",
+    "level": 1,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": true,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "warlock"
+    ],
+    "description": "The caster senses the presence of magic within 30 feet and, by focusing on a source, can learn its school of magic if visible.",
+    "source": "core"
+  },
+  "identify": {
+    "id": "identify",
+    "name": "Identify",
+    "level": 1,
+    "school": "Divination",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "wizard",
+      "bard"
+    ],
+    "description": "By touching an object or creature, the caster learns its magical properties, how to activate them, and any attunement requirements.",
+    "source": "core"
+  },
+  "mage-armor": {
+    "id": "mage-armor",
+    "name": "Mage Armor",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A protective magical force surrounds a willing creature not wearing armor, setting its base AC to 13 plus its Dexterity modifier.",
+    "source": "core"
+  },
+  "thunderwave": {
+    "id": "thunderwave",
+    "name": "Thunderwave",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (15-foot cube)",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "druid"
+    ],
+    "description": "A wave of thunderous force ripples outward from the caster, damaging and shoving back creatures who fail a Constitution save.",
+    "damage": "2d8 thunder",
+    "higherLevels": "Damage increases by 1d8 for each slot level above 1st.",
+    "source": "core"
+  },
+  "burning-hands": {
+    "id": "burning-hands",
+    "name": "Burning Hands",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (15-foot cone)",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A thin sheet of flame sweeps out from the caster's spread fingers, engulfing anything in a cone-shaped area.",
+    "damage": "3d6 fire",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 1st.",
+    "source": "core"
+  },
+  "charm-person": {
+    "id": "charm-person",
+    "name": "Charm Person",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "druid",
+      "warlock"
+    ],
+    "description": "A humanoid that fails a Wisdom save regards the caster as a friendly acquaintance for the duration, ending early if harmed.",
+    "higherLevels": "One additional humanoid can be targeted for each slot level above 1st, as long as targets are within 30 feet of each other.",
+    "source": "core"
+  },
+  "disguise-self": {
+    "id": "disguise-self",
+    "name": "Disguise Self",
+    "level": 1,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "Changes the caster's appearance, including clothing and gear, into another humanoid form of similar size, though the illusion won't survive physical inspection.",
+    "source": "core"
+  },
+  "comprehend-languages": {
+    "id": "comprehend-languages",
+    "name": "Comprehend Languages",
+    "level": 1,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "wizard",
+      "bard",
+      "warlock"
+    ],
+    "description": "The caster understands the literal meaning of any spoken language heard and any written language read for the duration.",
+    "source": "core"
+  },
+  "absorb-elements": {
+    "id": "absorb-elements",
+    "name": "Absorb Elements",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 reaction",
+    "range": "Self",
+    "components": [
+      "S"
+    ],
+    "duration": "Up to 1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid",
+      "ranger"
+    ],
+    "description": "Cast in response to taking acid, cold, fire, lightning, or thunder damage, this spell halves that damage and stores the rest, adding it to the caster's next melee attack before the end of their next turn.",
+    "higherLevels": "The stored damage die increases by 1d6 for each slot level above 1st.",
+    "source": "core"
+  },
+  "catapult": {
+    "id": "catapult",
+    "name": "Catapult",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Hurls a loose, nonmagical object weighing up to 5 pounds toward a point, striking any creature there that fails a Dexterity save.",
+    "damage": "3d8 bludgeoning, acid, cold, fire, or lightning",
+    "higherLevels": "Damage increases by 1d8 for each slot level above 1st.",
+    "source": "core"
+  },
+  "feather-fall": {
+    "id": "feather-fall",
+    "name": "Feather Fall",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 reaction",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "M"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "Slows the descent of up to five falling creatures to a gentle drift, preventing fall damage until they land.",
+    "source": "core"
+  },
+  "find-familiar": {
+    "id": "find-familiar",
+    "name": "Find Familiar",
+    "level": 1,
+    "school": "Conjuration",
+    "castingTime": "1 hour",
+    "range": "10 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Summons a spirit that takes the form of a small animal chosen by the caster, serving as a loyal companion that can deliver touch spells and scout independently.",
+    "source": "core"
+  },
+  "longstrider": {
+    "id": "longstrider",
+    "name": "Longstrider",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "druid",
+      "ranger"
+    ],
+    "description": "A touched creature's walking speed increases by 10 feet for the duration.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 1st.",
+    "source": "core"
+  },
+  "silent-image": {
+    "id": "silent-image",
+    "name": "Silent Image",
+    "level": 1,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "Creates a purely visual illusion of an object, creature, or phenomenon that the caster can mentally reshape and move within range.",
+    "source": "core"
+  },
+  "unseen-servant": {
+    "id": "unseen-servant",
+    "name": "Unseen Servant",
+    "level": 1,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "wizard",
+      "bard",
+      "warlock"
+    ],
+    "description": "Creates an invisible, mindless force that can perform simple tasks such as fetching, cleaning, or opening doors at the caster's command.",
+    "source": "core"
+  },
+  "invisibility": {
+    "id": "invisibility",
+    "name": "Invisibility",
+    "level": 2,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "A touched creature and its worn gear become invisible until the spell ends or the target attacks or casts a spell.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 2nd.",
+    "source": "core"
+  },
+  "misty-step": {
+    "id": "misty-step",
+    "name": "Misty Step",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "The caster is briefly surrounded by silvery mist and teleports up to 30 feet to an unoccupied space they can see.",
+    "source": "core"
+  },
+  "scorching-ray": {
+    "id": "scorching-ray",
+    "name": "Scorching Ray",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Three separate rays of fire streak toward targets within range, each requiring its own attack roll.",
+    "damage": "2d6 fire per ray",
+    "higherLevels": "One additional ray is created for each slot level above 2nd.",
+    "source": "core"
+  },
+  "web": {
+    "id": "web",
+    "name": "Web",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Fills a 20-foot cube with thick, sticky webbing that heavily obscures the area and restrains creatures failing a Dexterity save.",
+    "source": "core"
+  },
+  "hold-person": {
+    "id": "hold-person",
+    "name": "Hold Person",
+    "level": 2,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "cleric",
+      "druid"
+    ],
+    "description": "A humanoid must succeed on a Wisdom save or become paralyzed for the duration, repeating the save at the end of each of its turns.",
+    "higherLevels": "One additional humanoid can be targeted for each slot level above 2nd.",
+    "source": "core"
+  },
+  "spiritual-weapon": {
+    "id": "spiritual-weapon",
+    "name": "Spiritual Weapon",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Creates a floating spectral weapon that attacks a creature within 5 feet of it, and can be moved to strike a new target as a bonus action on later turns.",
+    "damage": "1d8 force",
+    "higherLevels": "Damage increases by 1d8 for every two slot levels above 2nd.",
+    "source": "core"
+  },
+  "spider-climb": {
+    "id": "spider-climb",
+    "name": "Spider Climb",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "A touched creature gains the ability to move up, down, and across vertical surfaces and ceilings while leaving its hands free.",
+    "source": "core"
+  },
+  "suggestion": {
+    "id": "suggestion",
+    "name": "Suggestion",
+    "level": 2,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "M"
+    ],
+    "duration": "Up to 8 hours",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Plants a reasonable-sounding course of action in a creature's mind; if it fails a Wisdom save it pursues that course to the best of its ability.",
+    "source": "core"
+  },
+  "mirror-image": {
+    "id": "mirror-image",
+    "name": "Mirror Image",
+    "level": 2,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "Creates three illusory duplicates of the caster that shift about, causing attackers to potentially strike a duplicate instead of the caster.",
+    "source": "core"
+  },
+  "counterspell": {
+    "id": "counterspell",
+    "name": "Counterspell",
+    "level": 3,
+    "school": "Abjuration",
+    "castingTime": "1 reaction",
+    "range": "60 feet",
+    "components": [
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "Interrupts a creature in the process of casting a spell, automatically foiling it if its level is 3rd or lower, or requiring an ability check against higher-level spells.",
+    "higherLevels": "The interruption automatically succeeds against spells of a level equal to or lower than the slot level used.",
+    "source": "core"
+  },
+  "darkness": {
+    "id": "darkness",
+    "name": "Darkness",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "Magical darkness spreads from a point within range, filling a 15-foot radius and even snuffing out nonmagical light sources within it.",
+    "source": "core"
+  },
+  "enlarge-reduce": {
+    "id": "enlarge-reduce",
+    "name": "Enlarge/Reduce",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A creature or object either doubles or halves in size, altering its weight and, for creatures, the damage of its Strength-based weapon attacks.",
+    "source": "core"
+  },
+  "flaming-sphere": {
+    "id": "flaming-sphere",
+    "name": "Flaming Sphere",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid"
+    ],
+    "description": "Conjures a 5-foot-diameter ball of fire that can be rolled around the battlefield as a bonus action, burning anything it touches.",
+    "damage": "2d6 fire",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 2nd.",
+    "source": "core"
+  },
+  "gust-of-wind": {
+    "id": "gust-of-wind",
+    "name": "Gust of Wind",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (60-foot line)",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "druid"
+    ],
+    "description": "A powerful wind blasts out in a line from the caster, pushing creatures back and hampering ranged attacks and gases within it.",
+    "source": "core"
+  },
+  "levitate": {
+    "id": "levitate",
+    "name": "Levitate",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A target creature or object rises vertically off the ground and floats there, able to be pushed or pulled along by the caster.",
+    "source": "core"
+  },
+  "phantasmal-force": {
+    "id": "phantasmal-force",
+    "name": "Phantasmal Force",
+    "level": 2,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "Plants a phantasmal object, creature, or effect in a target's mind, which it perceives as real and which can deal psychic damage.",
+    "damage": "1d6 psychic",
+    "source": "core"
+  },
+  "ray-of-enfeeblement": {
+    "id": "ray-of-enfeeblement",
+    "name": "Ray of Enfeeblement",
+    "level": 2,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "warlock"
+    ],
+    "description": "A black beam of enervating energy withers a creature, halving the damage of its Strength-based weapon attacks until the spell ends.",
+    "source": "core"
+  },
+  "alter-self": {
+    "id": "alter-self",
+    "name": "Alter Self",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "The caster shapes their own body, choosing to grow a swimming form, natural weapons, or a disguised appearance for the duration.",
+    "source": "core"
+  },
+  "blindness-deafness": {
+    "id": "blindness-deafness",
+    "name": "Blindness/Deafness",
+    "level": 2,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "cleric"
+    ],
+    "description": "A creature that fails a Constitution save is struck blind or deaf for the duration, repeating the save at the end of each of its turns.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 2nd.",
+    "source": "core"
+  },
+  "blur": {
+    "id": "blur",
+    "name": "Blur",
+    "level": 2,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "The caster's outline wavers and doubles, giving attackers disadvantage on attack rolls against them for the duration.",
+    "source": "core"
+  },
+  "crown-of-madness": {
+    "id": "crown-of-madness",
+    "name": "Crown of Madness",
+    "level": 2,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "A ring of horns appears atop a humanoid's head; while charmed, it must attack a target the caster chooses each turn instead of acting freely.",
+    "source": "core"
+  },
+  "enthrall": {
+    "id": "enthrall",
+    "name": "Enthrall",
+    "level": 2,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "warlock"
+    ],
+    "description": "A captivating speech distracts anyone who hears and understands it, giving them disadvantage on Wisdom checks to notice anything but the speaker.",
+    "source": "core"
+  },
+  "moonbeam": {
+    "id": "moonbeam",
+    "name": "Moonbeam",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "A silvery beam of pale light shines down in a 5-foot-radius cylinder, searing creatures who fail a save and can be moved as a bonus action.",
+    "damage": "2d10 radiant",
+    "higherLevels": "Damage increases by 1d10 for each slot level above 2nd.",
+    "source": "core"
+  },
+  "prayer-of-healing": {
+    "id": "prayer-of-healing",
+    "name": "Prayer of Healing",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "10 minutes",
+    "range": "30 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Up to six creatures of the caster's choice regain hit points as soothing, prayerful words wash over them.",
+    "healing": "2d8 + spellcasting modifier",
+    "higherLevels": "Healing increases by 1d8 for each slot level above 2nd.",
+    "source": "core"
+  },
+  "protection-from-poison": {
+    "id": "protection-from-poison",
+    "name": "Protection from Poison",
+    "level": 2,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ],
+    "description": "A touched creature is cured of one poison affecting it and gains advantage on saves against being poisoned, plus resistance to poison damage, for the duration.",
+    "source": "core"
+  },
+  "fireball": {
+    "id": "fireball",
+    "name": "Fireball",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A bright streak flashes to a point and erupts into a roaring ball of flame that engulfs a 20-foot-radius area.",
+    "damage": "8d6 fire",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 3rd.",
+    "source": "core"
+  },
+  "lightning-bolt": {
+    "id": "lightning-bolt",
+    "name": "Lightning Bolt",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (100-foot line)",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A stroke of lightning blasts out from the caster in a line, striking everything in its path.",
+    "damage": "8d6 lightning",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 3rd.",
+    "source": "core"
+  },
+  "fly": {
+    "id": "fly",
+    "name": "Fly",
+    "level": 3,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A touched creature gains a flying speed of 60 feet for the duration.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 3rd.",
+    "source": "core"
+  },
+  "haste": {
+    "id": "haste",
+    "name": "Haste",
+    "level": 3,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A willing creature's speed doubles, it gains a bonus to AC and Dexterity saves, and it gains an extra action limited to one option each turn.",
+    "source": "core"
+  },
+  "revivify": {
+    "id": "revivify",
+    "name": "Revivify",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "A creature that died within the last minute returns to life with 1 hit point, though it cannot restore missing body parts.",
+    "source": "core"
+  },
+  "dispel-magic": {
+    "id": "dispel-magic",
+    "name": "Dispel Magic",
+    "level": 3,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "cleric",
+      "druid",
+      "paladin"
+    ],
+    "description": "Ends spell effects on a chosen creature, object, or magical effect, automatically succeeding against spells of 3rd level or lower.",
+    "higherLevels": "Effects created by spells of a level equal to or lower than the slot used are automatically ended.",
+    "source": "core"
+  },
+  "fear": {
+    "id": "fear",
+    "name": "Fear",
+    "level": 3,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "Self (30-foot cone)",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Projects a phantasmal image of the caster's choosing that terrifies each creature in the cone, causing it to drop what it holds and flee.",
+    "source": "core"
+  },
+  "animate-dead": {
+    "id": "animate-dead",
+    "name": "Animate Dead",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "1 minute",
+    "range": "10 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric"
+    ],
+    "description": "Reanimates a corpse or pile of bones into a skeleton or zombie under the caster's control, which fights on its behalf indefinitely.",
+    "higherLevels": "Two additional undead can be animated for each slot level above 3rd.",
+    "source": "core"
+  },
+  "bestow-curse": {
+    "id": "bestow-curse",
+    "name": "Bestow Curse",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric"
+    ],
+    "description": "A touched creature suffers a curse of the caster's choosing, such as disadvantage on ability checks or extra necrotic damage from the caster's attacks.",
+    "higherLevels": "At 4th level the duration becomes concentration up to 10 minutes; at 5th level it lasts 8 hours without concentration; at 9th level it lasts until removed.",
+    "source": "core"
+  },
+  "clairvoyance": {
+    "id": "clairvoyance",
+    "name": "Clairvoyance",
+    "level": 3,
+    "school": "Divination",
+    "castingTime": "10 minutes",
+    "range": "1 mile",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "cleric"
+    ],
+    "description": "Creates an invisible sensor at a known or previously visited location, letting the caster see or hear through it as chosen.",
+    "source": "core"
+  },
+  "nondetection": {
+    "id": "nondetection",
+    "name": "Nondetection",
+    "level": 3,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "ranger"
+    ],
+    "description": "Hides a target creature or object from divination magic such as scrying sensors and detection spells for the duration.",
+    "source": "core"
+  },
+  "protection-from-energy": {
+    "id": "protection-from-energy",
+    "name": "Protection from Energy",
+    "level": 3,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric",
+      "druid",
+      "ranger",
+      "sorcerer"
+    ],
+    "description": "A touched creature gains resistance to one damage type of the caster's choosing among acid, cold, fire, lightning, or thunder.",
+    "source": "core"
+  },
+  "remove-curse": {
+    "id": "remove-curse",
+    "name": "Remove Curse",
+    "level": 3,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric",
+      "paladin",
+      "warlock"
+    ],
+    "description": "Ends all curses affecting a touched creature or object, and detaches any cursed item that would otherwise resist removal.",
+    "source": "core"
+  },
+  "sending": {
+    "id": "sending",
+    "name": "Sending",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Unlimited",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "cleric"
+    ],
+    "description": "A short message of 25 words or fewer is sent to a familiar creature anywhere, who can send a reply of equal length immediately.",
+    "source": "core"
+  },
+  "sleet-storm": {
+    "id": "sleet-storm",
+    "name": "Sleet Storm",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid"
+    ],
+    "description": "Freezing rain and sleet fall in a 40-foot-radius cylinder, heavily obscuring the area, coating the ground with slick ice, and dousing open flames.",
+    "source": "core"
+  },
+  "speak-with-dead": {
+    "id": "speak-with-dead",
+    "name": "Speak with Dead",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "10 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "10 minutes",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Animates a corpse's mouth to answer up to five questions, though it can lie or refuse if it was hostile in life.",
+    "source": "core"
+  },
+  "spirit-guardians": {
+    "id": "spirit-guardians",
+    "name": "Spirit Guardians",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "Self (15-foot radius)",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Protective spirits swirl around the caster, damaging hostile creatures that enter or start their turn nearby and halving their speed.",
+    "damage": "3d8 radiant or necrotic",
+    "higherLevels": "Damage increases by 1d8 for each slot level above 3rd.",
+    "source": "core"
+  },
+  "tongues": {
+    "id": "tongues",
+    "name": "Tongues",
+    "level": 3,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "A touched creature can understand any spoken language and be understood by anyone who knows at least one language, for the duration.",
+    "source": "core"
+  },
+  "vampiric-touch": {
+    "id": "vampiric-touch",
+    "name": "Vampiric Touch",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "warlock"
+    ],
+    "description": "The caster's hand drains life from a creature they touch, dealing necrotic damage and restoring half as many hit points to the caster.",
+    "damage": "3d6 necrotic",
+    "healing": "Half the necrotic damage dealt",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 3rd.",
+    "source": "core"
+  },
+  "water-walk": {
+    "id": "water-walk",
+    "name": "Water Walk",
+    "level": 3,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid",
+      "ranger"
+    ],
+    "description": "Up to ten willing creatures gain the ability to move across any liquid surface as if it were solid ground.",
+    "source": "core"
+  },
+  "banishment": {
+    "id": "banishment",
+    "name": "Banishment",
+    "level": 4,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "cleric",
+      "warlock",
+      "paladin"
+    ],
+    "description": "A creature that fails a Charisma save is sent to a harmless demiplane if native to the current plane, or banished home entirely if not, for the duration.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 4th.",
+    "source": "core"
+  },
+  "confusion": {
+    "id": "confusion",
+    "name": "Confusion",
+    "level": 4,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "druid",
+      "sorcerer"
+    ],
+    "description": "Assails the minds of creatures in a 10-foot-radius area, causing each affected creature to act randomly on its turn.",
+    "source": "core"
+  },
+  "dominate-beast": {
+    "id": "dominate-beast",
+    "name": "Dominate Beast",
+    "level": 4,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer"
+    ],
+    "description": "A beast that fails a Wisdom save becomes charmed and can be telepathically commanded by the caster for the duration.",
+    "higherLevels": "The duration increases to 10 minutes at 5th level, 1 hour at 6th level, and 8 hours at 7th level or higher.",
+    "source": "core"
+  },
+  "greater-invisibility": {
+    "id": "greater-invisibility",
+    "name": "Greater Invisibility",
+    "level": 4,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "A touched creature turns invisible for the duration, keeping the benefit even while attacking or casting spells.",
+    "source": "core"
+  },
+  "ice-storm": {
+    "id": "ice-storm",
+    "name": "Ice Storm",
+    "level": 4,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid",
+      "sorcerer"
+    ],
+    "description": "A hail of rock-hard ice pounds a 20-foot-radius cylinder, battering creatures with bludgeoning and cold damage.",
+    "damage": "2d8 bludgeoning plus 4d6 cold",
+    "higherLevels": "Bludgeoning damage increases by 1d8 for each slot level above 4th.",
+    "source": "core"
+  },
+  "locate-creature": {
+    "id": "locate-creature",
+    "name": "Locate Creature",
+    "level": 4,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin"
+    ],
+    "description": "Senses the direction and rough distance to a familiar creature or type of creature within a mile, as long as no barrier blocks the path.",
+    "source": "core"
+  },
+  "polymorph": {
+    "id": "polymorph",
+    "name": "Polymorph",
+    "level": 4,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "druid",
+      "sorcerer"
+    ],
+    "description": "Transforms a willing creature, or one that fails a Wisdom save, into a beast form whose statistics replace its own until the spell ends.",
+    "source": "core"
+  },
+  "stoneskin": {
+    "id": "stoneskin",
+    "name": "Stoneskin",
+    "level": 4,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid",
+      "ranger",
+      "sorcerer"
+    ],
+    "description": "A touched creature's skin hardens, granting resistance to nonmagical bludgeoning, piercing, and slashing damage for the duration.",
+    "source": "core"
+  },
+  "wall-of-fire": {
+    "id": "wall-of-fire",
+    "name": "Wall of Fire",
+    "level": 4,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid",
+      "sorcerer"
+    ],
+    "description": "Creates a wall of roaring flame in a line or ring that burns any creature passing through it or ending its turn nearby.",
+    "damage": "5d8 fire",
+    "higherLevels": "Damage increases by 1d8 for each slot level above 4th.",
+    "source": "core"
+  },
+  "arcane-eye": {
+    "id": "arcane-eye",
+    "name": "Arcane Eye",
+    "level": 4,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Creates an invisible, magical eye that flies at the caster's mental command, sending back everything it sees and hears.",
+    "source": "core"
+  },
+  "black-tentacles": {
+    "id": "black-tentacles",
+    "name": "Black Tentacles",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Squirming black tentacles fill a 20-foot square, seizing and crushing every creature that enters or starts its turn there.",
+    "damage": "3d6 bludgeoning",
+    "source": "core"
+  },
+  "blight": {
+    "id": "blight",
+    "name": "Blight",
+    "level": 4,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid",
+      "sorcerer"
+    ],
+    "description": "Necromantic energy withers a creature, though plant creatures and objects made of plant material take heightened damage.",
+    "damage": "8d8 necrotic",
+    "higherLevels": "Damage increases by 1d8 for each slot level above 4th.",
+    "source": "core"
+  },
+  "dimension-door": {
+    "id": "dimension-door",
+    "name": "Dimension Door",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "500 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "The caster teleports instantly to a spot they can visualize within range, optionally bringing along one willing creature within 5 feet.",
+    "source": "core"
+  },
+  "divination": {
+    "id": "divination",
+    "name": "Divination",
+    "level": 4,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "cleric"
+    ],
+    "description": "The caster petitions for an omen about a specific goal, event, or activity within the next 7 days, receiving a truthful but cryptic reply.",
+    "source": "core"
+  },
+  "freedom-of-movement": {
+    "id": "freedom-of-movement",
+    "name": "Freedom of Movement",
+    "level": 4,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid",
+      "ranger",
+      "bard"
+    ],
+    "description": "A touched creature ignores difficult terrain and cannot be restrained or have its speed reduced by any means for the duration.",
+    "source": "core"
+  },
+  "giant-insect": {
+    "id": "giant-insect",
+    "name": "Giant Insect",
+    "level": 4,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "Transforms up to ten centipedes, three spiders, five wasps, or one scorpion into giant versions under the caster's command.",
+    "source": "core"
+  },
+  "hallucinatory-terrain": {
+    "id": "hallucinatory-terrain",
+    "name": "Hallucinatory Terrain",
+    "level": 4,
+    "school": "Illusion",
+    "castingTime": "10 minutes",
+    "range": "300 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "24 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "druid"
+    ],
+    "description": "Makes a natural terrain feature within a large area look, sound, and smell like a different natural feature, though it remains physically unchanged.",
+    "source": "core"
+  },
+  "commune": {
+    "id": "commune",
+    "name": "Commune",
+    "level": 5,
+    "school": "Divination",
+    "castingTime": "1 minute",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "cleric"
+    ],
+    "description": "The caster contacts a divine entity to ask up to three yes-or-no questions, receiving a truthful answer for each within the spell's duration.",
+    "source": "core"
+  },
+  "contagion": {
+    "id": "contagion",
+    "name": "Contagion",
+    "level": 5,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "7 days",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "description": "A touched creature is infected with a virulent magical disease of the caster's choosing that worsens if failed saves accumulate.",
+    "source": "core"
+  },
+  "insect-plague": {
+    "id": "insect-plague",
+    "name": "Insect Plague",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid",
+      "sorcerer"
+    ],
+    "description": "A swarm of biting, stinging insects fills a 20-foot-radius sphere, lightly obscuring it and damaging creatures within.",
+    "damage": "4d10 piercing",
+    "higherLevels": "Damage increases by 1d10 for each slot level above 5th.",
+    "source": "core"
+  },
+  "mass-cure-wounds": {
+    "id": "mass-cure-wounds",
+    "name": "Mass Cure Wounds",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid",
+      "bard"
+    ],
+    "description": "A wave of healing energy washes over up to six creatures in a 30-foot-radius area, restoring hit points to each.",
+    "healing": "3d8 + spellcasting modifier per creature",
+    "higherLevels": "Healing increases by 1d8 for each slot level above 5th.",
+    "source": "core"
+  },
+  "awaken": {
+    "id": "awaken",
+    "name": "Awaken",
+    "level": 5,
+    "school": "Transmutation",
+    "castingTime": "8 hours",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "bard"
+    ],
+    "description": "Bestows sentience upon a beast or plant creature, granting it human-level intelligence and the ability to speak one language known by the caster.",
+    "source": "core"
+  },
+  "chain-lightning": {
+    "id": "chain-lightning",
+    "name": "Chain Lightning",
+    "level": 6,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A crackling bolt of lightning arcs to a primary target and then leaps to up to three additional nearby creatures.",
+    "damage": "10d8 lightning",
+    "higherLevels": "One additional bolt strikes a new target for each slot level above 6th.",
+    "source": "core"
+  },
+  "circle-of-death": {
+    "id": "circle-of-death",
+    "name": "Circle of Death",
+    "level": 6,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "warlock"
+    ],
+    "description": "A sphere of negative energy bursts outward in a 60-foot radius, withering everything caught within it.",
+    "damage": "8d6 necrotic",
+    "higherLevels": "Damage increases by 2d6 for each slot level above 6th.",
+    "source": "core"
+  },
+  "cone-of-cold": {
+    "id": "cone-of-cold",
+    "name": "Cone of Cold",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (60-foot cone)",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A blast of frigid air erupts from the caster's hands, coating everything in the cone with rime and biting cold.",
+    "damage": "8d8 cold",
+    "higherLevels": "Damage increases by 1d8 for each slot level above 5th.",
+    "source": "core"
+  },
+  "contingency": {
+    "id": "contingency",
+    "name": "Contingency",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "10 minutes",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "10 days",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Chooses another spell of 5th level or lower cast on the caster to trigger automatically when a stated circumstance occurs.",
+    "source": "core"
+  },
+  "disintegrate": {
+    "id": "disintegrate",
+    "name": "Disintegrate",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A thin green ray disintegrates a creature or object that fails to withstand it, reducing a slain creature to fine dust.",
+    "damage": "10d6 + 40 force",
+    "higherLevels": "Damage increases by 3d6 for each slot level above 6th.",
+    "source": "core"
+  },
+  "dominate-person": {
+    "id": "dominate-person",
+    "name": "Dominate Person",
+    "level": 5,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "A humanoid that fails a Wisdom save is charmed and can be telepathically commanded by the caster for the duration.",
+    "higherLevels": "The duration increases to 10 minutes at 6th level, 1 hour at 7th level, and 8 hours at 8th level or higher.",
+    "source": "core"
+  },
+  "eyebite": {
+    "id": "eyebite",
+    "name": "Eyebite",
+    "level": 6,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock",
+      "bard"
+    ],
+    "description": "For the duration, the caster can glare balefully at one creature per turn, inflicting sleep, panic, or sickness if it fails a save.",
+    "source": "core"
+  },
+  "mass-suggestion": {
+    "id": "mass-suggestion",
+    "name": "Mass Suggestion",
+    "level": 6,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "M"
+    ],
+    "duration": "24 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Plants a reasonable-sounding course of action in the minds of up to twelve creatures, who pursue it if they fail a Wisdom save.",
+    "source": "core"
+  },
+  "true-seeing": {
+    "id": "true-seeing",
+    "name": "True Seeing",
+    "level": 6,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "A touched creature gains truesight, sees through illusions, and can perceive the true form of shapechanged or transmuted creatures for the duration.",
+    "source": "core"
+  },
+  "wall-of-force": {
+    "id": "wall-of-force",
+    "name": "Wall of Force",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Creates an invisible, immobile wall of pure force that nothing can physically pass through and that resists nearly all damage.",
+    "source": "core"
+  },
+  "delayed-blast-fireball": {
+    "id": "delayed-blast-fireball",
+    "name": "Delayed Blast Fireball",
+    "level": 7,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A fiery bead hovers at a point, growing more destructive each round it lingers before detonating in a fiery explosion.",
+    "damage": "12d6 fire",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 7th.",
+    "source": "core"
+  },
+  "finger-of-death": {
+    "id": "finger-of-death",
+    "name": "Finger of Death",
+    "level": 7,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "warlock"
+    ],
+    "description": "Negative energy pierces a creature, and a humanoid slain by it rises as a zombie under the caster's control on its next turn.",
+    "damage": "7d8 + 30 necrotic",
+    "source": "core"
+  },
+  "forcecage": {
+    "id": "forcecage",
+    "name": "Forcecage",
+    "level": 7,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "100 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "warlock"
+    ],
+    "description": "An immobile, invisible cage or barrier of magical force springs up around a chosen area, trapping creatures that fail a save.",
+    "source": "core"
+  },
+  "plane-shift": {
+    "id": "plane-shift",
+    "name": "Plane Shift",
+    "level": 7,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "A touched creature, and up to eight willing others touching one another, are transported to a different plane of existence.",
+    "source": "core"
+  },
+  "project-image": {
+    "id": "project-image",
+    "name": "Project Image",
+    "level": 7,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "500 miles",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 day",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard"
+    ],
+    "description": "Creates an illusory duplicate of the caster that can be sent anywhere within range, through which the caster can see, hear, and speak.",
+    "source": "core"
+  },
+  "regenerate": {
+    "id": "regenerate",
+    "name": "Regenerate",
+    "level": 7,
+    "school": "Transmutation",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "description": "A touched creature regains hit points and slowly regrows severed limbs and organs over the course of the spell's duration.",
+    "healing": "4d8 + 15 initially, then 1 hp per minute for the duration",
+    "source": "core"
+  },
+  "reverse-gravity": {
+    "id": "reverse-gravity",
+    "name": "Reverse Gravity",
+    "level": 7,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "100 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid",
+      "sorcerer"
+    ],
+    "description": "Gravity reverses in a large cylindrical area, causing everything not anchored down to fall upward until the spell ends.",
+    "source": "core"
+  },
+  "sunburst": {
+    "id": "sunburst",
+    "name": "Sunburst",
+    "level": 8,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid"
+    ],
+    "description": "Brilliant sunlight blazes out in a 60-foot radius, blinding creatures and searing them with radiant energy.",
+    "damage": "12d6 radiant",
+    "source": "core"
+  },
+  "teleport": {
+    "id": "teleport",
+    "name": "Teleport",
+    "level": 7,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "10 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "Instantly transports the caster and up to eight willing creatures to a familiar destination, though unfamiliarity risks a mishap.",
+    "source": "core"
+  },
+  "dominate-monster": {
+    "id": "dominate-monster",
+    "name": "Dominate Monster",
+    "level": 8,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "Any creature that fails a Wisdom save is charmed and can be telepathically commanded by the caster for the duration.",
+    "higherLevels": "The duration becomes 8 hours without concentration when cast using a 9th-level slot.",
+    "source": "core"
+  },
+  "feeblemind": {
+    "id": "feeblemind",
+    "name": "Feeblemind",
+    "level": 8,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "druid",
+      "warlock"
+    ],
+    "description": "A blast of mental energy assaults a creature, and if it fails a save its Intelligence and Charisma scores are shattered to 1.",
+    "damage": "4d6 psychic",
+    "source": "core"
+  },
+  "foresight": {
+    "id": "foresight",
+    "name": "Foresight",
+    "level": 9,
+    "school": "Divination",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "druid",
+      "warlock"
+    ],
+    "description": "A touched creature gains an uncanny sense of what is about to happen, granting advantage on attacks, checks, and saves while foes have disadvantage against it.",
+    "source": "core"
+  },
+  "power-word-stun": {
+    "id": "power-word-stun",
+    "name": "Power Word Stun",
+    "level": 8,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Speaks a single word of power that stuns a creature outright unless its hit points exceed the spell's threshold.",
+    "source": "core"
+  },
+  "prismatic-wall": {
+    "id": "prismatic-wall",
+    "name": "Prismatic Wall",
+    "level": 9,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "10 minutes",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Conjures an immobile wall of shimmering, multicolored light, each of its seven bands imposing a different dangerous effect on those who pass through.",
+    "source": "core"
+  },
+  "resurrection": {
+    "id": "resurrection",
+    "name": "Resurrection",
+    "level": 7,
+    "school": "Necromancy",
+    "castingTime": "1 hour",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Restores life to a creature dead for no more than a century, mending mortal wounds and restoring any missing body parts.",
+    "source": "core"
+  },
+  "sunbeam": {
+    "id": "sunbeam",
+    "name": "Sunbeam",
+    "level": 6,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (60-foot line)",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid",
+      "sorcerer"
+    ],
+    "description": "A line of radiant light flashes out from the caster's hand, searing and possibly blinding creatures it touches, and can be fired again on later turns.",
+    "damage": "6d8 radiant",
+    "source": "core"
+  },
+  "gate": {
+    "id": "gate",
+    "name": "Gate",
+    "level": 9,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric",
+      "sorcerer"
+    ],
+    "description": "Conjures a shimmering portal linking to a specific location on another plane, through which creatures and objects can pass freely.",
+    "source": "core"
+  },
+  "mass-heal": {
+    "id": "mass-heal",
+    "name": "Mass Heal",
+    "level": 9,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "A flood of healing energy restores hit points among up to six creatures of the caster's choice and cures blindness, deafness, and disease.",
+    "healing": "700 total hit points divided as the caster chooses",
+    "source": "core"
+  },
+  "meteor-swarm": {
+    "id": "meteor-swarm",
+    "name": "Meteor Swarm",
+    "level": 9,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "1 mile",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Four blazing orbs streak down to chosen points, each exploding in a fiery, rocky burst that devastates a wide area.",
+    "damage": "20d6 fire plus 20d6 bludgeoning per orb",
+    "source": "core"
+  },
+  "power-word-kill": {
+    "id": "power-word-kill",
+    "name": "Power Word Kill",
+    "level": 9,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "Speaks a single word of power that instantly slays a creature outright unless its hit points exceed the spell's threshold.",
+    "source": "core"
+  },
+  "time-stop": {
+    "id": "time-stop",
+    "name": "Time Stop",
+    "level": 9,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Time freezes for everyone but the caster, who takes a rapid string of extra turns until an action affects another creature or the world moves too far.",
+    "source": "core"
+  },
+  "true-resurrection": {
+    "id": "true-resurrection",
+    "name": "True Resurrection",
+    "level": 9,
+    "school": "Necromancy",
+    "castingTime": "1 hour",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "description": "Restores life to a creature dead for up to two centuries, even without remains, fully mending it and restoring any missing body parts.",
+    "source": "core"
+  },
+  "wish": {
+    "id": "wish",
+    "name": "Wish",
+    "level": 9,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "The most powerful spell a mortal can cast, replicating any spell of 8th level or lower without needing its usual requirements, or creating a nearly limitless custom effect at great personal risk.",
+    "source": "core"
+  },
+  "imprisonment": {
+    "id": "imprisonment",
+    "name": "Imprisonment",
+    "level": 9,
+    "school": "Abjuration",
+    "castingTime": "1 minute",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Until dispelled",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "warlock"
+    ],
+    "description": "Binds a creature that fails a Wisdom save into magical confinement, choosing a form such as burial, chaining, hedged prison, minimus containment, or slumber.",
+    "source": "core"
+  },
+  "shapechange": {
+    "id": "shapechange",
+    "name": "Shapechange",
+    "level": 9,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid"
+    ],
+    "description": "The caster transforms into a different creature of challenge rating equal to or less than their level, gaining its statistics while keeping their own mind.",
+    "source": "core"
+  },
+  "aid": {
+    "id": "aid",
+    "name": "Aid",
+    "level": 2,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "Bolsters up to three allies' vitality, increasing their hit point maximum and current hit points for the duration.",
+    "healing": "5 temporary hit point maximum increase per target",
+    "higherLevels": "The hit point increase rises by 5 for each slot level above 2nd.",
+    "source": "core"
+  },
+  "lesser-restoration": {
+    "id": "lesser-restoration",
+    "name": "Lesser Restoration",
+    "level": 2,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid",
+      "paladin",
+      "bard",
+      "ranger"
+    ],
+    "description": "Ends one disease or condition afflicting a touched creature, such as blindness, deafness, paralysis, or poison.",
+    "source": "core"
+  },
+  "zone-of-truth": {
+    "id": "zone-of-truth",
+    "name": "Zone of Truth",
+    "level": 2,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "10 minutes",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin",
+      "bard"
+    ],
+    "description": "Creatures within a 15-foot-radius area that fail a save cannot speak a deliberate lie while inside the zone.",
+    "source": "core"
+  },
+  "find-steed": {
+    "id": "find-steed",
+    "name": "Find Steed",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "10 minutes",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "paladin"
+    ],
+    "description": "Summons a loyal spirit that manifests as a powerful, intelligent mount to serve the caster in their quest.",
+    "source": "core"
+  },
+  "pass-without-trace": {
+    "id": "pass-without-trace",
+    "name": "Pass without Trace",
+    "level": 2,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "A veil of shadows and silence radiates from the caster, granting a large bonus to Stealth checks to allies within 30 feet and hiding them from tracking.",
+    "source": "core"
+  },
+  "barkskin": {
+    "id": "barkskin",
+    "name": "Barkskin",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "A touched creature's skin toughens like bark, setting its AC to no less than 16 for the duration.",
+    "source": "core"
+  },
+  "protection-from-evil-and-good": {
+    "id": "protection-from-evil-and-good",
+    "name": "Protection from Evil and Good",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric",
+      "paladin",
+      "warlock"
+    ],
+    "description": "A touched creature is warded against aberrations, celestials, elementals, fey, fiends, and undead, hindering their attempts to charm, frighten, or possess it.",
+    "source": "core"
+  },
+  "wrathful-smite": {
+    "id": "wrathful-smite",
+    "name": "Wrathful Smite",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": [
+      "V"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "paladin"
+    ],
+    "description": "The caster's next melee weapon hit crackles with psychic force, dealing extra damage and potentially leaving the target frightened.",
+    "damage": "1d6 psychic",
+    "source": "core"
+  },
+  "divine-favor": {
+    "id": "divine-favor",
+    "name": "Divine Favor",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "paladin"
+    ],
+    "description": "Divine energy wreathes the caster's weapon, adding radiant damage to the next successful weapon attacks made before the spell ends.",
+    "damage": "1d4 radiant per hit",
+    "source": "core"
+  },
+  "searing-smite": {
+    "id": "searing-smite",
+    "name": "Searing Smite",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": [
+      "V"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "paladin"
+    ],
+    "description": "The caster's next melee weapon hit flares with fire, searing the target and igniting it so it continues to burn each turn unless treated.",
+    "damage": "1d6 fire, plus 1d6 fire at the start of the target's turns",
+    "source": "core"
+  },
+  "hunters-mark": {
+    "id": "hunters-mark",
+    "name": "Hunter's Mark",
+    "level": 1,
+    "school": "Divination",
+    "castingTime": "1 bonus action",
+    "range": "90 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "ranger"
+    ],
+    "description": "Marks a creature as quarry, dealing extra damage to it whenever the caster hits with a weapon attack and granting tracking advantages.",
+    "damage": "1d6 extra damage per weapon hit",
+    "higherLevels": "The concentration duration extends to 8 hours at 3rd level and 24 hours at 5th level or higher.",
+    "source": "core"
+  },
+  "ensnaring-strike": {
+    "id": "ensnaring-strike",
+    "name": "Ensnaring Strike",
+    "level": 1,
+    "school": "Conjuration",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": [
+      "V"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "ranger"
+    ],
+    "description": "The caster's next weapon hit causes grasping vines to burst forth, dealing piercing damage and restraining the target unless it succeeds on a save.",
+    "damage": "1d6 piercing",
+    "source": "core"
+  },
+  "goodberry": {
+    "id": "goodberry",
+    "name": "Goodberry",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "Creates ten berries infused with magic, each providing modest healing and enough sustenance to feed a creature for a day.",
+    "healing": "1 hit point per berry eaten",
+    "source": "core"
+  },
+  "speak-with-animals": {
+    "id": "speak-with-animals",
+    "name": "Speak with Animals",
+    "level": 1,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "10 minutes",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "druid",
+      "ranger",
+      "bard"
+    ],
+    "description": "The caster gains the ability to comprehend and verbally communicate with beasts for the duration.",
+    "source": "core"
+  },
+  "entangle": {
+    "id": "entangle",
+    "name": "Entangle",
+    "level": 1,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "Grasping weeds and vines sprout in a 20-foot square, restraining creatures within unless they succeed on a Strength save.",
+    "source": "core"
+  },
+  "chromatic-orb": {
+    "id": "chromatic-orb",
+    "name": "Chromatic Orb",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Hurls a two-inch sphere of energy of a chosen damage type at a creature, the sphere's color reflecting the element chosen.",
+    "damage": "3d8 (acid, cold, fire, lightning, poison, or thunder)",
+    "higherLevels": "Damage increases by 1d8 for each slot level above 1st.",
+    "source": "core"
+  },
+  "witch-bolt": {
+    "id": "witch-bolt",
+    "name": "Witch Bolt",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "A twisting arc of lightning strikes a creature and forms a sustained beam, dealing damage again each turn the caster maintains it.",
+    "damage": "1d12 lightning",
+    "higherLevels": "Initial damage increases by 1d12 for each slot level above 1st.",
+    "source": "core"
+  },
+  "animal-friendship": {
+    "id": "animal-friendship",
+    "name": "Animal Friendship",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "24 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "bard"
+    ],
+    "description": "A beast that fails a Wisdom save regards the caster as a trusted friend for the duration, ending early if harmed.",
+    "higherLevels": "One additional beast can be targeted for each slot level above 1st.",
+    "source": "core"
+  },
+  "expeditious-retreat": {
+    "id": "expeditious-retreat",
+    "name": "Expeditious Retreat",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "warlock"
+    ],
+    "description": "The caster's speed increases and they can use the Dash action as a bonus action each turn for the duration.",
+    "source": "core"
+  },
+  "arms-of-hadar": {
+    "id": "arms-of-hadar",
+    "name": "Arms of Hadar",
+    "level": 1,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "Self (10-foot radius)",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "sorcerer"
+    ],
+    "description": "Tendrils of dark energy erupt from the caster, damaging every creature nearby and briefly preventing them from taking reactions.",
+    "damage": "2d6 necrotic",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 1st.",
+    "source": "core"
+  },
+  "hellish-rebuke": {
+    "id": "hellish-rebuke",
+    "name": "Hellish Rebuke",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 reaction",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "warlock"
+    ],
+    "description": "Cast in response to being damaged by a creature, wreathing that creature in hellish flame unless it succeeds on a Dexterity save.",
+    "damage": "2d10 fire",
+    "higherLevels": "Damage increases by 1d10 for each slot level above 1st.",
+    "source": "core"
+  },
+  "armor-of-agathys": {
+    "id": "armor-of-agathys",
+    "name": "Armor of Agathys",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "warlock"
+    ],
+    "description": "A protective frost surrounds the caster, granting temporary hit points, and any creature that hits the caster in melee takes cold damage in return.",
+    "damage": "5 cold damage to attackers",
+    "healing": "5 temporary hit points",
+    "higherLevels": "Both the temporary hit points and retaliation damage increase by 5 for each slot level above 1st.",
+    "source": "core"
+  },
+  "create-or-destroy-water": {
+    "id": "create-or-destroy-water",
+    "name": "Create or Destroy Water",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "description": "Either creates up to 10 gallons of clean water or destroys an equal amount of water spread across an area, such as a fog bank or a wet surface.",
+    "higherLevels": "The amount of water affected doubles for each slot level above 1st.",
+    "source": "core"
+  },
+  "cloud-of-daggers": {
+    "id": "cloud-of-daggers",
+    "name": "Cloud of Daggers",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "warlock"
+    ],
+    "description": "Fills the air with spinning daggers in a 5-foot cube, slashing any creature that enters or ends its turn there.",
+    "damage": "4d4 slashing",
+    "source": "core"
+  },
+  "shatter": {
+    "id": "shatter",
+    "name": "Shatter",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "A sudden ringing noise painfully loud erupts from a point, damaging every creature in a 10-foot-radius sphere.",
+    "damage": "3d8 thunder",
+    "higherLevels": "Damage increases by 1d8 for each slot level above 2nd.",
+    "source": "core"
+  },
+  "see-invisibility": {
+    "id": "see-invisibility",
+    "name": "See Invisibility",
+    "level": 2,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard"
+    ],
+    "description": "The caster sees invisible creatures and objects as if they were visible, and can see into the Ethereal Plane, for the duration.",
+    "source": "core"
+  },
+  "knock": {
+    "id": "knock",
+    "name": "Knock",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "A loud knock sounds as a chosen lock or latch on a door, chest, or shackles springs open, or a stuck object becomes unstuck.",
+    "source": "core"
+  },
+  "magic-weapon": {
+    "id": "magic-weapon",
+    "name": "Magic Weapon",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "paladin"
+    ],
+    "description": "A touched nonmagical weapon becomes magical, granting a bonus to its attack and damage rolls for the duration.",
+    "source": "core"
+  },
+  "hold-monster": {
+    "id": "hold-monster",
+    "name": "Hold Monster",
+    "level": 5,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "bard",
+      "warlock"
+    ],
+    "description": "A creature that fails a Wisdom save becomes paralyzed for the duration, repeating the save at the end of each of its turns.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 5th.",
+    "source": "core"
+  },
+  "conjure-elemental": {
+    "id": "conjure-elemental",
+    "name": "Conjure Elemental",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "1 minute",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid"
+    ],
+    "description": "Summons an elemental spirit that manifests in an unoccupied space, fighting on the caster's behalf for the duration.",
+    "source": "core"
+  },
+  "conjure-woodland-beings": {
+    "id": "conjure-woodland-beings",
+    "name": "Conjure Woodland Beings",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "Summons fey creatures of the forest to fight alongside the caster, appearing in unoccupied spaces within range.",
+    "source": "core"
+  },
+  "conjure-animals": {
+    "id": "conjure-animals",
+    "name": "Conjure Animals",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "Summons spirits that take the form of beasts to fight alongside the caster, appearing in unoccupied spaces within range.",
+    "source": "core"
+  },
+  "call-lightning": {
+    "id": "call-lightning",
+    "name": "Call Lightning",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "A storm cloud forms overhead, and the caster can call down a bolt of lightning to strike a point beneath it each turn.",
+    "damage": "3d10 lightning",
+    "higherLevels": "Damage increases by 1d10 for each slot level above 3rd.",
+    "source": "core"
+  },
+  "daylight": {
+    "id": "daylight",
+    "name": "Daylight",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ],
+    "description": "A 60-foot-radius sphere of bright light spreads from a point, which can dispel magical darkness of a lower level it overlaps.",
+    "source": "core"
+  },
+  "elemental-weapon": {
+    "id": "elemental-weapon",
+    "name": "Elemental Weapon",
+    "level": 3,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "paladin",
+      "ranger"
+    ],
+    "description": "A touched nonmagical weapon becomes magical and takes on an elemental energy, granting a bonus to attack rolls and extra elemental damage.",
+    "damage": "1d4 acid, cold, fire, lightning, or thunder",
+    "higherLevels": "The bonuses improve at 5th and 7th level slots.",
+    "source": "core"
+  },
+  "conjure-minor-elementals": {
+    "id": "conjure-minor-elementals",
+    "name": "Conjure Minor Elementals",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 minute",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Summons lesser elemental spirits to fight alongside the caster, appearing in unoccupied spaces within range.",
+    "source": "core"
+  },
+  "wall-of-stone": {
+    "id": "wall-of-stone",
+    "name": "Wall of Stone",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "druid"
+    ],
+    "description": "A nonmagical wall of solid stone springs into being on a solid surface, shaped and sized by the caster within its limits.",
+    "source": "core"
+  },
+  "raise-dead": {
+    "id": "raise-dead",
+    "name": "Raise Dead",
+    "level": 5,
+    "school": "Necromancy",
+    "castingTime": "1 hour",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin",
+      "bard"
+    ],
+    "description": "Returns a dead creature to life, provided its soul is willing and its body is mostly intact, though it does not restore lost body parts.",
+    "source": "core"
+  },
+  "scrying": {
+    "id": "scrying",
+    "name": "Scrying",
+    "level": 5,
+    "school": "Divination",
+    "castingTime": "10 minutes",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "bard",
+      "cleric",
+      "druid",
+      "warlock"
+    ],
+    "description": "Creates an invisible sensor near a chosen creature anywhere on the plane, letting the caster see and hear through it if the target fails a Wisdom save.",
+    "source": "core"
+  },
+  "geas": {
+    "id": "geas",
+    "name": "Geas",
+    "level": 5,
+    "school": "Enchantment",
+    "castingTime": "1 minute",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "30 days",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric",
+      "druid",
+      "paladin"
+    ],
+    "description": "A creature that fails a Wisdom save is magically compelled to follow a course of conduct the caster describes, suffering psychic damage each time it disobeys.",
+    "damage": "5d10 psychic (on disobedience)",
+    "higherLevels": "The duration becomes a year and a day when cast using an 8th-level slot.",
+    "source": "core"
+  },
+  "planar-ally": {
+    "id": "planar-ally",
+    "name": "Planar Ally",
+    "level": 6,
+    "school": "Conjuration",
+    "castingTime": "10 minutes",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Calls forth a celestial, elemental, fey, or fiend to perform a task in exchange for a fee it names, requiring negotiation and payment.",
+    "source": "core"
+  },
+  "heal": {
+    "id": "heal",
+    "name": "Heal",
+    "level": 6,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "description": "A surge of positive energy washes through a creature, restoring a large amount of hit points and curing blindness, deafness, and any disease.",
+    "healing": "70 + spellcasting modifier",
+    "higherLevels": "Healing increases by 10 for each slot level above 6th.",
+    "source": "core"
+  },
+  "harm": {
+    "id": "harm",
+    "name": "Harm",
+    "level": 6,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Violent, unnatural energy ravages a creature's body, dealing devastating necrotic damage and reducing its hit point maximum until it recovers.",
+    "damage": "14d6 necrotic",
+    "source": "core"
+  },
+  "wall-of-ice": {
+    "id": "wall-of-ice",
+    "name": "Wall of Ice",
+    "level": 6,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Creates a wall of ice on a solid surface, which can be smashed to create a freezing shockwave that damages nearby creatures.",
+    "damage": "10d6 cold (if a section is destroyed)",
+    "higherLevels": "Damage and wall hit points increase for each slot level above 6th.",
+    "source": "core"
+  },
+  "prismatic-spray": {
+    "id": "prismatic-spray",
+    "name": "Prismatic Spray",
+    "level": 7,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (60-foot cone)",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "sorcerer"
+    ],
+    "description": "Eight rays of shimmering, multicolored light flash from the caster's hand, each ray randomly determined and inflicting a different dangerous effect.",
+    "damage": "10d6 (varies by ray color: acid, cold, fire, lightning, poison, or force)",
+    "source": "core"
+  },
+  "simulacrum": {
+    "id": "simulacrum",
+    "name": "Simulacrum",
+    "level": 7,
+    "school": "Illusion",
+    "castingTime": "12 hours",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Until dispelled",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "Creates a duplicate of a beast or humanoid out of snow or ice, obedient to the caster but at only half the original's hit points.",
+    "source": "core"
+  },
+  "power-word-heal": {
+    "id": "power-word-heal",
+    "name": "Power Word Heal",
+    "level": 9,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "bard"
+    ],
+    "description": "A touched creature is restored to full hit points and freed from being charmed, frightened, paralyzed, or stunned, and can rise if unconscious.",
+    "healing": "Full hit points restored",
+    "source": "core"
+  },
+  "guardian-of-faith": {
+    "id": "guardian-of-faith",
+    "name": "Guardian of Faith",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "A Large spectral guardian appears and stays near where it was cast, attacking any hostile creature that approaches within 10 feet.",
+    "damage": "20 radiant",
+    "source": "core"
+  },
+  "death-ward": {
+    "id": "death-ward",
+    "name": "Death Ward",
+    "level": 4,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "A touched creature that would be reduced to 0 hit points instead drops to 1 hit point once, consuming the spell's magic.",
+    "source": "core"
+  },
+  "fire-storm": {
+    "id": "fire-storm",
+    "name": "Fire Storm",
+    "level": 7,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "description": "Roaring flames spread through ten contiguous 10-foot cubes, burning creatures within and optionally leaving the ground scorched and free of plant life.",
+    "damage": "7d10 fire",
+    "source": "core"
+  },
+  "antimagic-field": {
+    "id": "antimagic-field",
+    "name": "Antimagic Field",
+    "level": 8,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Self (10-foot radius)",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard",
+      "cleric"
+    ],
+    "description": "A 10-foot-radius sphere of invisible force surrounds the caster, suppressing spells, magic items, and most other supernatural effects within it.",
+    "source": "core"
+  },
+  "holy-aura": {
+    "id": "holy-aura",
+    "name": "Holy Aura",
+    "level": 8,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Divine light flares from the caster, granting allies within range advantage on saving throws and causing attackers who miss them to be blinded.",
+    "source": "core"
+  },
+  "command": {
+    "id": "command",
+    "name": "Command",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "Speaks a single-word command, such as 'drop' or 'flee,' that a creature failing a Wisdom save must obey on its next turn.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 1st.",
+    "source": "core"
+  },
+  "heroism": {
+    "id": "heroism",
+    "name": "Heroism",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "paladin"
+    ],
+    "description": "A willing touched creature is imbued with bravery, gaining temporary hit points at the start of each of its turns and immunity to being frightened.",
+    "healing": "Temporary hit points equal to spellcasting modifier, renewed each turn",
+    "higherLevels": "One additional creature can be targeted for each slot level above 1st.",
+    "source": "core"
+  },
+  "illusory-script": {
+    "id": "illusory-script",
+    "name": "Illusory Script",
+    "level": 1,
+    "school": "Illusion",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": [
+      "S",
+      "M"
+    ],
+    "duration": "10 days",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "wizard",
+      "bard",
+      "warlock"
+    ],
+    "description": "Writes a message that appears as gibberish to anyone but designated readers, who instead see it in their own language and in the caster's hand.",
+    "source": "core"
+  },
+  "dissonant-whispers": {
+    "id": "dissonant-whispers",
+    "name": "Dissonant Whispers",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": [
+      "V"
+    ],
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard"
+    ],
+    "description": "Whispers a discordant melody only one creature can hear, dealing psychic damage and causing it to flee if it fails a Wisdom save.",
+    "damage": "3d6 psychic",
+    "higherLevels": "Damage increases by 1d6 for each slot level above 1st.",
+    "source": "core"
+  },
+  "bane": {
+    "id": "bane",
+    "name": "Bane",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "duration": "Up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "bard"
+    ],
+    "description": "Up to three creatures within range subtract 1d4 from attack rolls and saving throws for the duration unless they succeed on a Charisma save.",
+    "higherLevels": "One additional creature can be targeted for each slot level above 1st.",
+    "source": "core"
+  }
+}

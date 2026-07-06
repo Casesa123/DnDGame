@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ledgerhall &mdash; DnD Platform (dev build)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">&#9876;</span>
+    <span class="brand-name">Ledgerhall</span>
+    <span class="brand-tag">dev build</span>
+  </div>
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="builder">Character builder</button>
+    <button class="tab-btn" data-tab="session">Game session</button>
+    <button class="tab-btn" data-tab="compendium">Compendium</button>
+    <button class="tab-btn" data-tab="homebrew">Homebrew</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== CHARACTER BUILDER ===================== -->
+  <section id="tab-builder" class="tab-panel active">
+    <div class="grid-2">
+      <div class="card">
+        <h2>New character</h2>
+        <label>Name
+          <input id="char-name" type="text" placeholder="e.g. Thessaly Windrow" />
+        </label>
+
+        <label>Race
+          <select id="char-race"></select>
+        </label>
+
+        <div class="ability-block-header">
+          <span>Classes &amp; levels</span>
+          <button id="btn-add-class" class="link-btn" type="button">+ Add class (multiclass)</button>
+        </div>
+        <div id="class-levels-list"></div>
+
+        <div class="ability-block">
+          <div class="ability-block-header">
+            <span>Ability scores</span>
+            <button id="btn-standard-array" class="link-btn" type="button">Use standard array (15/14/13/12/10/8)</button>
+          </div>
+          <div class="ability-grid" id="ability-inputs"></div>
+        </div>
+
+        <div class="ability-block">
+          <div class="ability-block-header"><span>Equipment</span></div>
+          <div class="field-row">
+            <label>Armor
+              <select id="char-armor"><option value="">None</option></select>
+            </label>
+            <label>Shield
+              <select id="char-shield"><option value="">None</option></select>
+            </label>
+          </div>
+        </div>
+
+        <div id="spell-choice-section"></div>
+
+        <div class="field-row">
+          <button id="btn-build" class="primary-btn" type="button">Build character</button>
+          <button id="btn-save-character" class="secondary-btn" type="button" disabled>Save character</button>
+        </div>
+        <p id="builder-errors" class="error-text"></p>
+        <p id="save-status" class="muted small"></p>
+      </div>
+
+      <div class="card" id="sheet-card">
+        <h2>Character sheet</h2>
+        <p class="muted">Build a character to see the computed sheet here.</p>
+        <div id="sheet-output"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Saved characters</h2>
+      <p class="muted small">Saved characters can be brought into a game session as a token with HP, AC, and an attack roll.</p>
+      <ul id="saved-character-list" class="feature-list"></ul>
+    </div>
+  </section>
+
+  <!-- ===================== GAME SESSION ===================== -->
+  <section id="tab-session" class="tab-panel">
+    <div class="card join-bar">
+      <label>Session ID
+        <input id="session-id" type="text" placeholder="e.g. table-1" value="table-1" />
+      </label>
+      <label>Your name
+        <input id="session-username" type="text" placeholder="e.g. Thessaly" />
+      </label>
+      <label>Role
+        <select id="session-role">
+          <option value="player">Player</option>
+          <option value="dm">Dungeon Master</option>
+        </select>
+      </label>
+      <button id="btn-join-session" class="primary-btn" type="button">Join session</button>
+      <span id="session-status" class="muted"></span>
+    </div>
+
+    <div id="dm-tools-card" class="card" style="display:none">
+      <h3>DM Tools</h3>
+      <p class="muted small">Only visible to you. Monster tokens start hidden from players with their HP masked to a status word until you reveal them.</p>
+      <div id="dm-monster-tools"></div>
+      <h4>Party</h4>
+      <div id="dm-party-panel" class="muted small">No party characters on the map yet.</div>
+      <h4>DM notes <span class="muted small">(private, only you see this)</span></h4>
+      <div class="field-row">
+        <input id="dm-note-input" type="text" placeholder="e.g. The baron is secretly a doppelganger" style="flex:1" />
+        <button id="btn-add-dm-note" class="secondary-btn" type="button">Add</button>
+      </div>
+      <div id="dm-note-log" class="log-feed" style="max-height:120px"></div>
+    </div>
+
+    <div class="session-grid">
+      <div class="card">
+        <h3>Initiative</h3>
+        <div class="field-row">
+          <input id="init-name" type="text" placeholder="Combatant name" />
+          <input id="init-value" type="number" placeholder="Initiative" style="width:90px" />
+          <button id="btn-add-init" class="secondary-btn" type="button">Add</button>
+        </div>
+        <ol id="init-list" class="init-list"></ol>
+        <button id="btn-next-turn" class="secondary-btn" type="button">Next turn &rarr;</button>
+      </div>
+
+      <div class="card map-card">
+        <h3>Map</h3>
+        <p class="muted small">Click an empty cell to drop a plain marker. Drag any token to move it. Synced live with everyone in the session.</p>
+
+        <div class="field-row map-controls">
+          <label>My character
+            <select id="session-character-select"><option value="">No saved characters</option></select>
+          </label>
+          <button id="btn-add-pc-token" class="secondary-btn" type="button">Add to map</button>
+
+          <label>Add monster
+            <select id="session-monster-select"></select>
+          </label>
+          <button id="btn-add-monster-token" class="secondary-btn" type="button">Add to map</button>
+        </div>
+
+        <div class="field-row map-controls">
+          <button id="btn-attack-mode" class="secondary-btn" type="button">Attack mode: off</button>
+          <span id="attack-status" class="muted small"></span>
+        </div>
+
+        <div id="map-grid" class="map-grid"></div>
+      </div>
+
+      <div class="card">
+        <h3>Voice &amp; video</h3>
+        <div class="field-row">
+          <button id="btn-join-call" class="secondary-btn" type="button">Join call</button>
+          <button id="btn-toggle-mute" class="secondary-btn" type="button" disabled>Mute</button>
+          <button id="btn-toggle-camera" class="secondary-btn" type="button" disabled>Camera off</button>
+          <button id="btn-screen-share" class="secondary-btn" type="button" disabled>Share screen</button>
+        </div>
+        <div id="video-grid" class="video-grid"></div>
+      </div>
+    </div>
+
+    <div class="card log-card">
+      <h3>Dice &amp; chat</h3>
+      <div class="field-row">
+        <input id="dice-formula" type="text" placeholder="e.g. 1d20+5" style="width:120px" />
+        <button id="btn-roll-dice" class="secondary-btn" type="button">Roll</button>
+        <label id="secret-roll-wrap" class="muted small" style="display:none; flex-direction:row; align-items:center; gap:6px; margin-bottom:0;">
+          <input id="dice-secret" type="checkbox" style="width:auto"> Secret (DM only)
+        </label>
+        <input id="chat-input" type="text" placeholder="Say something to the table..." style="flex:1" />
+        <button id="btn-send-chat" class="secondary-btn" type="button">Send</button>
+      </div>
+      <div id="log-feed" class="log-feed"></div>
+    </div>
+  </section>
+
+  <!-- ===================== COMPENDIUM ===================== -->
+  <section id="tab-compendium" class="tab-panel">
+    <div class="card">
+      <h2>Compendium</h2>
+      <div class="field-row" id="compendium-cats"></div>
+      <div class="field-row">
+        <input id="compendium-search" type="text" placeholder="Search by name..." style="flex:1" />
+        <select id="compendium-filter-1" style="display:none"></select>
+        <select id="compendium-filter-2" style="display:none"></select>
+      </div>
+      <div id="compendium-results" class="compendium-results"></div>
+    </div>
+  </section>
+
+  <!-- ===================== HOMEBREW ===================== -->
+  <section id="tab-homebrew" class="tab-panel">
+    <div class="card">
+      <h2>Import a homebrew pack</h2>
+      <p class="muted">Paste a JSON pack with any of <code>races</code>, <code>classes</code>, <code>spells</code>, <code>monsters</code>, <code>items</code>. Entries are namespaced so they never collide with core content. Browse everything currently loaded, official and homebrew, in the Compendium tab.</p>
+      <label>Pack name
+        <input id="hb-pack-name" type="text" placeholder="e.g. my-homebrew-setting" />
+      </label>
+      <textarea id="hb-json" rows="12" placeholder='{"classes": {"gunslinger": {"name": "Gunslinger", "hitDie": 8, ...}}}'></textarea>
+      <button id="btn-upload-homebrew" class="primary-btn" type="button">Upload pack</button>
+      <p id="homebrew-status" class="muted"></p>
+    </div>
+    <div class="card">
+      <h2>Loaded content</h2>
+      <div id="content-summary"></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2009 @@
+{
+  "goblin": {
+    "id": "goblin",
+    "name": "Goblin",
+    "size": "Small",
+    "type": "Humanoid",
+    "ac": 15,
+    "hitDice": "2d6",
+    "speed": 30,
+    "abilities": { "str": 8, "dex": 14, "con": 10, "int": 10, "wis": 8, "cha": 8 },
+    "actions": [
+      { "name": "Scimitar", "description": "Melee weapon attack: +4 to hit, 1d6+2 slashing damage." },
+      { "name": "Shortbow", "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "skeleton": {
+    "id": "skeleton",
+    "name": "Skeleton",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 13,
+    "hitDice": "2d8+4",
+    "speed": 30,
+    "abilities": { "str": 10, "dex": 14, "con": 15, "int": 6, "wis": 8, "cha": 5 },
+    "actions": [
+      { "name": "Shortsword", "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage." },
+      { "name": "Shortbow", "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "owlbear": {
+    "id": "owlbear",
+    "name": "Owlbear",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 13,
+    "hitDice": "7d10+21",
+    "speed": 40,
+    "abilities": { "str": 20, "dex": 12, "con": 17, "int": 3, "wis": 12, "cha": 7 },
+    "actions": [
+      { "name": "Beak", "description": "Melee weapon attack: +7 to hit, 1d10+5 piercing damage." },
+      { "name": "Claws", "description": "Melee weapon attack: +7 to hit, 2d8+5 slashing damage." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "kobold": {
+    "id": "kobold",
+    "name": "Kobold",
+    "size": "Small",
+    "type": "Humanoid",
+    "ac": 12,
+    "hitDice": "2d6-2",
+    "speed": 30,
+    "abilities": { "str": 7, "dex": 15, "con": 9, "int": 8, "wis": 7, "cha": 8 },
+    "actions": [
+      { "name": "Dagger", "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage." },
+      { "name": "Sling", "description": "Ranged weapon attack: +4 to hit, 1d4+2 bludgeoning damage." }
+    ],
+    "cr": "1/8",
+    "source": "core"
+  },
+  "giant-rat": {
+    "id": "giant-rat",
+    "name": "Giant Rat",
+    "size": "Small",
+    "type": "Beast",
+    "ac": 12,
+    "hitDice": "2d6",
+    "speed": 30,
+    "abilities": { "str": 7, "dex": 15, "con": 11, "int": 2, "wis": 10, "cha": 4 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage." }
+    ],
+    "cr": "1/8",
+    "source": "core"
+  },
+  "giant-frog": {
+    "id": "giant-frog",
+    "name": "Giant Frog",
+    "size": "Medium",
+    "type": "Beast",
+    "ac": 11,
+    "hitDice": "2d8",
+    "speed": 30,
+    "swimSpeed": 30,
+    "abilities": { "str": 12, "dex": 13, "con": 11, "int": 2, "wis": 10, "cha": 3 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d6+1 piercing damage, and the target is grappled (escape DC 11)." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "stirge": {
+    "id": "stirge",
+    "name": "Stirge",
+    "size": "Tiny",
+    "type": "Beast",
+    "ac": 14,
+    "hitDice": "2d4+2",
+    "speed": 10,
+    "flySpeed": 40,
+    "abilities": { "str": 4, "dex": 16, "con": 11, "int": 2, "wis": 8, "cha": 6 },
+    "actions": [
+      { "name": "Proboscis", "description": "Melee weapon attack: +5 to hit, 1d4+3 piercing damage, and the stirge attaches and drains 1d4 blood damage each turn." }
+    ],
+    "cr": "1/8",
+    "source": "core"
+  },
+  "giant-crab": {
+    "id": "giant-crab",
+    "name": "Giant Crab",
+    "size": "Medium",
+    "type": "Beast",
+    "ac": 15,
+    "hitDice": "3d8+3",
+    "speed": 30,
+    "swimSpeed": 30,
+    "abilities": { "str": 13, "dex": 15, "con": 13, "int": 1, "wis": 9, "cha": 3 },
+    "actions": [
+      { "name": "Claw", "description": "Melee weapon attack: +3 to hit, 1d6+1 bludgeoning damage, and the target is grappled (escape DC 11)." }
+    ],
+    "cr": "1/8",
+    "source": "core"
+  },
+  "giant-lizard": {
+    "id": "giant-lizard",
+    "name": "Giant Lizard",
+    "size": "Large",
+    "type": "Beast",
+    "ac": 12,
+    "hitDice": "3d10+3",
+    "speed": 30,
+    "swimSpeed": 15,
+    "abilities": { "str": 15, "dex": 12, "con": 13, "int": 2, "wis": 10, "cha": 5 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d8+2 piercing damage." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "giant-centipede": {
+    "id": "giant-centipede",
+    "name": "Giant Centipede",
+    "size": "Small",
+    "type": "Beast",
+    "ac": 13,
+    "hitDice": "2d6",
+    "speed": 30,
+    "abilities": { "str": 5, "dex": 14, "con": 11, "int": 1, "wis": 7, "cha": 3 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage, and the target must succeed on a DC 11 Constitution save or take 3d6 poison damage and become poisoned for 1 minute." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "jackal": {
+    "id": "jackal",
+    "name": "Jackal",
+    "size": "Small",
+    "type": "Beast",
+    "ac": 12,
+    "hitDice": "1d8+1",
+    "speed": 40,
+    "abilities": { "str": 8, "dex": 15, "con": 11, "int": 3, "wis": 12, "cha": 6 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d4+1 piercing damage." }
+    ],
+    "cr": "1/8",
+    "source": "core"
+  },
+  "wolf": {
+    "id": "wolf",
+    "name": "Wolf",
+    "size": "Medium",
+    "type": "Beast",
+    "ac": 13,
+    "hitDice": "2d8+2",
+    "speed": 40,
+    "abilities": { "str": 12, "dex": 15, "con": 12, "int": 3, "wis": 12, "cha": 6 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 2d4+2 piercing damage, and the target must succeed on a DC 11 Strength save or be knocked prone." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "giant-spider": {
+    "id": "giant-spider",
+    "name": "Giant Spider",
+    "size": "Large",
+    "type": "Beast",
+    "ac": 14,
+    "hitDice": "4d10+4",
+    "speed": 30,
+    "abilities": { "str": 14, "dex": 16, "con": 12, "int": 2, "wis": 11, "cha": 4 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 1d8+3 piercing damage, and the target must succeed on a DC 11 Constitution save or take 2d8 poison damage and become poisoned for 1 hour." },
+      { "name": "Web", "description": "Ranged weapon attack: +5 to hit, the target is restrained by webbing (escape DC 12)." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "flying-sword": {
+    "id": "flying-sword",
+    "name": "Flying Sword",
+    "size": "Small",
+    "type": "Construct",
+    "ac": 17,
+    "hitDice": "5d6+5",
+    "speed": 0,
+    "flySpeed": 50,
+    "abilities": { "str": 12, "dex": 15, "con": 11, "int": 1, "wis": 5, "cha": 1 },
+    "actions": [
+      { "name": "Longsword", "description": "Melee weapon attack: +3 to hit, 1d8+2 slashing damage." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "animated-armor": {
+    "id": "animated-armor",
+    "name": "Animated Armor",
+    "size": "Medium",
+    "type": "Construct",
+    "ac": 18,
+    "hitDice": "6d8+6",
+    "speed": 25,
+    "abilities": { "str": 14, "dex": 11, "con": 13, "int": 1, "wis": 3, "cha": 1 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +4 to hit, 1d6+2 bludgeoning damage." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "zombie": {
+    "id": "zombie",
+    "name": "Zombie",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 8,
+    "hitDice": "3d8+9",
+    "speed": 20,
+    "abilities": { "str": 13, "dex": 6, "con": 16, "int": 3, "wis": 6, "cha": 5 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +3 to hit, 1d6+1 bludgeoning damage." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "giant-toad": {
+    "id": "giant-toad",
+    "name": "Giant Toad",
+    "size": "Large",
+    "type": "Beast",
+    "ac": 11,
+    "hitDice": "6d10+12",
+    "speed": 20,
+    "swimSpeed": 30,
+    "abilities": { "str": 15, "dex": 13, "con": 15, "int": 2, "wis": 10, "cha": 3 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d10+3 piercing damage, and the target is swallowed if Medium or smaller." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "giant-octopus": {
+    "id": "giant-octopus",
+    "name": "Giant Octopus",
+    "size": "Large",
+    "type": "Beast",
+    "ac": 11,
+    "hitDice": "8d10+8",
+    "speed": 10,
+    "swimSpeed": 60,
+    "abilities": { "str": 17, "dex": 13, "con": 13, "int": 4, "wis": 10, "cha": 4 },
+    "actions": [
+      { "name": "Tentacles", "description": "Melee weapon attack: +5 to hit, 1d6+3 bludgeoning damage, and the target is grappled (escape DC 13)." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "swarm-of-rats": {
+    "id": "swarm-of-rats",
+    "name": "Swarm of Rats",
+    "size": "Medium",
+    "type": "Beast",
+    "ac": 10,
+    "hitDice": "6d8",
+    "speed": 30,
+    "abilities": { "str": 9, "dex": 11, "con": 9, "int": 2, "wis": 10, "cha": 3 },
+    "actions": [
+      { "name": "Bites", "description": "Melee weapon attack: +2 to hit, 3d4 piercing damage, or 1d4 piercing damage if the swarm has half its hit points or fewer." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "swarm-of-insects": {
+    "id": "swarm-of-insects",
+    "name": "Swarm of Insects",
+    "size": "Medium",
+    "type": "Beast",
+    "ac": 12,
+    "hitDice": "7d8",
+    "speed": 20,
+    "abilities": { "str": 3, "dex": 13, "con": 10, "int": 1, "wis": 7, "cha": 1 },
+    "actions": [
+      { "name": "Bites", "description": "Melee weapon attack: +3 to hit, 3d6 piercing damage, or 1d6 piercing damage if the swarm has half its hit points or fewer." }
+    ],
+    "cr": "1/2",
+    "source": "core"
+  },
+  "awakened-shrub": {
+    "id": "awakened-shrub",
+    "name": "Awakened Shrub",
+    "size": "Small",
+    "type": "Plant",
+    "ac": 9,
+    "hitDice": "2d8",
+    "speed": 20,
+    "abilities": { "str": 3, "dex": 8, "con": 11, "int": 10, "wis": 10, "cha": 6 },
+    "actions": [
+      { "name": "Rake", "description": "Melee weapon attack: +1 to hit, 1d4-1 slashing damage." }
+    ],
+    "cr": "0",
+    "source": "core"
+  },
+  "hobgoblin": {
+    "id": "hobgoblin",
+    "name": "Hobgoblin",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 18,
+    "hitDice": "2d8+2",
+    "speed": 30,
+    "abilities": { "str": 13, "dex": 12, "con": 12, "int": 10, "wis": 10, "cha": 9 },
+    "actions": [
+      { "name": "Longsword", "description": "Melee weapon attack: +3 to hit, 1d8+1 slashing damage." }
+    ],
+    "cr": "1/2",
+    "source": "core"
+  },
+  "bugbear": {
+    "id": "bugbear",
+    "name": "Bugbear",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 16,
+    "hitDice": "5d8+5",
+    "speed": 30,
+    "abilities": { "str": 15, "dex": 14, "con": 13, "int": 8, "wis": 11, "cha": 9 },
+    "actions": [
+      { "name": "Morningstar", "description": "Melee weapon attack: +4 to hit, 2d8+2 piercing damage." },
+      { "name": "Javelin", "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "orc": {
+    "id": "orc",
+    "name": "Orc",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 13,
+    "hitDice": "2d8+3",
+    "speed": 30,
+    "abilities": { "str": 16, "dex": 12, "con": 16, "int": 7, "wis": 11, "cha": 10 },
+    "actions": [
+      { "name": "Greataxe", "description": "Melee weapon attack: +5 to hit, 1d12+3 slashing damage." },
+      { "name": "Javelin", "description": "Ranged weapon attack: +5 to hit, 1d6+3 piercing damage." }
+    ],
+    "cr": "1/2",
+    "source": "core"
+  },
+  "gnoll": {
+    "id": "gnoll",
+    "name": "Gnoll",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 15,
+    "hitDice": "5d8",
+    "speed": 30,
+    "abilities": { "str": 14, "dex": 12, "con": 11, "int": 6, "wis": 10, "cha": 8 },
+    "actions": [
+      { "name": "Spear", "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage." },
+      { "name": "Longbow", "description": "Ranged weapon attack: +3 to hit, 1d8+1 piercing damage." }
+    ],
+    "cr": "1/2",
+    "source": "core"
+  },
+  "lizardfolk": {
+    "id": "lizardfolk",
+    "name": "Lizardfolk",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 15,
+    "hitDice": "4d8+4",
+    "speed": 30,
+    "swimSpeed": 30,
+    "abilities": { "str": 15, "dex": 10, "con": 13, "int": 7, "wis": 12, "cha": 7 },
+    "actions": [
+      { "name": "Spiked Shield", "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage." },
+      { "name": "Javelin", "description": "Melee or ranged weapon attack: +4 to hit, 1d6+2 piercing damage." }
+    ],
+    "cr": "1/2",
+    "source": "core"
+  },
+  "merfolk": {
+    "id": "merfolk",
+    "name": "Merfolk",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 11,
+    "hitDice": "4d8",
+    "speed": 10,
+    "swimSpeed": 40,
+    "abilities": { "str": 10, "dex": 13, "con": 12, "int": 11, "wis": 11, "cha": 12 },
+    "actions": [
+      { "name": "Spear", "description": "Melee weapon attack: +2 to hit, 1d6 piercing damage." }
+    ],
+    "cr": "1/8",
+    "source": "core"
+  },
+  "harpy": {
+    "id": "harpy",
+    "name": "Harpy",
+    "size": "Medium",
+    "type": "Monstrosity",
+    "ac": 11,
+    "hitDice": "7d8+7",
+    "speed": 20,
+    "flySpeed": 40,
+    "abilities": { "str": 12, "dex": 13, "con": 12, "int": 7, "wis": 10, "cha": 13 },
+    "actions": [
+      { "name": "Claws", "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage." },
+      { "name": "Luring Song", "description": "Charms creatures within 30 feet that fail a DC 11 Wisdom save, drawing them toward the harpy." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "ghoul": {
+    "id": "ghoul",
+    "name": "Ghoul",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 12,
+    "hitDice": "5d8",
+    "speed": 30,
+    "abilities": { "str": 13, "dex": 15, "con": 10, "int": 7, "wis": 10, "cha": 6 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +2 to hit, 2d6+2 piercing damage." },
+      { "name": "Claws", "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage, and the target must succeed on a DC 10 Constitution save or be paralyzed for 1 minute." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "giant-scorpion": {
+    "id": "giant-scorpion",
+    "name": "Giant Scorpion",
+    "size": "Large",
+    "type": "Beast",
+    "ac": 15,
+    "hitDice": "7d10+14",
+    "speed": 40,
+    "abilities": { "str": 15, "dex": 13, "con": 15, "int": 1, "wis": 9, "cha": 3 },
+    "actions": [
+      { "name": "Claw", "description": "Melee weapon attack: +4 to hit, 1d8+2 bludgeoning damage, and the target is grappled (escape DC 12)." },
+      { "name": "Sting", "description": "Melee weapon attack: +4 to hit, 1d10+2 piercing damage, and the target must succeed on a DC 12 Constitution save or take 4d10 poison damage." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "giant-boar": {
+    "id": "giant-boar",
+    "name": "Giant Boar",
+    "size": "Large",
+    "type": "Beast",
+    "ac": 12,
+    "hitDice": "6d10+18",
+    "speed": 40,
+    "abilities": { "str": 17, "dex": 10, "con": 17, "int": 2, "wis": 7, "cha": 5 },
+    "actions": [
+      { "name": "Tusk", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "dire-wolf": {
+    "id": "dire-wolf",
+    "name": "Dire Wolf",
+    "size": "Large",
+    "type": "Beast",
+    "ac": 14,
+    "hitDice": "5d10+10",
+    "speed": 50,
+    "abilities": { "str": 17, "dex": 15, "con": 15, "int": 3, "wis": 12, "cha": 7 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage, and the target must succeed on a DC 13 Strength save or be knocked prone." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "black-bear": {
+    "id": "black-bear",
+    "name": "Black Bear",
+    "size": "Medium",
+    "type": "Beast",
+    "ac": 11,
+    "hitDice": "3d8+3",
+    "speed": 40,
+    "swimSpeed": 30,
+    "abilities": { "str": 15, "dex": 10, "con": 13, "int": 2, "wis": 12, "cha": 7 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d6+2 piercing damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +3 to hit, 1d4+2 slashing damage." }
+    ],
+    "cr": "1/2",
+    "source": "core"
+  },
+  "brown-bear": {
+    "id": "brown-bear",
+    "name": "Brown Bear",
+    "size": "Large",
+    "type": "Beast",
+    "ac": 11,
+    "hitDice": "6d10+18",
+    "speed": 40,
+    "abilities": { "str": 19, "dex": 10, "con": 16, "int": 2, "wis": 13, "cha": 7 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +6 to hit, 1d8+4 piercing damage." },
+      { "name": "Claws", "description": "Melee weapon attack: +6 to hit, 2d6+4 slashing damage." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "ogre": {
+    "id": "ogre",
+    "name": "Ogre",
+    "size": "Large",
+    "type": "Giant",
+    "ac": 11,
+    "hitDice": "7d10+21",
+    "speed": 40,
+    "abilities": { "str": 19, "dex": 8, "con": 16, "int": 5, "wis": 7, "cha": 7 },
+    "actions": [
+      { "name": "Greatclub", "description": "Melee weapon attack: +6 to hit, 2d8+4 bludgeoning damage." },
+      { "name": "Javelin", "description": "Ranged weapon attack: +6 to hit, 2d6+4 piercing damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "ghast": {
+    "id": "ghast",
+    "name": "Ghast",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 13,
+    "hitDice": "8d8+8",
+    "speed": 30,
+    "abilities": { "str": 16, "dex": 17, "con": 13, "int": 11, "wis": 10, "cha": 8 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 2d8+3 piercing damage." },
+      { "name": "Claws", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be paralyzed for 1 minute." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "specter": {
+    "id": "specter",
+    "name": "Specter",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 12,
+    "hitDice": "5d8",
+    "speed": 0,
+    "flySpeed": 50,
+    "abilities": { "str": 1, "dex": 14, "con": 11, "int": 10, "wis": 10, "cha": 11 },
+    "actions": [
+      { "name": "Life Drain", "description": "Melee weapon attack: +4 to hit, 3d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "will-o-wisp": {
+    "id": "will-o-wisp",
+    "name": "Will-o'-Wisp",
+    "size": "Tiny",
+    "type": "Undead",
+    "ac": 19,
+    "hitDice": "9d4+9",
+    "speed": 0,
+    "flySpeed": 50,
+    "abilities": { "str": 1, "dex": 28, "con": 10, "int": 13, "wis": 14, "cha": 11 },
+    "actions": [
+      { "name": "Shock", "description": "Melee weapon attack: +9 to hit, 2d8 lightning damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "rust-monster": {
+    "id": "rust-monster",
+    "name": "Rust Monster",
+    "size": "Medium",
+    "type": "Monstrosity",
+    "ac": 14,
+    "hitDice": "5d8+5",
+    "speed": 40,
+    "abilities": { "str": 13, "dex": 12, "con": 13, "int": 2, "wis": 13, "cha": 6 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d8+1 piercing damage." },
+      { "name": "Antennae", "description": "Melee weapon attack: +3 to hit, corrodes and destroys nonmagical metal armor or weapons touched." }
+    ],
+    "cr": "1/2",
+    "source": "core"
+  },
+  "gelatinous-cube": {
+    "id": "gelatinous-cube",
+    "name": "Gelatinous Cube",
+    "size": "Large",
+    "type": "Ooze",
+    "ac": 6,
+    "hitDice": "8d10+40",
+    "speed": 15,
+    "abilities": { "str": 14, "dex": 3, "con": 20, "int": 1, "wis": 6, "cha": 1 },
+    "actions": [
+      { "name": "Pseudopod", "description": "Melee weapon attack: +5 to hit, 3d6+2 acid damage, and the target is engulfed if the cube can accommodate it." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "ochre-jelly": {
+    "id": "ochre-jelly",
+    "name": "Ochre Jelly",
+    "size": "Large",
+    "type": "Ooze",
+    "ac": 8,
+    "hitDice": "6d10+21",
+    "speed": 10,
+    "abilities": { "str": 15, "dex": 6, "con": 18, "int": 2, "wis": 6, "cha": 1 },
+    "actions": [
+      { "name": "Pseudopod", "description": "Melee weapon attack: +5 to hit, 2d6+2 bludgeoning damage plus 1d6 acid damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "basilisk": {
+    "id": "basilisk",
+    "name": "Basilisk",
+    "size": "Medium",
+    "type": "Monstrosity",
+    "ac": 15,
+    "hitDice": "6d8+12",
+    "speed": 20,
+    "abilities": { "str": 16, "dex": 8, "con": 15, "int": 2, "wis": 8, "cha": 7 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage, and the target must succeed on a DC 12 Constitution save or begin turning to stone." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "ankheg": {
+    "id": "ankheg",
+    "name": "Ankheg",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 14,
+    "hitDice": "6d10+18",
+    "speed": 30,
+    "abilities": { "str": 17, "dex": 11, "con": 17, "int": 1, "wis": 13, "cha": 6 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage plus 1d6 acid damage, and the target is grappled (escape DC 13)." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "imp": {
+    "id": "imp",
+    "name": "Imp",
+    "size": "Tiny",
+    "type": "Fiend",
+    "ac": 13,
+    "hitDice": "3d4+3",
+    "speed": 20,
+    "flySpeed": 40,
+    "abilities": { "str": 6, "dex": 17, "con": 13, "int": 11, "wis": 12, "cha": 14 },
+    "actions": [
+      { "name": "Sting", "description": "Melee weapon attack: +5 to hit, 1d4+3 piercing damage plus 3d6 poison damage." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "quasit": {
+    "id": "quasit",
+    "name": "Quasit",
+    "size": "Tiny",
+    "type": "Fiend",
+    "ac": 13,
+    "hitDice": "4d4+4",
+    "speed": 40,
+    "abilities": { "str": 5, "dex": 17, "con": 13, "int": 7, "wis": 10, "cha": 10 },
+    "actions": [
+      { "name": "Claw", "description": "Melee weapon attack: +4 to hit, 1d4+3 piercing damage plus 2d4 poison damage." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "sea-hag": {
+    "id": "sea-hag",
+    "name": "Sea Hag",
+    "size": "Medium",
+    "type": "Fey",
+    "ac": 14,
+    "hitDice": "7d8+14",
+    "speed": 30,
+    "swimSpeed": 40,
+    "abilities": { "str": 16, "dex": 13, "con": 14, "int": 12, "wis": 12, "cha": 13 },
+    "actions": [
+      { "name": "Claws", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage." },
+      { "name": "Horrific Appearance", "description": "Frightens creatures within 30 feet that fail a DC 11 Wisdom save." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "green-hag": {
+    "id": "green-hag",
+    "name": "Green Hag",
+    "size": "Medium",
+    "type": "Fey",
+    "ac": 17,
+    "hitDice": "9d8+18",
+    "speed": 30,
+    "swimSpeed": 30,
+    "abilities": { "str": 18, "dex": 12, "con": 16, "int": 13, "wis": 14, "cha": 14 },
+    "actions": [
+      { "name": "Claws", "description": "Melee weapon attack: +6 to hit, 2d8+4 slashing damage." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "satyr": {
+    "id": "satyr",
+    "name": "Satyr",
+    "size": "Medium",
+    "type": "Fey",
+    "ac": 14,
+    "hitDice": "5d8+5",
+    "speed": 40,
+    "abilities": { "str": 12, "dex": 16, "con": 13, "int": 12, "wis": 10, "cha": 14 },
+    "actions": [
+      { "name": "Ram", "description": "Melee weapon attack: +5 to hit, 2d4+3 bludgeoning damage." },
+      { "name": "Shortbow", "description": "Ranged weapon attack: +5 to hit, 1d6+3 piercing damage." }
+    ],
+    "cr": "1/2",
+    "source": "core"
+  },
+  "centaur": {
+    "id": "centaur",
+    "name": "Centaur",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 12,
+    "hitDice": "4d10+8",
+    "speed": 50,
+    "abilities": { "str": 18, "dex": 14, "con": 14, "int": 9, "wis": 13, "cha": 11 },
+    "actions": [
+      { "name": "Pike", "description": "Melee weapon attack: +6 to hit, 1d10+4 piercing damage." },
+      { "name": "Hooves", "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "pixie": {
+    "id": "pixie",
+    "name": "Pixie",
+    "size": "Tiny",
+    "type": "Fey",
+    "ac": 15,
+    "hitDice": "1d4",
+    "speed": 10,
+    "flySpeed": 30,
+    "abilities": { "str": 2, "dex": 20, "con": 8, "int": 10, "wis": 14, "cha": 15 },
+    "actions": [
+      { "name": "Shortsword", "description": "Melee weapon attack: +6 to hit, 1d6+5 piercing damage." },
+      { "name": "Sleep Arrow", "description": "Ranged weapon attack: +6 to hit, 1 piercing damage, and the target must succeed on a DC 10 Constitution save or fall unconscious for 1 minute." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "blink-dog": {
+    "id": "blink-dog",
+    "name": "Blink Dog",
+    "size": "Medium",
+    "type": "Fey",
+    "ac": 13,
+    "hitDice": "4d8",
+    "speed": 40,
+    "abilities": { "str": 12, "dex": 17, "con": 11, "int": 10, "wis": 13, "cha": 11 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d6+1 piercing damage. The blink dog can teleport up to 40 feet before or after the attack." }
+    ],
+    "cr": "1/4",
+    "source": "core"
+  },
+  "giant-eagle": {
+    "id": "giant-eagle",
+    "name": "Giant Eagle",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 13,
+    "hitDice": "4d10+8",
+    "speed": 10,
+    "flySpeed": 80,
+    "abilities": { "str": 16, "dex": 17, "con": 13, "int": 8, "wis": 14, "cha": 10 },
+    "actions": [
+      { "name": "Talons", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "hippogriff": {
+    "id": "hippogriff",
+    "name": "Hippogriff",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 11,
+    "hitDice": "6d10+18",
+    "speed": 40,
+    "flySpeed": 60,
+    "abilities": { "str": 17, "dex": 13, "con": 16, "int": 2, "wis": 12, "cha": 8 },
+    "actions": [
+      { "name": "Beak", "description": "Melee weapon attack: +5 to hit, 1d10+3 piercing damage." },
+      { "name": "Claws", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage." }
+    ],
+    "cr": "1",
+    "source": "core"
+  },
+  "manticore": {
+    "id": "manticore",
+    "name": "Manticore",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 14,
+    "hitDice": "6d10+18",
+    "speed": 30,
+    "flySpeed": 50,
+    "abilities": { "str": 17, "dex": 16, "con": 17, "int": 7, "wis": 12, "cha": 8 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 1d8+3 piercing damage." },
+      { "name": "Tail Spike", "description": "Ranged weapon attack: +5 to hit, 1d8+3 piercing damage." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "wight": {
+    "id": "wight",
+    "name": "Wight",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 14,
+    "hitDice": "8d8+16",
+    "speed": 30,
+    "abilities": { "str": 15, "dex": 14, "con": 15, "int": 10, "wis": 13, "cha": 15 },
+    "actions": [
+      { "name": "Longsword", "description": "Melee weapon attack: +5 to hit, 1d8+3 slashing damage." },
+      { "name": "Life Drain", "description": "Melee weapon attack: +5 to hit, 1d6+3 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "wraith": {
+    "id": "wraith",
+    "name": "Wraith",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 13,
+    "hitDice": "9d8+27",
+    "speed": 0,
+    "flySpeed": 60,
+    "abilities": { "str": 6, "dex": 16, "con": 16, "int": 12, "wis": 14, "cha": 15 },
+    "actions": [
+      { "name": "Life Drain", "description": "Melee weapon attack: +6 to hit, 4d8+3 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "minotaur": {
+    "id": "minotaur",
+    "name": "Minotaur",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 14,
+    "hitDice": "6d10+18",
+    "speed": 40,
+    "abilities": { "str": 18, "dex": 11, "con": 16, "int": 6, "wis": 16, "cha": 9 },
+    "actions": [
+      { "name": "Greataxe", "description": "Melee weapon attack: +6 to hit, 2d12+4 slashing damage." },
+      { "name": "Gore", "description": "Melee weapon attack: +6 to hit, 2d8+4 piercing damage." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "gargoyle": {
+    "id": "gargoyle",
+    "name": "Gargoyle",
+    "size": "Medium",
+    "type": "Elemental",
+    "ac": 15,
+    "hitDice": "4d8+8",
+    "speed": 30,
+    "flySpeed": 60,
+    "abilities": { "str": 15, "dex": 11, "con": 16, "int": 6, "wis": 11, "cha": 7 },
+    "actions": [
+      { "name": "Claws", "description": "Melee weapon attack: +4 to hit, 2d6+2 slashing damage." },
+      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "banshee": {
+    "id": "banshee",
+    "name": "Banshee",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 12,
+    "hitDice": "13d8",
+    "speed": 0,
+    "flySpeed": 40,
+    "abilities": { "str": 1, "dex": 14, "con": 10, "int": 12, "wis": 11, "cha": 17 },
+    "actions": [
+      { "name": "Corrupting Touch", "description": "Melee weapon attack: +4 to hit, 3d6 necrotic damage." },
+      { "name": "Wail", "description": "Forces creatures within 30 feet to make a DC 13 Constitution save, taking 3d10 psychic damage on a failure." }
+    ],
+    "cr": "4",
+    "source": "core"
+  },
+  "mummy": {
+    "id": "mummy",
+    "name": "Mummy",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 11,
+    "hitDice": "9d8+27",
+    "speed": 20,
+    "abilities": { "str": 16, "dex": 8, "con": 17, "int": 6, "wis": 10, "cha": 12 },
+    "actions": [
+      { "name": "Rotting Fist", "description": "Melee weapon attack: +5 to hit, 2d6+3 bludgeoning damage plus 1d6 necrotic damage, and the target must succeed on a DC 13 Constitution save or be cursed with mummy rot." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "doppelganger": {
+    "id": "doppelganger",
+    "name": "Doppelganger",
+    "size": "Medium",
+    "type": "Monstrosity",
+    "ac": 14,
+    "hitDice": "8d8+16",
+    "speed": 30,
+    "abilities": { "str": 11, "dex": 18, "con": 14, "int": 11, "wis": 12, "cha": 14 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "ettin": {
+    "id": "ettin",
+    "name": "Ettin",
+    "size": "Large",
+    "type": "Giant",
+    "ac": 12,
+    "hitDice": "10d10+30",
+    "speed": 40,
+    "abilities": { "str": 21, "dex": 8, "con": 17, "int": 6, "wis": 10, "cha": 8 },
+    "actions": [
+      { "name": "Battleaxe", "description": "Melee weapon attack: +7 to hit, 2d8+5 slashing damage." },
+      { "name": "Morningstar", "description": "Melee weapon attack: +7 to hit, 2d8+5 piercing damage." }
+    ],
+    "cr": "4",
+    "source": "core"
+  },
+  "cyclops": {
+    "id": "cyclops",
+    "name": "Cyclops",
+    "size": "Huge",
+    "type": "Giant",
+    "ac": 14,
+    "hitDice": "11d12+44",
+    "speed": 30,
+    "abilities": { "str": 22, "dex": 11, "con": 19, "int": 8, "wis": 12, "cha": 10 },
+    "actions": [
+      { "name": "Greatclub", "description": "Melee weapon attack: +9 to hit, 3d8+6 bludgeoning damage." },
+      { "name": "Rock", "description": "Ranged weapon attack: +9 to hit, 3d10+6 bludgeoning damage." }
+    ],
+    "cr": "6",
+    "source": "core"
+  },
+  "troll": {
+    "id": "troll",
+    "name": "Troll",
+    "size": "Large",
+    "type": "Giant",
+    "ac": 15,
+    "hitDice": "8d10+40",
+    "speed": 30,
+    "abilities": { "str": 18, "dex": 13, "con": 20, "int": 7, "wis": 9, "cha": 7 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +7 to hit, 1d6+4 piercing damage." },
+      { "name": "Claws", "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage. The troll regenerates 10 hit points at the start of its turn unless it took fire or acid damage since then." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "chimera": {
+    "id": "chimera",
+    "name": "Chimera",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 14,
+    "hitDice": "12d10+36",
+    "speed": 30,
+    "flySpeed": 50,
+    "abilities": { "str": 19, "dex": 11, "con": 19, "int": 3, "wis": 14, "cha": 10 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +7 to hit, 2d6+4 piercing damage." },
+      { "name": "Horns", "description": "Melee weapon attack: +7 to hit, 1d12+4 bludgeoning damage." },
+      { "name": "Fire Breath", "description": "Forces creatures in a 15-foot cone to make a DC 15 Dexterity save, taking 7d6 fire damage on a failure." }
+    ],
+    "cr": "6",
+    "source": "core"
+  },
+  "griffon": {
+    "id": "griffon",
+    "name": "Griffon",
+    "size": "Large",
+    "type": "Monstrosity",
+    "ac": 12,
+    "hitDice": "7d10+14",
+    "speed": 30,
+    "flySpeed": 80,
+    "abilities": { "str": 18, "dex": 15, "con": 14, "int": 2, "wis": 13, "cha": 8 },
+    "actions": [
+      { "name": "Beak", "description": "Melee weapon attack: +6 to hit, 1d8+4 piercing damage." },
+      { "name": "Claws", "description": "Melee weapon attack: +6 to hit, 2d6+4 slashing damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "pegasus": {
+    "id": "pegasus",
+    "name": "Pegasus",
+    "size": "Large",
+    "type": "Celestial",
+    "ac": 12,
+    "hitDice": "6d10+12",
+    "speed": 60,
+    "flySpeed": 90,
+    "abilities": { "str": 18, "dex": 15, "con": 14, "int": 10, "wis": 15, "cha": 13 },
+    "actions": [
+      { "name": "Hooves", "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "unicorn": {
+    "id": "unicorn",
+    "name": "Unicorn",
+    "size": "Large",
+    "type": "Celestial",
+    "ac": 12,
+    "hitDice": "8d10+24",
+    "speed": 50,
+    "abilities": { "str": 18, "dex": 14, "con": 15, "int": 11, "wis": 17, "cha": 16 },
+    "actions": [
+      { "name": "Horn", "description": "Melee weapon attack: +7 to hit, 1d8+4 piercing damage." },
+      { "name": "Hooves", "description": "Melee weapon attack: +7 to hit, 2d6+4 bludgeoning damage." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "hydra": {
+    "id": "hydra",
+    "name": "Hydra",
+    "size": "Huge",
+    "type": "Monstrosity",
+    "ac": 15,
+    "hitDice": "15d12+75",
+    "speed": 30,
+    "swimSpeed": 30,
+    "abilities": { "str": 20, "dex": 12, "con": 20, "int": 2, "wis": 10, "cha": 7 },
+    "actions": [
+      { "name": "Bite (x5 heads)", "description": "Melee weapon attack: +9 to hit, 1d10+5 piercing damage per head." }
+    ],
+    "cr": "8",
+    "source": "core"
+  },
+  "stone-giant": {
+    "id": "stone-giant",
+    "name": "Stone Giant",
+    "size": "Huge",
+    "type": "Giant",
+    "ac": 17,
+    "hitDice": "14d12+56",
+    "speed": 40,
+    "abilities": { "str": 23, "dex": 15, "con": 20, "int": 10, "wis": 12, "cha": 9 },
+    "actions": [
+      { "name": "Greatclub", "description": "Melee weapon attack: +12 to hit, 3d8+9 bludgeoning damage." },
+      { "name": "Rock", "description": "Ranged weapon attack: +12 to hit, 4d10+9 bludgeoning damage." }
+    ],
+    "cr": "7",
+    "source": "core"
+  },
+  "frost-giant": {
+    "id": "frost-giant",
+    "name": "Frost Giant",
+    "size": "Huge",
+    "type": "Giant",
+    "ac": 15,
+    "hitDice": "12d12+48",
+    "speed": 40,
+    "abilities": { "str": 23, "dex": 9, "con": 21, "int": 9, "wis": 10, "cha": 12 },
+    "actions": [
+      { "name": "Greataxe", "description": "Melee weapon attack: +9 to hit, 3d12+6 slashing damage." },
+      { "name": "Rock", "description": "Ranged weapon attack: +9 to hit, 4d10+6 bludgeoning damage." }
+    ],
+    "cr": "8",
+    "source": "core"
+  },
+  "fire-giant": {
+    "id": "fire-giant",
+    "name": "Fire Giant",
+    "size": "Huge",
+    "type": "Giant",
+    "ac": 18,
+    "hitDice": "13d12+65",
+    "speed": 30,
+    "abilities": { "str": 25, "dex": 9, "con": 23, "int": 10, "wis": 14, "cha": 13 },
+    "actions": [
+      { "name": "Greatsword", "description": "Melee weapon attack: +11 to hit, 6d6+7 slashing damage." },
+      { "name": "Rock", "description": "Ranged weapon attack: +11 to hit, 4d10+7 bludgeoning damage." }
+    ],
+    "cr": "9",
+    "source": "core"
+  },
+  "hill-giant": {
+    "id": "hill-giant",
+    "name": "Hill Giant",
+    "size": "Huge",
+    "type": "Giant",
+    "ac": 13,
+    "hitDice": "10d12+40",
+    "speed": 40,
+    "abilities": { "str": 21, "dex": 8, "con": 19, "int": 5, "wis": 9, "cha": 6 },
+    "actions": [
+      { "name": "Greatclub", "description": "Melee weapon attack: +8 to hit, 3d8+5 bludgeoning damage." },
+      { "name": "Rock", "description": "Ranged weapon attack: +8 to hit, 3d10+5 bludgeoning damage." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "cloud-giant": {
+    "id": "cloud-giant",
+    "name": "Cloud Giant",
+    "size": "Huge",
+    "type": "Giant",
+    "ac": 14,
+    "hitDice": "15d12+75",
+    "speed": 40,
+    "abilities": { "str": 27, "dex": 10, "con": 21, "int": 12, "wis": 16, "cha": 16 },
+    "actions": [
+      { "name": "Morningstar", "description": "Melee weapon attack: +12 to hit, 3d8+8 piercing damage." },
+      { "name": "Rock", "description": "Ranged weapon attack: +12 to hit, 4d10+8 bludgeoning damage." }
+    ],
+    "cr": "9",
+    "source": "core"
+  },
+  "vampire-spawn": {
+    "id": "vampire-spawn",
+    "name": "Vampire Spawn",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 15,
+    "hitDice": "11d8+22",
+    "speed": 30,
+    "flySpeed": 30,
+    "abilities": { "str": 16, "dex": 16, "con": 15, "int": 11, "wis": 10, "cha": 12 },
+    "actions": [
+      { "name": "Claws", "description": "Melee weapon attack: +6 to hit, 2d4+3 slashing damage." },
+      { "name": "Bite", "description": "Melee weapon attack: +6 to hit, 1d6+3 piercing damage plus 1d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "werewolf": {
+    "id": "werewolf",
+    "name": "Werewolf",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 12,
+    "hitDice": "9d8+9",
+    "speed": 30,
+    "abilities": { "str": 15, "dex": 13, "con": 14, "int": 10, "wis": 11, "cha": 10 },
+    "actions": [
+      { "name": "Bite (hybrid form)", "description": "Melee weapon attack: +4 to hit, 1d8+2 piercing damage, and the target must succeed on a DC 12 Constitution save or be cursed with lycanthropy." },
+      { "name": "Claws", "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "weretiger": {
+    "id": "weretiger",
+    "name": "Weretiger",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 12,
+    "hitDice": "9d8+18",
+    "speed": 30,
+    "abilities": { "str": 17, "dex": 15, "con": 15, "int": 10, "wis": 13, "cha": 11 },
+    "actions": [
+      { "name": "Claws (hybrid form)", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be cursed with lycanthropy." },
+      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 1d10+3 piercing damage." }
+    ],
+    "cr": "4",
+    "source": "core"
+  },
+  "wereboar": {
+    "id": "wereboar",
+    "name": "Wereboar",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 10,
+    "hitDice": "10d8+30",
+    "speed": 30,
+    "abilities": { "str": 17, "dex": 10, "con": 17, "int": 10, "wis": 11, "cha": 8 },
+    "actions": [
+      { "name": "Tusks (hybrid form)", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be cursed with lycanthropy." },
+      { "name": "Maul", "description": "Melee weapon attack: +5 to hit, 2d6+3 bludgeoning damage." }
+    ],
+    "cr": "4",
+    "source": "core"
+  },
+  "medusa": {
+    "id": "medusa",
+    "name": "Medusa",
+    "size": "Medium",
+    "type": "Monstrosity",
+    "ac": 15,
+    "hitDice": "10d8+30",
+    "speed": 30,
+    "abilities": { "str": 10, "dex": 15, "con": 16, "int": 12, "wis": 13, "cha": 15 },
+    "actions": [
+      { "name": "Snake Hair", "description": "Melee weapon attack: +5 to hit, 1d4+2 piercing damage plus 4d6 poison damage." },
+      { "name": "Petrifying Gaze", "description": "Creatures within 30 feet who meet the medusa's eyes must succeed on a DC 14 Constitution save or begin turning to stone." }
+    ],
+    "cr": "6",
+    "source": "core"
+  },
+  "shambling-mound": {
+    "id": "shambling-mound",
+    "name": "Shambling Mound",
+    "size": "Large",
+    "type": "Plant",
+    "ac": 15,
+    "hitDice": "9d10+36",
+    "speed": 20,
+    "swimSpeed": 20,
+    "abilities": { "str": 18, "dex": 8, "con": 19, "int": 5, "wis": 10, "cha": 5 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage, and the target is grappled (escape DC 14)." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "young-black-dragon": {
+    "id": "young-black-dragon",
+    "name": "Young Black Dragon",
+    "size": "Large",
+    "type": "Dragon",
+    "ac": 18,
+    "hitDice": "17d10+68",
+    "speed": 40,
+    "flySpeed": 80,
+    "swimSpeed": 40,
+    "abilities": { "str": 19, "dex": 14, "con": 19, "int": 12, "wis": 11, "cha": 15 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +7 to hit, 2d10+4 piercing damage plus 1d8 acid damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage." },
+      { "name": "Acid Breath", "description": "Forces creatures in a 30-foot line to make a DC 14 Dexterity save, taking 11d8 acid damage on a failure." }
+    ],
+    "cr": "7",
+    "source": "core"
+  },
+  "young-red-dragon": {
+    "id": "young-red-dragon",
+    "name": "Young Red Dragon",
+    "size": "Large",
+    "type": "Dragon",
+    "ac": 18,
+    "hitDice": "17d10+68",
+    "speed": 40,
+    "flySpeed": 80,
+    "abilities": { "str": 23, "dex": 10, "con": 21, "int": 14, "wis": 11, "cha": 19 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +10 to hit, 2d10+6 piercing damage plus 1d6 fire damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +10 to hit, 2d6+6 slashing damage." },
+      { "name": "Fire Breath", "description": "Forces creatures in a 30-foot cone to make a DC 17 Dexterity save, taking 16d6 fire damage on a failure." }
+    ],
+    "cr": "10",
+    "source": "core"
+  },
+  "young-silver-dragon": {
+    "id": "young-silver-dragon",
+    "name": "Young Silver Dragon",
+    "size": "Large",
+    "type": "Dragon",
+    "ac": 18,
+    "hitDice": "18d10+72",
+    "speed": 40,
+    "flySpeed": 80,
+    "abilities": { "str": 23, "dex": 10, "con": 19, "int": 14, "wis": 11, "cha": 19 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 2d10+6 piercing damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +9 to hit, 2d6+6 slashing damage." },
+      { "name": "Cold Breath", "description": "Forces creatures in a 30-foot cone to make a DC 16 Constitution save, taking 13d8 cold damage on a failure." }
+    ],
+    "cr": "9",
+    "source": "core"
+  },
+  "bandit-captain": {
+    "id": "bandit-captain",
+    "name": "Bandit Captain",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 15,
+    "hitDice": "6d8+6",
+    "speed": 30,
+    "abilities": { "str": 15, "dex": 16, "con": 14, "int": 14, "wis": 11, "cha": 14 },
+    "actions": [
+      { "name": "Scimitar", "description": "Melee weapon attack: +5 to hit, 1d6+3 slashing damage." },
+      { "name": "Dagger", "description": "Ranged weapon attack: +5 to hit, 1d4+3 piercing damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "cult-fanatic": {
+    "id": "cult-fanatic",
+    "name": "Cult Fanatic",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 13,
+    "hitDice": "6d8+6",
+    "speed": 30,
+    "abilities": { "str": 11, "dex": 14, "con": 12, "int": 10, "wis": 13, "cha": 14 },
+    "actions": [
+      { "name": "Dagger", "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage." },
+      { "name": "Dark Bolt", "description": "Ranged spell attack: +4 to hit, 3d8 necrotic damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "gladiator": {
+    "id": "gladiator",
+    "name": "Gladiator",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 16,
+    "hitDice": "9d8+27",
+    "speed": 30,
+    "abilities": { "str": 18, "dex": 15, "con": 16, "int": 10, "wis": 12, "cha": 15 },
+    "actions": [
+      { "name": "Spear", "description": "Melee weapon attack: +7 to hit, 2d8+4 piercing damage." },
+      { "name": "Shield Bash", "description": "Melee weapon attack: +7 to hit, 2d4+4 bludgeoning damage, and the target must succeed on a DC 15 Strength save or be knocked prone." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "veteran": {
+    "id": "veteran",
+    "name": "Veteran",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 17,
+    "hitDice": "9d8+9",
+    "speed": 30,
+    "abilities": { "str": 16, "dex": 13, "con": 14, "int": 10, "wis": 11, "cha": 10 },
+    "actions": [
+      { "name": "Longsword", "description": "Melee weapon attack: +5 to hit, 2d8+3 slashing damage." },
+      { "name": "Heavy Crossbow", "description": "Ranged weapon attack: +3 to hit, 1d10+1 piercing damage." }
+    ],
+    "cr": "3",
+    "source": "core"
+  },
+  "mage": {
+    "id": "mage",
+    "name": "Mage",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 12,
+    "hitDice": "9d8+9",
+    "speed": 30,
+    "abilities": { "str": 9, "dex": 14, "con": 11, "int": 17, "wis": 12, "cha": 11 },
+    "actions": [
+      { "name": "Fire Bolt", "description": "Ranged spell attack: +6 to hit, 2d10 fire damage." },
+      { "name": "Frostbite Bolt", "description": "Ranged spell attack: +6 to hit, 2d8 cold damage, and the target has disadvantage on its next Strength check or attack roll." }
+    ],
+    "cr": "6",
+    "source": "core"
+  },
+  "priest": {
+    "id": "priest",
+    "name": "Priest",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 13,
+    "hitDice": "7d8+7",
+    "speed": 30,
+    "abilities": { "str": 10, "dex": 10, "con": 12, "int": 13, "wis": 16, "cha": 13 },
+    "actions": [
+      { "name": "Mace", "description": "Melee weapon attack: +2 to hit, 1d6 bludgeoning damage." },
+      { "name": "Radiant Bolt", "description": "Ranged spell attack: +5 to hit, 2d8 radiant damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "assassin": {
+    "id": "assassin",
+    "name": "Assassin",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 15,
+    "hitDice": "8d8+16",
+    "speed": 30,
+    "abilities": { "str": 11, "dex": 16, "con": 14, "int": 13, "wis": 11, "cha": 10 },
+    "actions": [
+      { "name": "Shortsword", "description": "Melee weapon attack: +6 to hit, 1d6+3 piercing damage plus 4d6 poison damage against a surprised target." },
+      { "name": "Light Crossbow", "description": "Ranged weapon attack: +6 to hit, 1d8+3 piercing damage plus 4d6 poison damage against a surprised target." }
+    ],
+    "cr": "8",
+    "source": "core"
+  },
+  "berserker": {
+    "id": "berserker",
+    "name": "Berserker",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 13,
+    "hitDice": "9d8+27",
+    "speed": 30,
+    "abilities": { "str": 16, "dex": 12, "con": 17, "int": 9, "wis": 11, "cha": 9 },
+    "actions": [
+      { "name": "Greataxe", "description": "Melee weapon attack: +5 to hit, 2d12+3 slashing damage." }
+    ],
+    "cr": "2",
+    "source": "core"
+  },
+  "vampire": {
+    "id": "vampire",
+    "name": "Vampire",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 16,
+    "hitDice": "17d8+68",
+    "speed": 30,
+    "flySpeed": 30,
+    "abilities": { "str": 18, "dex": 18, "con": 18, "int": 17, "wis": 15, "cha": 18 },
+    "actions": [
+      { "name": "Claws", "description": "Melee weapon attack: +9 to hit, 2d6+4 slashing damage." },
+      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 1d6+4 piercing damage plus 3d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+    ],
+    "cr": "13",
+    "source": "core"
+  },
+  "adult-red-dragon": {
+    "id": "adult-red-dragon",
+    "name": "Adult Red Dragon",
+    "size": "Huge",
+    "type": "Dragon",
+    "ac": 19,
+    "hitDice": "22d12+110",
+    "speed": 40,
+    "flySpeed": 80,
+    "abilities": { "str": 27, "dex": 10, "con": 25, "int": 16, "wis": 13, "cha": 21 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +14 to hit, 2d10+8 piercing damage plus 2d6 fire damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage." },
+      { "name": "Fire Breath", "description": "Forces creatures in a 60-foot cone to make a DC 21 Dexterity save, taking 18d6 fire damage on a failure." }
+    ],
+    "cr": "17",
+    "source": "core"
+  },
+  "adult-blue-dragon": {
+    "id": "adult-blue-dragon",
+    "name": "Adult Blue Dragon",
+    "size": "Huge",
+    "type": "Dragon",
+    "ac": 19,
+    "hitDice": "21d12+126",
+    "speed": 40,
+    "flySpeed": 80,
+    "abilities": { "str": 25, "dex": 10, "con": 23, "int": 16, "wis": 15, "cha": 19 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +13 to hit, 2d10+7 piercing damage plus 1d10 lightning damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +13 to hit, 2d6+7 slashing damage." },
+      { "name": "Lightning Breath", "description": "Forces creatures in a 90-foot line to make a DC 19 Dexterity save, taking 12d10 lightning damage on a failure." }
+    ],
+    "cr": "16",
+    "source": "core"
+  },
+  "adult-gold-dragon": {
+    "id": "adult-gold-dragon",
+    "name": "Adult Gold Dragon",
+    "size": "Huge",
+    "type": "Dragon",
+    "ac": 19,
+    "hitDice": "22d12+110",
+    "speed": 40,
+    "flySpeed": 80,
+    "swimSpeed": 40,
+    "abilities": { "str": 27, "dex": 14, "con": 25, "int": 16, "wis": 15, "cha": 24 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +14 to hit, 2d10+8 piercing damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage." },
+      { "name": "Fire Breath", "description": "Forces creatures in a 60-foot cone to make a DC 21 Dexterity save, taking 17d6 fire damage on a failure." }
+    ],
+    "cr": "17",
+    "source": "core"
+  },
+  "storm-giant": {
+    "id": "storm-giant",
+    "name": "Storm Giant",
+    "size": "Huge",
+    "type": "Giant",
+    "ac": 16,
+    "hitDice": "20d12+120",
+    "speed": 50,
+    "swimSpeed": 50,
+    "abilities": { "str": 29, "dex": 14, "con": 22, "int": 16, "wis": 18, "cha": 18 },
+    "actions": [
+      { "name": "Greatsword", "description": "Melee weapon attack: +16 to hit, 6d6+9 slashing damage." },
+      { "name": "Lightning Strike", "description": "Ranged spell attack: +16 to hit, 13d10 lightning damage." }
+    ],
+    "cr": "13",
+    "source": "core"
+  },
+  "night-hag-coven-leader": {
+    "id": "night-hag-coven-leader",
+    "name": "Night Hag Coven Leader",
+    "size": "Medium",
+    "type": "Fiend",
+    "ac": 17,
+    "hitDice": "13d8+52",
+    "speed": 30,
+    "flySpeed": 30,
+    "abilities": { "str": 18, "dex": 15, "con": 18, "int": 16, "wis": 16, "cha": 16 },
+    "actions": [
+      { "name": "Claws", "description": "Melee weapon attack: +7 to hit, 2d8+4 slashing damage." },
+      { "name": "Nightmare Haunting", "description": "Assails a sleeping creature's mind, dealing 9d6 psychic damage on a failed DC 15 Wisdom save." }
+    ],
+    "cr": "9",
+    "source": "core"
+  },
+  "mummy-lord": {
+    "id": "mummy-lord",
+    "name": "Mummy Lord",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 17,
+    "hitDice": "15d8+75",
+    "speed": 20,
+    "abilities": { "str": 18, "dex": 10, "con": 20, "int": 16, "wis": 18, "cha": 18 },
+    "actions": [
+      { "name": "Rotting Fist", "description": "Melee weapon attack: +9 to hit, 3d6+4 bludgeoning damage plus 3d6 necrotic damage, and the target must succeed on a DC 16 Constitution save or be cursed with mummy rot." },
+      { "name": "Blasphemous Word", "description": "Forces creatures within 10 feet to make a DC 16 Wisdom save, becoming stunned on a failure." }
+    ],
+    "cr": "15",
+    "source": "core"
+  },
+  "lich": {
+    "id": "lich",
+    "name": "Lich",
+    "size": "Medium",
+    "type": "Undead",
+    "ac": 17,
+    "hitDice": "18d8+72",
+    "speed": 30,
+    "abilities": { "str": 11, "dex": 16, "con": 18, "int": 20, "wis": 14, "cha": 16 },
+    "actions": [
+      { "name": "Paralyzing Touch", "description": "Melee spell attack: +12 to hit, 3d6 cold damage, and the target must succeed on a DC 18 Constitution save or be paralyzed for 1 minute." },
+      { "name": "Disintegrate Ray", "description": "Ranged spell attack: +12 to hit, 10d6+40 force damage on a failed DC 18 Dexterity save." }
+    ],
+    "cr": "21",
+    "source": "core"
+  },
+  "stone-golem": {
+    "id": "stone-golem",
+    "name": "Stone Golem",
+    "size": "Large",
+    "type": "Construct",
+    "ac": 17,
+    "hitDice": "17d10+102",
+    "speed": 30,
+    "abilities": { "str": 22, "dex": 9, "con": 22, "int": 3, "wis": 11, "cha": 1 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +10 to hit, 3d8+6 bludgeoning damage." },
+      { "name": "Slow Ray", "description": "Ranged spell attack: causes a creature to become slowed for 1 minute on a failed DC 17 Wisdom save." }
+    ],
+    "cr": "10",
+    "source": "core"
+  },
+  "iron-golem": {
+    "id": "iron-golem",
+    "name": "Iron Golem",
+    "size": "Large",
+    "type": "Construct",
+    "ac": 20,
+    "hitDice": "18d10+108",
+    "speed": 30,
+    "abilities": { "str": 24, "dex": 9, "con": 24, "int": 3, "wis": 11, "cha": 1 },
+    "actions": [
+      { "name": "Sword", "description": "Melee weapon attack: +12 to hit, 3d8+7 slashing damage." },
+      { "name": "Poison Breath", "description": "Forces creatures in a 15-foot cone to make a DC 19 Constitution save, taking 10d8 poison damage on a failure." }
+    ],
+    "cr": "16",
+    "source": "core"
+  },
+  "flesh-golem": {
+    "id": "flesh-golem",
+    "name": "Flesh Golem",
+    "size": "Medium",
+    "type": "Construct",
+    "ac": 9,
+    "hitDice": "9d8+27",
+    "speed": 30,
+    "abilities": { "str": 19, "dex": 9, "con": 18, "int": 6, "wis": 10, "cha": 5 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "clay-golem": {
+    "id": "clay-golem",
+    "name": "Clay Golem",
+    "size": "Medium",
+    "type": "Construct",
+    "ac": 14,
+    "hitDice": "14d8+56",
+    "speed": 20,
+    "abilities": { "str": 20, "dex": 9, "con": 18, "int": 3, "wis": 8, "cha": 1 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +9 to hit, 2d10+5 bludgeoning damage, and the target's hit point maximum is reduced by an equal amount." }
+    ],
+    "cr": "9",
+    "source": "core"
+  },
+  "fire-elemental": {
+    "id": "fire-elemental",
+    "name": "Fire Elemental",
+    "size": "Large",
+    "type": "Elemental",
+    "ac": 13,
+    "hitDice": "12d10+24",
+    "speed": 50,
+    "abilities": { "str": 10, "dex": 17, "con": 16, "int": 6, "wis": 10, "cha": 7 },
+    "actions": [
+      { "name": "Touch", "description": "Melee weapon attack: +6 to hit, 2d6+3 fire damage, and the target ignites, taking 1d6 fire damage at the start of each of its turns." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "water-elemental": {
+    "id": "water-elemental",
+    "name": "Water Elemental",
+    "size": "Large",
+    "type": "Elemental",
+    "ac": 14,
+    "hitDice": "12d10+36",
+    "speed": 30,
+    "swimSpeed": 90,
+    "abilities": { "str": 18, "dex": 14, "con": 18, "int": 5, "wis": 10, "cha": 8 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage, and the target is grappled (escape DC 14)." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "air-elemental": {
+    "id": "air-elemental",
+    "name": "Air Elemental",
+    "size": "Large",
+    "type": "Elemental",
+    "ac": 15,
+    "hitDice": "12d10+36",
+    "speed": 0,
+    "flySpeed": 90,
+    "abilities": { "str": 14, "dex": 20, "con": 16, "int": 6, "wis": 10, "cha": 6 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +8 to hit, 2d8+5 bludgeoning damage." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "earth-elemental": {
+    "id": "earth-elemental",
+    "name": "Earth Elemental",
+    "size": "Large",
+    "type": "Elemental",
+    "ac": 17,
+    "hitDice": "12d10+48",
+    "speed": 30,
+    "abilities": { "str": 20, "dex": 8, "con": 20, "int": 5, "wis": 10, "cha": 5 },
+    "actions": [
+      { "name": "Slam", "description": "Melee weapon attack: +8 to hit, 2d8+5 bludgeoning damage." }
+    ],
+    "cr": "5",
+    "source": "core"
+  },
+  "chain-devil": {
+    "id": "chain-devil",
+    "name": "Chain Devil",
+    "size": "Medium",
+    "type": "Fiend",
+    "ac": 16,
+    "hitDice": "13d8+52",
+    "speed": 30,
+    "abilities": { "str": 18, "dex": 15, "con": 18, "int": 11, "wis": 12, "cha": 14 },
+    "actions": [
+      { "name": "Chain", "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage, and the target is restrained (escape DC 14)." }
+    ],
+    "cr": "8",
+    "source": "core"
+  },
+  "bone-devil": {
+    "id": "bone-devil",
+    "name": "Bone Devil",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 19,
+    "hitDice": "16d10+64",
+    "speed": 40,
+    "flySpeed": 40,
+    "abilities": { "str": 18, "dex": 16, "con": 18, "int": 13, "wis": 14, "cha": 16 },
+    "actions": [
+      { "name": "Claw", "description": "Melee weapon attack: +9 to hit, 2d4+4 slashing damage." },
+      { "name": "Sting", "description": "Melee weapon attack: +9 to hit, 2d8+4 piercing damage plus 3d6 poison damage." }
+    ],
+    "cr": "9",
+    "source": "core"
+  },
+  "horned-devil": {
+    "id": "horned-devil",
+    "name": "Horned Devil",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 18,
+    "hitDice": "15d10+60",
+    "speed": 20,
+    "flySpeed": 60,
+    "abilities": { "str": 22, "dex": 17, "con": 21, "int": 12, "wis": 16, "cha": 17 },
+    "actions": [
+      { "name": "Fork", "description": "Melee weapon attack: +10 to hit, 2d8+6 piercing damage." },
+      { "name": "Tail", "description": "Melee weapon attack: +10 to hit, 2d8+6 piercing damage plus 3d6 fire damage." }
+    ],
+    "cr": "11",
+    "source": "core"
+  },
+  "ice-devil": {
+    "id": "ice-devil",
+    "name": "Ice Devil",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 18,
+    "hitDice": "18d10+90",
+    "speed": 40,
+    "flySpeed": 40,
+    "abilities": { "str": 21, "dex": 14, "con": 21, "int": 14, "wis": 18, "cha": 18 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 2d6+5 piercing damage plus 2d6 cold damage." },
+      { "name": "Tail", "description": "Melee weapon attack: +9 to hit, 2d8+5 bludgeoning damage." },
+      { "name": "Wall of Ice", "description": "Ranged spell attack: forces creatures in a 30-foot line to make a DC 18 Dexterity save, taking 4d10 cold damage on a failure." }
+    ],
+    "cr": "14",
+    "source": "core"
+  },
+  "vrock": {
+    "id": "vrock",
+    "name": "Vrock",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 15,
+    "hitDice": "13d10+52",
+    "speed": 40,
+    "flySpeed": 60,
+    "abilities": { "str": 17, "dex": 15, "con": 18, "int": 8, "wis": 13, "cha": 8 },
+    "actions": [
+      { "name": "Talons", "description": "Melee weapon attack: +7 to hit, 2d6+3 slashing damage." },
+      { "name": "Beak", "description": "Melee weapon attack: +7 to hit, 2d6+3 piercing damage." }
+    ],
+    "cr": "6",
+    "source": "core"
+  },
+  "hezrou": {
+    "id": "hezrou",
+    "name": "Hezrou",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 16,
+    "hitDice": "15d10+90",
+    "speed": 30,
+    "abilities": { "str": 19, "dex": 17, "con": 22, "int": 5, "wis": 12, "cha": 13 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 3d8+4 piercing damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +9 to hit, 2d6+4 slashing damage." }
+    ],
+    "cr": "8",
+    "source": "core"
+  },
+  "glabrezu": {
+    "id": "glabrezu",
+    "name": "Glabrezu",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 17,
+    "hitDice": "18d10+108",
+    "speed": 40,
+    "abilities": { "str": 20, "dex": 15, "con": 22, "int": 19, "wis": 17, "cha": 16 },
+    "actions": [
+      { "name": "Pincer", "description": "Melee weapon attack: +10 to hit, 2d10+5 bludgeoning damage, and the target is grappled (escape DC 15)." },
+      { "name": "Fist", "description": "Melee weapon attack: +10 to hit, 2d4+5 bludgeoning damage." }
+    ],
+    "cr": "9",
+    "source": "core"
+  },
+  "ancient-red-dragon": {
+    "id": "ancient-red-dragon",
+    "name": "Ancient Red Dragon",
+    "size": "Gargantuan",
+    "type": "Dragon",
+    "ac": 22,
+    "hitDice": "26d20+182",
+    "speed": 40,
+    "flySpeed": 80,
+    "abilities": { "str": 30, "dex": 10, "con": 29, "int": 18, "wis": 15, "cha": 26 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +17 to hit, 2d10+10 piercing damage plus 4d6 fire damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +17 to hit, 2d6+10 slashing damage." },
+      { "name": "Fire Breath", "description": "Forces creatures in a 90-foot cone to make a DC 24 Dexterity save, taking 26d6 fire damage on a failure." }
+    ],
+    "cr": "24",
+    "source": "core"
+  },
+  "ancient-white-dragon": {
+    "id": "ancient-white-dragon",
+    "name": "Ancient White Dragon",
+    "size": "Gargantuan",
+    "type": "Dragon",
+    "ac": 20,
+    "hitDice": "22d20+132",
+    "speed": 40,
+    "flySpeed": 80,
+    "swimSpeed": 40,
+    "abilities": { "str": 26, "dex": 10, "con": 26, "int": 10, "wis": 13, "cha": 14 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +15 to hit, 2d10+8 piercing damage plus 1d8 cold damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +15 to hit, 2d6+8 slashing damage." },
+      { "name": "Cold Breath", "description": "Forces creatures in a 60-foot cone to make a DC 22 Constitution save, taking 15d8 cold damage on a failure." }
+    ],
+    "cr": "20",
+    "source": "core"
+  },
+  "ancient-gold-dragon": {
+    "id": "ancient-gold-dragon",
+    "name": "Ancient Gold Dragon",
+    "size": "Gargantuan",
+    "type": "Dragon",
+    "ac": 22,
+    "hitDice": "27d20+189",
+    "speed": 40,
+    "flySpeed": 80,
+    "swimSpeed": 40,
+    "abilities": { "str": 30, "dex": 14, "con": 29, "int": 18, "wis": 17, "cha": 28 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +17 to hit, 2d10+10 piercing damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +17 to hit, 2d6+10 slashing damage." },
+      { "name": "Fire Breath", "description": "Forces creatures in a 90-foot cone to make a DC 24 Dexterity save, taking 26d6 fire damage on a failure." }
+    ],
+    "cr": "24",
+    "source": "core"
+  },
+  "pit-fiend": {
+    "id": "pit-fiend",
+    "name": "Pit Fiend",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 21,
+    "hitDice": "22d10+143",
+    "speed": 30,
+    "flySpeed": 60,
+    "abilities": { "str": 26, "dex": 14, "con": 24, "int": 22, "wis": 18, "cha": 24 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +14 to hit, 4d6+8 piercing damage plus 4d6 poison damage." },
+      { "name": "Mace", "description": "Melee weapon attack: +14 to hit, 3d10+8 bludgeoning damage plus 6d6 fire damage." },
+      { "name": "Tail", "description": "Melee weapon attack: +14 to hit, 3d10+8 bludgeoning damage." }
+    ],
+    "cr": "20",
+    "source": "core"
+  },
+  "balor": {
+    "id": "balor",
+    "name": "Balor",
+    "size": "Huge",
+    "type": "Fiend",
+    "ac": 19,
+    "hitDice": "25d12+175",
+    "speed": 40,
+    "flySpeed": 80,
+    "abilities": { "str": 26, "dex": 15, "con": 22, "int": 20, "wis": 16, "cha": 22 },
+    "actions": [
+      { "name": "Longsword", "description": "Melee weapon attack: +14 to hit, 3d8+8 slashing damage plus 3d8 lightning damage." },
+      { "name": "Whip", "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage plus 3d6 fire damage." }
+    ],
+    "cr": "19",
+    "source": "core"
+  },
+  "nalfeshnee": {
+    "id": "nalfeshnee",
+    "name": "Nalfeshnee",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 18,
+    "hitDice": "18d10+108",
+    "speed": 20,
+    "flySpeed": 30,
+    "abilities": { "str": 21, "dex": 10, "con": 22, "int": 19, "wis": 12, "cha": 15 },
+    "actions": [
+      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 3d10+5 piercing damage." },
+      { "name": "Claw", "description": "Melee weapon attack: +9 to hit, 2d6+5 slashing damage." }
+    ],
+    "cr": "13",
+    "source": "core"
+  },
+  "marilith": {
+    "id": "marilith",
+    "name": "Marilith",
+    "size": "Large",
+    "type": "Fiend",
+    "ac": 18,
+    "hitDice": "20d10+120",
+    "speed": 40,
+    "abilities": { "str": 18, "dex": 20, "con": 22, "int": 18, "wis": 16, "cha": 20 },
+    "actions": [
+      { "name": "Longsword (x6)", "description": "Melee weapon attack: +9 to hit, 2d8+5 slashing damage per sword." },
+      { "name": "Tail", "description": "Melee weapon attack: +9 to hit, 2d10+5 bludgeoning damage, and the target is grappled (escape DC 17)." }
+    ],
+    "cr": "16",
+    "source": "core"
+  },
+  "archmage": {
+    "id": "archmage",
+    "name": "Archmage",
+    "size": "Medium",
+    "type": "Humanoid",
+    "ac": 13,
+    "hitDice": "18d8+36",
+    "speed": 30,
+    "abilities": { "str": 10, "dex": 14, "con": 12, "int": 20, "wis": 15, "cha": 16 },
+    "actions": [
+      { "name": "Fire Bolt", "description": "Ranged spell attack: +9 to hit, 4d10 fire damage." },
+      { "name": "Cone of Cold", "description": "Forces creatures in a 60-foot cone to make a DC 17 Constitution save, taking 8d8 cold damage on a failure." }
+    ],
+    "cr": "12",
+    "source": "core"
+  },
+  "planetar": {
+    "id": "planetar",
+    "name": "Planetar",
+    "size": "Large",
+    "type": "Celestial",
+    "ac": 19,
+    "hitDice": "22d10+132",
+    "speed": 40,
+    "flySpeed": 120,
+    "abilities": { "str": 24, "dex": 20, "con": 22, "int": 19, "wis": 22, "cha": 25 },
+    "actions": [
+      { "name": "Greatsword", "description": "Melee weapon attack: +13 to hit, 4d6+7 slashing damage plus 5d8 radiant damage." },
+      { "name": "Holy Fire", "description": "Ranged spell attack: forces creatures in a 10-foot radius to make a DC 18 Dexterity save, taking 7d10 radiant damage on a failure." }
+    ],
+    "cr": "16",
+    "source": "core"
+  },
+  "solar": {
+    "id": "solar",
+    "name": "Solar",
+    "size": "Large",
+    "type": "Celestial",
+    "ac": 21,
+    "hitDice": "26d10+208",
+    "speed": 50,
+    "flySpeed": 150,
+    "abilities": { "str": 26, "dex": 22, "con": 26, "int": 25, "wis": 25, "cha": 30 },
+    "actions": [
+      { "name": "Greatsword", "description": "Melee weapon attack: +18 to hit, 6d8+10 slashing damage plus 6d8 radiant damage." },
+      { "name": "Slaying Longbow", "description": "Ranged weapon attack: +14 to hit, 2d8+8 piercing damage plus 6d8 radiant damage, and a non-celestial target must succeed on a DC 20 Constitution save or die." }
+    ],
+    "cr": "23",
+    "source": "core"
+  }
+}

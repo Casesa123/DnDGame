@@ -1,0 +1,198 @@
+{
+  "human": {
+    "id": "human",
+    "name": "Human",
+    "abilityScoreIncrease": { "all": 1 },
+    "speed": 30,
+    "size": "Medium",
+    "languages": ["Common", "one language of choice"],
+    "traits": [
+      { "name": "Adaptable", "description": "Gains proficiency in one skill of choice, reflecting broad adaptability." }
+    ],
+    "source": "core"
+  },
+  "elf-high": {
+    "id": "elf-high",
+    "name": "Elf (High)",
+    "abilityScoreIncrease": { "dex": 2, "int": 1 },
+    "speed": 30,
+    "size": "Medium",
+    "languages": ["Common", "Elvish"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Fey Ancestry", "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects." },
+      { "name": "Trance", "description": "Does not need to sleep; instead meditates for 4 hours to gain the benefit of a long rest." },
+      { "name": "Keen Senses", "description": "Gains proficiency in the Perception skill." },
+      { "name": "Elf Weapon Training", "description": "Proficient with longswords, shortswords, shortbows, and longbows." },
+      { "name": "Cantrip", "description": "Knows one wizard cantrip of choice, cast using Intelligence." }
+    ],
+    "source": "core"
+  },
+  "elf-wood": {
+    "id": "elf-wood",
+    "name": "Elf (Wood)",
+    "abilityScoreIncrease": { "dex": 2, "wis": 1 },
+    "speed": 35,
+    "size": "Medium",
+    "languages": ["Common", "Elvish"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Fey Ancestry", "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects." },
+      { "name": "Trance", "description": "Does not need to sleep; instead meditates for 4 hours to gain the benefit of a long rest." },
+      { "name": "Mask of the Wild", "description": "Can attempt to hide even when only lightly obscured by natural phenomena." },
+      { "name": "Elf Weapon Training", "description": "Proficient with longswords, shortswords, shortbows, and longbows." },
+      { "name": "Fleet of Foot", "description": "Base walking speed increases to 35 feet." }
+    ],
+    "source": "core"
+  },
+  "dwarf-hill": {
+    "id": "dwarf-hill",
+    "name": "Dwarf (Hill)",
+    "abilityScoreIncrease": { "con": 2, "wis": 1 },
+    "speed": 25,
+    "size": "Medium",
+    "languages": ["Common", "Dwarvish"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Dwarven Resilience", "description": "Advantage on saving throws against poison, and resistance to poison damage." },
+      { "name": "Dwarven Combat Training", "description": "Proficient with battleaxes, handaxes, light hammers, and warhammers." },
+      { "name": "Tool Proficiency", "description": "Proficient with one type of artisan's tools of choice." },
+      { "name": "Stonecunning", "description": "Doubles proficiency bonus on history checks related to stonework." },
+      { "name": "Dwarven Toughness", "description": "Maximum hit points increase by 1, and by 1 again every time a level is gained." }
+    ],
+    "source": "core"
+  },
+  "dwarf-mountain": {
+    "id": "dwarf-mountain",
+    "name": "Dwarf (Mountain)",
+    "abilityScoreIncrease": { "con": 2, "str": 2 },
+    "speed": 25,
+    "size": "Medium",
+    "languages": ["Common", "Dwarvish"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Dwarven Resilience", "description": "Advantage on saving throws against poison, and resistance to poison damage." },
+      { "name": "Dwarven Combat Training", "description": "Proficient with battleaxes, handaxes, light hammers, and warhammers." },
+      { "name": "Stonecunning", "description": "Doubles proficiency bonus on history checks related to stonework." },
+      { "name": "Dwarven Armor Training", "description": "Proficient with light and medium armor." }
+    ],
+    "source": "core"
+  },
+  "halfling-lightfoot": {
+    "id": "halfling-lightfoot",
+    "name": "Halfling (Lightfoot)",
+    "abilityScoreIncrease": { "dex": 2, "cha": 1 },
+    "speed": 25,
+    "size": "Small",
+    "languages": ["Common", "Halfling"],
+    "traits": [
+      { "name": "Lucky", "description": "May reroll a natural 1 on an attack roll, ability check, or saving throw." },
+      { "name": "Brave", "description": "Advantage on saving throws against being frightened." },
+      { "name": "Nimble", "description": "Can move through the space of any creature that is a size larger." },
+      { "name": "Naturally Stealthy", "description": "Can attempt to hide even when obscured only by a creature at least one size larger." }
+    ],
+    "source": "core"
+  },
+  "halfling-stout": {
+    "id": "halfling-stout",
+    "name": "Halfling (Stout)",
+    "abilityScoreIncrease": { "dex": 2, "con": 1 },
+    "speed": 25,
+    "size": "Small",
+    "languages": ["Common", "Halfling"],
+    "traits": [
+      { "name": "Lucky", "description": "May reroll a natural 1 on an attack roll, ability check, or saving throw." },
+      { "name": "Brave", "description": "Advantage on saving throws against being frightened." },
+      { "name": "Nimble", "description": "Can move through the space of any creature that is a size larger." },
+      { "name": "Stout Resilience", "description": "Advantage on saving throws against poison, and resistance to poison damage." }
+    ],
+    "source": "core"
+  },
+  "dragonborn": {
+    "id": "dragonborn",
+    "name": "Dragonborn",
+    "abilityScoreIncrease": { "str": 2, "cha": 1 },
+    "speed": 30,
+    "size": "Medium",
+    "languages": ["Common", "Draconic"],
+    "traits": [
+      { "name": "Draconic Ancestry", "description": "Chooses a draconic lineage (e.g. red, blue, gold) that determines breath weapon and resistance damage type." },
+      { "name": "Breath Weapon", "description": "Can exhale destructive energy in a shape and damage type determined by draconic ancestry, once per short or long rest." },
+      { "name": "Damage Resistance", "description": "Resistance to the damage type associated with draconic ancestry." }
+    ],
+    "source": "core"
+  },
+  "gnome-forest": {
+    "id": "gnome-forest",
+    "name": "Gnome (Forest)",
+    "abilityScoreIncrease": { "int": 2, "dex": 1 },
+    "speed": 25,
+    "size": "Small",
+    "languages": ["Common", "Gnomish"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Gnome Cunning", "description": "Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic." },
+      { "name": "Natural Illusionist", "description": "Knows the minor illusion cantrip, cast using Intelligence." },
+      { "name": "Speak with Small Beasts", "description": "Can communicate simple ideas with Small or smaller beasts." }
+    ],
+    "source": "core"
+  },
+  "gnome-rock": {
+    "id": "gnome-rock",
+    "name": "Gnome (Rock)",
+    "abilityScoreIncrease": { "int": 2, "con": 1 },
+    "speed": 25,
+    "size": "Small",
+    "languages": ["Common", "Gnomish"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Gnome Cunning", "description": "Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic." },
+      { "name": "Artificer's Lore", "description": "Doubles proficiency bonus on history checks related to magic items, alchemical objects, or technological devices." },
+      { "name": "Tinker", "description": "Proficient with tinker's tools; can build tiny clockwork devices." }
+    ],
+    "source": "core"
+  },
+  "half-elf": {
+    "id": "half-elf",
+    "name": "Half-Elf",
+    "abilityScoreIncrease": { "cha": 2, "choice": { "count": 2, "amount": 1, "except": ["cha"] } },
+    "speed": 30,
+    "size": "Medium",
+    "languages": ["Common", "Elvish", "one language of choice"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Fey Ancestry", "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects." },
+      { "name": "Skill Versatility", "description": "Gains proficiency in two skills of choice." }
+    ],
+    "source": "core"
+  },
+  "half-orc": {
+    "id": "half-orc",
+    "name": "Half-Orc",
+    "abilityScoreIncrease": { "str": 2, "con": 1 },
+    "speed": 30,
+    "size": "Medium",
+    "languages": ["Common", "Orc"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Menacing", "description": "Gains proficiency in the Intimidation skill." },
+      { "name": "Relentless Endurance", "description": "When reduced to 0 hit points but not killed outright, can drop to 1 hit point instead, once per long rest." },
+      { "name": "Savage Attacks", "description": "On a critical hit with a melee weapon, rolls one additional damage die." }
+    ],
+    "source": "core"
+  },
+  "tiefling": {
+    "id": "tiefling",
+    "name": "Tiefling",
+    "abilityScoreIncrease": { "cha": 2, "int": 1 },
+    "speed": 30,
+    "size": "Medium",
+    "languages": ["Common", "Infernal"],
+    "traits": [
+      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
+      { "name": "Hellish Resistance", "description": "Resistance to fire damage." },
+      { "name": "Infernal Legacy", "description": "Knows the thaumaturgy cantrip; gains hellish rebuke at level 3 and darkness at level 5 (each castable once per long rest), all using Charisma." }
+    ],
+    "source": "core"
+  }
+}
