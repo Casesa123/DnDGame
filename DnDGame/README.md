@@ -9,8 +9,7 @@ voice/video with screen share) — all running from a single Node server you
 control. Characters and session state persist to disk, so restarting the
 server doesn't wipe a campaign in progress.
 
-## Run it locally
-
+## Run it locally - Requires Node.js installed
 ```
 cd server
 npm install
