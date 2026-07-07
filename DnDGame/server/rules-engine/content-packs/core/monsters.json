@@ -7,12 +7,26 @@
     "ac": 15,
     "hitDice": "2d6",
     "speed": 30,
-    "abilities": { "str": 8, "dex": 14, "con": 10, "int": 10, "wis": 8, "cha": 8 },
+    "abilities": {
+      "str": 8,
+      "dex": 14,
+      "con": 10,
+      "int": 10,
+      "wis": 8,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Scimitar", "description": "Melee weapon attack: +4 to hit, 1d6+2 slashing damage." },
-      { "name": "Shortbow", "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage." }
+      {
+        "name": "Scimitar",
+        "description": "Melee weapon attack: +4 to hit, 1d6+2 slashing damage."
+      },
+      {
+        "name": "Shortbow",
+        "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage."
+      }
     ],
     "cr": "1/4",
+    "description": "A small, wiry humanoid with sickly green skin, a flat face, and quick, grasping hands. Goblins swarm together in raiding packs, favoring ambush, dirty tricks, and sheer numbers over open courage.",
     "source": "core"
   },
   "skeleton": {
@@ -23,12 +37,26 @@
     "ac": 13,
     "hitDice": "2d8+4",
     "speed": 30,
-    "abilities": { "str": 10, "dex": 14, "con": 15, "int": 6, "wis": 8, "cha": 5 },
+    "abilities": {
+      "str": 10,
+      "dex": 14,
+      "con": 15,
+      "int": 6,
+      "wis": 8,
+      "cha": 5
+    },
     "actions": [
-      { "name": "Shortsword", "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage." },
-      { "name": "Shortbow", "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage." }
+      {
+        "name": "Shortsword",
+        "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage."
+      },
+      {
+        "name": "Shortbow",
+        "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage."
+      }
     ],
     "cr": "1/4",
+    "description": "The animated bones of a dead humanoid, bound together by dark magic and driven by the will of whatever raised it. Its hollow eye sockets flicker with cold light as it fights on tirelessly, feeling neither fear nor pain.",
     "source": "core"
   },
   "owlbear": {
@@ -39,12 +67,26 @@
     "ac": 13,
     "hitDice": "7d10+21",
     "speed": 40,
-    "abilities": { "str": 20, "dex": 12, "con": 17, "int": 3, "wis": 12, "cha": 7 },
+    "abilities": {
+      "str": 20,
+      "dex": 12,
+      "con": 17,
+      "int": 3,
+      "wis": 12,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Beak", "description": "Melee weapon attack: +7 to hit, 1d10+5 piercing damage." },
-      { "name": "Claws", "description": "Melee weapon attack: +7 to hit, 2d8+5 slashing damage." }
+      {
+        "name": "Beak",
+        "description": "Melee weapon attack: +7 to hit, 1d10+5 piercing damage."
+      },
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +7 to hit, 2d8+5 slashing damage."
+      }
     ],
     "cr": "3",
+    "description": "A monstrous hybrid of giant owl and bear, with a hooked beak, feathered forequarters, and a foul temper. It hunts with relentless ferocity, shrieking as it charges, and defends its lair to the death.",
     "source": "core"
   },
   "kobold": {
@@ -55,12 +97,26 @@
     "ac": 12,
     "hitDice": "2d6-2",
     "speed": 30,
-    "abilities": { "str": 7, "dex": 15, "con": 9, "int": 8, "wis": 7, "cha": 8 },
+    "abilities": {
+      "str": 7,
+      "dex": 15,
+      "con": 9,
+      "int": 8,
+      "wis": 7,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Dagger", "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage." },
-      { "name": "Sling", "description": "Ranged weapon attack: +4 to hit, 1d4+2 bludgeoning damage." }
+      {
+        "name": "Dagger",
+        "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage."
+      },
+      {
+        "name": "Sling",
+        "description": "Ranged weapon attack: +4 to hit, 1d4+2 bludgeoning damage."
+      }
     ],
     "cr": "1/8",
+    "description": "A diminutive, reptilian humanoid with rust-colored scales, a rat-like tail, and beady eyes. Cowardly alone, kobolds are cunning in numbers, riddling their warrens with traps and ambushing intruders from the dark.",
     "source": "core"
   },
   "giant-rat": {
@@ -71,11 +127,22 @@
     "ac": 12,
     "hitDice": "2d6",
     "speed": 30,
-    "abilities": { "str": 7, "dex": 15, "con": 11, "int": 2, "wis": 10, "cha": 4 },
+    "abilities": {
+      "str": 7,
+      "dex": 15,
+      "con": 11,
+      "int": 2,
+      "wis": 10,
+      "cha": 4
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage."
+      }
     ],
     "cr": "1/8",
+    "description": "An oversized rodent the size of a small dog, with matted fur, yellowed incisors, and a naked, twitching tail. Giant rats infest sewers and ruins, attacking in packs when cornered or hungry.",
     "source": "core"
   },
   "giant-frog": {
@@ -87,11 +154,22 @@
     "hitDice": "2d8",
     "speed": 30,
     "swimSpeed": 30,
-    "abilities": { "str": 12, "dex": 13, "con": 11, "int": 2, "wis": 10, "cha": 3 },
+    "abilities": {
+      "str": 12,
+      "dex": 13,
+      "con": 11,
+      "int": 2,
+      "wis": 10,
+      "cha": 3
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d6+1 piercing damage, and the target is grappled (escape DC 11)." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +3 to hit, 1d6+1 piercing damage, and the target is grappled (escape DC 11)."
+      }
     ],
     "cr": "1/4",
+    "description": "A bloated amphibian large enough to swallow a child whole, with bulging eyes and slick, mottled skin. It lurks half-submerged in marshes, lashing out with a sticky tongue to drag prey into its gullet.",
     "source": "core"
   },
   "stirge": {
@@ -103,11 +181,22 @@
     "hitDice": "2d4+2",
     "speed": 10,
     "flySpeed": 40,
-    "abilities": { "str": 4, "dex": 16, "con": 11, "int": 2, "wis": 8, "cha": 6 },
+    "abilities": {
+      "str": 4,
+      "dex": 16,
+      "con": 11,
+      "int": 2,
+      "wis": 8,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Proboscis", "description": "Melee weapon attack: +5 to hit, 1d4+3 piercing damage, and the stirge attaches and drains 1d4 blood damage each turn." }
+      {
+        "name": "Proboscis",
+        "description": "Melee weapon attack: +5 to hit, 1d4+3 piercing damage, and the stirge attaches and drains 1d4 blood damage each turn."
+      }
     ],
     "cr": "1/8",
+    "description": "A hideous cross between a bat and a mosquito, with leathery wings and a long, needle-like proboscis. Stirges dart in swarms to latch onto warm-blooded prey and drain its blood until bloated.",
     "source": "core"
   },
   "giant-crab": {
@@ -119,11 +208,22 @@
     "hitDice": "3d8+3",
     "speed": 30,
     "swimSpeed": 30,
-    "abilities": { "str": 13, "dex": 15, "con": 13, "int": 1, "wis": 9, "cha": 3 },
+    "abilities": {
+      "str": 13,
+      "dex": 15,
+      "con": 13,
+      "int": 1,
+      "wis": 9,
+      "cha": 3
+    },
     "actions": [
-      { "name": "Claw", "description": "Melee weapon attack: +3 to hit, 1d6+1 bludgeoning damage, and the target is grappled (escape DC 11)." }
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +3 to hit, 1d6+1 bludgeoning damage, and the target is grappled (escape DC 11)."
+      }
     ],
     "cr": "1/8",
+    "description": "A crustacean grown to monstrous size, armored in a thick shell and wielding pincers strong enough to snap bone. It scuttles along coastlines and riverbeds, seizing any creature that wanders too close.",
     "source": "core"
   },
   "giant-lizard": {
@@ -135,11 +235,22 @@
     "hitDice": "3d10+3",
     "speed": 30,
     "swimSpeed": 15,
-    "abilities": { "str": 15, "dex": 12, "con": 13, "int": 2, "wis": 10, "cha": 5 },
+    "abilities": {
+      "str": 15,
+      "dex": 12,
+      "con": 13,
+      "int": 2,
+      "wis": 10,
+      "cha": 5
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d8+2 piercing damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +4 to hit, 1d8+2 piercing damage."
+      }
     ],
     "cr": "1/4",
+    "description": "A hulking reptile with pebbled hide and a whip-like tail, often kept as a mount or beast of burden by cave-dwellers. Sluggish but strong, it clamps onto prey with powerful jaws.",
     "source": "core"
   },
   "giant-centipede": {
@@ -150,11 +261,22 @@
     "ac": 13,
     "hitDice": "2d6",
     "speed": 30,
-    "abilities": { "str": 5, "dex": 14, "con": 11, "int": 1, "wis": 7, "cha": 3 },
+    "abilities": {
+      "str": 5,
+      "dex": 14,
+      "con": 11,
+      "int": 1,
+      "wis": 7,
+      "cha": 3
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage, and the target must succeed on a DC 11 Constitution save or take 3d6 poison damage and become poisoned for 1 minute." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage, and the target must succeed on a DC 11 Constitution save or take 3d6 poison damage and become poisoned for 1 minute."
+      }
     ],
     "cr": "1/4",
+    "description": "A segmented arthropod the length of a person's arm, bristling with legs and dripping venom from curved mandibles. It skitters from cracks in stone to bite and poison anything that disturbs it.",
     "source": "core"
   },
   "jackal": {
@@ -165,11 +287,22 @@
     "ac": 12,
     "hitDice": "1d8+1",
     "speed": 40,
-    "abilities": { "str": 8, "dex": 15, "con": 11, "int": 3, "wis": 12, "cha": 6 },
+    "abilities": {
+      "str": 8,
+      "dex": 15,
+      "con": 11,
+      "int": 3,
+      "wis": 12,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d4+1 piercing damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +3 to hit, 1d4+1 piercing damage."
+      }
     ],
     "cr": "1/8",
+    "description": "A lean, scavenging canine with tan fur and sharp, alert eyes. Jackals roam in small packs across scrubland and desert, harrying weaker prey and squabbling over carrion.",
     "source": "core"
   },
   "wolf": {
@@ -180,11 +313,22 @@
     "ac": 13,
     "hitDice": "2d8+2",
     "speed": 40,
-    "abilities": { "str": 12, "dex": 15, "con": 12, "int": 3, "wis": 12, "cha": 6 },
+    "abilities": {
+      "str": 12,
+      "dex": 15,
+      "con": 12,
+      "int": 3,
+      "wis": 12,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 2d4+2 piercing damage, and the target must succeed on a DC 11 Strength save or be knocked prone." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +4 to hit, 2d4+2 piercing damage, and the target must succeed on a DC 11 Strength save or be knocked prone."
+      }
     ],
     "cr": "1/4",
+    "description": "A powerful pack hunter with a thick gray coat, keen senses, and bone-crushing jaws. Wolves work in coordinated packs, circling prey and lunging to drag it down.",
     "source": "core"
   },
   "giant-spider": {
@@ -195,12 +339,26 @@
     "ac": 14,
     "hitDice": "4d10+4",
     "speed": 30,
-    "abilities": { "str": 14, "dex": 16, "con": 12, "int": 2, "wis": 11, "cha": 4 },
+    "abilities": {
+      "str": 14,
+      "dex": 16,
+      "con": 12,
+      "int": 2,
+      "wis": 11,
+      "cha": 4
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 1d8+3 piercing damage, and the target must succeed on a DC 11 Constitution save or take 2d8 poison damage and become poisoned for 1 hour." },
-      { "name": "Web", "description": "Ranged weapon attack: +5 to hit, the target is restrained by webbing (escape DC 12)." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +5 to hit, 1d8+3 piercing damage, and the target must succeed on a DC 11 Constitution save or take 2d8 poison damage and become poisoned for 1 hour."
+      },
+      {
+        "name": "Web",
+        "description": "Ranged weapon attack: +5 to hit, the target is restrained by webbing (escape DC 12)."
+      }
     ],
     "cr": "1",
+    "description": "An enormous arachnid with bristling legs, gleaming fangs, and a bulbous, venom-filled body. It spins vast webs in dark places, then rushes forth to bite and bind ensnared prey.",
     "source": "core"
   },
   "flying-sword": {
@@ -212,11 +370,22 @@
     "hitDice": "5d6+5",
     "speed": 0,
     "flySpeed": 50,
-    "abilities": { "str": 12, "dex": 15, "con": 11, "int": 1, "wis": 5, "cha": 1 },
+    "abilities": {
+      "str": 12,
+      "dex": 15,
+      "con": 11,
+      "int": 1,
+      "wis": 5,
+      "cha": 1
+    },
     "actions": [
-      { "name": "Longsword", "description": "Melee weapon attack: +3 to hit, 1d8+2 slashing damage." }
+      {
+        "name": "Longsword",
+        "description": "Melee weapon attack: +3 to hit, 1d8+2 slashing damage."
+      }
     ],
     "cr": "1/4",
+    "description": "An ordinary-looking blade animated by magic, hovering and darting through the air on its own. Silent and single-minded, it slashes at intruders to guard a treasure or master.",
     "source": "core"
   },
   "animated-armor": {
@@ -227,11 +396,22 @@
     "ac": 18,
     "hitDice": "6d8+6",
     "speed": 25,
-    "abilities": { "str": 14, "dex": 11, "con": 13, "int": 1, "wis": 3, "cha": 1 },
+    "abilities": {
+      "str": 14,
+      "dex": 11,
+      "con": 13,
+      "int": 1,
+      "wis": 3,
+      "cha": 1
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +4 to hit, 1d6+2 bludgeoning damage." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +4 to hit, 1d6+2 bludgeoning damage."
+      }
     ],
     "cr": "1",
+    "description": "An empty suit of plate armor brought to life by enchantment, clanking as it stalks forward with no wearer inside. It stands sentinel until roused, then strikes with heavy metal fists.",
     "source": "core"
   },
   "zombie": {
@@ -242,11 +422,22 @@
     "ac": 8,
     "hitDice": "3d8+9",
     "speed": 20,
-    "abilities": { "str": 13, "dex": 6, "con": 16, "int": 3, "wis": 6, "cha": 5 },
+    "abilities": {
+      "str": 13,
+      "dex": 6,
+      "con": 16,
+      "int": 3,
+      "wis": 6,
+      "cha": 5
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +3 to hit, 1d6+1 bludgeoning damage." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +3 to hit, 1d6+1 bludgeoning damage."
+      }
     ],
     "cr": "1/4",
+    "description": "A shambling corpse reanimated by necromancy, its flesh rotting and its movements slow and clumsy. Mindlessly relentless, it lurches toward the living, absorbing wound after wound before it falls.",
     "source": "core"
   },
   "giant-toad": {
@@ -258,11 +449,22 @@
     "hitDice": "6d10+12",
     "speed": 20,
     "swimSpeed": 30,
-    "abilities": { "str": 15, "dex": 13, "con": 15, "int": 2, "wis": 10, "cha": 3 },
+    "abilities": {
+      "str": 15,
+      "dex": 13,
+      "con": 15,
+      "int": 2,
+      "wis": 10,
+      "cha": 3
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d10+3 piercing damage, and the target is swallowed if Medium or smaller." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +4 to hit, 1d10+3 piercing damage, and the target is swallowed if Medium or smaller."
+      }
     ],
     "cr": "1",
+    "description": "A massive amphibian with warty skin and a cavernous mouth, capable of swallowing a person whole. It squats in fetid swamps, ambushing prey with a lightning-fast tongue.",
     "source": "core"
   },
   "giant-octopus": {
@@ -274,11 +476,22 @@
     "hitDice": "8d10+8",
     "speed": 10,
     "swimSpeed": 60,
-    "abilities": { "str": 17, "dex": 13, "con": 13, "int": 4, "wis": 10, "cha": 4 },
+    "abilities": {
+      "str": 17,
+      "dex": 13,
+      "con": 13,
+      "int": 4,
+      "wis": 10,
+      "cha": 4
+    },
     "actions": [
-      { "name": "Tentacles", "description": "Melee weapon attack: +5 to hit, 1d6+3 bludgeoning damage, and the target is grappled (escape DC 13)." }
+      {
+        "name": "Tentacles",
+        "description": "Melee weapon attack: +5 to hit, 1d6+3 bludgeoning damage, and the target is grappled (escape DC 13)."
+      }
     ],
     "cr": "1",
+    "description": "A colossal cephalopod with writhing tentacles and an unnerving, intelligent gaze. It lurks in the deep, seizing prey with sucker-lined arms and dragging it down to be crushed and devoured.",
     "source": "core"
   },
   "swarm-of-rats": {
@@ -289,11 +502,22 @@
     "ac": 10,
     "hitDice": "6d8",
     "speed": 30,
-    "abilities": { "str": 9, "dex": 11, "con": 9, "int": 2, "wis": 10, "cha": 3 },
+    "abilities": {
+      "str": 9,
+      "dex": 11,
+      "con": 9,
+      "int": 2,
+      "wis": 10,
+      "cha": 3
+    },
     "actions": [
-      { "name": "Bites", "description": "Melee weapon attack: +2 to hit, 3d4 piercing damage, or 1d4 piercing damage if the swarm has half its hit points or fewer." }
+      {
+        "name": "Bites",
+        "description": "Melee weapon attack: +2 to hit, 3d4 piercing damage, or 1d4 piercing damage if the swarm has half its hit points or fewer."
+      }
     ],
     "cr": "1/4",
+    "description": "A seething mass of rodents moving as one heaving tide of fur, teeth, and beady eyes. The swarm pours over its victims, biting from every direction and scattering only when scattered.",
     "source": "core"
   },
   "swarm-of-insects": {
@@ -304,11 +528,22 @@
     "ac": 12,
     "hitDice": "7d8",
     "speed": 20,
-    "abilities": { "str": 3, "dex": 13, "con": 10, "int": 1, "wis": 7, "cha": 1 },
+    "abilities": {
+      "str": 3,
+      "dex": 13,
+      "con": 10,
+      "int": 1,
+      "wis": 7,
+      "cha": 1
+    },
     "actions": [
-      { "name": "Bites", "description": "Melee weapon attack: +3 to hit, 3d6 piercing damage, or 1d6 piercing damage if the swarm has half its hit points or fewer." }
+      {
+        "name": "Bites",
+        "description": "Melee weapon attack: +3 to hit, 3d6 piercing damage, or 1d6 piercing damage if the swarm has half its hit points or fewer."
+      }
     ],
     "cr": "1/2",
+    "description": "A dense, buzzing cloud of biting and stinging vermin that darkens the air. The swarm engulfs its targets, filling ears and mouths with a maddening, gnawing storm of tiny bodies.",
     "source": "core"
   },
   "awakened-shrub": {
@@ -319,11 +554,22 @@
     "ac": 9,
     "hitDice": "2d8",
     "speed": 20,
-    "abilities": { "str": 3, "dex": 8, "con": 11, "int": 10, "wis": 10, "cha": 6 },
+    "abilities": {
+      "str": 3,
+      "dex": 8,
+      "con": 11,
+      "int": 10,
+      "wis": 10,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Rake", "description": "Melee weapon attack: +1 to hit, 1d4-1 slashing damage." }
+      {
+        "name": "Rake",
+        "description": "Melee weapon attack: +1 to hit, 1d4-1 slashing damage."
+      }
     ],
     "cr": "0",
+    "description": "An ordinary bush granted a flicker of consciousness by magic, able to uproot itself and shuffle about. Gentle unless provoked, it rakes at threats with thorny branches.",
     "source": "core"
   },
   "hobgoblin": {
@@ -334,11 +580,22 @@
     "ac": 18,
     "hitDice": "2d8+2",
     "speed": 30,
-    "abilities": { "str": 13, "dex": 12, "con": 12, "int": 10, "wis": 10, "cha": 9 },
+    "abilities": {
+      "str": 13,
+      "dex": 12,
+      "con": 12,
+      "int": 10,
+      "wis": 10,
+      "cha": 9
+    },
     "actions": [
-      { "name": "Longsword", "description": "Melee weapon attack: +3 to hit, 1d8+1 slashing damage." }
+      {
+        "name": "Longsword",
+        "description": "Melee weapon attack: +3 to hit, 1d8+1 slashing damage."
+      }
     ],
     "cr": "1/2",
+    "description": "A tall, disciplined goblinoid with reddish-orange skin and a soldier's bearing. Hobgoblins fight in ordered ranks, prizing martial discipline and cruelty in equal measure.",
     "source": "core"
   },
   "bugbear": {
@@ -349,12 +606,26 @@
     "ac": 16,
     "hitDice": "5d8+5",
     "speed": 30,
-    "abilities": { "str": 15, "dex": 14, "con": 13, "int": 8, "wis": 11, "cha": 9 },
+    "abilities": {
+      "str": 15,
+      "dex": 14,
+      "con": 13,
+      "int": 8,
+      "wis": 11,
+      "cha": 9
+    },
     "actions": [
-      { "name": "Morningstar", "description": "Melee weapon attack: +4 to hit, 2d8+2 piercing damage." },
-      { "name": "Javelin", "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage." }
+      {
+        "name": "Morningstar",
+        "description": "Melee weapon attack: +4 to hit, 2d8+2 piercing damage."
+      },
+      {
+        "name": "Javelin",
+        "description": "Ranged weapon attack: +4 to hit, 1d6+2 piercing damage."
+      }
     ],
     "cr": "1",
+    "description": "A hulking, hairy goblinoid with long arms and a hunched frame, surprisingly stealthy for its size. Bugbears delight in ambush, crushing victims with brutal strength before they can react.",
     "source": "core"
   },
   "orc": {
@@ -365,12 +636,26 @@
     "ac": 13,
     "hitDice": "2d8+3",
     "speed": 30,
-    "abilities": { "str": 16, "dex": 12, "con": 16, "int": 7, "wis": 11, "cha": 10 },
+    "abilities": {
+      "str": 16,
+      "dex": 12,
+      "con": 16,
+      "int": 7,
+      "wis": 11,
+      "cha": 10
+    },
     "actions": [
-      { "name": "Greataxe", "description": "Melee weapon attack: +5 to hit, 1d12+3 slashing damage." },
-      { "name": "Javelin", "description": "Ranged weapon attack: +5 to hit, 1d6+3 piercing damage." }
+      {
+        "name": "Greataxe",
+        "description": "Melee weapon attack: +5 to hit, 1d12+3 slashing damage."
+      },
+      {
+        "name": "Javelin",
+        "description": "Ranged weapon attack: +5 to hit, 1d6+3 piercing damage."
+      }
     ],
     "cr": "1/2",
+    "description": "A brutish, muscular humanoid with grayish skin, jutting tusks, and a savage disposition. Orcs live for battle and plunder, hurling themselves at their foes with reckless fury.",
     "source": "core"
   },
   "gnoll": {
@@ -381,12 +666,26 @@
     "ac": 15,
     "hitDice": "5d8",
     "speed": 30,
-    "abilities": { "str": 14, "dex": 12, "con": 11, "int": 6, "wis": 10, "cha": 8 },
+    "abilities": {
+      "str": 14,
+      "dex": 12,
+      "con": 11,
+      "int": 6,
+      "wis": 10,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Spear", "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage." },
-      { "name": "Longbow", "description": "Ranged weapon attack: +3 to hit, 1d8+1 piercing damage." }
+      {
+        "name": "Spear",
+        "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage."
+      },
+      {
+        "name": "Longbow",
+        "description": "Ranged weapon attack: +3 to hit, 1d8+1 piercing damage."
+      }
     ],
     "cr": "1/2",
+    "description": "A hyena-headed humanoid that stands upright on digitigrade legs, driven by an insatiable hunger. Gnolls hunt in cackling war-bands, killing and devouring with frenzied cruelty.",
     "source": "core"
   },
   "lizardfolk": {
@@ -398,12 +697,26 @@
     "hitDice": "4d8+4",
     "speed": 30,
     "swimSpeed": 30,
-    "abilities": { "str": 15, "dex": 10, "con": 13, "int": 7, "wis": 12, "cha": 7 },
+    "abilities": {
+      "str": 15,
+      "dex": 10,
+      "con": 13,
+      "int": 7,
+      "wis": 12,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Spiked Shield", "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage." },
-      { "name": "Javelin", "description": "Melee or ranged weapon attack: +4 to hit, 1d6+2 piercing damage." }
+      {
+        "name": "Spiked Shield",
+        "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage."
+      },
+      {
+        "name": "Javelin",
+        "description": "Melee or ranged weapon attack: +4 to hit, 1d6+2 piercing damage."
+      }
     ],
     "cr": "1/2",
+    "description": "A scaled, cold-blooded reptilian humanoid with clawed hands and a swishing tail. Practical and inscrutable, lizardfolk defend their swamp territories with spears and grim efficiency.",
     "source": "core"
   },
   "merfolk": {
@@ -415,11 +728,22 @@
     "hitDice": "4d8",
     "speed": 10,
     "swimSpeed": 40,
-    "abilities": { "str": 10, "dex": 13, "con": 12, "int": 11, "wis": 11, "cha": 12 },
+    "abilities": {
+      "str": 10,
+      "dex": 13,
+      "con": 12,
+      "int": 11,
+      "wis": 11,
+      "cha": 12
+    },
     "actions": [
-      { "name": "Spear", "description": "Melee weapon attack: +2 to hit, 1d6 piercing damage." }
+      {
+        "name": "Spear",
+        "description": "Melee weapon attack: +2 to hit, 1d6 piercing damage."
+      }
     ],
     "cr": "1/8",
+    "description": "An aquatic humanoid with a human torso and a fish's tail, gliding gracefully through coastal waters. Merfolk are wary of surface-dwellers but fierce in defense of their reefs.",
     "source": "core"
   },
   "harpy": {
@@ -431,12 +755,26 @@
     "hitDice": "7d8+7",
     "speed": 20,
     "flySpeed": 40,
-    "abilities": { "str": 12, "dex": 13, "con": 12, "int": 7, "wis": 10, "cha": 13 },
+    "abilities": {
+      "str": 12,
+      "dex": 13,
+      "con": 12,
+      "int": 7,
+      "wis": 10,
+      "cha": 13
+    },
     "actions": [
-      { "name": "Claws", "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage." },
-      { "name": "Luring Song", "description": "Charms creatures within 30 feet that fail a DC 11 Wisdom save, drawing them toward the harpy." }
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage."
+      },
+      {
+        "name": "Luring Song",
+        "description": "Charms creatures within 30 feet that fail a DC 11 Wisdom save, drawing them toward the harpy."
+      }
     ],
     "cr": "1",
+    "description": "A foul creature with the body of a vulture and the face of a hag, reeking of rot. It lures travelers to their doom with an enchanting song, then falls upon them with raking talons.",
     "source": "core"
   },
   "ghoul": {
@@ -447,12 +785,26 @@
     "ac": 12,
     "hitDice": "5d8",
     "speed": 30,
-    "abilities": { "str": 13, "dex": 15, "con": 10, "int": 7, "wis": 10, "cha": 6 },
+    "abilities": {
+      "str": 13,
+      "dex": 15,
+      "con": 10,
+      "int": 7,
+      "wis": 10,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +2 to hit, 2d6+2 piercing damage." },
-      { "name": "Claws", "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage, and the target must succeed on a DC 10 Constitution save or be paralyzed for 1 minute." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +2 to hit, 2d6+2 piercing damage."
+      },
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage, and the target must succeed on a DC 10 Constitution save or be paralyzed for 1 minute."
+      }
     ],
     "cr": "1",
+    "description": "A gaunt, ravenous undead with gray flesh, blackened claws, and a hunger for living meat. Ghouls haunt graveyards and ruins, their touch bringing a paralyzing chill.",
     "source": "core"
   },
   "giant-scorpion": {
@@ -463,12 +815,26 @@
     "ac": 15,
     "hitDice": "7d10+14",
     "speed": 40,
-    "abilities": { "str": 15, "dex": 13, "con": 15, "int": 1, "wis": 9, "cha": 3 },
+    "abilities": {
+      "str": 15,
+      "dex": 13,
+      "con": 15,
+      "int": 1,
+      "wis": 9,
+      "cha": 3
+    },
     "actions": [
-      { "name": "Claw", "description": "Melee weapon attack: +4 to hit, 1d8+2 bludgeoning damage, and the target is grappled (escape DC 12)." },
-      { "name": "Sting", "description": "Melee weapon attack: +4 to hit, 1d10+2 piercing damage, and the target must succeed on a DC 12 Constitution save or take 4d10 poison damage." }
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +4 to hit, 1d8+2 bludgeoning damage, and the target is grappled (escape DC 12)."
+      },
+      {
+        "name": "Sting",
+        "description": "Melee weapon attack: +4 to hit, 1d10+2 piercing damage, and the target must succeed on a DC 12 Constitution save or take 4d10 poison damage."
+      }
     ],
     "cr": "3",
+    "description": "A chitinous predator the size of a horse, with grasping claws and a venom-tipped tail arched over its back. It burrows beneath desert sands, striking without warning.",
     "source": "core"
   },
   "giant-boar": {
@@ -479,11 +845,22 @@
     "ac": 12,
     "hitDice": "6d10+18",
     "speed": 40,
-    "abilities": { "str": 17, "dex": 10, "con": 17, "int": 2, "wis": 7, "cha": 5 },
+    "abilities": {
+      "str": 17,
+      "dex": 10,
+      "con": 17,
+      "int": 2,
+      "wis": 7,
+      "cha": 5
+    },
     "actions": [
-      { "name": "Tusk", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage." }
+      {
+        "name": "Tusk",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage."
+      }
     ],
     "cr": "2",
+    "description": "A massive wild pig with coarse bristles, curved tusks, and a foul temper. It charges recklessly through the underbrush, goring anything foolish enough to stand in its path.",
     "source": "core"
   },
   "dire-wolf": {
@@ -494,11 +871,22 @@
     "ac": 14,
     "hitDice": "5d10+10",
     "speed": 50,
-    "abilities": { "str": 17, "dex": 15, "con": 15, "int": 3, "wis": 12, "cha": 7 },
+    "abilities": {
+      "str": 17,
+      "dex": 15,
+      "con": 15,
+      "int": 3,
+      "wis": 12,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage, and the target must succeed on a DC 13 Strength save or be knocked prone." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage, and the target must succeed on a DC 13 Strength save or be knocked prone."
+      }
     ],
     "cr": "1",
+    "description": "A prehistoric wolf far larger and fiercer than its common kin, with a shaggy pelt and crushing jaws. Dire wolves lead ordinary wolf packs and bring down prey many times their size.",
     "source": "core"
   },
   "black-bear": {
@@ -510,12 +898,26 @@
     "hitDice": "3d8+3",
     "speed": 40,
     "swimSpeed": 30,
-    "abilities": { "str": 15, "dex": 10, "con": 13, "int": 2, "wis": 12, "cha": 7 },
+    "abilities": {
+      "str": 15,
+      "dex": 10,
+      "con": 13,
+      "int": 2,
+      "wis": 12,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d6+2 piercing damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +3 to hit, 1d4+2 slashing damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +3 to hit, 1d6+2 piercing damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +3 to hit, 1d4+2 slashing damage."
+      }
     ],
     "cr": "1/2",
+    "description": "A sturdy forest bear with dark shaggy fur and powerful forelimbs. Usually shy, it becomes dangerous when startled, cornered, or defending its cubs.",
     "source": "core"
   },
   "brown-bear": {
@@ -526,12 +928,26 @@
     "ac": 11,
     "hitDice": "6d10+18",
     "speed": 40,
-    "abilities": { "str": 19, "dex": 10, "con": 16, "int": 2, "wis": 13, "cha": 7 },
+    "abilities": {
+      "str": 19,
+      "dex": 10,
+      "con": 16,
+      "int": 2,
+      "wis": 13,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +6 to hit, 1d8+4 piercing damage." },
-      { "name": "Claws", "description": "Melee weapon attack: +6 to hit, 2d6+4 slashing damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +6 to hit, 1d8+4 piercing damage."
+      },
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +6 to hit, 2d6+4 slashing damage."
+      }
     ],
     "cr": "1",
+    "description": "A towering bear of great strength, with a humped back and claws that can rend flesh and timber alike. Territorial and short-tempered, it will maul any intruder near its range.",
     "source": "core"
   },
   "ogre": {
@@ -542,12 +958,26 @@
     "ac": 11,
     "hitDice": "7d10+21",
     "speed": 40,
-    "abilities": { "str": 19, "dex": 8, "con": 16, "int": 5, "wis": 7, "cha": 7 },
+    "abilities": {
+      "str": 19,
+      "dex": 8,
+      "con": 16,
+      "int": 5,
+      "wis": 7,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Greatclub", "description": "Melee weapon attack: +6 to hit, 2d8+4 bludgeoning damage." },
-      { "name": "Javelin", "description": "Ranged weapon attack: +6 to hit, 2d6+4 piercing damage." }
+      {
+        "name": "Greatclub",
+        "description": "Melee weapon attack: +6 to hit, 2d8+4 bludgeoning damage."
+      },
+      {
+        "name": "Javelin",
+        "description": "Ranged weapon attack: +6 to hit, 2d6+4 piercing damage."
+      }
     ],
     "cr": "2",
+    "description": "A dull-witted giant of enormous size, with a sloping brow, warty hide, and a club the size of a tree trunk. Ogres are gluttonous and cruel, smashing anything that annoys them.",
     "source": "core"
   },
   "ghast": {
@@ -558,12 +988,26 @@
     "ac": 13,
     "hitDice": "8d8+8",
     "speed": 30,
-    "abilities": { "str": 16, "dex": 17, "con": 13, "int": 11, "wis": 10, "cha": 8 },
+    "abilities": {
+      "str": 16,
+      "dex": 17,
+      "con": 13,
+      "int": 11,
+      "wis": 10,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 2d8+3 piercing damage." },
-      { "name": "Claws", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be paralyzed for 1 minute." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +5 to hit, 2d8+3 piercing damage."
+      },
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be paralyzed for 1 minute."
+      }
     ],
     "cr": "2",
+    "description": "A more virulent cousin of the ghoul, wreathed in a nauseating stench of decay. Cunning and vicious, it leads packs of lesser undead, its claws bringing paralysis.",
     "source": "core"
   },
   "specter": {
@@ -575,11 +1019,22 @@
     "hitDice": "5d8",
     "speed": 0,
     "flySpeed": 50,
-    "abilities": { "str": 1, "dex": 14, "con": 11, "int": 10, "wis": 10, "cha": 11 },
+    "abilities": {
+      "str": 1,
+      "dex": 14,
+      "con": 11,
+      "int": 10,
+      "wis": 10,
+      "cha": 11
+    },
     "actions": [
-      { "name": "Life Drain", "description": "Melee weapon attack: +4 to hit, 3d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+      {
+        "name": "Life Drain",
+        "description": "Melee weapon attack: +4 to hit, 3d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount."
+      }
     ],
     "cr": "1",
+    "description": "The seething remnant of a soul denied rest, a translucent, hateful shape drifting through walls and shadow. It drains the life from the living with a chilling touch.",
     "source": "core"
   },
   "will-o-wisp": {
@@ -591,11 +1046,22 @@
     "hitDice": "9d4+9",
     "speed": 0,
     "flySpeed": 50,
-    "abilities": { "str": 1, "dex": 28, "con": 10, "int": 13, "wis": 14, "cha": 11 },
+    "abilities": {
+      "str": 1,
+      "dex": 28,
+      "con": 10,
+      "int": 13,
+      "wis": 14,
+      "cha": 11
+    },
     "actions": [
-      { "name": "Shock", "description": "Melee weapon attack: +9 to hit, 2d8 lightning damage." }
+      {
+        "name": "Shock",
+        "description": "Melee weapon attack: +9 to hit, 2d8 lightning damage."
+      }
     ],
     "cr": "2",
+    "description": "A hovering mote of pale, ghostly light born of anguish and death. It lures travelers into bogs and traps with false hope, then shocks them with searing energy.",
     "source": "core"
   },
   "rust-monster": {
@@ -606,12 +1072,26 @@
     "ac": 14,
     "hitDice": "5d8+5",
     "speed": 40,
-    "abilities": { "str": 13, "dex": 12, "con": 13, "int": 2, "wis": 13, "cha": 6 },
+    "abilities": {
+      "str": 13,
+      "dex": 12,
+      "con": 13,
+      "int": 2,
+      "wis": 13,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d8+1 piercing damage." },
-      { "name": "Antennae", "description": "Melee weapon attack: +3 to hit, corrodes and destroys nonmagical metal armor or weapons touched." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +3 to hit, 1d8+1 piercing damage."
+      },
+      {
+        "name": "Antennae",
+        "description": "Melee weapon attack: +3 to hit, corrodes and destroys nonmagical metal armor or weapons touched."
+      }
     ],
     "cr": "1/2",
+    "description": "An armor-plated insectoid with feathery antennae and a segmented body, scuttling through dungeons. It craves metal, corroding weapons and armor to rust with a mere touch.",
     "source": "core"
   },
   "gelatinous-cube": {
@@ -622,11 +1102,22 @@
     "ac": 6,
     "hitDice": "8d10+40",
     "speed": 15,
-    "abilities": { "str": 14, "dex": 3, "con": 20, "int": 1, "wis": 6, "cha": 1 },
+    "abilities": {
+      "str": 14,
+      "dex": 3,
+      "con": 20,
+      "int": 1,
+      "wis": 6,
+      "cha": 1
+    },
     "actions": [
-      { "name": "Pseudopod", "description": "Melee weapon attack: +5 to hit, 3d6+2 acid damage, and the target is engulfed if the cube can accommodate it." }
+      {
+        "name": "Pseudopod",
+        "description": "Melee weapon attack: +5 to hit, 3d6+2 acid damage, and the target is engulfed if the cube can accommodate it."
+      }
     ],
     "cr": "2",
+    "description": "A near-transparent cube of quivering acidic ooze that fills a corridor as it creeps forward. It engulfs everything in its path, slowly dissolving flesh while bones and coins hang suspended within.",
     "source": "core"
   },
   "ochre-jelly": {
@@ -637,11 +1128,22 @@
     "ac": 8,
     "hitDice": "6d10+21",
     "speed": 10,
-    "abilities": { "str": 15, "dex": 6, "con": 18, "int": 2, "wis": 6, "cha": 1 },
+    "abilities": {
+      "str": 15,
+      "dex": 6,
+      "con": 18,
+      "int": 2,
+      "wis": 6,
+      "cha": 1
+    },
     "actions": [
-      { "name": "Pseudopod", "description": "Melee weapon attack: +5 to hit, 2d6+2 bludgeoning damage plus 1d6 acid damage." }
+      {
+        "name": "Pseudopod",
+        "description": "Melee weapon attack: +5 to hit, 2d6+2 bludgeoning damage plus 1d6 acid damage."
+      }
     ],
     "cr": "2",
+    "description": "A mound of translucent yellow slime that oozes along walls and floors in search of organic matter. Struck by a blade, it merely splits into smaller jellies that keep on feeding.",
     "source": "core"
   },
   "basilisk": {
@@ -652,11 +1154,22 @@
     "ac": 15,
     "hitDice": "6d8+12",
     "speed": 20,
-    "abilities": { "str": 16, "dex": 8, "con": 15, "int": 2, "wis": 8, "cha": 7 },
+    "abilities": {
+      "str": 16,
+      "dex": 8,
+      "con": 15,
+      "int": 2,
+      "wis": 8,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage, and the target must succeed on a DC 12 Constitution save or begin turning to stone." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage, and the target must succeed on a DC 12 Constitution save or begin turning to stone."
+      }
     ],
     "cr": "3",
+    "description": "A squat, eight-legged reptile with a bony frill and a lethal gaze. Its stare turns flesh to stone, littering its lair with the petrified statues of past victims.",
     "source": "core"
   },
   "ankheg": {
@@ -667,11 +1180,22 @@
     "ac": 14,
     "hitDice": "6d10+18",
     "speed": 30,
-    "abilities": { "str": 17, "dex": 11, "con": 17, "int": 1, "wis": 13, "cha": 6 },
+    "abilities": {
+      "str": 17,
+      "dex": 11,
+      "con": 17,
+      "int": 1,
+      "wis": 13,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage plus 1d6 acid damage, and the target is grappled (escape DC 13)." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 piercing damage plus 1d6 acid damage, and the target is grappled (escape DC 13)."
+      }
     ],
     "cr": "2",
+    "description": "A burrowing insectoid predator with a chitinous shell and acid-spraying mandibles. It tunnels beneath fields and forests, erupting to seize prey and drag it underground.",
     "source": "core"
   },
   "imp": {
@@ -683,11 +1207,22 @@
     "hitDice": "3d4+3",
     "speed": 20,
     "flySpeed": 40,
-    "abilities": { "str": 6, "dex": 17, "con": 13, "int": 11, "wis": 12, "cha": 14 },
+    "abilities": {
+      "str": 6,
+      "dex": 17,
+      "con": 13,
+      "int": 11,
+      "wis": 12,
+      "cha": 14
+    },
     "actions": [
-      { "name": "Sting", "description": "Melee weapon attack: +5 to hit, 1d4+3 piercing damage plus 3d6 poison damage." }
+      {
+        "name": "Sting",
+        "description": "Melee weapon attack: +5 to hit, 1d4+3 piercing damage plus 3d6 poison damage."
+      }
     ],
     "cr": "1",
+    "description": "A tiny, red-skinned devil with bat wings, a barbed tail, and a malicious grin. Imps serve as spies and familiars, shifting shape and striking with venomous stings.",
     "source": "core"
   },
   "quasit": {
@@ -698,11 +1233,22 @@
     "ac": 13,
     "hitDice": "4d4+4",
     "speed": 40,
-    "abilities": { "str": 5, "dex": 17, "con": 13, "int": 7, "wis": 10, "cha": 10 },
+    "abilities": {
+      "str": 5,
+      "dex": 17,
+      "con": 13,
+      "int": 7,
+      "wis": 10,
+      "cha": 10
+    },
     "actions": [
-      { "name": "Claw", "description": "Melee weapon attack: +4 to hit, 1d4+3 piercing damage plus 2d4 poison damage." }
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +4 to hit, 1d4+3 piercing damage plus 2d4 poison damage."
+      }
     ],
     "cr": "1",
+    "description": "A diminutive demon with warty skin, tiny horns, and a poisonous claw. Mischievous and cruel, quasits serve dark spellcasters and torment mortals for sport.",
     "source": "core"
   },
   "sea-hag": {
@@ -714,12 +1260,26 @@
     "hitDice": "7d8+14",
     "speed": 30,
     "swimSpeed": 40,
-    "abilities": { "str": 16, "dex": 13, "con": 14, "int": 12, "wis": 12, "cha": 13 },
+    "abilities": {
+      "str": 16,
+      "dex": 13,
+      "con": 14,
+      "int": 12,
+      "wis": 12,
+      "cha": 13
+    },
     "actions": [
-      { "name": "Claws", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage." },
-      { "name": "Horrific Appearance", "description": "Frightens creatures within 30 feet that fail a DC 11 Wisdom save." }
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage."
+      },
+      {
+        "name": "Horrific Appearance",
+        "description": "Frightens creatures within 30 feet that fail a DC 11 Wisdom save."
+      }
     ],
     "cr": "2",
+    "description": "A repulsive fey crone with slimy green skin, seaweed hair, and a face so hideous it can stop a heart. She dwells in coastal grottoes, delighting in misery and drowning.",
     "source": "core"
   },
   "green-hag": {
@@ -731,11 +1291,22 @@
     "hitDice": "9d8+18",
     "speed": 30,
     "swimSpeed": 30,
-    "abilities": { "str": 18, "dex": 12, "con": 16, "int": 13, "wis": 14, "cha": 14 },
+    "abilities": {
+      "str": 18,
+      "dex": 12,
+      "con": 16,
+      "int": 13,
+      "wis": 14,
+      "cha": 14
+    },
     "actions": [
-      { "name": "Claws", "description": "Melee weapon attack: +6 to hit, 2d8+4 slashing damage." }
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +6 to hit, 2d8+4 slashing damage."
+      }
     ],
     "cr": "3",
+    "description": "A cunning fey witch with warty green skin, tangled hair, and long yellow claws. She haunts dark forests and fens, weaving deceptions and reveling in the corruption of the innocent.",
     "source": "core"
   },
   "satyr": {
@@ -746,12 +1317,26 @@
     "ac": 14,
     "hitDice": "5d8+5",
     "speed": 40,
-    "abilities": { "str": 12, "dex": 16, "con": 13, "int": 12, "wis": 10, "cha": 14 },
+    "abilities": {
+      "str": 12,
+      "dex": 16,
+      "con": 13,
+      "int": 12,
+      "wis": 10,
+      "cha": 14
+    },
     "actions": [
-      { "name": "Ram", "description": "Melee weapon attack: +5 to hit, 2d4+3 bludgeoning damage." },
-      { "name": "Shortbow", "description": "Ranged weapon attack: +5 to hit, 1d6+3 piercing damage." }
+      {
+        "name": "Ram",
+        "description": "Melee weapon attack: +5 to hit, 2d4+3 bludgeoning damage."
+      },
+      {
+        "name": "Shortbow",
+        "description": "Ranged weapon attack: +5 to hit, 1d6+3 piercing damage."
+      }
     ],
     "cr": "1/2",
+    "description": "A carefree fey with a human torso, a goat's furry legs, and curling horns. Satyrs love wine, music, and revelry, though they turn dangerous when their woodland pleasures are threatened.",
     "source": "core"
   },
   "centaur": {
@@ -762,12 +1347,26 @@
     "ac": 12,
     "hitDice": "4d10+8",
     "speed": 50,
-    "abilities": { "str": 18, "dex": 14, "con": 14, "int": 9, "wis": 13, "cha": 11 },
+    "abilities": {
+      "str": 18,
+      "dex": 14,
+      "con": 14,
+      "int": 9,
+      "wis": 13,
+      "cha": 11
+    },
     "actions": [
-      { "name": "Pike", "description": "Melee weapon attack: +6 to hit, 1d10+4 piercing damage." },
-      { "name": "Hooves", "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage." }
+      {
+        "name": "Pike",
+        "description": "Melee weapon attack: +6 to hit, 1d10+4 piercing damage."
+      },
+      {
+        "name": "Hooves",
+        "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage."
+      }
     ],
     "cr": "2",
+    "description": "A proud creature with the upper body of a human joined to the powerful body of a horse. Centaurs roam open plains and forests, wary of strangers and fierce in defense of their herds.",
     "source": "core"
   },
   "pixie": {
@@ -779,12 +1378,26 @@
     "hitDice": "1d4",
     "speed": 10,
     "flySpeed": 30,
-    "abilities": { "str": 2, "dex": 20, "con": 8, "int": 10, "wis": 14, "cha": 15 },
+    "abilities": {
+      "str": 2,
+      "dex": 20,
+      "con": 8,
+      "int": 10,
+      "wis": 14,
+      "cha": 15
+    },
     "actions": [
-      { "name": "Shortsword", "description": "Melee weapon attack: +6 to hit, 1d6+5 piercing damage." },
-      { "name": "Sleep Arrow", "description": "Ranged weapon attack: +6 to hit, 1 piercing damage, and the target must succeed on a DC 10 Constitution save or fall unconscious for 1 minute." }
+      {
+        "name": "Shortsword",
+        "description": "Melee weapon attack: +6 to hit, 1d6+5 piercing damage."
+      },
+      {
+        "name": "Sleep Arrow",
+        "description": "Ranged weapon attack: +6 to hit, 1 piercing damage, and the target must succeed on a DC 10 Constitution save or fall unconscious for 1 minute."
+      }
     ],
     "cr": "1/4",
+    "description": "A tiny, gossamer-winged fey no taller than a hand, glowing with soft light. Playful and elusive, pixies weave enchantments and turn invisible to play tricks on wanderers.",
     "source": "core"
   },
   "blink-dog": {
@@ -795,11 +1408,22 @@
     "ac": 13,
     "hitDice": "4d8",
     "speed": 40,
-    "abilities": { "str": 12, "dex": 17, "con": 11, "int": 10, "wis": 13, "cha": 11 },
+    "abilities": {
+      "str": 12,
+      "dex": 17,
+      "con": 11,
+      "int": 10,
+      "wis": 13,
+      "cha": 11
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +3 to hit, 1d6+1 piercing damage. The blink dog can teleport up to 40 feet before or after the attack." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +3 to hit, 1d6+1 piercing damage. The blink dog can teleport up to 40 feet before or after the attack."
+      }
     ],
     "cr": "1/4",
+    "description": "An intelligent, fox-like canine with tawny fur and the ability to blink in and out of existence. Blink dogs hunt evil fey and teleport around foes to strike from unexpected angles.",
     "source": "core"
   },
   "giant-eagle": {
@@ -811,11 +1435,22 @@
     "hitDice": "4d10+8",
     "speed": 10,
     "flySpeed": 80,
-    "abilities": { "str": 16, "dex": 17, "con": 13, "int": 8, "wis": 14, "cha": 10 },
+    "abilities": {
+      "str": 16,
+      "dex": 17,
+      "con": 13,
+      "int": 8,
+      "wis": 14,
+      "cha": 10
+    },
     "actions": [
-      { "name": "Talons", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage." }
+      {
+        "name": "Talons",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage."
+      }
     ],
     "cr": "1",
+    "description": "A majestic raptor with a wingspan wide enough to carry off a person, and eyes of piercing intelligence. Giant eagles nest on high crags and defend their mountain territory fiercely.",
     "source": "core"
   },
   "hippogriff": {
@@ -827,12 +1462,26 @@
     "hitDice": "6d10+18",
     "speed": 40,
     "flySpeed": 60,
-    "abilities": { "str": 17, "dex": 13, "con": 16, "int": 2, "wis": 12, "cha": 8 },
+    "abilities": {
+      "str": 17,
+      "dex": 13,
+      "con": 16,
+      "int": 2,
+      "wis": 12,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Beak", "description": "Melee weapon attack: +5 to hit, 1d10+3 piercing damage." },
-      { "name": "Claws", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage." }
+      {
+        "name": "Beak",
+        "description": "Melee weapon attack: +5 to hit, 1d10+3 piercing damage."
+      },
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage."
+      }
     ],
     "cr": "1",
+    "description": "A winged beast with the foreparts of a giant eagle and the hindquarters of a horse. Fiercely protective of its young, it dives from the sky to rend prey with beak and talon.",
     "source": "core"
   },
   "manticore": {
@@ -844,12 +1493,26 @@
     "hitDice": "6d10+18",
     "speed": 30,
     "flySpeed": 50,
-    "abilities": { "str": 17, "dex": 16, "con": 17, "int": 7, "wis": 12, "cha": 8 },
+    "abilities": {
+      "str": 17,
+      "dex": 16,
+      "con": 17,
+      "int": 7,
+      "wis": 12,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 1d8+3 piercing damage." },
-      { "name": "Tail Spike", "description": "Ranged weapon attack: +5 to hit, 1d8+3 piercing damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +5 to hit, 1d8+3 piercing damage."
+      },
+      {
+        "name": "Tail Spike",
+        "description": "Ranged weapon attack: +5 to hit, 1d8+3 piercing damage."
+      }
     ],
     "cr": "3",
+    "description": "A monstrous creature with a lion's body, leathery bat wings, and a human-like face full of teeth. Its spiked tail launches volleys of deadly barbs at prey from a distance.",
     "source": "core"
   },
   "wight": {
@@ -860,12 +1523,26 @@
     "ac": 14,
     "hitDice": "8d8+16",
     "speed": 30,
-    "abilities": { "str": 15, "dex": 14, "con": 15, "int": 10, "wis": 13, "cha": 15 },
+    "abilities": {
+      "str": 15,
+      "dex": 14,
+      "con": 15,
+      "int": 10,
+      "wis": 13,
+      "cha": 15
+    },
     "actions": [
-      { "name": "Longsword", "description": "Melee weapon attack: +5 to hit, 1d8+3 slashing damage." },
-      { "name": "Life Drain", "description": "Melee weapon attack: +5 to hit, 1d6+3 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+      {
+        "name": "Longsword",
+        "description": "Melee weapon attack: +5 to hit, 1d8+3 slashing damage."
+      },
+      {
+        "name": "Life Drain",
+        "description": "Melee weapon attack: +5 to hit, 1d6+3 necrotic damage, and the target's hit point maximum is reduced by an equal amount."
+      }
     ],
     "cr": "3",
+    "description": "The corpse of a once-mighty warrior, animated by hatred and dark power, retaining cunning in undeath. Its touch drains the very life from the living, who may rise as zombies under its command.",
     "source": "core"
   },
   "wraith": {
@@ -877,11 +1554,22 @@
     "hitDice": "9d8+27",
     "speed": 0,
     "flySpeed": 60,
-    "abilities": { "str": 6, "dex": 16, "con": 16, "int": 12, "wis": 14, "cha": 15 },
+    "abilities": {
+      "str": 6,
+      "dex": 16,
+      "con": 16,
+      "int": 12,
+      "wis": 14,
+      "cha": 15
+    },
     "actions": [
-      { "name": "Life Drain", "description": "Melee weapon attack: +6 to hit, 4d8+3 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+      {
+        "name": "Life Drain",
+        "description": "Melee weapon attack: +6 to hit, 4d8+3 necrotic damage, and the target's hit point maximum is reduced by an equal amount."
+      }
     ],
     "cr": "5",
+    "description": "A malevolent spirit of pure darkness and hatred, a hollow shape wreathed in shadow that drifts silently through the night. Its touch withers life away and leaves ruin in its wake.",
     "source": "core"
   },
   "minotaur": {
@@ -892,12 +1580,26 @@
     "ac": 14,
     "hitDice": "6d10+18",
     "speed": 40,
-    "abilities": { "str": 18, "dex": 11, "con": 16, "int": 6, "wis": 16, "cha": 9 },
+    "abilities": {
+      "str": 18,
+      "dex": 11,
+      "con": 16,
+      "int": 6,
+      "wis": 16,
+      "cha": 9
+    },
     "actions": [
-      { "name": "Greataxe", "description": "Melee weapon attack: +6 to hit, 2d12+4 slashing damage." },
-      { "name": "Gore", "description": "Melee weapon attack: +6 to hit, 2d8+4 piercing damage." }
+      {
+        "name": "Greataxe",
+        "description": "Melee weapon attack: +6 to hit, 2d12+4 slashing damage."
+      },
+      {
+        "name": "Gore",
+        "description": "Melee weapon attack: +6 to hit, 2d8+4 piercing damage."
+      }
     ],
     "cr": "3",
+    "description": "A towering brute with the head of a bull and the body of a massive man, wielding a great axe. It stalks labyrinths and ruins, charging with lowered horns to gore its prey.",
     "source": "core"
   },
   "gargoyle": {
@@ -909,12 +1611,26 @@
     "hitDice": "4d8+8",
     "speed": 30,
     "flySpeed": 60,
-    "abilities": { "str": 15, "dex": 11, "con": 16, "int": 6, "wis": 11, "cha": 7 },
+    "abilities": {
+      "str": 15,
+      "dex": 11,
+      "con": 16,
+      "int": 6,
+      "wis": 11,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Claws", "description": "Melee weapon attack: +4 to hit, 2d6+2 slashing damage." },
-      { "name": "Bite", "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage." }
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +4 to hit, 2d6+2 slashing damage."
+      },
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +4 to hit, 1d6+2 piercing damage."
+      }
     ],
     "cr": "2",
+    "description": "A creature of animated stone resembling a grotesque winged statue, able to sit utterly motionless among ordinary carvings. It springs to sudden, savage life to ambush the unwary.",
     "source": "core"
   },
   "banshee": {
@@ -926,12 +1642,26 @@
     "hitDice": "13d8",
     "speed": 0,
     "flySpeed": 40,
-    "abilities": { "str": 1, "dex": 14, "con": 10, "int": 12, "wis": 11, "cha": 17 },
+    "abilities": {
+      "str": 1,
+      "dex": 14,
+      "con": 10,
+      "int": 12,
+      "wis": 11,
+      "cha": 17
+    },
     "actions": [
-      { "name": "Corrupting Touch", "description": "Melee weapon attack: +4 to hit, 3d6 necrotic damage." },
-      { "name": "Wail", "description": "Forces creatures within 30 feet to make a DC 13 Constitution save, taking 3d10 psychic damage on a failure." }
+      {
+        "name": "Corrupting Touch",
+        "description": "Melee weapon attack: +4 to hit, 3d6 necrotic damage."
+      },
+      {
+        "name": "Wail",
+        "description": "Forces creatures within 30 feet to make a DC 13 Constitution save, taking 3d10 psychic damage on a failure."
+      }
     ],
     "cr": "4",
+    "description": "The tormented spirit of a once-beautiful elf, now a gaunt, wailing apparition bound to the place of her sorrow. Her keening wail can stop the hearts of all who hear it.",
     "source": "core"
   },
   "mummy": {
@@ -942,11 +1672,22 @@
     "ac": 11,
     "hitDice": "9d8+27",
     "speed": 20,
-    "abilities": { "str": 16, "dex": 8, "con": 17, "int": 6, "wis": 10, "cha": 12 },
+    "abilities": {
+      "str": 16,
+      "dex": 8,
+      "con": 17,
+      "int": 6,
+      "wis": 10,
+      "cha": 12
+    },
     "actions": [
-      { "name": "Rotting Fist", "description": "Melee weapon attack: +5 to hit, 2d6+3 bludgeoning damage plus 1d6 necrotic damage, and the target must succeed on a DC 13 Constitution save or be cursed with mummy rot." }
+      {
+        "name": "Rotting Fist",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 bludgeoning damage plus 1d6 necrotic damage, and the target must succeed on a DC 13 Constitution save or be cursed with mummy rot."
+      }
     ],
     "cr": "3",
+    "description": "A desiccated corpse wrapped in ancient burial linens, animated to guard a tomb for eternity. It lurches forward with a rotting fist, spreading a wasting curse to any it strikes.",
     "source": "core"
   },
   "doppelganger": {
@@ -957,11 +1698,22 @@
     "ac": 14,
     "hitDice": "8d8+16",
     "speed": 30,
-    "abilities": { "str": 11, "dex": 18, "con": 14, "int": 11, "wis": 12, "cha": 14 },
+    "abilities": {
+      "str": 11,
+      "dex": 18,
+      "con": 14,
+      "int": 11,
+      "wis": 12,
+      "cha": 14
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage."
+      }
     ],
     "cr": "3",
+    "description": "A gray-skinned shapeshifter with blank features and unsettling eyes in its natural form. It perfectly mimics other humanoids, infiltrating and manipulating from within before it strikes.",
     "source": "core"
   },
   "ettin": {
@@ -972,12 +1724,26 @@
     "ac": 12,
     "hitDice": "10d10+30",
     "speed": 40,
-    "abilities": { "str": 21, "dex": 8, "con": 17, "int": 6, "wis": 10, "cha": 8 },
+    "abilities": {
+      "str": 21,
+      "dex": 8,
+      "con": 17,
+      "int": 6,
+      "wis": 10,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Battleaxe", "description": "Melee weapon attack: +7 to hit, 2d8+5 slashing damage." },
-      { "name": "Morningstar", "description": "Melee weapon attack: +7 to hit, 2d8+5 piercing damage." }
+      {
+        "name": "Battleaxe",
+        "description": "Melee weapon attack: +7 to hit, 2d8+5 slashing damage."
+      },
+      {
+        "name": "Morningstar",
+        "description": "Melee weapon attack: +7 to hit, 2d8+5 piercing damage."
+      }
     ],
     "cr": "4",
+    "description": "A two-headed giant with filthy hide and a foul stench, each head bickering constantly with the other. Despite its squabbling, the ettin is a savage and unpredictable fighter.",
     "source": "core"
   },
   "cyclops": {
@@ -988,12 +1754,26 @@
     "ac": 14,
     "hitDice": "11d12+44",
     "speed": 30,
-    "abilities": { "str": 22, "dex": 11, "con": 19, "int": 8, "wis": 12, "cha": 10 },
+    "abilities": {
+      "str": 22,
+      "dex": 11,
+      "con": 19,
+      "int": 8,
+      "wis": 12,
+      "cha": 10
+    },
     "actions": [
-      { "name": "Greatclub", "description": "Melee weapon attack: +9 to hit, 3d8+6 bludgeoning damage." },
-      { "name": "Rock", "description": "Ranged weapon attack: +9 to hit, 3d10+6 bludgeoning damage." }
+      {
+        "name": "Greatclub",
+        "description": "Melee weapon attack: +9 to hit, 3d8+6 bludgeoning damage."
+      },
+      {
+        "name": "Rock",
+        "description": "Ranged weapon attack: +9 to hit, 3d10+6 bludgeoning damage."
+      }
     ],
     "cr": "6",
+    "description": "A one-eyed giant of immense size and strength, but poor depth perception. Solitary and short-tempered, it hurls boulders and swings a massive club at any who disturb its lair.",
     "source": "core"
   },
   "troll": {
@@ -1004,12 +1784,26 @@
     "ac": 15,
     "hitDice": "8d10+40",
     "speed": 30,
-    "abilities": { "str": 18, "dex": 13, "con": 20, "int": 7, "wis": 9, "cha": 7 },
+    "abilities": {
+      "str": 18,
+      "dex": 13,
+      "con": 20,
+      "int": 7,
+      "wis": 9,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +7 to hit, 1d6+4 piercing damage." },
-      { "name": "Claws", "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage. The troll regenerates 10 hit points at the start of its turn unless it took fire or acid damage since then." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +7 to hit, 1d6+4 piercing damage."
+      },
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage. The troll regenerates 10 hit points at the start of its turn unless it took fire or acid damage since then."
+      }
     ],
     "cr": "5",
+    "description": "A gangly, rubbery-skinned giant with a hunched posture, long claws, and a ravenous appetite. Its wounds knit shut almost instantly, and only fire or acid can stop its regeneration.",
     "source": "core"
   },
   "chimera": {
@@ -1021,13 +1815,30 @@
     "hitDice": "12d10+36",
     "speed": 30,
     "flySpeed": 50,
-    "abilities": { "str": 19, "dex": 11, "con": 19, "int": 3, "wis": 14, "cha": 10 },
+    "abilities": {
+      "str": 19,
+      "dex": 11,
+      "con": 19,
+      "int": 3,
+      "wis": 14,
+      "cha": 10
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +7 to hit, 2d6+4 piercing damage." },
-      { "name": "Horns", "description": "Melee weapon attack: +7 to hit, 1d12+4 bludgeoning damage." },
-      { "name": "Fire Breath", "description": "Forces creatures in a 15-foot cone to make a DC 15 Dexterity save, taking 7d6 fire damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +7 to hit, 2d6+4 piercing damage."
+      },
+      {
+        "name": "Horns",
+        "description": "Melee weapon attack: +7 to hit, 1d12+4 bludgeoning damage."
+      },
+      {
+        "name": "Fire Breath",
+        "description": "Forces creatures in a 15-foot cone to make a DC 15 Dexterity save, taking 7d6 fire damage on a failure."
+      }
     ],
     "cr": "6",
+    "description": "A nightmarish fusion of lion, goat, and dragon, bearing three heads on a single body. It attacks with fang, horn, and a searing gout of dragon-fire, driven by savage hunger.",
     "source": "core"
   },
   "griffon": {
@@ -1039,12 +1850,26 @@
     "hitDice": "7d10+14",
     "speed": 30,
     "flySpeed": 80,
-    "abilities": { "str": 18, "dex": 15, "con": 14, "int": 2, "wis": 13, "cha": 8 },
+    "abilities": {
+      "str": 18,
+      "dex": 15,
+      "con": 14,
+      "int": 2,
+      "wis": 13,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Beak", "description": "Melee weapon attack: +6 to hit, 1d8+4 piercing damage." },
-      { "name": "Claws", "description": "Melee weapon attack: +6 to hit, 2d6+4 slashing damage." }
+      {
+        "name": "Beak",
+        "description": "Melee weapon attack: +6 to hit, 1d8+4 piercing damage."
+      },
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +6 to hit, 2d6+4 slashing damage."
+      }
     ],
     "cr": "2",
+    "description": "A noble beast with the head, wings, and talons of an eagle joined to a lion's body. Griffons nest on high cliffs and prize horseflesh above all, diving on prey from great heights.",
     "source": "core"
   },
   "pegasus": {
@@ -1056,11 +1881,22 @@
     "hitDice": "6d10+12",
     "speed": 60,
     "flySpeed": 90,
-    "abilities": { "str": 18, "dex": 15, "con": 14, "int": 10, "wis": 15, "cha": 13 },
+    "abilities": {
+      "str": 18,
+      "dex": 15,
+      "con": 14,
+      "int": 10,
+      "wis": 15,
+      "cha": 13
+    },
     "actions": [
-      { "name": "Hooves", "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage." }
+      {
+        "name": "Hooves",
+        "description": "Melee weapon attack: +6 to hit, 2d6+4 bludgeoning damage."
+      }
     ],
     "cr": "2",
+    "description": "A graceful winged horse with a shimmering coat, radiating an aura of goodness. Wild and free, pegasi soar the heavens and shun those with wicked hearts.",
     "source": "core"
   },
   "unicorn": {
@@ -1071,12 +1907,26 @@
     "ac": 12,
     "hitDice": "8d10+24",
     "speed": 50,
-    "abilities": { "str": 18, "dex": 14, "con": 15, "int": 11, "wis": 17, "cha": 16 },
+    "abilities": {
+      "str": 18,
+      "dex": 14,
+      "con": 15,
+      "int": 11,
+      "wis": 17,
+      "cha": 16
+    },
     "actions": [
-      { "name": "Horn", "description": "Melee weapon attack: +7 to hit, 1d8+4 piercing damage." },
-      { "name": "Hooves", "description": "Melee weapon attack: +7 to hit, 2d6+4 bludgeoning damage." }
+      {
+        "name": "Horn",
+        "description": "Melee weapon attack: +7 to hit, 1d8+4 piercing damage."
+      },
+      {
+        "name": "Hooves",
+        "description": "Melee weapon attack: +7 to hit, 2d6+4 bludgeoning damage."
+      }
     ],
     "cr": "5",
+    "description": "A resplendent white horse crowned with a single spiraling horn, guardian of enchanted forests. Its presence heals and blesses the pure, while its horn skewers those who defile its domain.",
     "source": "core"
   },
   "hydra": {
@@ -1088,11 +1938,22 @@
     "hitDice": "15d12+75",
     "speed": 30,
     "swimSpeed": 30,
-    "abilities": { "str": 20, "dex": 12, "con": 20, "int": 2, "wis": 10, "cha": 7 },
+    "abilities": {
+      "str": 20,
+      "dex": 12,
+      "con": 20,
+      "int": 2,
+      "wis": 10,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Bite (x5 heads)", "description": "Melee weapon attack: +9 to hit, 1d10+5 piercing damage per head." }
+      {
+        "name": "Bite (x5 heads)",
+        "description": "Melee weapon attack: +9 to hit, 1d10+5 piercing damage per head."
+      }
     ],
     "cr": "8",
+    "description": "A serpentine reptile with a scaled body and five snapping heads on long, weaving necks. Sever a head and two grow back in its place, making it a relentless, near-unkillable foe.",
     "source": "core"
   },
   "stone-giant": {
@@ -1103,12 +1964,26 @@
     "ac": 17,
     "hitDice": "14d12+56",
     "speed": 40,
-    "abilities": { "str": 23, "dex": 15, "con": 20, "int": 10, "wis": 12, "cha": 9 },
+    "abilities": {
+      "str": 23,
+      "dex": 15,
+      "con": 20,
+      "int": 10,
+      "wis": 12,
+      "cha": 9
+    },
     "actions": [
-      { "name": "Greatclub", "description": "Melee weapon attack: +12 to hit, 3d8+9 bludgeoning damage." },
-      { "name": "Rock", "description": "Ranged weapon attack: +12 to hit, 4d10+9 bludgeoning damage." }
+      {
+        "name": "Greatclub",
+        "description": "Melee weapon attack: +12 to hit, 3d8+9 bludgeoning damage."
+      },
+      {
+        "name": "Rock",
+        "description": "Ranged weapon attack: +12 to hit, 4d10+9 bludgeoning damage."
+      }
     ],
     "cr": "7",
+    "description": "A lean, gray-skinned giant with an artist's grace, dwelling deep in mountain caverns. Reclusive and contemplative, it hurls boulders with astonishing accuracy when disturbed.",
     "source": "core"
   },
   "frost-giant": {
@@ -1119,12 +1994,26 @@
     "ac": 15,
     "hitDice": "12d12+48",
     "speed": 40,
-    "abilities": { "str": 23, "dex": 9, "con": 21, "int": 9, "wis": 10, "cha": 12 },
+    "abilities": {
+      "str": 23,
+      "dex": 9,
+      "con": 21,
+      "int": 9,
+      "wis": 10,
+      "cha": 12
+    },
     "actions": [
-      { "name": "Greataxe", "description": "Melee weapon attack: +9 to hit, 3d12+6 slashing damage." },
-      { "name": "Rock", "description": "Ranged weapon attack: +9 to hit, 4d10+6 bludgeoning damage." }
+      {
+        "name": "Greataxe",
+        "description": "Melee weapon attack: +9 to hit, 3d12+6 slashing damage."
+      },
+      {
+        "name": "Rock",
+        "description": "Ranged weapon attack: +9 to hit, 4d10+6 bludgeoning damage."
+      }
     ],
     "cr": "8",
+    "description": "A towering giant with blue-white skin, a shaggy beard rimed with ice, and immense raw strength. Frost giants raid from frozen holds, valuing might above all and taking what they please.",
     "source": "core"
   },
   "fire-giant": {
@@ -1135,12 +2024,26 @@
     "ac": 18,
     "hitDice": "13d12+65",
     "speed": 30,
-    "abilities": { "str": 25, "dex": 9, "con": 23, "int": 10, "wis": 14, "cha": 13 },
+    "abilities": {
+      "str": 25,
+      "dex": 9,
+      "con": 23,
+      "int": 10,
+      "wis": 14,
+      "cha": 13
+    },
     "actions": [
-      { "name": "Greatsword", "description": "Melee weapon attack: +11 to hit, 6d6+7 slashing damage." },
-      { "name": "Rock", "description": "Ranged weapon attack: +11 to hit, 4d10+7 bludgeoning damage." }
+      {
+        "name": "Greatsword",
+        "description": "Melee weapon attack: +11 to hit, 6d6+7 slashing damage."
+      },
+      {
+        "name": "Rock",
+        "description": "Ranged weapon attack: +11 to hit, 4d10+7 bludgeoning damage."
+      }
     ],
     "cr": "9",
+    "description": "A massive giant with coal-black skin, flaming hair, and the build of a blacksmith. Disciplined and militaristic, fire giants forge weapons in volcanic strongholds and crush foes with brutal precision.",
     "source": "core"
   },
   "hill-giant": {
@@ -1151,12 +2054,26 @@
     "ac": 13,
     "hitDice": "10d12+40",
     "speed": 40,
-    "abilities": { "str": 21, "dex": 8, "con": 19, "int": 5, "wis": 9, "cha": 6 },
+    "abilities": {
+      "str": 21,
+      "dex": 8,
+      "con": 19,
+      "int": 5,
+      "wis": 9,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Greatclub", "description": "Melee weapon attack: +8 to hit, 3d8+5 bludgeoning damage." },
-      { "name": "Rock", "description": "Ranged weapon attack: +8 to hit, 3d10+5 bludgeoning damage." }
+      {
+        "name": "Greatclub",
+        "description": "Melee weapon attack: +8 to hit, 3d8+5 bludgeoning damage."
+      },
+      {
+        "name": "Rock",
+        "description": "Ranged weapon attack: +8 to hit, 3d10+5 bludgeoning damage."
+      }
     ],
     "cr": "5",
+    "description": "A crude, enormously fat giant with leathery skin and a dull, gluttonous mind. Hill giants smash and eat whatever they can catch, driven by an endless, mindless hunger.",
     "source": "core"
   },
   "cloud-giant": {
@@ -1167,12 +2084,26 @@
     "ac": 14,
     "hitDice": "15d12+75",
     "speed": 40,
-    "abilities": { "str": 27, "dex": 10, "con": 21, "int": 12, "wis": 16, "cha": 16 },
+    "abilities": {
+      "str": 27,
+      "dex": 10,
+      "con": 21,
+      "int": 12,
+      "wis": 16,
+      "cha": 16
+    },
     "actions": [
-      { "name": "Morningstar", "description": "Melee weapon attack: +12 to hit, 3d8+8 piercing damage." },
-      { "name": "Rock", "description": "Ranged weapon attack: +12 to hit, 4d10+8 bludgeoning damage." }
+      {
+        "name": "Morningstar",
+        "description": "Melee weapon attack: +12 to hit, 3d8+8 piercing damage."
+      },
+      {
+        "name": "Rock",
+        "description": "Ranged weapon attack: +12 to hit, 4d10+8 bludgeoning damage."
+      }
     ],
     "cr": "9",
+    "description": "A stately giant with skin of pale sky-blue and an air of noble arrogance, dwelling in castles among the clouds. Cloud giants scheme and feast, viewing lesser folk as amusements or servants.",
     "source": "core"
   },
   "vampire-spawn": {
@@ -1184,12 +2115,26 @@
     "hitDice": "11d8+22",
     "speed": 30,
     "flySpeed": 30,
-    "abilities": { "str": 16, "dex": 16, "con": 15, "int": 11, "wis": 10, "cha": 12 },
+    "abilities": {
+      "str": 16,
+      "dex": 16,
+      "con": 15,
+      "int": 11,
+      "wis": 10,
+      "cha": 12
+    },
     "actions": [
-      { "name": "Claws", "description": "Melee weapon attack: +6 to hit, 2d4+3 slashing damage." },
-      { "name": "Bite", "description": "Melee weapon attack: +6 to hit, 1d6+3 piercing damage plus 1d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +6 to hit, 2d4+3 slashing damage."
+      },
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +6 to hit, 1d6+3 piercing damage plus 1d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount."
+      }
     ],
     "cr": "5",
+    "description": "A lesser vampire, thrall to its creator, with pale skin, red eyes, and fangs. Driven by bloodlust yet lacking free will, it hunts the night at its master's bidding.",
     "source": "core"
   },
   "werewolf": {
@@ -1200,12 +2145,26 @@
     "ac": 12,
     "hitDice": "9d8+9",
     "speed": 30,
-    "abilities": { "str": 15, "dex": 13, "con": 14, "int": 10, "wis": 11, "cha": 10 },
+    "abilities": {
+      "str": 15,
+      "dex": 13,
+      "con": 14,
+      "int": 10,
+      "wis": 11,
+      "cha": 10
+    },
     "actions": [
-      { "name": "Bite (hybrid form)", "description": "Melee weapon attack: +4 to hit, 1d8+2 piercing damage, and the target must succeed on a DC 12 Constitution save or be cursed with lycanthropy." },
-      { "name": "Claws", "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage." }
+      {
+        "name": "Bite (hybrid form)",
+        "description": "Melee weapon attack: +4 to hit, 1d8+2 piercing damage, and the target must succeed on a DC 12 Constitution save or be cursed with lycanthropy."
+      },
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +4 to hit, 2d4+2 slashing damage."
+      }
     ],
     "cr": "3",
+    "description": "A humanoid cursed with lycanthropy, able to shift into a savage wolf or a monstrous man-wolf hybrid. In beast form it turns feral and bloodthirsty, spreading its curse with every bite.",
     "source": "core"
   },
   "weretiger": {
@@ -1216,12 +2175,26 @@
     "ac": 12,
     "hitDice": "9d8+18",
     "speed": 30,
-    "abilities": { "str": 17, "dex": 15, "con": 15, "int": 10, "wis": 13, "cha": 11 },
+    "abilities": {
+      "str": 17,
+      "dex": 15,
+      "con": 15,
+      "int": 10,
+      "wis": 13,
+      "cha": 11
+    },
     "actions": [
-      { "name": "Claws (hybrid form)", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be cursed with lycanthropy." },
-      { "name": "Bite", "description": "Melee weapon attack: +5 to hit, 1d10+3 piercing damage." }
+      {
+        "name": "Claws (hybrid form)",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be cursed with lycanthropy."
+      },
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +5 to hit, 1d10+3 piercing damage."
+      }
     ],
     "cr": "4",
+    "description": "A shapeshifter afflicted with lycanthropy who takes the form of a powerful tiger or a fanged hybrid. Solitary and territorial, it hunts by stealth and pounces with lethal speed.",
     "source": "core"
   },
   "wereboar": {
@@ -1232,12 +2205,26 @@
     "ac": 10,
     "hitDice": "10d8+30",
     "speed": 30,
-    "abilities": { "str": 17, "dex": 10, "con": 17, "int": 10, "wis": 11, "cha": 8 },
+    "abilities": {
+      "str": 17,
+      "dex": 10,
+      "con": 17,
+      "int": 10,
+      "wis": 11,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Tusks (hybrid form)", "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be cursed with lycanthropy." },
-      { "name": "Maul", "description": "Melee weapon attack: +5 to hit, 2d6+3 bludgeoning damage." }
+      {
+        "name": "Tusks (hybrid form)",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 slashing damage, and the target must succeed on a DC 13 Constitution save or be cursed with lycanthropy."
+      },
+      {
+        "name": "Maul",
+        "description": "Melee weapon attack: +5 to hit, 2d6+3 bludgeoning damage."
+      }
     ],
     "cr": "4",
+    "description": "A brutish lycanthrope that transforms into a great boar or a bristled, tusked hybrid. When roused to rage it becomes reckless and savage, goring foes and spreading its curse.",
     "source": "core"
   },
   "medusa": {
@@ -1248,12 +2235,26 @@
     "ac": 15,
     "hitDice": "10d8+30",
     "speed": 30,
-    "abilities": { "str": 10, "dex": 15, "con": 16, "int": 12, "wis": 13, "cha": 15 },
+    "abilities": {
+      "str": 10,
+      "dex": 15,
+      "con": 16,
+      "int": 12,
+      "wis": 13,
+      "cha": 15
+    },
     "actions": [
-      { "name": "Snake Hair", "description": "Melee weapon attack: +5 to hit, 1d4+2 piercing damage plus 4d6 poison damage." },
-      { "name": "Petrifying Gaze", "description": "Creatures within 30 feet who meet the medusa's eyes must succeed on a DC 14 Constitution save or begin turning to stone." }
+      {
+        "name": "Snake Hair",
+        "description": "Melee weapon attack: +5 to hit, 1d4+2 piercing damage plus 4d6 poison damage."
+      },
+      {
+        "name": "Petrifying Gaze",
+        "description": "Creatures within 30 feet who meet the medusa's eyes must succeed on a DC 14 Constitution save or begin turning to stone."
+      }
     ],
     "cr": "6",
+    "description": "A cursed humanoid with a mane of writhing, venomous snakes for hair and a petrifying gaze. She lurks amid the stone statues of those who dared meet her eyes.",
     "source": "core"
   },
   "shambling-mound": {
@@ -1265,11 +2266,22 @@
     "hitDice": "9d10+36",
     "speed": 20,
     "swimSpeed": 20,
-    "abilities": { "str": 18, "dex": 8, "con": 19, "int": 5, "wis": 10, "cha": 5 },
+    "abilities": {
+      "str": 18,
+      "dex": 8,
+      "con": 19,
+      "int": 5,
+      "wis": 10,
+      "cha": 5
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage, and the target is grappled (escape DC 14)." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage, and the target is grappled (escape DC 14)."
+      }
     ],
     "cr": "5",
+    "description": "A hulking mass of rotting vegetation, roots, and vines animated by strange energy. It lumbers through swamps, enveloping and suffocating creatures to feed on their decay.",
     "source": "core"
   },
   "young-black-dragon": {
@@ -1282,13 +2294,30 @@
     "speed": 40,
     "flySpeed": 80,
     "swimSpeed": 40,
-    "abilities": { "str": 19, "dex": 14, "con": 19, "int": 12, "wis": 11, "cha": 15 },
+    "abilities": {
+      "str": 19,
+      "dex": 14,
+      "con": 19,
+      "int": 12,
+      "wis": 11,
+      "cha": 15
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +7 to hit, 2d10+4 piercing damage plus 1d8 acid damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage." },
-      { "name": "Acid Breath", "description": "Forces creatures in a 30-foot line to make a DC 14 Dexterity save, taking 11d8 acid damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +7 to hit, 2d10+4 piercing damage plus 1d8 acid damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage."
+      },
+      {
+        "name": "Acid Breath",
+        "description": "Forces creatures in a 30-foot line to make a DC 14 Dexterity save, taking 11d8 acid damage on a failure."
+      }
     ],
     "cr": "7",
+    "description": "A sleek, malevolent dragon with glossy black scales and a reptilian sneer, dwelling in fetid swamps. Cruel and cunning, it spits a corrosive line of acid and delights in its victims' suffering.",
     "source": "core"
   },
   "young-red-dragon": {
@@ -1300,13 +2329,30 @@
     "hitDice": "17d10+68",
     "speed": 40,
     "flySpeed": 80,
-    "abilities": { "str": 23, "dex": 10, "con": 21, "int": 14, "wis": 11, "cha": 19 },
+    "abilities": {
+      "str": 23,
+      "dex": 10,
+      "con": 21,
+      "int": 14,
+      "wis": 11,
+      "cha": 19
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +10 to hit, 2d10+6 piercing damage plus 1d6 fire damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +10 to hit, 2d6+6 slashing damage." },
-      { "name": "Fire Breath", "description": "Forces creatures in a 30-foot cone to make a DC 17 Dexterity save, taking 16d6 fire damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +10 to hit, 2d10+6 piercing damage plus 1d6 fire damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +10 to hit, 2d6+6 slashing damage."
+      },
+      {
+        "name": "Fire Breath",
+        "description": "Forces creatures in a 30-foot cone to make a DC 17 Dexterity save, taking 16d6 fire damage on a failure."
+      }
     ],
     "cr": "10",
+    "description": "A proud, arrogant dragon with crimson scales and smoldering eyes, already a terror to nearby lands. It breathes a searing cone of flame and hoards treasure with jealous, wrathful greed.",
     "source": "core"
   },
   "young-silver-dragon": {
@@ -1318,13 +2364,30 @@
     "hitDice": "18d10+72",
     "speed": 40,
     "flySpeed": 80,
-    "abilities": { "str": 23, "dex": 10, "con": 19, "int": 14, "wis": 11, "cha": 19 },
+    "abilities": {
+      "str": 23,
+      "dex": 10,
+      "con": 19,
+      "int": 14,
+      "wis": 11,
+      "cha": 19
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 2d10+6 piercing damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +9 to hit, 2d6+6 slashing damage." },
-      { "name": "Cold Breath", "description": "Forces creatures in a 30-foot cone to make a DC 16 Constitution save, taking 13d8 cold damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +9 to hit, 2d10+6 piercing damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +9 to hit, 2d6+6 slashing damage."
+      },
+      {
+        "name": "Cold Breath",
+        "description": "Forces creatures in a 30-foot cone to make a DC 16 Constitution save, taking 13d8 cold damage on a failure."
+      }
     ],
     "cr": "9",
+    "description": "A gleaming dragon with scales like polished metal and a friendly curiosity toward humankind. Noble and playful, it breathes freezing cold but prefers reason to wanton destruction.",
     "source": "core"
   },
   "bandit-captain": {
@@ -1335,12 +2398,26 @@
     "ac": 15,
     "hitDice": "6d8+6",
     "speed": 30,
-    "abilities": { "str": 15, "dex": 16, "con": 14, "int": 14, "wis": 11, "cha": 14 },
+    "abilities": {
+      "str": 15,
+      "dex": 16,
+      "con": 14,
+      "int": 14,
+      "wis": 11,
+      "cha": 14
+    },
     "actions": [
-      { "name": "Scimitar", "description": "Melee weapon attack: +5 to hit, 1d6+3 slashing damage." },
-      { "name": "Dagger", "description": "Ranged weapon attack: +5 to hit, 1d4+3 piercing damage." }
+      {
+        "name": "Scimitar",
+        "description": "Melee weapon attack: +5 to hit, 1d6+3 slashing damage."
+      },
+      {
+        "name": "Dagger",
+        "description": "Ranged weapon attack: +5 to hit, 1d4+3 piercing damage."
+      }
     ],
     "cr": "2",
+    "description": "A charismatic, sword-wielding rogue who leads a band of cutthroats through fear and greed. Skilled with blade and dagger, the captain fights with flashy bravado and ruthless cunning.",
     "source": "core"
   },
   "cult-fanatic": {
@@ -1351,12 +2428,26 @@
     "ac": 13,
     "hitDice": "6d8+6",
     "speed": 30,
-    "abilities": { "str": 11, "dex": 14, "con": 12, "int": 10, "wis": 13, "cha": 14 },
+    "abilities": {
+      "str": 11,
+      "dex": 14,
+      "con": 12,
+      "int": 10,
+      "wis": 13,
+      "cha": 14
+    },
     "actions": [
-      { "name": "Dagger", "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage." },
-      { "name": "Dark Bolt", "description": "Ranged spell attack: +4 to hit, 3d8 necrotic damage." }
+      {
+        "name": "Dagger",
+        "description": "Melee weapon attack: +4 to hit, 1d4+2 piercing damage."
+      },
+      {
+        "name": "Dark Bolt",
+        "description": "Ranged spell attack: +4 to hit, 3d8 necrotic damage."
+      }
     ],
     "cr": "2",
+    "description": "A wild-eyed zealot cloaked in dark vestments, devoted body and soul to a sinister cause. Fueled by fervor, the fanatic wields both dagger and dark magic in service of a forbidden faith.",
     "source": "core"
   },
   "gladiator": {
@@ -1367,12 +2458,26 @@
     "ac": 16,
     "hitDice": "9d8+27",
     "speed": 30,
-    "abilities": { "str": 18, "dex": 15, "con": 16, "int": 10, "wis": 12, "cha": 15 },
+    "abilities": {
+      "str": 18,
+      "dex": 15,
+      "con": 16,
+      "int": 10,
+      "wis": 12,
+      "cha": 15
+    },
     "actions": [
-      { "name": "Spear", "description": "Melee weapon attack: +7 to hit, 2d8+4 piercing damage." },
-      { "name": "Shield Bash", "description": "Melee weapon attack: +7 to hit, 2d4+4 bludgeoning damage, and the target must succeed on a DC 15 Strength save or be knocked prone." }
+      {
+        "name": "Spear",
+        "description": "Melee weapon attack: +7 to hit, 2d8+4 piercing damage."
+      },
+      {
+        "name": "Shield Bash",
+        "description": "Melee weapon attack: +7 to hit, 2d4+4 bludgeoning damage, and the target must succeed on a DC 15 Strength save or be knocked prone."
+      }
     ],
     "cr": "5",
+    "description": "A battle-hardened arena fighter with scarred muscles and crowd-pleasing showmanship. Expert with spear and shield, the gladiator fights to entertain and to kill in equal measure.",
     "source": "core"
   },
   "veteran": {
@@ -1383,12 +2488,26 @@
     "ac": 17,
     "hitDice": "9d8+9",
     "speed": 30,
-    "abilities": { "str": 16, "dex": 13, "con": 14, "int": 10, "wis": 11, "cha": 10 },
+    "abilities": {
+      "str": 16,
+      "dex": 13,
+      "con": 14,
+      "int": 10,
+      "wis": 11,
+      "cha": 10
+    },
     "actions": [
-      { "name": "Longsword", "description": "Melee weapon attack: +5 to hit, 2d8+3 slashing damage." },
-      { "name": "Heavy Crossbow", "description": "Ranged weapon attack: +3 to hit, 1d10+1 piercing damage." }
+      {
+        "name": "Longsword",
+        "description": "Melee weapon attack: +5 to hit, 2d8+3 slashing damage."
+      },
+      {
+        "name": "Heavy Crossbow",
+        "description": "Ranged weapon attack: +3 to hit, 1d10+1 piercing damage."
+      }
     ],
     "cr": "3",
+    "description": "A seasoned soldier or mercenary bearing the scars of countless battles. Steady and professional, the veteran wields sword and crossbow with practiced, unflinching skill.",
     "source": "core"
   },
   "mage": {
@@ -1399,12 +2518,26 @@
     "ac": 12,
     "hitDice": "9d8+9",
     "speed": 30,
-    "abilities": { "str": 9, "dex": 14, "con": 11, "int": 17, "wis": 12, "cha": 11 },
+    "abilities": {
+      "str": 9,
+      "dex": 14,
+      "con": 11,
+      "int": 17,
+      "wis": 12,
+      "cha": 11
+    },
     "actions": [
-      { "name": "Fire Bolt", "description": "Ranged spell attack: +6 to hit, 2d10 fire damage." },
-      { "name": "Frostbite Bolt", "description": "Ranged spell attack: +6 to hit, 2d8 cold damage, and the target has disadvantage on its next Strength check or attack roll." }
+      {
+        "name": "Fire Bolt",
+        "description": "Ranged spell attack: +6 to hit, 2d10 fire damage."
+      },
+      {
+        "name": "Frostbite Bolt",
+        "description": "Ranged spell attack: +6 to hit, 2d8 cold damage, and the target has disadvantage on its next Strength check or attack roll."
+      }
     ],
     "cr": "6",
+    "description": "A learned spellcaster clad in robes, armed with a repertoire of arcane magic. From a safe distance the mage flings bolts of fire and frost, relying on wards and wits to survive.",
     "source": "core"
   },
   "priest": {
@@ -1415,12 +2548,26 @@
     "ac": 13,
     "hitDice": "7d8+7",
     "speed": 30,
-    "abilities": { "str": 10, "dex": 10, "con": 12, "int": 13, "wis": 16, "cha": 13 },
+    "abilities": {
+      "str": 10,
+      "dex": 10,
+      "con": 12,
+      "int": 13,
+      "wis": 16,
+      "cha": 13
+    },
     "actions": [
-      { "name": "Mace", "description": "Melee weapon attack: +2 to hit, 1d6 bludgeoning damage." },
-      { "name": "Radiant Bolt", "description": "Ranged spell attack: +5 to hit, 2d8 radiant damage." }
+      {
+        "name": "Mace",
+        "description": "Melee weapon attack: +2 to hit, 1d6 bludgeoning damage."
+      },
+      {
+        "name": "Radiant Bolt",
+        "description": "Ranged spell attack: +5 to hit, 2d8 radiant damage."
+      }
     ],
     "cr": "2",
+    "description": "A devoted cleric who channels divine power on behalf of a temple or deity. The priest heals allies and smites foes with radiant magic, blessing the faithful in battle.",
     "source": "core"
   },
   "assassin": {
@@ -1431,12 +2578,26 @@
     "ac": 15,
     "hitDice": "8d8+16",
     "speed": 30,
-    "abilities": { "str": 11, "dex": 16, "con": 14, "int": 13, "wis": 11, "cha": 10 },
+    "abilities": {
+      "str": 11,
+      "dex": 16,
+      "con": 14,
+      "int": 13,
+      "wis": 11,
+      "cha": 10
+    },
     "actions": [
-      { "name": "Shortsword", "description": "Melee weapon attack: +6 to hit, 1d6+3 piercing damage plus 4d6 poison damage against a surprised target." },
-      { "name": "Light Crossbow", "description": "Ranged weapon attack: +6 to hit, 1d8+3 piercing damage plus 4d6 poison damage against a surprised target." }
+      {
+        "name": "Shortsword",
+        "description": "Melee weapon attack: +6 to hit, 1d6+3 piercing damage plus 4d6 poison damage against a surprised target."
+      },
+      {
+        "name": "Light Crossbow",
+        "description": "Ranged weapon attack: +6 to hit, 1d8+3 piercing damage plus 4d6 poison damage against a surprised target."
+      }
     ],
     "cr": "8",
+    "description": "A cold, methodical killer trained in stealth and poison, striking from the shadows. The assassin's first blow is often the last, delivered with a venom-coated blade against an unsuspecting target.",
     "source": "core"
   },
   "berserker": {
@@ -1447,11 +2608,22 @@
     "ac": 13,
     "hitDice": "9d8+27",
     "speed": 30,
-    "abilities": { "str": 16, "dex": 12, "con": 17, "int": 9, "wis": 11, "cha": 9 },
+    "abilities": {
+      "str": 16,
+      "dex": 12,
+      "con": 17,
+      "int": 9,
+      "wis": 11,
+      "cha": 9
+    },
     "actions": [
-      { "name": "Greataxe", "description": "Melee weapon attack: +5 to hit, 2d12+3 slashing damage." }
+      {
+        "name": "Greataxe",
+        "description": "Melee weapon attack: +5 to hit, 2d12+3 slashing damage."
+      }
     ],
     "cr": "2",
+    "description": "A frenzied warrior who charges into battle heedless of wounds, driven by primal rage. Swinging a massive axe, the berserker fights harder the closer it comes to death.",
     "source": "core"
   },
   "vampire": {
@@ -1463,12 +2635,26 @@
     "hitDice": "17d8+68",
     "speed": 30,
     "flySpeed": 30,
-    "abilities": { "str": 18, "dex": 18, "con": 18, "int": 17, "wis": 15, "cha": 18 },
+    "abilities": {
+      "str": 18,
+      "dex": 18,
+      "con": 18,
+      "int": 17,
+      "wis": 15,
+      "cha": 18
+    },
     "actions": [
-      { "name": "Claws", "description": "Melee weapon attack: +9 to hit, 2d6+4 slashing damage." },
-      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 1d6+4 piercing damage plus 3d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount." }
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +9 to hit, 2d6+4 slashing damage."
+      },
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +9 to hit, 1d6+4 piercing damage plus 3d6 necrotic damage, and the target's hit point maximum is reduced by an equal amount."
+      }
     ],
     "cr": "13",
+    "description": "An ancient, aristocratic undead of terrible power and hypnotic charm, master of the night. It commands beasts and lesser undead, drains blood to sustain its immortality, and dreads only sunlight and running water.",
     "source": "core"
   },
   "adult-red-dragon": {
@@ -1480,13 +2666,30 @@
     "hitDice": "22d12+110",
     "speed": 40,
     "flySpeed": 80,
-    "abilities": { "str": 27, "dex": 10, "con": 25, "int": 16, "wis": 13, "cha": 21 },
+    "abilities": {
+      "str": 27,
+      "dex": 10,
+      "con": 25,
+      "int": 16,
+      "wis": 13,
+      "cha": 21
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +14 to hit, 2d10+8 piercing damage plus 2d6 fire damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage." },
-      { "name": "Fire Breath", "description": "Forces creatures in a 60-foot cone to make a DC 21 Dexterity save, taking 18d6 fire damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +14 to hit, 2d10+8 piercing damage plus 2d6 fire damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage."
+      },
+      {
+        "name": "Fire Breath",
+        "description": "Forces creatures in a 60-foot cone to make a DC 21 Dexterity save, taking 18d6 fire damage on a failure."
+      }
     ],
     "cr": "17",
+    "description": "A vast, wrathful dragon with scales like molten iron and an ego to match its size. It rules its volcanic domain as a tyrant, incinerating challengers with a torrent of flame.",
     "source": "core"
   },
   "adult-blue-dragon": {
@@ -1498,13 +2701,30 @@
     "hitDice": "21d12+126",
     "speed": 40,
     "flySpeed": 80,
-    "abilities": { "str": 25, "dex": 10, "con": 23, "int": 16, "wis": 15, "cha": 19 },
+    "abilities": {
+      "str": 25,
+      "dex": 10,
+      "con": 23,
+      "int": 16,
+      "wis": 15,
+      "cha": 19
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +13 to hit, 2d10+7 piercing damage plus 1d10 lightning damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +13 to hit, 2d6+7 slashing damage." },
-      { "name": "Lightning Breath", "description": "Forces creatures in a 90-foot line to make a DC 19 Dexterity save, taking 12d10 lightning damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +13 to hit, 2d10+7 piercing damage plus 1d10 lightning damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +13 to hit, 2d6+7 slashing damage."
+      },
+      {
+        "name": "Lightning Breath",
+        "description": "Forces creatures in a 90-foot line to make a DC 19 Dexterity save, taking 12d10 lightning damage on a failure."
+      }
     ],
     "cr": "16",
+    "description": "A regal desert dragon with sapphire scales and a single great horn, master of storm and sand. Vain and territorial, it blasts foes with a devastating bolt of lightning.",
     "source": "core"
   },
   "adult-gold-dragon": {
@@ -1517,13 +2737,30 @@
     "speed": 40,
     "flySpeed": 80,
     "swimSpeed": 40,
-    "abilities": { "str": 27, "dex": 14, "con": 25, "int": 16, "wis": 15, "cha": 24 },
+    "abilities": {
+      "str": 27,
+      "dex": 14,
+      "con": 25,
+      "int": 16,
+      "wis": 15,
+      "cha": 24
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +14 to hit, 2d10+8 piercing damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage." },
-      { "name": "Fire Breath", "description": "Forces creatures in a 60-foot cone to make a DC 21 Dexterity save, taking 17d6 fire damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +14 to hit, 2d10+8 piercing damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage."
+      },
+      {
+        "name": "Fire Breath",
+        "description": "Forces creatures in a 60-foot cone to make a DC 21 Dexterity save, taking 17d6 fire damage on a failure."
+      }
     ],
     "cr": "17",
+    "description": "A magnificent dragon with radiant golden scales and eyes full of ancient wisdom. Noble and just, it opposes evil wherever it finds it, wielding fire and potent magic.",
     "source": "core"
   },
   "storm-giant": {
@@ -1535,12 +2772,26 @@
     "hitDice": "20d12+120",
     "speed": 50,
     "swimSpeed": 50,
-    "abilities": { "str": 29, "dex": 14, "con": 22, "int": 16, "wis": 18, "cha": 18 },
+    "abilities": {
+      "str": 29,
+      "dex": 14,
+      "con": 22,
+      "int": 16,
+      "wis": 18,
+      "cha": 18
+    },
     "actions": [
-      { "name": "Greatsword", "description": "Melee weapon attack: +16 to hit, 6d6+9 slashing damage." },
-      { "name": "Lightning Strike", "description": "Ranged spell attack: +16 to hit, 13d10 lightning damage." }
+      {
+        "name": "Greatsword",
+        "description": "Melee weapon attack: +16 to hit, 6d6+9 slashing damage."
+      },
+      {
+        "name": "Lightning Strike",
+        "description": "Ranged spell attack: +16 to hit, 13d10 lightning damage."
+      }
     ],
     "cr": "13",
+    "description": "A colossal giant with pale violet or sea-green skin, wreathed in the power of tempests. Reclusive and philosophical, storm giants dwell at the edges of the world and call down lightning upon their enemies.",
     "source": "core"
   },
   "night-hag-coven-leader": {
@@ -1552,12 +2803,26 @@
     "hitDice": "13d8+52",
     "speed": 30,
     "flySpeed": 30,
-    "abilities": { "str": 18, "dex": 15, "con": 18, "int": 16, "wis": 16, "cha": 16 },
+    "abilities": {
+      "str": 18,
+      "dex": 15,
+      "con": 18,
+      "int": 16,
+      "wis": 16,
+      "cha": 16
+    },
     "actions": [
-      { "name": "Claws", "description": "Melee weapon attack: +7 to hit, 2d8+4 slashing damage." },
-      { "name": "Nightmare Haunting", "description": "Assails a sleeping creature's mind, dealing 9d6 psychic damage on a failed DC 15 Wisdom save." }
+      {
+        "name": "Claws",
+        "description": "Melee weapon attack: +7 to hit, 2d8+4 slashing damage."
+      },
+      {
+        "name": "Nightmare Haunting",
+        "description": "Assails a sleeping creature's mind, dealing 9d6 psychic damage on a failed DC 15 Wisdom save."
+      }
     ],
     "cr": "9",
+    "description": "A fiendish crone who preys on mortal dreams, harvesting souls from the sleeping. As a coven leader she wields potent magic, tormenting her victims with nightmares from afar.",
     "source": "core"
   },
   "mummy-lord": {
@@ -1568,12 +2833,26 @@
     "ac": 17,
     "hitDice": "15d8+75",
     "speed": 20,
-    "abilities": { "str": 18, "dex": 10, "con": 20, "int": 16, "wis": 18, "cha": 18 },
+    "abilities": {
+      "str": 18,
+      "dex": 10,
+      "con": 20,
+      "int": 16,
+      "wis": 18,
+      "cha": 18
+    },
     "actions": [
-      { "name": "Rotting Fist", "description": "Melee weapon attack: +9 to hit, 3d6+4 bludgeoning damage plus 3d6 necrotic damage, and the target must succeed on a DC 16 Constitution save or be cursed with mummy rot." },
-      { "name": "Blasphemous Word", "description": "Forces creatures within 10 feet to make a DC 16 Wisdom save, becoming stunned on a failure." }
+      {
+        "name": "Rotting Fist",
+        "description": "Melee weapon attack: +9 to hit, 3d6+4 bludgeoning damage plus 3d6 necrotic damage, and the target must succeed on a DC 16 Constitution save or be cursed with mummy rot."
+      },
+      {
+        "name": "Blasphemous Word",
+        "description": "Forces creatures within 10 feet to make a DC 16 Wisdom save, becoming stunned on a failure."
+      }
     ],
     "cr": "15",
+    "description": "The preserved corpse of a high priest or ruler, risen with intelligence and dread sorcery intact. It commands the power of its ancient faith, cursing and stunning intruders who defile its tomb.",
     "source": "core"
   },
   "lich": {
@@ -1584,12 +2863,26 @@
     "ac": 17,
     "hitDice": "18d8+72",
     "speed": 30,
-    "abilities": { "str": 11, "dex": 16, "con": 18, "int": 20, "wis": 14, "cha": 16 },
+    "abilities": {
+      "str": 11,
+      "dex": 16,
+      "con": 18,
+      "int": 20,
+      "wis": 14,
+      "cha": 16
+    },
     "actions": [
-      { "name": "Paralyzing Touch", "description": "Melee spell attack: +12 to hit, 3d6 cold damage, and the target must succeed on a DC 18 Constitution save or be paralyzed for 1 minute." },
-      { "name": "Disintegrate Ray", "description": "Ranged spell attack: +12 to hit, 10d6+40 force damage on a failed DC 18 Dexterity save." }
+      {
+        "name": "Paralyzing Touch",
+        "description": "Melee spell attack: +12 to hit, 3d6 cold damage, and the target must succeed on a DC 18 Constitution save or be paralyzed for 1 minute."
+      },
+      {
+        "name": "Disintegrate Ray",
+        "description": "Ranged spell attack: +12 to hit, 10d6+40 force damage on a failed DC 18 Dexterity save."
+      }
     ],
     "cr": "21",
+    "description": "The undead form of a mighty wizard who traded life for immortality, its withered body clad in ancient finery. Coldly brilliant and utterly ruthless, it wields devastating spells and cannot be truly slain while its phylactery endures.",
     "source": "core"
   },
   "stone-golem": {
@@ -1600,12 +2893,26 @@
     "ac": 17,
     "hitDice": "17d10+102",
     "speed": 30,
-    "abilities": { "str": 22, "dex": 9, "con": 22, "int": 3, "wis": 11, "cha": 1 },
+    "abilities": {
+      "str": 22,
+      "dex": 9,
+      "con": 22,
+      "int": 3,
+      "wis": 11,
+      "cha": 1
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +10 to hit, 3d8+6 bludgeoning damage." },
-      { "name": "Slow Ray", "description": "Ranged spell attack: causes a creature to become slowed for 1 minute on a failed DC 17 Wisdom save." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +10 to hit, 3d8+6 bludgeoning damage."
+      },
+      {
+        "name": "Slow Ray",
+        "description": "Ranged spell attack: causes a creature to become slowed for 1 minute on a failed DC 17 Wisdom save."
+      }
     ],
     "cr": "10",
+    "description": "A towering humanoid statue carved from stone and animated by binding magic. Tireless and implacable, it obeys its creator's commands and can slow its foes with a mystic gaze.",
     "source": "core"
   },
   "iron-golem": {
@@ -1616,12 +2923,26 @@
     "ac": 20,
     "hitDice": "18d10+108",
     "speed": 30,
-    "abilities": { "str": 24, "dex": 9, "con": 24, "int": 3, "wis": 11, "cha": 1 },
+    "abilities": {
+      "str": 24,
+      "dex": 9,
+      "con": 24,
+      "int": 3,
+      "wis": 11,
+      "cha": 1
+    },
     "actions": [
-      { "name": "Sword", "description": "Melee weapon attack: +12 to hit, 3d8+7 slashing damage." },
-      { "name": "Poison Breath", "description": "Forces creatures in a 15-foot cone to make a DC 19 Constitution save, taking 10d8 poison damage on a failure." }
+      {
+        "name": "Sword",
+        "description": "Melee weapon attack: +12 to hit, 3d8+7 slashing damage."
+      },
+      {
+        "name": "Poison Breath",
+        "description": "Forces creatures in a 15-foot cone to make a DC 19 Constitution save, taking 10d8 poison damage on a failure."
+      }
     ],
     "cr": "16",
+    "description": "A colossal construct of forged iron, radiating menace and immune to most harm. It crushes intruders with a massive sword and exhales clouds of poison, an unstoppable guardian.",
     "source": "core"
   },
   "flesh-golem": {
@@ -1632,11 +2953,22 @@
     "ac": 9,
     "hitDice": "9d8+27",
     "speed": 30,
-    "abilities": { "str": 19, "dex": 9, "con": 18, "int": 6, "wis": 10, "cha": 5 },
+    "abilities": {
+      "str": 19,
+      "dex": 9,
+      "con": 18,
+      "int": 6,
+      "wis": 10,
+      "cha": 5
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage."
+      }
     ],
     "cr": "5",
+    "description": "A hulking humanoid stitched together from mismatched corpses and jolted to life. Slow and confused, it lashes out in blind fury when its rudimentary mind is provoked.",
     "source": "core"
   },
   "clay-golem": {
@@ -1647,11 +2979,22 @@
     "ac": 14,
     "hitDice": "14d8+56",
     "speed": 20,
-    "abilities": { "str": 20, "dex": 9, "con": 18, "int": 3, "wis": 8, "cha": 1 },
+    "abilities": {
+      "str": 20,
+      "dex": 9,
+      "con": 18,
+      "int": 3,
+      "wis": 8,
+      "cha": 1
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +9 to hit, 2d10+5 bludgeoning damage, and the target's hit point maximum is reduced by an equal amount." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +9 to hit, 2d10+5 bludgeoning damage, and the target's hit point maximum is reduced by an equal amount."
+      }
     ],
     "cr": "9",
+    "description": "A crude humanoid figure molded from clay and animated by holy words. Its slam can wither a victim's vitality, and when enraged it becomes berserk and hard to control.",
     "source": "core"
   },
   "fire-elemental": {
@@ -1662,11 +3005,22 @@
     "ac": 13,
     "hitDice": "12d10+24",
     "speed": 50,
-    "abilities": { "str": 10, "dex": 17, "con": 16, "int": 6, "wis": 10, "cha": 7 },
+    "abilities": {
+      "str": 10,
+      "dex": 17,
+      "con": 16,
+      "int": 6,
+      "wis": 10,
+      "cha": 7
+    },
     "actions": [
-      { "name": "Touch", "description": "Melee weapon attack: +6 to hit, 2d6+3 fire damage, and the target ignites, taking 1d6 fire damage at the start of each of its turns." }
+      {
+        "name": "Touch",
+        "description": "Melee weapon attack: +6 to hit, 2d6+3 fire damage, and the target ignites, taking 1d6 fire damage at the start of each of its turns."
+      }
     ],
     "cr": "5",
+    "description": "A roaring vortex of living flame, vaguely humanoid, that leaves scorched earth in its wake. It ignites everything it touches, spreading fire with mindless, hungry glee.",
     "source": "core"
   },
   "water-elemental": {
@@ -1678,11 +3032,22 @@
     "hitDice": "12d10+36",
     "speed": 30,
     "swimSpeed": 90,
-    "abilities": { "str": 18, "dex": 14, "con": 18, "int": 5, "wis": 10, "cha": 8 },
+    "abilities": {
+      "str": 18,
+      "dex": 14,
+      "con": 18,
+      "int": 5,
+      "wis": 10,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage, and the target is grappled (escape DC 14)." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +7 to hit, 2d8+4 bludgeoning damage, and the target is grappled (escape DC 14)."
+      }
     ],
     "cr": "5",
+    "description": "A surging mass of animated water in a roughly humanoid shape, crashing forward like a rogue wave. It engulfs and drowns its foes, dissolving and reforming as it moves.",
     "source": "core"
   },
   "air-elemental": {
@@ -1694,11 +3059,22 @@
     "hitDice": "12d10+36",
     "speed": 0,
     "flySpeed": 90,
-    "abilities": { "str": 14, "dex": 20, "con": 16, "int": 6, "wis": 10, "cha": 6 },
+    "abilities": {
+      "str": 14,
+      "dex": 20,
+      "con": 16,
+      "int": 6,
+      "wis": 10,
+      "cha": 6
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +8 to hit, 2d8+5 bludgeoning damage." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +8 to hit, 2d8+5 bludgeoning damage."
+      }
     ],
     "cr": "5",
+    "description": "A howling whirlwind of living air, nearly invisible save for the debris it carries aloft. It buffets and batters foes, moving with dizzying speed and striking from all sides.",
     "source": "core"
   },
   "earth-elemental": {
@@ -1709,11 +3085,22 @@
     "ac": 17,
     "hitDice": "12d10+48",
     "speed": 30,
-    "abilities": { "str": 20, "dex": 8, "con": 20, "int": 5, "wis": 10, "cha": 5 },
+    "abilities": {
+      "str": 20,
+      "dex": 8,
+      "con": 20,
+      "int": 5,
+      "wis": 10,
+      "cha": 5
+    },
     "actions": [
-      { "name": "Slam", "description": "Melee weapon attack: +8 to hit, 2d8+5 bludgeoning damage." }
+      {
+        "name": "Slam",
+        "description": "Melee weapon attack: +8 to hit, 2d8+5 bludgeoning damage."
+      }
     ],
     "cr": "5",
+    "description": "A lumbering humanoid formed of stone and soil, its heavy tread cracking the ground. Slow but immensely strong, it strikes with fists of solid rock and glides through the earth itself.",
     "source": "core"
   },
   "chain-devil": {
@@ -1724,11 +3111,22 @@
     "ac": 16,
     "hitDice": "13d8+52",
     "speed": 30,
-    "abilities": { "str": 18, "dex": 15, "con": 18, "int": 11, "wis": 12, "cha": 14 },
+    "abilities": {
+      "str": 18,
+      "dex": 15,
+      "con": 18,
+      "int": 11,
+      "wis": 12,
+      "cha": 14
+    },
     "actions": [
-      { "name": "Chain", "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage, and the target is restrained (escape DC 14)." }
+      {
+        "name": "Chain",
+        "description": "Melee weapon attack: +7 to hit, 2d6+4 slashing damage, and the target is restrained (escape DC 14)."
+      }
     ],
     "cr": "8",
+    "description": "A gaunt fiend draped in animated, barbed chains that whip and lash of their own accord. It torments its victims for pleasure, ensnaring and flaying them in its iron coils.",
     "source": "core"
   },
   "bone-devil": {
@@ -1740,12 +3138,26 @@
     "hitDice": "16d10+64",
     "speed": 40,
     "flySpeed": 40,
-    "abilities": { "str": 18, "dex": 16, "con": 18, "int": 13, "wis": 14, "cha": 16 },
+    "abilities": {
+      "str": 18,
+      "dex": 16,
+      "con": 18,
+      "int": 13,
+      "wis": 14,
+      "cha": 16
+    },
     "actions": [
-      { "name": "Claw", "description": "Melee weapon attack: +9 to hit, 2d4+4 slashing damage." },
-      { "name": "Sting", "description": "Melee weapon attack: +9 to hit, 2d8+4 piercing damage plus 3d6 poison damage." }
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +9 to hit, 2d4+4 slashing damage."
+      },
+      {
+        "name": "Sting",
+        "description": "Melee weapon attack: +9 to hit, 2d8+4 piercing damage plus 3d6 poison damage."
+      }
     ],
     "cr": "9",
+    "description": "A towering, skeletal devil with an insect-like carapace and a scorpion's venomous tail. Cruel and disciplined, it commands lesser fiends and strikes with poison and terror.",
     "source": "core"
   },
   "horned-devil": {
@@ -1757,12 +3169,26 @@
     "hitDice": "15d10+60",
     "speed": 20,
     "flySpeed": 60,
-    "abilities": { "str": 22, "dex": 17, "con": 21, "int": 12, "wis": 16, "cha": 17 },
+    "abilities": {
+      "str": 22,
+      "dex": 17,
+      "con": 21,
+      "int": 12,
+      "wis": 16,
+      "cha": 17
+    },
     "actions": [
-      { "name": "Fork", "description": "Melee weapon attack: +10 to hit, 2d8+6 piercing damage." },
-      { "name": "Tail", "description": "Melee weapon attack: +10 to hit, 2d8+6 piercing damage plus 3d6 fire damage." }
+      {
+        "name": "Fork",
+        "description": "Melee weapon attack: +10 to hit, 2d8+6 piercing damage."
+      },
+      {
+        "name": "Tail",
+        "description": "Melee weapon attack: +10 to hit, 2d8+6 piercing damage plus 3d6 fire damage."
+      }
     ],
     "cr": "11",
+    "description": "A winged, red-skinned devil with great curling horns, a barbed tail, and a heavy fork. It hovers above the battlefield, hurling fire and lashing enemies with its blazing tail.",
     "source": "core"
   },
   "ice-devil": {
@@ -1774,13 +3200,30 @@
     "hitDice": "18d10+90",
     "speed": 40,
     "flySpeed": 40,
-    "abilities": { "str": 21, "dex": 14, "con": 21, "int": 14, "wis": 18, "cha": 18 },
+    "abilities": {
+      "str": 21,
+      "dex": 14,
+      "con": 21,
+      "int": 14,
+      "wis": 18,
+      "cha": 18
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 2d6+5 piercing damage plus 2d6 cold damage." },
-      { "name": "Tail", "description": "Melee weapon attack: +9 to hit, 2d8+5 bludgeoning damage." },
-      { "name": "Wall of Ice", "description": "Ranged spell attack: forces creatures in a 30-foot line to make a DC 18 Dexterity save, taking 4d10 cold damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +9 to hit, 2d6+5 piercing damage plus 2d6 cold damage."
+      },
+      {
+        "name": "Tail",
+        "description": "Melee weapon attack: +9 to hit, 2d8+5 bludgeoning damage."
+      },
+      {
+        "name": "Wall of Ice",
+        "description": "Ranged spell attack: forces creatures in a 30-foot line to make a DC 18 Dexterity save, taking 4d10 cold damage on a failure."
+      }
     ],
     "cr": "14",
+    "description": "A monstrous, insectile devil radiating unnatural cold, with clawed limbs and a spiked tail. A merciless commander of infernal legions, it freezes foes with breath and blade.",
     "source": "core"
   },
   "vrock": {
@@ -1792,12 +3235,26 @@
     "hitDice": "13d10+52",
     "speed": 40,
     "flySpeed": 60,
-    "abilities": { "str": 17, "dex": 15, "con": 18, "int": 8, "wis": 13, "cha": 8 },
+    "abilities": {
+      "str": 17,
+      "dex": 15,
+      "con": 18,
+      "int": 8,
+      "wis": 13,
+      "cha": 8
+    },
     "actions": [
-      { "name": "Talons", "description": "Melee weapon attack: +7 to hit, 2d6+3 slashing damage." },
-      { "name": "Beak", "description": "Melee weapon attack: +7 to hit, 2d6+3 piercing damage." }
+      {
+        "name": "Talons",
+        "description": "Melee weapon attack: +7 to hit, 2d6+3 slashing damage."
+      },
+      {
+        "name": "Beak",
+        "description": "Melee weapon attack: +7 to hit, 2d6+3 piercing damage."
+      }
     ],
     "cr": "6",
+    "description": "A vulture-headed demon with filthy feathers, rending talons, and a piercing screech. It descends upon prey in a frenzy, tearing at flesh and spreading toxic spores.",
     "source": "core"
   },
   "hezrou": {
@@ -1808,12 +3265,26 @@
     "ac": 16,
     "hitDice": "15d10+90",
     "speed": 30,
-    "abilities": { "str": 19, "dex": 17, "con": 22, "int": 5, "wis": 12, "cha": 13 },
+    "abilities": {
+      "str": 19,
+      "dex": 17,
+      "con": 22,
+      "int": 5,
+      "wis": 12,
+      "cha": 13
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 3d8+4 piercing damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +9 to hit, 2d6+4 slashing damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +9 to hit, 3d8+4 piercing damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +9 to hit, 2d6+4 slashing damage."
+      }
     ],
     "cr": "8",
+    "description": "A bloated, toad-like demon reeking of rot and filth, with clawed hands and gnashing jaws. Brutish and relentless, it wades into battle spreading nausea and carnage.",
     "source": "core"
   },
   "glabrezu": {
@@ -1824,12 +3295,26 @@
     "ac": 17,
     "hitDice": "18d10+108",
     "speed": 40,
-    "abilities": { "str": 20, "dex": 15, "con": 22, "int": 19, "wis": 17, "cha": 16 },
+    "abilities": {
+      "str": 20,
+      "dex": 15,
+      "con": 22,
+      "int": 19,
+      "wis": 17,
+      "cha": 16
+    },
     "actions": [
-      { "name": "Pincer", "description": "Melee weapon attack: +10 to hit, 2d10+5 bludgeoning damage, and the target is grappled (escape DC 15)." },
-      { "name": "Fist", "description": "Melee weapon attack: +10 to hit, 2d4+5 bludgeoning damage." }
+      {
+        "name": "Pincer",
+        "description": "Melee weapon attack: +10 to hit, 2d10+5 bludgeoning damage, and the target is grappled (escape DC 15)."
+      },
+      {
+        "name": "Fist",
+        "description": "Melee weapon attack: +10 to hit, 2d4+5 bludgeoning damage."
+      }
     ],
     "cr": "9",
+    "description": "A towering demon with a dog-like head, a barrel chest, four arms ending in crushing pincers, and lesser grasping hands. It tempts mortals with false bargains before rending them apart.",
     "source": "core"
   },
   "ancient-red-dragon": {
@@ -1841,13 +3326,30 @@
     "hitDice": "26d20+182",
     "speed": 40,
     "flySpeed": 80,
-    "abilities": { "str": 30, "dex": 10, "con": 29, "int": 18, "wis": 15, "cha": 26 },
+    "abilities": {
+      "str": 30,
+      "dex": 10,
+      "con": 29,
+      "int": 18,
+      "wis": 15,
+      "cha": 26
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +17 to hit, 2d10+10 piercing damage plus 4d6 fire damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +17 to hit, 2d6+10 slashing damage." },
-      { "name": "Fire Breath", "description": "Forces creatures in a 90-foot cone to make a DC 24 Dexterity save, taking 26d6 fire damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +17 to hit, 2d10+10 piercing damage plus 4d6 fire damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +17 to hit, 2d6+10 slashing damage."
+      },
+      {
+        "name": "Fire Breath",
+        "description": "Forces creatures in a 90-foot cone to make a DC 24 Dexterity save, taking 26d6 fire damage on a failure."
+      }
     ],
     "cr": "24",
+    "description": "A gargantuan, primordial dragon whose crimson scales glow like the heart of a furnace. Millennia of pride and cruelty have made it a living cataclysm, incinerating armies with a single breath.",
     "source": "core"
   },
   "ancient-white-dragon": {
@@ -1860,13 +3362,30 @@
     "speed": 40,
     "flySpeed": 80,
     "swimSpeed": 40,
-    "abilities": { "str": 26, "dex": 10, "con": 26, "int": 10, "wis": 13, "cha": 14 },
+    "abilities": {
+      "str": 26,
+      "dex": 10,
+      "con": 26,
+      "int": 10,
+      "wis": 13,
+      "cha": 14
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +15 to hit, 2d10+8 piercing damage plus 1d8 cold damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +15 to hit, 2d6+8 slashing damage." },
-      { "name": "Cold Breath", "description": "Forces creatures in a 60-foot cone to make a DC 22 Constitution save, taking 15d8 cold damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +15 to hit, 2d10+8 piercing damage plus 1d8 cold damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +15 to hit, 2d6+8 slashing damage."
+      },
+      {
+        "name": "Cold Breath",
+        "description": "Forces creatures in a 60-foot cone to make a DC 22 Constitution save, taking 15d8 cold damage on a failure."
+      }
     ],
     "cr": "20",
+    "description": "A colossal dragon of the frozen wastes, its ice-white scales frosted with rime and its mind ruled by bestial cunning. Savage and territorial, it entombs prey in a blast of killing cold.",
     "source": "core"
   },
   "ancient-gold-dragon": {
@@ -1879,13 +3398,30 @@
     "speed": 40,
     "flySpeed": 80,
     "swimSpeed": 40,
-    "abilities": { "str": 30, "dex": 14, "con": 29, "int": 18, "wis": 17, "cha": 28 },
+    "abilities": {
+      "str": 30,
+      "dex": 14,
+      "con": 29,
+      "int": 18,
+      "wis": 17,
+      "cha": 28
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +17 to hit, 2d10+10 piercing damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +17 to hit, 2d6+10 slashing damage." },
-      { "name": "Fire Breath", "description": "Forces creatures in a 90-foot cone to make a DC 24 Dexterity save, taking 26d6 fire damage on a failure." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +17 to hit, 2d10+10 piercing damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +17 to hit, 2d6+10 slashing damage."
+      },
+      {
+        "name": "Fire Breath",
+        "description": "Forces creatures in a 90-foot cone to make a DC 24 Dexterity save, taking 26d6 fire damage on a failure."
+      }
     ],
     "cr": "24",
+    "description": "A resplendent, ancient dragon of immense wisdom and power, its golden scales shining like the sun. A tireless foe of evil, it wields radiant fire and mighty magic in the cause of righteousness.",
     "source": "core"
   },
   "pit-fiend": {
@@ -1897,13 +3433,30 @@
     "hitDice": "22d10+143",
     "speed": 30,
     "flySpeed": 60,
-    "abilities": { "str": 26, "dex": 14, "con": 24, "int": 22, "wis": 18, "cha": 24 },
+    "abilities": {
+      "str": 26,
+      "dex": 14,
+      "con": 24,
+      "int": 22,
+      "wis": 18,
+      "cha": 24
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +14 to hit, 4d6+8 piercing damage plus 4d6 poison damage." },
-      { "name": "Mace", "description": "Melee weapon attack: +14 to hit, 3d10+8 bludgeoning damage plus 6d6 fire damage." },
-      { "name": "Tail", "description": "Melee weapon attack: +14 to hit, 3d10+8 bludgeoning damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +14 to hit, 4d6+8 piercing damage plus 4d6 poison damage."
+      },
+      {
+        "name": "Mace",
+        "description": "Melee weapon attack: +14 to hit, 3d10+8 bludgeoning damage plus 6d6 fire damage."
+      },
+      {
+        "name": "Tail",
+        "description": "Melee weapon attack: +14 to hit, 3d10+8 bludgeoning damage."
+      }
     ],
     "cr": "20",
+    "description": "A towering lord of the Nine Hells, with red scales, vast bat wings, and an aura of dread that withers courage. It commands infernal armies and wields fire, poison, and terrible sorcery.",
     "source": "core"
   },
   "balor": {
@@ -1915,12 +3468,26 @@
     "hitDice": "25d12+175",
     "speed": 40,
     "flySpeed": 80,
-    "abilities": { "str": 26, "dex": 15, "con": 22, "int": 20, "wis": 16, "cha": 22 },
+    "abilities": {
+      "str": 26,
+      "dex": 15,
+      "con": 22,
+      "int": 20,
+      "wis": 16,
+      "cha": 22
+    },
     "actions": [
-      { "name": "Longsword", "description": "Melee weapon attack: +14 to hit, 3d8+8 slashing damage plus 3d8 lightning damage." },
-      { "name": "Whip", "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage plus 3d6 fire damage." }
+      {
+        "name": "Longsword",
+        "description": "Melee weapon attack: +14 to hit, 3d8+8 slashing damage plus 3d8 lightning damage."
+      },
+      {
+        "name": "Whip",
+        "description": "Melee weapon attack: +14 to hit, 2d6+8 slashing damage plus 3d6 fire damage."
+      }
     ],
     "cr": "19",
+    "description": "A gigantic demon lord wreathed in flame and shadow, wielding a lightning-forged sword and a fiery whip. Its very presence radiates dread, and its death erupts in a devastating blast.",
     "source": "core"
   },
   "nalfeshnee": {
@@ -1932,12 +3499,26 @@
     "hitDice": "18d10+108",
     "speed": 20,
     "flySpeed": 30,
-    "abilities": { "str": 21, "dex": 10, "con": 22, "int": 19, "wis": 12, "cha": 15 },
+    "abilities": {
+      "str": 21,
+      "dex": 10,
+      "con": 22,
+      "int": 19,
+      "wis": 12,
+      "cha": 15
+    },
     "actions": [
-      { "name": "Bite", "description": "Melee weapon attack: +9 to hit, 3d10+5 piercing damage." },
-      { "name": "Claw", "description": "Melee weapon attack: +9 to hit, 2d6+5 slashing damage." }
+      {
+        "name": "Bite",
+        "description": "Melee weapon attack: +9 to hit, 3d10+5 piercing damage."
+      },
+      {
+        "name": "Claw",
+        "description": "Melee weapon attack: +9 to hit, 2d6+5 slashing damage."
+      }
     ],
     "cr": "13",
+    "description": "A grotesque, boar-headed demon with a bloated body and undersized wings, radiating an aura of madness. It lumbers into battle, savaging foes with tusks and claws while spreading despair.",
     "source": "core"
   },
   "marilith": {
@@ -1948,12 +3529,26 @@
     "ac": 18,
     "hitDice": "20d10+120",
     "speed": 40,
-    "abilities": { "str": 18, "dex": 20, "con": 22, "int": 18, "wis": 16, "cha": 20 },
+    "abilities": {
+      "str": 18,
+      "dex": 20,
+      "con": 22,
+      "int": 18,
+      "wis": 16,
+      "cha": 20
+    },
     "actions": [
-      { "name": "Longsword (x6)", "description": "Melee weapon attack: +9 to hit, 2d8+5 slashing damage per sword." },
-      { "name": "Tail", "description": "Melee weapon attack: +9 to hit, 2d10+5 bludgeoning damage, and the target is grappled (escape DC 17)." }
+      {
+        "name": "Longsword (x6)",
+        "description": "Melee weapon attack: +9 to hit, 2d8+5 slashing damage per sword."
+      },
+      {
+        "name": "Tail",
+        "description": "Melee weapon attack: +9 to hit, 2d10+5 bludgeoning damage, and the target is grappled (escape DC 17)."
+      }
     ],
     "cr": "16",
+    "description": "A serpent-bodied demon with the torso of a woman and six sword-wielding arms. A brilliant tactician, it whirls through combat in a storm of blades, coiling around and crushing its prey.",
     "source": "core"
   },
   "archmage": {
@@ -1964,12 +3559,26 @@
     "ac": 13,
     "hitDice": "18d8+36",
     "speed": 30,
-    "abilities": { "str": 10, "dex": 14, "con": 12, "int": 20, "wis": 15, "cha": 16 },
+    "abilities": {
+      "str": 10,
+      "dex": 14,
+      "con": 12,
+      "int": 20,
+      "wis": 15,
+      "cha": 16
+    },
     "actions": [
-      { "name": "Fire Bolt", "description": "Ranged spell attack: +9 to hit, 4d10 fire damage." },
-      { "name": "Cone of Cold", "description": "Forces creatures in a 60-foot cone to make a DC 17 Constitution save, taking 8d8 cold damage on a failure." }
+      {
+        "name": "Fire Bolt",
+        "description": "Ranged spell attack: +9 to hit, 4d10 fire damage."
+      },
+      {
+        "name": "Cone of Cold",
+        "description": "Forces creatures in a 60-foot cone to make a DC 17 Constitution save, taking 8d8 cold damage on a failure."
+      }
     ],
     "cr": "12",
+    "description": "A supremely powerful wizard whose mastery of the arcane rivals that of kings and demigods. Surrounded by protective wards, the archmage unleashes devastating spells with cold precision.",
     "source": "core"
   },
   "planetar": {
@@ -1981,12 +3590,26 @@
     "hitDice": "22d10+132",
     "speed": 40,
     "flySpeed": 120,
-    "abilities": { "str": 24, "dex": 20, "con": 22, "int": 19, "wis": 22, "cha": 25 },
+    "abilities": {
+      "str": 24,
+      "dex": 20,
+      "con": 22,
+      "int": 19,
+      "wis": 22,
+      "cha": 25
+    },
     "actions": [
-      { "name": "Greatsword", "description": "Melee weapon attack: +13 to hit, 4d6+7 slashing damage plus 5d8 radiant damage." },
-      { "name": "Holy Fire", "description": "Ranged spell attack: forces creatures in a 10-foot radius to make a DC 18 Dexterity save, taking 7d10 radiant damage on a failure." }
+      {
+        "name": "Greatsword",
+        "description": "Melee weapon attack: +13 to hit, 4d6+7 slashing damage plus 5d8 radiant damage."
+      },
+      {
+        "name": "Holy Fire",
+        "description": "Ranged spell attack: forces creatures in a 10-foot radius to make a DC 18 Dexterity save, taking 7d10 radiant damage on a failure."
+      }
     ],
     "cr": "16",
+    "description": "A towering angel of radiant beauty and terrible purpose, sent to wage war against evil. Wielding a holy greatsword, the planetar smites the wicked with steel and searing celestial fire.",
     "source": "core"
   },
   "solar": {
@@ -1998,12 +3621,26 @@
     "hitDice": "26d10+208",
     "speed": 50,
     "flySpeed": 150,
-    "abilities": { "str": 26, "dex": 22, "con": 26, "int": 25, "wis": 25, "cha": 30 },
+    "abilities": {
+      "str": 26,
+      "dex": 22,
+      "con": 26,
+      "int": 25,
+      "wis": 25,
+      "cha": 30
+    },
     "actions": [
-      { "name": "Greatsword", "description": "Melee weapon attack: +18 to hit, 6d8+10 slashing damage plus 6d8 radiant damage." },
-      { "name": "Slaying Longbow", "description": "Ranged weapon attack: +14 to hit, 2d8+8 piercing damage plus 6d8 radiant damage, and a non-celestial target must succeed on a DC 20 Constitution save or die." }
+      {
+        "name": "Greatsword",
+        "description": "Melee weapon attack: +18 to hit, 6d8+10 slashing damage plus 6d8 radiant damage."
+      },
+      {
+        "name": "Slaying Longbow",
+        "description": "Ranged weapon attack: +14 to hit, 2d8+8 piercing damage plus 6d8 radiant damage, and a non-celestial target must succeed on a DC 20 Constitution save or die."
+      }
     ],
     "cr": "23",
+    "description": "The mightiest of angels, a being of blinding glory and supreme martial and magical power. Wielding a slaying blade and bow of pure light, the solar is an unstoppable champion of the heavens.",
     "source": "core"
   }
 }

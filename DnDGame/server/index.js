@@ -1,4 +1,5 @@
 const path = require("path");
+const crypto = require("crypto");
 const express = require("express");
 const cors = require("cors");
 const http = require("http");
@@ -80,23 +81,91 @@ app.post("/api/characters/validate", (req, res) => {
   res.json(result);
 });
 
-// ---------- Saved characters (persisted to disk) ----------
+// ---------- Accounts (optional; lightweight token auth) ----------
+// Passwords are salted+hashed with scrypt. A login issues an opaque bearer
+// token held in memory (tokens don't survive a restart -- users just log in
+// again). This is deliberately simple: enough to tie characters to a person
+// and enforce ownership, not a hardened public auth system.
+const authTokens = new Map(); // token -> username
 
-app.get("/api/characters", (req, res) => {
-  res.json(dataStore.loadCharacters());
+function hashPassword(password, salt = crypto.randomBytes(16).toString("hex")) {
+  const hash = crypto.scryptSync(password, salt, 64).toString("hex");
+  return { salt, hash };
+}
+function verifyPassword(password, salt, expectedHash) {
+  const hash = crypto.scryptSync(password, salt, 64).toString("hex");
+  return crypto.timingSafeEqual(Buffer.from(hash), Buffer.from(expectedHash));
+}
+function issueToken(username) {
+  const token = crypto.randomBytes(24).toString("hex");
+  authTokens.set(token, username);
+  return token;
+}
+function userFromReq(req) {
+  const auth = req.get("authorization") || "";
+  const token = auth.replace(/^Bearer\s+/i, "");
+  return authTokens.get(token) || null;
+}
+
+app.post("/api/register", async (req, res) => {
+  const { username, password } = req.body || {};
+  const name = (username || "").trim().toLowerCase();
+  if (!/^[a-z0-9_]{3,20}$/.test(name)) return res.status(400).json({ ok: false, error: "Username must be 3-20 chars: letters, numbers, underscore." });
+  if (!password || password.length < 6) return res.status(400).json({ ok: false, error: "Password must be at least 6 characters." });
+  if (await dataStore.getUser(name)) return res.status(400).json({ ok: false, error: "That username is taken." });
+  const { salt, hash } = hashPassword(password);
+  await dataStore.saveUser({ username: name, salt, hash, createdAt: Date.now() });
+  res.json({ ok: true, username: name, token: issueToken(name) });
 });
 
-app.post("/api/characters", (req, res) => {
+app.post("/api/login", async (req, res) => {
+  const { username, password } = req.body || {};
+  const name = (username || "").trim().toLowerCase();
+  const user = await dataStore.getUser(name);
+  if (!user || !verifyPassword(password || "", user.salt, user.hash)) {
+    return res.status(401).json({ ok: false, error: "Wrong username or password." });
+  }
+  res.json({ ok: true, username: name, token: issueToken(name) });
+});
+
+// ---------- Saved characters (persisted; owner-scoped when logged in) ----------
+
+app.get("/api/characters", async (req, res) => {
+  const user = userFromReq(req);
+  const all = await dataStore.loadCharacters();
+  // Logged-in users see their own characters plus any legacy un-owned ones;
+  // anonymous users see only the un-owned pool. Keeps single-group use simple
+  // while giving real per-user separation once accounts are in play.
+  const filtered = {};
+  for (const [id, c] of Object.entries(all)) {
+    if (!c.ownerUser || (user && c.ownerUser === user)) filtered[id] = c;
+  }
+  res.json(filtered);
+});
+
+app.post("/api/characters", async (req, res) => {
   const { character } = req.body || {};
   if (!character || typeof character !== "object" || !character.name || !character.name.trim()) {
     return res.status(400).json({ ok: false, error: "A character object with a name is required." });
   }
-  const saved = dataStore.saveCharacter(character);
+  const user = userFromReq(req);
+  if (character.id) {
+    const existing = (await dataStore.loadCharacters())[character.id];
+    if (existing && existing.ownerUser && existing.ownerUser !== user) {
+      return res.status(403).json({ ok: false, error: "That character belongs to another account." });
+    }
+  }
+  const saved = await dataStore.saveCharacter({ ...character, ownerUser: user || character.ownerUser || null });
   res.json({ ok: true, character: saved });
 });
 
-app.delete("/api/characters/:id", (req, res) => {
-  const removed = dataStore.deleteCharacter(req.params.id);
+app.delete("/api/characters/:id", async (req, res) => {
+  const user = userFromReq(req);
+  const existing = (await dataStore.loadCharacters())[req.params.id];
+  if (existing && existing.ownerUser && existing.ownerUser !== user) {
+    return res.status(403).json({ ok: false, error: "That character belongs to another account." });
+  }
+  const removed = await dataStore.deleteCharacter(req.params.id);
   res.json({ ok: removed });
 });
 
@@ -127,10 +196,21 @@ function getOrCreateSession(sessionId) {
       diceLog: (persisted && persisted.diceLog) || [],
       combatLog: (persisted && persisted.combatLog) || [],
       dmNotes: (persisted && persisted.dmNotes) || [],
+      map: (persisted && persisted.map) || { background: "", fogEnabled: false, revealed: {} },
       members: {},
     });
   }
   return sessions.get(sessionId);
+}
+
+// Logical map grid dimensions -- token coordinates and fog cells are stored
+// as fractions/indices against this, so they line up across screen sizes.
+const GRID_N = 20;
+
+function tokenCell(token) {
+  const c = Math.min(GRID_N - 1, Math.max(0, Math.floor((token.fx ?? 0.5) * GRID_N)));
+  const r = Math.min(GRID_N - 1, Math.max(0, Math.floor((token.fy ?? 0.5) * GRID_N)));
+  return `${c},${r}`;
 }
 
 function persistSession(sessionId) {
@@ -170,6 +250,14 @@ function isTokenGated(token) {
   return token.kind === "monster" && (token.hidden || token.revealHp === false);
 }
 
+// With fog of war on, non-PC tokens sitting on an unrevealed cell are hidden
+// from players entirely (the party can always see their own PCs).
+function isTokenFogHidden(session, token) {
+  if (!session.map || !session.map.fogEnabled) return false;
+  if (token.kind === "pc") return false;
+  return !session.map.revealed[tokenCell(token)];
+}
+
 function hpStatusLabel(hp, maxHp) {
   if (hp <= 0) return "Down";
   const pct = maxHp > 0 ? hp / maxHp : 0;
@@ -179,20 +267,26 @@ function hpStatusLabel(hp, maxHp) {
   return "Critical";
 }
 
+// Strip DM-only internals (exact HP, attack bonuses, saves, spell slots)
+// from a monster the players can see but shouldn't have full numbers for.
 function redactToken(token) {
-  return { ...token, hp: null, maxHp: null, hpStatus: hpStatusLabel(token.hp, token.maxHp) };
+  const { hp, maxHp, attacks, saves, slots, pactSlots, ...rest } = token;
+  return { ...rest, hp: null, maxHp: null, hpStatus: hpStatusLabel(hp, maxHp) };
 }
 
 // Broadcasts a token's current state to the right audience: full truth to
 // everyone if it isn't gated, otherwise full truth to the DM room only and
 // a redacted (or entirely absent) view to the players room.
 function broadcastToken(sessionId, token) {
-  if (!isTokenGated(token)) {
-    io.to(sessionId).emit("token-upsert", token);
+  const session = sessions.get(sessionId);
+  const fogHidden = session && isTokenFogHidden(session, token);
+  if (!isTokenGated(token) && !fogHidden) {
+    io.to(dmRoom(sessionId)).emit("token-upsert", token);
+    io.to(playersRoom(sessionId)).emit("token-upsert", token);
     return;
   }
   io.to(dmRoom(sessionId)).emit("token-upsert", token);
-  if (token.hidden) {
+  if (token.hidden || fogHidden) {
     io.to(playersRoom(sessionId)).emit("token-remove", { id: token.id });
   } else {
     io.to(playersRoom(sessionId)).emit("token-upsert", redactToken(token));
@@ -204,7 +298,7 @@ function sessionStateForRole(session, role) {
   for (const [id, token] of Object.entries(session.tokens)) {
     if (role === "dm") {
       tokens[id] = token;
-    } else if (!token.hidden) {
+    } else if (!token.hidden && !isTokenFogHidden(session, token)) {
       tokens[id] = isTokenGated(token) ? redactToken(token) : token;
     }
   }
@@ -215,6 +309,7 @@ function sessionStateForRole(session, role) {
     diceLog: role === "dm" ? session.diceLog : session.diceLog.filter((d) => !d.secret),
     combatLog: session.combatLog,
     dmNotes: role === "dm" ? session.dmNotes : undefined,
+    map: session.map,
     members: session.members,
   };
 }
@@ -222,11 +317,26 @@ function sessionStateForRole(session, role) {
 io.on("connection", (socket) => {
   let currentSessionId = null;
   let currentRole = "player";
+  let currentClientId = null;
+
+  // Who may move/edit/remove a token:
+  //  - DM can touch anything.
+  //  - a PC token: only the browser that owns it.
+  //  - a monster/NPC token: only the DM or whoever placed it (players can't
+  //    push the DM's monsters around).
+  //  - a plain marker: anyone (they're lightweight shared annotations).
+  const canEditToken = (token) => {
+    if (currentRole === "dm") return true;
+    if (token.kind === "pc") return token.ownerClientId === currentClientId;
+    if (token.kind === "monster") return token.placedByClientId === currentClientId;
+    return true;
+  };
 
   socket.on("join-session", ({ sessionId, userName, clientId, role } = {}) => {
     if (!sessionId || typeof sessionId !== "string") return;
     currentSessionId = sessionId;
     currentRole = role === "dm" ? "dm" : "player";
+    currentClientId = clientId || null;
     socket.join(sessionId);
     socket.join(currentRole === "dm" ? dmRoom(sessionId) : playersRoom(sessionId));
 
@@ -241,11 +351,27 @@ io.on("connection", (socket) => {
 
   socket.on("token-upsert", (token) => {
     if (!currentSessionId || !token || typeof token.id !== "string") return;
-    if (!isFiniteNumber(token.x) || !isFiniteNumber(token.y)) return;
+    // Coordinates are stored as fractions (0..1) of the map so they line up
+    // across different screen sizes; accept legacy px only as a fallback.
+    if (!isFiniteNumber(token.fx) || !isFiniteNumber(token.fy)) {
+      if (!isFiniteNumber(token.x) || !isFiniteNumber(token.y)) return;
+    }
     const session = getOrCreateSession(currentSessionId);
     const existing = session.tokens[token.id];
-    // Preserve DM-set gating flags across plain moves (client may not echo them back).
-    const merged = existing ? { ...existing, ...token, hidden: token.hidden ?? existing.hidden, revealHp: token.revealHp ?? existing.revealHp } : token;
+    // Only the owner/DM may move an existing owned token. New markers are
+    // created freely (kind defaults to marker on the client).
+    if (existing && !canEditToken(existing)) return;
+    // Preserve server-authoritative combat state and DM gating flags across
+    // plain moves (the client only echoes position/label for those).
+    const merged = existing
+      ? {
+          ...existing,
+          fx: isFiniteNumber(token.fx) ? token.fx : existing.fx,
+          fy: isFiniteNumber(token.fy) ? token.fy : existing.fy,
+          label: token.label ?? existing.label,
+          color: token.color ?? existing.color,
+        }
+      : token;
     session.tokens[token.id] = merged;
     broadcastToken(currentSessionId, merged);
     persistSession(currentSessionId);
@@ -254,51 +380,66 @@ io.on("connection", (socket) => {
   socket.on("token-remove", ({ id } = {}) => {
     if (!currentSessionId || typeof id !== "string") return;
     const session = getOrCreateSession(currentSessionId);
+    const token = session.tokens[id];
+    if (token && !canEditToken(token)) return;
     delete session.tokens[id];
     io.to(currentSessionId).emit("token-remove", { id });
     persistSession(currentSessionId);
   });
 
   // Adds/updates the caller's own PC token, computed server-side from their
-  // saved character sheet so HP/AC/attack bonus are trustworthy for combat.
-  socket.on("add-pc-token", ({ clientId, character, x, y } = {}) => {
+  // saved character sheet so HP/AC/attacks/saves/slots are trustworthy.
+  socket.on("add-pc-token", ({ clientId, character, fx, fy } = {}) => {
     if (!currentSessionId || !clientId || !character || !character.name) return;
     const session = getOrCreateSession(currentSessionId);
     const id = `pc-${clientId}`;
+    const existing = session.tokens[id];
+    const pcCombat = combat.buildPcCombat(character, contentStore);
     const token = {
       id,
       kind: "pc",
-      x: isFiniteNumber(x) ? x : 60,
-      y: isFiniteNumber(y) ? y : 60,
+      fx: isFiniteNumber(fx) ? fx : existing ? existing.fx : 0.15,
+      fy: isFiniteNumber(fy) ? fy : existing ? existing.fy : 0.15,
       label: character.name.trim().slice(0, 2).toUpperCase(),
       name: character.name.trim().slice(0, 60),
-      color: TOKEN_COLORS[Math.floor(Math.random() * TOKEN_COLORS.length)],
+      color: (existing && existing.color) || TOKEN_COLORS[Math.floor(Math.random() * TOKEN_COLORS.length)],
       characterId: character.id || null,
       ownerClientId: clientId,
-      hp: isFiniteNumber(character.currentHp) ? character.currentHp : character.maxHp,
+      charLevel: character.level || 1,
+      hp: existing && isFiniteNumber(existing.hp) ? existing.hp : isFiniteNumber(character.currentHp) ? character.currentHp : character.maxHp,
       maxHp: character.maxHp,
       ac: character.armorClass,
-      atk: combat.pcAttackProfile(character),
+      conditions: (existing && existing.conditions) || [],
+      attacks: pcCombat.attacks,
+      saves: pcCombat.saves,
+      slots: pcCombat.slots,
+      slotsUsed: (existing && existing.slotsUsed) || (pcCombat.slots ? pcCombat.slots.map(() => 0) : null),
+      pactSlots: pcCombat.pactSlots,
+      pactUsed: (existing && existing.pactUsed) || 0,
     };
     session.tokens[id] = token;
     broadcastToken(currentSessionId, token);
     persistSession(currentSessionId);
   });
 
-  // DM/anyone adds a monster token from the bestiary. Monster HP starts
+  // DM/anyone adds a monster token from the bestiary. HP defaults to the flat
+  // average of its hit dice (the standard "fixed HP" used for consistency);
+  // pass roll:true to roll the dice for variance instead. Monster HP starts
   // hidden from players by default -- the DM reveals it explicitly.
-  socket.on("add-monster-token", ({ monsterId, x, y } = {}) => {
+  socket.on("add-monster-token", ({ monsterId, fx, fy, roll } = {}) => {
     if (!currentSessionId || typeof monsterId !== "string") return;
     const monster = contentStore.monsters[monsterId];
     if (!monster) return;
     const session = getOrCreateSession(currentSessionId);
     const id = `mon-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
-    const hp = rollHitDice(monster.hitDice);
+    const hp = roll ? rollHitDice(monster.hitDice) : averageHitDice(monster.hitDice);
+    const monCombat = combat.buildMonsterCombat(monster);
     const token = {
       id,
       kind: "monster",
-      x: isFiniteNumber(x) ? x : 200,
-      y: isFiniteNumber(y) ? y : 60,
+      placedByClientId: currentClientId,
+      fx: isFiniteNumber(fx) ? fx : 0.55,
+      fy: isFiniteNumber(fy) ? fy : 0.15,
       label: monster.name.slice(0, 2).toUpperCase(),
       name: monster.name,
       color: "#6B5E45",
@@ -306,7 +447,9 @@ io.on("connection", (socket) => {
       hp,
       maxHp: hp,
       ac: monster.ac,
-      atk: combat.parseMonsterAttack(monster),
+      conditions: [],
+      attacks: monCombat.attacks,
+      saves: monCombat.saves,
       hidden: false,
       revealHp: false,
     };
@@ -315,16 +458,40 @@ io.on("connection", (socket) => {
     persistSession(currentSessionId);
   });
 
-  socket.on("attack-roll", ({ attackerTokenId, targetTokenId } = {}) => {
+  // Resolves a chosen attack/spell from the attacker's option list against a
+  // target. Everything (rolls, saves, damage, healing, slot spend) happens
+  // here server-side so results are consistent and un-fakeable.
+  socket.on("attack-roll", ({ attackerTokenId, targetTokenId, attackIndex = 0, slotLevel } = {}) => {
     if (!currentSessionId) return;
     const session = getOrCreateSession(currentSessionId);
     const attacker = session.tokens[attackerTokenId];
     const target = session.tokens[targetTokenId];
-    if (!attacker || !target || attackerTokenId === targetTokenId) return;
+    if (!attacker || !target) return;
+    // A downed/dead combatant (0 HP) can't take actions.
+    if (typeof attacker.hp === "number" && attacker.hp <= 0) {
+      socket.emit("attack-result", { at: Date.now(), attackerName: attacker.name || attacker.label, targetName: target.name || target.label, kind: "downed", attackName: "", note: `${attacker.name || attacker.label} is down and can't act.` });
+      return;
+    }
+    const action = (attacker.attacks || [])[attackIndex];
+    if (!action) return;
     if (typeof target.hp !== "number") return;
 
-    const result = combat.resolveAttack(attacker, target);
-    if (result.hit && result.damage) {
+    // Spending a leveled spell slot (cantrips and weapons are free).
+    if (action.spellLevel > 0) {
+      const useLevel = Math.max(action.spellLevel, Number(slotLevel) || action.spellLevel);
+      if (!spendSpellSlot(attacker, useLevel)) {
+        socket.emit("attack-result", { at: Date.now(), attackerName: attacker.name, targetName: target.name || target.label, kind: "no-slot", attackName: action.name, note: `No level ${useLevel} slot available.` });
+        return;
+      }
+      action._slotLevel = useLevel;
+    }
+
+    const result = combat.resolveAction(attacker, target, action, { slotLevel: action._slotLevel });
+
+    if (result.kind === "heal" && result.heal) {
+      target.hp = Math.min(target.maxHp || target.hp, target.hp + result.heal.total);
+      session.tokens[targetTokenId] = target;
+    } else if (result.damage && result.damage.total > 0 && (result.hit || result.kind === "save" || result.kind === "auto")) {
       target.hp = Math.max(0, target.hp - result.damage.total);
       session.tokens[targetTokenId] = target;
     }
@@ -333,15 +500,93 @@ io.on("connection", (socket) => {
       at: Date.now(),
       attackerName: attacker.name || attacker.label,
       targetName: target.name || target.label,
+      slotLevel: action._slotLevel,
       ...result,
     };
+    delete action._slotLevel;
     session.combatLog.push(entry);
     session.combatLog = session.combatLog.slice(-50);
 
     io.to(currentSessionId).emit("attack-result", entry);
-    if (result.hit && result.damage) {
-      broadcastToken(currentSessionId, target);
+    broadcastToken(currentSessionId, target);
+    if (action.spellLevel > 0) broadcastToken(currentSessionId, attacker); // slot count changed
+    persistSession(currentSessionId);
+  });
+
+  // ---- Conditions ----
+  socket.on("token-set-conditions", ({ tokenId, conditions } = {}) => {
+    if (!currentSessionId || typeof tokenId !== "string" || !Array.isArray(conditions)) return;
+    const session = getOrCreateSession(currentSessionId);
+    const token = session.tokens[tokenId];
+    if (!token || !canEditToken(token)) return;
+    token.conditions = conditions.slice(0, 15).map((c) => String(c).slice(0, 20));
+    broadcastToken(currentSessionId, token);
+    persistSession(currentSessionId);
+  });
+
+  // Manual HP set (owner of a PC token, or the DM). Handy for out-of-combat
+  // healing, temp HP, or DM adjudication.
+  socket.on("token-set-hp", ({ tokenId, hp } = {}) => {
+    if (!currentSessionId || typeof tokenId !== "string" || !isFiniteNumber(hp)) return;
+    const session = getOrCreateSession(currentSessionId);
+    const token = session.tokens[tokenId];
+    if (!token || !canEditToken(token)) return;
+    token.hp = Math.max(0, Math.min(token.maxHp || hp, Math.floor(hp)));
+    broadcastToken(currentSessionId, token);
+    persistSession(currentSessionId);
+  });
+
+  // Restore all spell slots / reset (a "long rest") for a PC token.
+  socket.on("token-long-rest", ({ tokenId } = {}) => {
+    if (!currentSessionId || typeof tokenId !== "string") return;
+    const session = getOrCreateSession(currentSessionId);
+    const token = session.tokens[tokenId];
+    if (!token || token.kind !== "pc" || !canEditToken(token)) return;
+    if (token.slotsUsed) token.slotsUsed = token.slotsUsed.map(() => 0);
+    token.pactUsed = 0;
+    token.hp = token.maxHp;
+    token.conditions = [];
+    broadcastToken(currentSessionId, token);
+    persistSession(currentSessionId);
+  });
+
+  // ---- Map / fog of war (DM controls the map, everyone sees it) ----
+  socket.on("map-set-background", ({ url } = {}) => {
+    if (!currentSessionId || currentRole !== "dm") return;
+    const session = getOrCreateSession(currentSessionId);
+    session.map.background = typeof url === "string" ? url.slice(0, 2000) : "";
+    io.to(currentSessionId).emit("map-update", session.map);
+    persistSession(currentSessionId);
+  });
+
+  socket.on("map-toggle-fog", () => {
+    if (!currentSessionId || currentRole !== "dm") return;
+    const session = getOrCreateSession(currentSessionId);
+    session.map.fogEnabled = !session.map.fogEnabled;
+    io.to(currentSessionId).emit("map-update", session.map);
+    resendAllTokens(currentSessionId);
+    persistSession(currentSessionId);
+  });
+
+  socket.on("map-reveal-cell", ({ cell, revealed } = {}) => {
+    if (!currentSessionId || currentRole !== "dm" || typeof cell !== "string") return;
+    const session = getOrCreateSession(currentSessionId);
+    if (revealed) session.map.revealed[cell] = true;
+    else delete session.map.revealed[cell];
+    io.to(currentSessionId).emit("map-update", session.map);
+    resendAllTokens(currentSessionId);
+    persistSession(currentSessionId);
+  });
+
+  socket.on("map-reveal-all", ({ revealed } = {}) => {
+    if (!currentSessionId || currentRole !== "dm") return;
+    const session = getOrCreateSession(currentSessionId);
+    session.map.revealed = {};
+    if (revealed) {
+      for (let c = 0; c < GRID_N; c++) for (let r = 0; r < GRID_N; r++) session.map.revealed[`${c},${r}`] = true;
     }
+    io.to(currentSessionId).emit("map-update", session.map);
+    resendAllTokens(currentSessionId);
     persistSession(currentSessionId);
   });
 
@@ -437,6 +682,36 @@ io.on("connection", (socket) => {
   });
 });
 
+// Consumes one spell slot of at least `level` from a PC token, preferring the
+// exact level and otherwise the lowest available higher slot. Pact slots are
+// tried if a warlock has no matching shared slot. Returns true on success.
+function spendSpellSlot(token, level) {
+  if (token.slots && token.slotsUsed) {
+    for (let lvl = level; lvl <= 9; lvl++) {
+      const idx = lvl - 1;
+      if ((token.slots[idx] || 0) - (token.slotsUsed[idx] || 0) > 0) {
+        token.slotsUsed[idx] = (token.slotsUsed[idx] || 0) + 1;
+        return true;
+      }
+    }
+  }
+  if (token.pactSlots && token.pactSlots.level >= level) {
+    if ((token.pactSlots.slots || 0) - (token.pactUsed || 0) > 0) {
+      token.pactUsed = (token.pactUsed || 0) + 1;
+      return true;
+    }
+  }
+  return false;
+}
+
+// Re-broadcasts every token in a room to the correct audiences. Used after a
+// fog change so players gain/lose visibility of tokens as cells flip.
+function resendAllTokens(sessionId) {
+  const session = sessions.get(sessionId);
+  if (!session) return;
+  for (const token of Object.values(session.tokens)) broadcastToken(sessionId, token);
+}
+
 function rollHitDice(hitDiceNotation) {
   const m = /(\d+)d(\d+)\s*([+-]\d+)?/i.exec(hitDiceNotation || "");
   if (!m) return 10;
@@ -448,6 +723,23 @@ function rollHitDice(hitDiceNotation) {
   return Math.max(1, total);
 }
 
-server.listen(PORT, HOST, () => {
-  console.log(`DnD platform server listening on http://${HOST}:${PORT} (reachable at your LAN/public IP on port ${PORT})`);
-});
+// The "fixed" / average HP shown on a 5e stat block: count * average die + mod.
+function averageHitDice(hitDiceNotation) {
+  const m = /(\d+)d(\d+)\s*([+-]\d+)?/i.exec(hitDiceNotation || "");
+  if (!m) return 10;
+  const count = parseInt(m[1], 10);
+  const sides = parseInt(m[2], 10);
+  const mod = m[3] ? parseInt(m[3], 10) : 0;
+  return Math.max(1, Math.floor(count * ((sides + 1) / 2)) + mod);
+}
+
+// Wait for storage to be ready (and, for Postgres, warm the session cache)
+// before accepting connections, so a restart restores in-progress games.
+dataStore
+  .preload()
+  .catch((err) => console.error("Storage preload failed:", err.message))
+  .finally(() => {
+    server.listen(PORT, HOST, () => {
+      console.log(`DnD platform server listening on http://${HOST}:${PORT} (reachable at your LAN/public IP on port ${PORT})`);
+    });
+  });

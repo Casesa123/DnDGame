@@ -22,7 +22,27 @@
     <button class="tab-btn" data-tab="compendium">Compendium</button>
     <button class="tab-btn" data-tab="homebrew">Homebrew</button>
   </nav>
+  <div class="account-area">
+    <span id="account-status" class="muted small"></span>
+    <button id="btn-account" class="secondary-btn" type="button">Log in</button>
+    <button id="btn-logout" class="secondary-btn" type="button" style="display:none">Log out</button>
+  </div>
 </header>
+
+<div id="account-modal" class="modal-backdrop" style="display:none">
+  <div class="modal-card">
+    <h3>Log in or create an account</h3>
+    <p class="muted small">Optional — ties your saved characters to you and enforces token ownership at the table. Skip it for casual local play.</p>
+    <label>Username <input id="account-username" type="text" placeholder="3-20 letters/numbers" /></label>
+    <label>Password <input id="account-password" type="password" placeholder="at least 6 characters" /></label>
+    <div class="field-row">
+      <button id="btn-do-login" class="primary-btn" type="button">Log in</button>
+      <button id="btn-do-register" class="secondary-btn" type="button">Create account</button>
+      <button id="btn-account-cancel" class="link-btn" type="button">Cancel</button>
+    </div>
+    <p id="account-error" class="error-text"></p>
+  </div>
+</div>
 
 <main>
 
@@ -53,6 +73,8 @@
           <div class="ability-grid" id="ability-inputs"></div>
         </div>
 
+        <div id="asi-section"></div>
+
         <div class="ability-block">
           <div class="ability-block-header"><span>Equipment</span></div>
           <div class="field-row">
@@ -63,6 +85,10 @@
               <select id="char-shield"><option value="">None</option></select>
             </label>
           </div>
+          <label style="margin-top:10px">Weapons (equipped — drive your attacks in play)
+            <span class="muted small" style="text-transform:none">Ctrl/Cmd-click to select several.</span>
+            <select id="char-weapons" multiple size="5"></select>
+          </label>
         </div>
 
         <div id="spell-choice-section"></div>
@@ -136,7 +162,7 @@
 
       <div class="card map-card">
         <h3>Map</h3>
-        <p class="muted small">Click an empty cell to drop a plain marker. Drag any token to move it. Synced live with everyone in the session.</p>
+        <p class="muted small">Click empty space to drop a marker. Drag tokens to move. Shift-drag to measure distance (5&nbsp;ft/square). Click a token for its details; turn on Attack mode to fight.</p>
 
         <div class="field-row map-controls">
           <label>My character
@@ -147,6 +173,9 @@
           <label>Add monster
             <select id="session-monster-select"></select>
           </label>
+          <label class="muted small" style="flex-direction:row; align-items:center; gap:6px; min-width:auto">
+            <input id="monster-roll-hp" type="checkbox" style="width:auto"> Roll HP (vs. average)
+          </label>
           <button id="btn-add-monster-token" class="secondary-btn" type="button">Add to map</button>
         </div>
 
@@ -155,7 +184,23 @@
           <span id="attack-status" class="muted small"></span>
         </div>
 
-        <div id="map-grid" class="map-grid"></div>
+        <div id="dm-map-controls" class="field-row map-controls" style="display:none">
+          <button id="btn-map-bg" class="secondary-btn" type="button">Set background</button>
+          <button id="btn-fog-toggle" class="secondary-btn" type="button">Toggle fog</button>
+          <button id="btn-fog-paint" class="secondary-btn" type="button">Paint fog: off</button>
+          <button id="btn-fog-reveal-all" class="secondary-btn" type="button">Reveal all</button>
+          <button id="btn-fog-hide-all" class="secondary-btn" type="button">Hide all</button>
+        </div>
+
+        <div id="attack-menu" class="attack-menu" style="display:none"></div>
+
+        <div class="map-viewport">
+          <div id="map-grid" class="map-grid"></div>
+          <div id="fog-layer" class="fog-layer"></div>
+          <div id="measure-label" class="measure-label"></div>
+        </div>
+
+        <div id="token-panel" class="token-panel" style="display:none"></div>
       </div>
 
       <div class="card">
@@ -202,12 +247,24 @@
   <!-- ===================== HOMEBREW ===================== -->
   <section id="tab-homebrew" class="tab-panel">
     <div class="card">
-      <h2>Import a homebrew pack</h2>
-      <p class="muted">Paste a JSON pack with any of <code>races</code>, <code>classes</code>, <code>spells</code>, <code>monsters</code>, <code>items</code>. Entries are namespaced so they never collide with core content. Browse everything currently loaded, official and homebrew, in the Compendium tab.</p>
+      <h2>Create homebrew content</h2>
+      <p class="muted">Fill in a form to add a custom monster, spell, item, race, or class — no JSON required. It's namespaced so it never collides with core content, and shows up immediately in the builder and Compendium.</p>
+      <label>Pack name (groups your creations)
+        <input id="hb-form-pack" type="text" placeholder="e.g. my-homebrew-setting" value="my-homebrew" />
+      </label>
+      <div class="field-row" id="hb-type-tabs"></div>
+      <div id="hb-form"></div>
+      <button id="btn-hb-form-submit" class="primary-btn" type="button">Add to pack</button>
+      <p id="hb-form-status" class="muted small"></p>
+    </div>
+
+    <div class="card">
+      <h2>Import a homebrew pack (raw JSON)</h2>
+      <p class="muted">Prefer to paste JSON? Provide a pack with any of <code>races</code>, <code>classes</code>, <code>spells</code>, <code>monsters</code>, <code>items</code>.</p>
       <label>Pack name
         <input id="hb-pack-name" type="text" placeholder="e.g. my-homebrew-setting" />
       </label>
-      <textarea id="hb-json" rows="12" placeholder='{"classes": {"gunslinger": {"name": "Gunslinger", "hitDie": 8, ...}}}'></textarea>
+      <textarea id="hb-json" rows="10" placeholder='{"classes": {"gunslinger": {"name": "Gunslinger", "hitDie": 8, ...}}}'></textarea>
       <button id="btn-upload-homebrew" class="primary-btn" type="button">Upload pack</button>
       <p id="homebrew-status" class="muted"></p>
     </div>
@@ -218,6 +275,11 @@
   </section>
 
 </main>
+
+<div id="dice-overlay" class="dice-overlay">
+  <div class="dice-cube"><span id="dice-face">20</span></div>
+  <div id="dice-caption" class="dice-caption"></div>
+</div>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="/app.js"></script>

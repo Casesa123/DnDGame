@@ -2,600 +2,3188 @@
   "barbarian": {
     "id": "barbarian",
     "name": "Barbarian",
+    "description": "A fierce warrior who channels primal fury into a battle rage, shrugging off blows that would fell others. Barbarians rely on instinct, toughness, and overwhelming physical power.",
     "hitDie": 12,
-    "primaryAbility": ["str"],
-    "savingThrowProficiencies": ["str", "con"],
-    "armorProficiencies": ["light", "medium", "shields"],
-    "weaponProficiencies": ["simple", "martial"],
-    "skillChoices": { "count": 2, "options": ["animal-handling", "athletics", "intimidation", "nature", "perception", "survival"] },
-    "startingEquipment": ["A greataxe or any martial melee weapon", "Two handaxes or a simple weapon", "An explorer's pack and four javelins"],
+    "primaryAbility": [
+      "str"
+    ],
+    "savingThrowProficiencies": [
+      "str",
+      "con"
+    ],
+    "armorProficiencies": [
+      "light",
+      "medium",
+      "shields"
+    ],
+    "weaponProficiencies": [
+      "simple",
+      "martial"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "animal-handling",
+        "athletics",
+        "intimidation",
+        "nature",
+        "perception",
+        "survival"
+      ]
+    },
+    "startingEquipment": [
+      "A greataxe or any martial melee weapon",
+      "Two handaxes or a simple weapon",
+      "An explorer's pack and four javelins"
+    ],
     "spellcasting": null,
-    "asiLevels": [4, 8, 12, 16, 19],
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 3,
     "subclasses": [
       {
         "id": "path-of-the-berserker",
         "name": "Path of the Berserker",
         "features": [
-          { "level": 3, "name": "Frenzy", "description": "Can enter a frenzy while raging, gaining extra melee attacks at the cost of exhaustion afterward." },
-          { "level": 6, "name": "Mindless Rage", "description": "Can't be charmed or frightened while raging." },
-          { "level": 10, "name": "Intimidating Presence", "description": "Can spend an action to frighten a creature with a display of primal fury." },
-          { "level": 14, "name": "Retaliation", "description": "As a reaction, can make a melee attack against a creature that just damaged you." }
+          {
+            "level": 3,
+            "name": "Frenzy",
+            "description": "Can enter a frenzy while raging, gaining extra melee attacks at the cost of exhaustion afterward."
+          },
+          {
+            "level": 6,
+            "name": "Mindless Rage",
+            "description": "Can't be charmed or frightened while raging."
+          },
+          {
+            "level": 10,
+            "name": "Intimidating Presence",
+            "description": "Can spend an action to frighten a creature with a display of primal fury."
+          },
+          {
+            "level": 14,
+            "name": "Retaliation",
+            "description": "As a reaction, can make a melee attack against a creature that just damaged you."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Rage", "description": "Enter a rage as a bonus action for bonus melee damage, resistance to physical damage, and advantage on Strength checks/saves." }, { "name": "Unarmored Defense", "description": "AC equals 10 + Dex modifier + Con modifier while not wearing armor." }] },
-      { "level": 2, "features": [{ "name": "Reckless Attack", "description": "Can attack with advantage at the cost of granting advantage to attacks against you until your next turn." }, { "name": "Danger Sense", "description": "Advantage on Dexterity saves against effects you can see, such as traps and spells." }] },
-      { "level": 3, "features": [{ "name": "Primal Path", "description": "Choose a subclass (Primal Path) that grants additional features." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [{ "name": "Extra Attack", "description": "Attack twice, instead of once, whenever you take the Attack action on your turn." }, { "name": "Fast Movement", "description": "Speed increases by 10 feet while not wearing heavy armor." }] },
-      { "level": 6, "features": [{ "name": "Path Feature", "description": "Gains a feature from their chosen Primal Path." }] },
-      { "level": 7, "features": [{ "name": "Feral Instinct", "description": "Advantage on initiative rolls, and can act normally when surprised if you enter a rage first." }] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [{ "name": "Brutal Critical", "description": "Roll one additional weapon damage die on a critical hit." }] },
-      { "level": 10, "features": [{ "name": "Path Feature", "description": "Gains a feature from their chosen Primal Path." }] },
-      { "level": 11, "features": [{ "name": "Relentless Rage", "description": "When dropped to 0 HP while raging, can make a Constitution save to drop to 1 HP instead." }] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [{ "name": "Brutal Critical", "description": "Roll two additional weapon damage dice on a critical hit." }] },
-      { "level": 14, "features": [{ "name": "Path Feature", "description": "Gains a feature from their chosen Primal Path." }] },
-      { "level": 15, "features": [{ "name": "Persistent Rage", "description": "Rage only ends early if you fall unconscious or choose to end it." }] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [{ "name": "Brutal Critical", "description": "Roll three additional weapon damage dice on a critical hit." }] },
-      { "level": 18, "features": [{ "name": "Indomitable Might", "description": "If your total for a Strength check is less than your Strength score, use that score instead." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Primal Champion", "description": "Strength and Constitution scores increase by 4, to a new maximum of 24." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Rage",
+            "description": "Enter a rage as a bonus action for bonus melee damage, resistance to physical damage, and advantage on Strength checks/saves."
+          },
+          {
+            "name": "Unarmored Defense",
+            "description": "AC equals 10 + Dex modifier + Con modifier while not wearing armor."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Reckless Attack",
+            "description": "Can attack with advantage at the cost of granting advantage to attacks against you until your next turn."
+          },
+          {
+            "name": "Danger Sense",
+            "description": "Advantage on Dexterity saves against effects you can see, such as traps and spells."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Primal Path",
+            "description": "Choose a subclass (Primal Path) that grants additional features."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": [
+          {
+            "name": "Extra Attack",
+            "description": "Attack twice, instead of once, whenever you take the Attack action on your turn."
+          },
+          {
+            "name": "Fast Movement",
+            "description": "Speed increases by 10 feet while not wearing heavy armor."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Path Feature",
+            "description": "Gains a feature from their chosen Primal Path."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": [
+          {
+            "name": "Feral Instinct",
+            "description": "Advantage on initiative rolls, and can act normally when surprised if you enter a rage first."
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": [
+          {
+            "name": "Brutal Critical",
+            "description": "Roll one additional weapon damage die on a critical hit."
+          }
+        ]
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Path Feature",
+            "description": "Gains a feature from their chosen Primal Path."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": [
+          {
+            "name": "Relentless Rage",
+            "description": "When dropped to 0 HP while raging, can make a Constitution save to drop to 1 HP instead."
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": [
+          {
+            "name": "Brutal Critical",
+            "description": "Roll two additional weapon damage dice on a critical hit."
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Path Feature",
+            "description": "Gains a feature from their chosen Primal Path."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": [
+          {
+            "name": "Persistent Rage",
+            "description": "Rage only ends early if you fall unconscious or choose to end it."
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": [
+          {
+            "name": "Brutal Critical",
+            "description": "Roll three additional weapon damage dice on a critical hit."
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Indomitable Might",
+            "description": "If your total for a Strength check is less than your Strength score, use that score instead."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Primal Champion",
+            "description": "Strength and Constitution scores increase by 4, to a new maximum of 24."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "bard": {
     "id": "bard",
     "name": "Bard",
+    "description": "A master of song, speech, and the magic they contain. Bards inspire allies, bend minds, and weave a little of every kind of magic, thriving on versatility and charm.",
     "hitDie": 8,
-    "primaryAbility": ["cha"],
-    "savingThrowProficiencies": ["dex", "cha"],
-    "armorProficiencies": ["light"],
-    "weaponProficiencies": ["simple", "hand-crossbow", "longsword", "rapier", "shortsword"],
-    "toolProficiencies": ["three musical instruments of choice"],
-    "skillChoices": { "count": 3, "options": ["any-three-skills"] },
-    "startingEquipment": ["A rapier, longsword, or simple weapon", "A diplomat's pack or entertainer's pack", "A musical instrument of choice", "Leather armor and a dagger"],
-    "spellcasting": { "ability": "cha", "type": "full", "prepared": false },
-    "asiLevels": [4, 8, 12, 16, 19],
+    "primaryAbility": [
+      "cha"
+    ],
+    "savingThrowProficiencies": [
+      "dex",
+      "cha"
+    ],
+    "armorProficiencies": [
+      "light"
+    ],
+    "weaponProficiencies": [
+      "simple",
+      "hand-crossbow",
+      "longsword",
+      "rapier",
+      "shortsword"
+    ],
+    "toolProficiencies": [
+      "three musical instruments of choice"
+    ],
+    "skillChoices": {
+      "count": 3,
+      "options": [
+        "any-three-skills"
+      ]
+    },
+    "startingEquipment": [
+      "A rapier, longsword, or simple weapon",
+      "A diplomat's pack or entertainer's pack",
+      "A musical instrument of choice",
+      "Leather armor and a dagger"
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "type": "full",
+      "prepared": false
+    },
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 3,
     "subclasses": [
       {
         "id": "college-of-lore",
         "name": "College of Lore",
         "features": [
-          { "level": 3, "name": "Bonus Proficiencies", "description": "Gains proficiency in three additional skills of choice." },
-          { "level": 3, "name": "Cutting Words", "description": "As a reaction, expend Bardic Inspiration to subtract from a nearby enemy's roll." },
-          { "level": 6, "name": "Additional Magical Secrets", "description": "Learn two spells from any class's spell list." },
-          { "level": 14, "name": "Peerless Skill", "description": "Add a Bardic Inspiration die to your own ability checks." }
+          {
+            "level": 3,
+            "name": "Bonus Proficiencies",
+            "description": "Gains proficiency in three additional skills of choice."
+          },
+          {
+            "level": 3,
+            "name": "Cutting Words",
+            "description": "As a reaction, expend Bardic Inspiration to subtract from a nearby enemy's roll."
+          },
+          {
+            "level": 6,
+            "name": "Additional Magical Secrets",
+            "description": "Learn two spells from any class's spell list."
+          },
+          {
+            "level": 14,
+            "name": "Peerless Skill",
+            "description": "Add a Bardic Inspiration die to your own ability checks."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Spellcasting", "description": "Casts bard spells using Charisma, knowing a limited number of spells at once." }, { "name": "Bardic Inspiration", "description": "As a bonus action, give an ally a die (d6) they can add to one roll." }] },
-      { "level": 2, "features": [{ "name": "Jack of All Trades", "description": "Add half proficiency bonus (rounded down) to ability checks that don't already include it." }, { "name": "Song of Rest", "description": "Allies who rest with you regain extra hit points during a short rest." }] },
-      { "level": 3, "features": [{ "name": "Bard College", "description": "Choose a subclass (Bard College) that grants additional features." }, { "name": "Expertise", "description": "Double proficiency bonus for two chosen skill proficiencies." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [{ "name": "Bardic Inspiration Improves", "description": "Bardic Inspiration die becomes a d8." }, { "name": "Font of Inspiration", "description": "Regain all uses of Bardic Inspiration on a short or long rest." }] },
-      { "level": 6, "features": [{ "name": "College Feature", "description": "Gains a feature from their chosen Bard College." }] },
-      { "level": 7, "features": [{ "name": "Countercharm", "description": "Use music to grant allies advantage against being frightened or charmed." }] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [{ "name": "Song of Rest Improves", "description": "Song of Rest die becomes a d8." }] },
-      { "level": 10, "features": [{ "name": "Bardic Inspiration Improves", "description": "Bardic Inspiration die becomes a d10." }, { "name": "Expertise", "description": "Two more skill proficiencies gain double proficiency bonus." }, { "name": "College Feature", "description": "Gains a feature from their chosen Bard College." }] },
-      { "level": 11, "features": [] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [{ "name": "Song of Rest Improves", "description": "Song of Rest die becomes a d10." }] },
-      { "level": 14, "features": [{ "name": "Magical Secrets", "description": "Learn two spells from any class's spell list." }, { "name": "College Feature", "description": "Gains a feature from their chosen Bard College." }] },
-      { "level": 15, "features": [{ "name": "Bardic Inspiration Improves", "description": "Bardic Inspiration die becomes a d12." }] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [{ "name": "Song of Rest Improves", "description": "Song of Rest die becomes a d12." }] },
-      { "level": 18, "features": [{ "name": "Magical Secrets", "description": "Learn two more spells from any class's spell list." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Superior Inspiration", "description": "Regain one use of Bardic Inspiration when you roll initiative if you have none left." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Spellcasting",
+            "description": "Casts bard spells using Charisma, knowing a limited number of spells at once."
+          },
+          {
+            "name": "Bardic Inspiration",
+            "description": "As a bonus action, give an ally a die (d6) they can add to one roll."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Jack of All Trades",
+            "description": "Add half proficiency bonus (rounded down) to ability checks that don't already include it."
+          },
+          {
+            "name": "Song of Rest",
+            "description": "Allies who rest with you regain extra hit points during a short rest."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Bard College",
+            "description": "Choose a subclass (Bard College) that grants additional features."
+          },
+          {
+            "name": "Expertise",
+            "description": "Double proficiency bonus for two chosen skill proficiencies."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": [
+          {
+            "name": "Bardic Inspiration Improves",
+            "description": "Bardic Inspiration die becomes a d8."
+          },
+          {
+            "name": "Font of Inspiration",
+            "description": "Regain all uses of Bardic Inspiration on a short or long rest."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "College Feature",
+            "description": "Gains a feature from their chosen Bard College."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": [
+          {
+            "name": "Countercharm",
+            "description": "Use music to grant allies advantage against being frightened or charmed."
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": [
+          {
+            "name": "Song of Rest Improves",
+            "description": "Song of Rest die becomes a d8."
+          }
+        ]
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Bardic Inspiration Improves",
+            "description": "Bardic Inspiration die becomes a d10."
+          },
+          {
+            "name": "Expertise",
+            "description": "Two more skill proficiencies gain double proficiency bonus."
+          },
+          {
+            "name": "College Feature",
+            "description": "Gains a feature from their chosen Bard College."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": []
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": [
+          {
+            "name": "Song of Rest Improves",
+            "description": "Song of Rest die becomes a d10."
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Magical Secrets",
+            "description": "Learn two spells from any class's spell list."
+          },
+          {
+            "name": "College Feature",
+            "description": "Gains a feature from their chosen Bard College."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": [
+          {
+            "name": "Bardic Inspiration Improves",
+            "description": "Bardic Inspiration die becomes a d12."
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": [
+          {
+            "name": "Song of Rest Improves",
+            "description": "Song of Rest die becomes a d12."
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Magical Secrets",
+            "description": "Learn two more spells from any class's spell list."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Superior Inspiration",
+            "description": "Regain one use of Bardic Inspiration when you roll initiative if you have none left."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "cleric": {
     "id": "cleric",
     "name": "Cleric",
+    "description": "A divine champion who wields the power of a god. Clerics heal, protect, and smite, shaping the battlefield with miracles drawn from their faith and chosen domain.",
     "hitDie": 8,
-    "primaryAbility": ["wis"],
-    "savingThrowProficiencies": ["wis", "cha"],
-    "armorProficiencies": ["light", "medium", "shields"],
-    "weaponProficiencies": ["simple"],
-    "skillChoices": { "count": 2, "options": ["history", "insight", "medicine", "persuasion", "religion"] },
-    "startingEquipment": ["A mace or warhammer (if proficient)", "Scale mail, leather armor, or chain mail (if proficient)", "A light crossbow and 20 bolts, or a simple weapon", "A priest's pack and a holy symbol"],
-    "spellcasting": { "ability": "wis", "type": "full", "prepared": true },
-    "asiLevels": [4, 8, 12, 16, 19],
+    "primaryAbility": [
+      "wis"
+    ],
+    "savingThrowProficiencies": [
+      "wis",
+      "cha"
+    ],
+    "armorProficiencies": [
+      "light",
+      "medium",
+      "shields"
+    ],
+    "weaponProficiencies": [
+      "simple"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "history",
+        "insight",
+        "medicine",
+        "persuasion",
+        "religion"
+      ]
+    },
+    "startingEquipment": [
+      "A mace or warhammer (if proficient)",
+      "Scale mail, leather armor, or chain mail (if proficient)",
+      "A light crossbow and 20 bolts, or a simple weapon",
+      "A priest's pack and a holy symbol"
+    ],
+    "spellcasting": {
+      "ability": "wis",
+      "type": "full",
+      "prepared": true
+    },
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 1,
     "subclasses": [
       {
         "id": "life-domain",
         "name": "Life Domain",
         "features": [
-          { "level": 1, "name": "Bonus Proficiency", "description": "Proficient with heavy armor." },
-          { "level": 1, "name": "Disciple of Life", "description": "Healing spells restore additional hit points." },
-          { "level": 2, "name": "Channel Divinity: Preserve Life", "description": "Spend a Channel Divinity use to restore a pool of hit points split among nearby creatures." },
-          { "level": 6, "name": "Blessed Healer", "description": "You also regain hit points when you cast a healing spell on someone else." },
-          { "level": 8, "name": "Divine Strike", "description": "Once per turn, deal extra radiant damage on a weapon hit." },
-          { "level": 17, "name": "Supreme Healing", "description": "Healing spells restore the maximum possible number of hit points instead of rolling." }
+          {
+            "level": 1,
+            "name": "Bonus Proficiency",
+            "description": "Proficient with heavy armor."
+          },
+          {
+            "level": 1,
+            "name": "Disciple of Life",
+            "description": "Healing spells restore additional hit points."
+          },
+          {
+            "level": 2,
+            "name": "Channel Divinity: Preserve Life",
+            "description": "Spend a Channel Divinity use to restore a pool of hit points split among nearby creatures."
+          },
+          {
+            "level": 6,
+            "name": "Blessed Healer",
+            "description": "You also regain hit points when you cast a healing spell on someone else."
+          },
+          {
+            "level": 8,
+            "name": "Divine Strike",
+            "description": "Once per turn, deal extra radiant damage on a weapon hit."
+          },
+          {
+            "level": 17,
+            "name": "Supreme Healing",
+            "description": "Healing spells restore the maximum possible number of hit points instead of rolling."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Spellcasting", "description": "Casts cleric spells using Wisdom, preparing spells each day from the full cleric spell list." }, { "name": "Divine Domain", "description": "Choose a domain granting bonus spells and domain-specific features." }] },
-      { "level": 2, "features": [{ "name": "Channel Divinity", "description": "Channel divine energy once per rest to fuel a domain effect or Turn Undead." }, { "name": "Domain Feature", "description": "Gains a feature from their chosen Divine Domain." }] },
-      { "level": 3, "features": [] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [{ "name": "Destroy Undead", "description": "Turned undead of CR 1/2 or lower are instantly destroyed." }] },
-      { "level": 6, "features": [{ "name": "Channel Divinity (2/rest)", "description": "Can use Channel Divinity twice between rests." }, { "name": "Domain Feature", "description": "Gains a feature from their chosen Divine Domain." }] },
-      { "level": 7, "features": [] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }, { "name": "Destroy Undead (CR 1)", "description": "Destroy Undead threshold increases to CR 1." }] },
-      { "level": 9, "features": [] },
-      { "level": 10, "features": [{ "name": "Divine Intervention", "description": "Call on your deity for aid, with a chance of a direct miraculous effect." }] },
-      { "level": 11, "features": [] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [] },
-      { "level": 14, "features": [{ "name": "Destroy Undead (CR 2)", "description": "Destroy Undead threshold increases to CR 2." }] },
-      { "level": 15, "features": [] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [{ "name": "Destroy Undead (CR 3)", "description": "Destroy Undead threshold increases to CR 3." }, { "name": "Domain Feature", "description": "Gains a feature from their chosen Divine Domain." }] },
-      { "level": 18, "features": [{ "name": "Channel Divinity (3/rest)", "description": "Can use Channel Divinity three times between rests." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Divine Intervention Improvement", "description": "Divine Intervention succeeds automatically." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Spellcasting",
+            "description": "Casts cleric spells using Wisdom, preparing spells each day from the full cleric spell list."
+          },
+          {
+            "name": "Divine Domain",
+            "description": "Choose a domain granting bonus spells and domain-specific features."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Channel Divinity",
+            "description": "Channel divine energy once per rest to fuel a domain effect or Turn Undead."
+          },
+          {
+            "name": "Domain Feature",
+            "description": "Gains a feature from their chosen Divine Domain."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": []
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": [
+          {
+            "name": "Destroy Undead",
+            "description": "Turned undead of CR 1/2 or lower are instantly destroyed."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Channel Divinity (2/rest)",
+            "description": "Can use Channel Divinity twice between rests."
+          },
+          {
+            "name": "Domain Feature",
+            "description": "Gains a feature from their chosen Divine Domain."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": []
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          },
+          {
+            "name": "Destroy Undead (CR 1)",
+            "description": "Destroy Undead threshold increases to CR 1."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": []
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Divine Intervention",
+            "description": "Call on your deity for aid, with a chance of a direct miraculous effect."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": []
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": []
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Destroy Undead (CR 2)",
+            "description": "Destroy Undead threshold increases to CR 2."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": []
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": [
+          {
+            "name": "Destroy Undead (CR 3)",
+            "description": "Destroy Undead threshold increases to CR 3."
+          },
+          {
+            "name": "Domain Feature",
+            "description": "Gains a feature from their chosen Divine Domain."
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Channel Divinity (3/rest)",
+            "description": "Can use Channel Divinity three times between rests."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Divine Intervention Improvement",
+            "description": "Divine Intervention succeeds automatically."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "druid": {
     "id": "druid",
     "name": "Druid",
+    "description": "A priest of the Old Faith who draws on the power of nature. Druids call on the elements, wear the forms of beasts, and defend the balance of the wild.",
     "hitDie": 8,
-    "primaryAbility": ["wis"],
-    "savingThrowProficiencies": ["int", "wis"],
-    "armorProficiencies": ["light", "medium", "shields-nonmetal"],
-    "weaponProficiencies": ["club", "dagger", "dart", "javelin", "mace", "quarterstaff", "scimitar", "sickle", "sling", "spear"],
-    "toolProficiencies": ["herbalism-kit"],
-    "skillChoices": { "count": 2, "options": ["arcana", "animal-handling", "insight", "medicine", "nature", "perception", "religion", "survival"] },
-    "startingEquipment": ["A wooden shield or a simple weapon", "A scimitar or simple melee weapon", "Leather armor, an explorer's pack, and a druidic focus"],
-    "spellcasting": { "ability": "wis", "type": "full", "prepared": true },
-    "asiLevels": [4, 8, 12, 16, 19],
+    "primaryAbility": [
+      "wis"
+    ],
+    "savingThrowProficiencies": [
+      "int",
+      "wis"
+    ],
+    "armorProficiencies": [
+      "light",
+      "medium",
+      "shields-nonmetal"
+    ],
+    "weaponProficiencies": [
+      "club",
+      "dagger",
+      "dart",
+      "javelin",
+      "mace",
+      "quarterstaff",
+      "scimitar",
+      "sickle",
+      "sling",
+      "spear"
+    ],
+    "toolProficiencies": [
+      "herbalism-kit"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "arcana",
+        "animal-handling",
+        "insight",
+        "medicine",
+        "nature",
+        "perception",
+        "religion",
+        "survival"
+      ]
+    },
+    "startingEquipment": [
+      "A wooden shield or a simple weapon",
+      "A scimitar or simple melee weapon",
+      "Leather armor, an explorer's pack, and a druidic focus"
+    ],
+    "spellcasting": {
+      "ability": "wis",
+      "type": "full",
+      "prepared": true
+    },
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 2,
     "subclasses": [
       {
         "id": "circle-of-the-moon",
         "name": "Circle of the Moon",
         "features": [
-          { "level": 2, "name": "Combat Wild Shape", "description": "Can Wild Shape as a bonus action and expend spell slots to heal while transformed." },
-          { "level": 2, "name": "Circle Forms", "description": "Can transform into more dangerous beast forms than other druids." },
-          { "level": 6, "name": "Primal Strike", "description": "Attacks in beast form count as magical for overcoming resistance." },
-          { "level": 10, "name": "Elemental Wild Shape", "description": "Can expend a Wild Shape use to transform into an air, earth, fire, or water elemental." },
-          { "level": 14, "name": "Thousand Forms", "description": "Can cast the alter self spell at will." }
+          {
+            "level": 2,
+            "name": "Combat Wild Shape",
+            "description": "Can Wild Shape as a bonus action and expend spell slots to heal while transformed."
+          },
+          {
+            "level": 2,
+            "name": "Circle Forms",
+            "description": "Can transform into more dangerous beast forms than other druids."
+          },
+          {
+            "level": 6,
+            "name": "Primal Strike",
+            "description": "Attacks in beast form count as magical for overcoming resistance."
+          },
+          {
+            "level": 10,
+            "name": "Elemental Wild Shape",
+            "description": "Can expend a Wild Shape use to transform into an air, earth, fire, or water elemental."
+          },
+          {
+            "level": 14,
+            "name": "Thousand Forms",
+            "description": "Can cast the alter self spell at will."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Druidic", "description": "Knows Druidic, a secret language of druids." }, { "name": "Spellcasting", "description": "Casts druid spells using Wisdom, preparing spells each day from the full druid spell list." }] },
-      { "level": 2, "features": [{ "name": "Wild Shape", "description": "Can transform into a beast you've seen, twice per rest." }, { "name": "Druid Circle", "description": "Choose a subclass (Druid Circle) that grants additional features." }] },
-      { "level": 3, "features": [] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }, { "name": "Wild Shape Improvement", "description": "Can transform into beasts with a swimming speed." }] },
-      { "level": 5, "features": [] },
-      { "level": 6, "features": [{ "name": "Circle Feature", "description": "Gains a feature from their chosen Druid Circle." }] },
-      { "level": 7, "features": [] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }, { "name": "Wild Shape Improvement", "description": "Can transform into beasts with a flying speed." }] },
-      { "level": 9, "features": [] },
-      { "level": 10, "features": [{ "name": "Circle Feature", "description": "Gains a feature from their chosen Druid Circle." }] },
-      { "level": 11, "features": [] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [] },
-      { "level": 14, "features": [{ "name": "Circle Feature", "description": "Gains a feature from their chosen Druid Circle." }] },
-      { "level": 15, "features": [] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [] },
-      { "level": 18, "features": [{ "name": "Timeless Body", "description": "Ages more slowly." }, { "name": "Beast Spells", "description": "Can cast most druid spells while in Wild Shape form." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Archdruid", "description": "Unlimited Wild Shape uses." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Druidic",
+            "description": "Knows Druidic, a secret language of druids."
+          },
+          {
+            "name": "Spellcasting",
+            "description": "Casts druid spells using Wisdom, preparing spells each day from the full druid spell list."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Wild Shape",
+            "description": "Can transform into a beast you've seen, twice per rest."
+          },
+          {
+            "name": "Druid Circle",
+            "description": "Choose a subclass (Druid Circle) that grants additional features."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": []
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          },
+          {
+            "name": "Wild Shape Improvement",
+            "description": "Can transform into beasts with a swimming speed."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": []
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Circle Feature",
+            "description": "Gains a feature from their chosen Druid Circle."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": []
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          },
+          {
+            "name": "Wild Shape Improvement",
+            "description": "Can transform into beasts with a flying speed."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": []
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Circle Feature",
+            "description": "Gains a feature from their chosen Druid Circle."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": []
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": []
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Circle Feature",
+            "description": "Gains a feature from their chosen Druid Circle."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": []
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": []
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Timeless Body",
+            "description": "Ages more slowly."
+          },
+          {
+            "name": "Beast Spells",
+            "description": "Can cast most druid spells while in Wild Shape form."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Archdruid",
+            "description": "Unlimited Wild Shape uses."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "fighter": {
     "id": "fighter",
     "name": "Fighter",
+    "description": "A master of martial combat, skilled with every weapon and armor. Fighters are defined by their versatility and endurance, adapting to any style from archery to heavy blade.",
     "hitDie": 10,
-    "primaryAbility": ["str", "dex"],
-    "savingThrowProficiencies": ["str", "con"],
-    "armorProficiencies": ["light", "medium", "heavy", "shields"],
-    "weaponProficiencies": ["simple", "martial"],
-    "skillChoices": { "count": 2, "options": ["acrobatics", "athletics", "history", "insight", "intimidation", "perception", "survival"] },
-    "startingEquipment": ["A martial weapon and a shield, or two martial weapons", "A light crossbow and 20 bolts, or two handaxes", "Chain mail or leather armor with a longbow", "An explorer's pack"],
+    "primaryAbility": [
+      "str",
+      "dex"
+    ],
+    "savingThrowProficiencies": [
+      "str",
+      "con"
+    ],
+    "armorProficiencies": [
+      "light",
+      "medium",
+      "heavy",
+      "shields"
+    ],
+    "weaponProficiencies": [
+      "simple",
+      "martial"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "acrobatics",
+        "athletics",
+        "history",
+        "insight",
+        "intimidation",
+        "perception",
+        "survival"
+      ]
+    },
+    "startingEquipment": [
+      "A martial weapon and a shield, or two martial weapons",
+      "A light crossbow and 20 bolts, or two handaxes",
+      "Chain mail or leather armor with a longbow",
+      "An explorer's pack"
+    ],
     "spellcasting": null,
-    "asiLevels": [4, 6, 8, 12, 14, 16, 19],
+    "asiLevels": [
+      4,
+      6,
+      8,
+      12,
+      14,
+      16,
+      19
+    ],
     "subclassLevel": 3,
     "subclasses": [
       {
         "id": "champion",
         "name": "Champion",
         "features": [
-          { "level": 3, "name": "Improved Critical", "description": "Weapon attacks score a critical hit on a roll of 19 or 20." },
-          { "level": 7, "name": "Remarkable Athlete", "description": "Add half proficiency bonus to Strength/Dexterity/Constitution checks that don't already use it." },
-          { "level": 10, "name": "Additional Fighting Style", "description": "Choose a second Fighting Style option." },
-          { "level": 15, "name": "Superior Critical", "description": "Weapon attacks score a critical hit on a roll of 18-20." },
-          { "level": 18, "name": "Survivor", "description": "Regain hit points at the start of each turn if below half hit points." }
+          {
+            "level": 3,
+            "name": "Improved Critical",
+            "description": "Weapon attacks score a critical hit on a roll of 19 or 20."
+          },
+          {
+            "level": 7,
+            "name": "Remarkable Athlete",
+            "description": "Add half proficiency bonus to Strength/Dexterity/Constitution checks that don't already use it."
+          },
+          {
+            "level": 10,
+            "name": "Additional Fighting Style",
+            "description": "Choose a second Fighting Style option."
+          },
+          {
+            "level": 15,
+            "name": "Superior Critical",
+            "description": "Weapon attacks score a critical hit on a roll of 18-20."
+          },
+          {
+            "level": 18,
+            "name": "Survivor",
+            "description": "Regain hit points at the start of each turn if below half hit points."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Fighting Style", "description": "Choose a combat specialization (e.g. Defense, Dueling, Archery) that grants a passive combat bonus." }, { "name": "Second Wind", "description": "Once per short or long rest, use a bonus action to regain hit points equal to 1d10 plus fighter level." }] },
-      { "level": 2, "features": [{ "name": "Action Surge", "description": "Once per short or long rest, take one additional action on your turn." }] },
-      { "level": 3, "features": [{ "name": "Martial Archetype", "description": "Choose a subclass (Martial Archetype) that grants additional features." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [{ "name": "Extra Attack", "description": "Attack twice, instead of once, whenever you take the Attack action on your turn." }] },
-      { "level": 6, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 7, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Martial Archetype." }] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [{ "name": "Indomitable", "description": "Reroll a failed saving throw once per long rest." }] },
-      { "level": 10, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Martial Archetype." }] },
-      { "level": 11, "features": [{ "name": "Extra Attack (2)", "description": "Attack three times, instead of once, whenever you take the Attack action on your turn." }] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [{ "name": "Indomitable (2 uses)", "description": "Can reroll a failed save twice per long rest." }] },
-      { "level": 14, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 15, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Martial Archetype." }] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [{ "name": "Action Surge (2 uses)", "description": "Can use Action Surge twice per rest." }, { "name": "Indomitable (3 uses)", "description": "Can reroll a failed save three times per long rest." }] },
-      { "level": 18, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Martial Archetype." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Extra Attack (3)", "description": "Attack four times, instead of once, whenever you take the Attack action on your turn." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Fighting Style",
+            "description": "Choose a combat specialization (e.g. Defense, Dueling, Archery) that grants a passive combat bonus."
+          },
+          {
+            "name": "Second Wind",
+            "description": "Once per short or long rest, use a bonus action to regain hit points equal to 1d10 plus fighter level."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Action Surge",
+            "description": "Once per short or long rest, take one additional action on your turn."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Martial Archetype",
+            "description": "Choose a subclass (Martial Archetype) that grants additional features."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": [
+          {
+            "name": "Extra Attack",
+            "description": "Attack twice, instead of once, whenever you take the Attack action on your turn."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Martial Archetype."
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": [
+          {
+            "name": "Indomitable",
+            "description": "Reroll a failed saving throw once per long rest."
+          }
+        ]
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Martial Archetype."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": [
+          {
+            "name": "Extra Attack (2)",
+            "description": "Attack three times, instead of once, whenever you take the Attack action on your turn."
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": [
+          {
+            "name": "Indomitable (2 uses)",
+            "description": "Can reroll a failed save twice per long rest."
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Martial Archetype."
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": [
+          {
+            "name": "Action Surge (2 uses)",
+            "description": "Can use Action Surge twice per rest."
+          },
+          {
+            "name": "Indomitable (3 uses)",
+            "description": "Can reroll a failed save three times per long rest."
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Martial Archetype."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Extra Attack (3)",
+            "description": "Attack four times, instead of once, whenever you take the Attack action on your turn."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "monk": {
     "id": "monk",
     "name": "Monk",
+    "description": "A disciplined martial artist who harnesses the mystical energy of ki. Monks strike with blinding speed, move like the wind, and turn body and mind into a single deadly weapon.",
     "hitDie": 8,
-    "primaryAbility": ["dex", "wis"],
-    "savingThrowProficiencies": ["str", "dex"],
+    "primaryAbility": [
+      "dex",
+      "wis"
+    ],
+    "savingThrowProficiencies": [
+      "str",
+      "dex"
+    ],
     "armorProficiencies": [],
-    "weaponProficiencies": ["simple", "shortsword"],
-    "toolProficiencies": ["one artisan's tool or musical instrument of choice"],
-    "skillChoices": { "count": 2, "options": ["acrobatics", "athletics", "history", "insight", "religion", "stealth"] },
-    "startingEquipment": ["A shortsword or simple weapon", "A dungeoneer's pack or explorer's pack", "10 darts"],
+    "weaponProficiencies": [
+      "simple",
+      "shortsword"
+    ],
+    "toolProficiencies": [
+      "one artisan's tool or musical instrument of choice"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "acrobatics",
+        "athletics",
+        "history",
+        "insight",
+        "religion",
+        "stealth"
+      ]
+    },
+    "startingEquipment": [
+      "A shortsword or simple weapon",
+      "A dungeoneer's pack or explorer's pack",
+      "10 darts"
+    ],
     "spellcasting": null,
-    "asiLevels": [4, 8, 12, 16, 19],
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 3,
     "subclasses": [
       {
         "id": "way-of-the-open-hand",
         "name": "Way of the Open Hand",
         "features": [
-          { "level": 3, "name": "Open Hand Technique", "description": "Martial Arts hits can knock a target prone, push it back, or prevent its reactions." },
-          { "level": 6, "name": "Wholeness of Body", "description": "Can spend an action to heal yourself using ki." },
-          { "level": 11, "name": "Tranquility", "description": "Gain the effect of the sanctuary spell at the end of a long rest." },
-          { "level": 17, "name": "Quivering Palm", "description": "Can set up lethal vibrations in a creature that can later be triggered to devastating effect." }
+          {
+            "level": 3,
+            "name": "Open Hand Technique",
+            "description": "Martial Arts hits can knock a target prone, push it back, or prevent its reactions."
+          },
+          {
+            "level": 6,
+            "name": "Wholeness of Body",
+            "description": "Can spend an action to heal yourself using ki."
+          },
+          {
+            "level": 11,
+            "name": "Tranquility",
+            "description": "Gain the effect of the sanctuary spell at the end of a long rest."
+          },
+          {
+            "level": 17,
+            "name": "Quivering Palm",
+            "description": "Can set up lethal vibrations in a creature that can later be triggered to devastating effect."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Unarmored Defense", "description": "AC equals 10 + Dex modifier + Wis modifier while not wearing armor or a shield." }, { "name": "Martial Arts", "description": "Can use Dexterity for unarmed strikes/monk weapons, and make an extra unarmed strike as a bonus action." }] },
-      { "level": 2, "features": [{ "name": "Ki", "description": "Gain ki points to fuel Flurry of Blows, Patient Defense, and Step of the Wind." }, { "name": "Unarmored Movement", "description": "Speed increases while not wearing armor or a shield." }] },
-      { "level": 3, "features": [{ "name": "Monastic Tradition", "description": "Choose a subclass (Monastic Tradition) that grants additional features." }, { "name": "Deflect Missiles", "description": "Can reduce and even catch/throw back ranged weapon attack damage." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }, { "name": "Slow Fall", "description": "Can use a reaction to reduce falling damage." }] },
-      { "level": 5, "features": [{ "name": "Extra Attack", "description": "Attack twice, instead of once, whenever you take the Attack action on your turn." }, { "name": "Stunning Strike", "description": "Can spend a ki point to attempt to stun a creature hit by a melee attack." }] },
-      { "level": 6, "features": [{ "name": "Ki-Empowered Strikes", "description": "Unarmed strikes count as magical for overcoming resistance." }, { "name": "Tradition Feature", "description": "Gains a feature from their chosen Monastic Tradition." }] },
-      { "level": 7, "features": [{ "name": "Evasion", "description": "Take no damage on a successful Dexterity save against area effects, half on a failure." }, { "name": "Stillness of Mind", "description": "Can use an action to end being charmed or frightened." }] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [{ "name": "Unarmored Movement Improvement", "description": "Can move along vertical surfaces and across liquids without falling." }] },
-      { "level": 10, "features": [{ "name": "Purity of Body", "description": "Immune to disease and poison." }] },
-      { "level": 11, "features": [{ "name": "Tradition Feature", "description": "Gains a feature from their chosen Monastic Tradition." }] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [{ "name": "Tongue of the Sun and Moon", "description": "Understand and be understood by anyone speaking any language." }] },
-      { "level": 14, "features": [{ "name": "Diamond Soul", "description": "Proficient in all saving throws; can spend ki to reroll a failed save." }] },
-      { "level": 15, "features": [{ "name": "Timeless Body", "description": "No longer suffers frailty of old age and doesn't need food or water." }] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [{ "name": "Tradition Feature", "description": "Gains a feature from their chosen Monastic Tradition." }] },
-      { "level": 18, "features": [{ "name": "Empty Body", "description": "Can spend ki to become invisible and resistant to all damage but force, or to cast astral projection." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Perfect Self", "description": "Regain 4 ki points if you start your turn with none." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Unarmored Defense",
+            "description": "AC equals 10 + Dex modifier + Wis modifier while not wearing armor or a shield."
+          },
+          {
+            "name": "Martial Arts",
+            "description": "Can use Dexterity for unarmed strikes/monk weapons, and make an extra unarmed strike as a bonus action."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Ki",
+            "description": "Gain ki points to fuel Flurry of Blows, Patient Defense, and Step of the Wind."
+          },
+          {
+            "name": "Unarmored Movement",
+            "description": "Speed increases while not wearing armor or a shield."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Monastic Tradition",
+            "description": "Choose a subclass (Monastic Tradition) that grants additional features."
+          },
+          {
+            "name": "Deflect Missiles",
+            "description": "Can reduce and even catch/throw back ranged weapon attack damage."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          },
+          {
+            "name": "Slow Fall",
+            "description": "Can use a reaction to reduce falling damage."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": [
+          {
+            "name": "Extra Attack",
+            "description": "Attack twice, instead of once, whenever you take the Attack action on your turn."
+          },
+          {
+            "name": "Stunning Strike",
+            "description": "Can spend a ki point to attempt to stun a creature hit by a melee attack."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Ki-Empowered Strikes",
+            "description": "Unarmed strikes count as magical for overcoming resistance."
+          },
+          {
+            "name": "Tradition Feature",
+            "description": "Gains a feature from their chosen Monastic Tradition."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": [
+          {
+            "name": "Evasion",
+            "description": "Take no damage on a successful Dexterity save against area effects, half on a failure."
+          },
+          {
+            "name": "Stillness of Mind",
+            "description": "Can use an action to end being charmed or frightened."
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": [
+          {
+            "name": "Unarmored Movement Improvement",
+            "description": "Can move along vertical surfaces and across liquids without falling."
+          }
+        ]
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Purity of Body",
+            "description": "Immune to disease and poison."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": [
+          {
+            "name": "Tradition Feature",
+            "description": "Gains a feature from their chosen Monastic Tradition."
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": [
+          {
+            "name": "Tongue of the Sun and Moon",
+            "description": "Understand and be understood by anyone speaking any language."
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Diamond Soul",
+            "description": "Proficient in all saving throws; can spend ki to reroll a failed save."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": [
+          {
+            "name": "Timeless Body",
+            "description": "No longer suffers frailty of old age and doesn't need food or water."
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": [
+          {
+            "name": "Tradition Feature",
+            "description": "Gains a feature from their chosen Monastic Tradition."
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Empty Body",
+            "description": "Can spend ki to become invisible and resistant to all damage but force, or to cast astral projection."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Perfect Self",
+            "description": "Regain 4 ki points if you start your turn with none."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "paladin": {
     "id": "paladin",
     "name": "Paladin",
+    "description": "A holy warrior bound by a sacred oath. Paladins blend martial prowess with divine magic, smiting foes, shielding allies with protective auras, and standing as living embodiments of their creed.",
     "hitDie": 10,
-    "primaryAbility": ["str", "cha"],
-    "savingThrowProficiencies": ["wis", "cha"],
-    "armorProficiencies": ["light", "medium", "heavy", "shields"],
-    "weaponProficiencies": ["simple", "martial"],
-    "skillChoices": { "count": 2, "options": ["athletics", "insight", "intimidation", "medicine", "persuasion", "religion"] },
-    "startingEquipment": ["A martial weapon and a shield, or two martial weapons", "Five javelins or a simple melee weapon", "A priest's pack or explorer's pack", "Chain mail and a holy symbol"],
-    "spellcasting": { "ability": "cha", "type": "half", "prepared": true },
-    "asiLevels": [4, 8, 12, 16, 19],
+    "primaryAbility": [
+      "str",
+      "cha"
+    ],
+    "savingThrowProficiencies": [
+      "wis",
+      "cha"
+    ],
+    "armorProficiencies": [
+      "light",
+      "medium",
+      "heavy",
+      "shields"
+    ],
+    "weaponProficiencies": [
+      "simple",
+      "martial"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "athletics",
+        "insight",
+        "intimidation",
+        "medicine",
+        "persuasion",
+        "religion"
+      ]
+    },
+    "startingEquipment": [
+      "A martial weapon and a shield, or two martial weapons",
+      "Five javelins or a simple melee weapon",
+      "A priest's pack or explorer's pack",
+      "Chain mail and a holy symbol"
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "type": "half",
+      "prepared": true
+    },
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 3,
     "subclasses": [
       {
         "id": "oath-of-devotion",
         "name": "Oath of Devotion",
         "features": [
-          { "level": 3, "name": "Sacred Weapon", "description": "As an action, imbue a weapon with radiant light, adding your Charisma modifier to attack rolls with it." },
-          { "level": 3, "name": "Turn the Unholy", "description": "Use Channel Divinity to frighten fiends and undead." },
-          { "level": 7, "name": "Aura of Devotion", "description": "You and nearby allies can't be charmed while you're conscious." },
-          { "level": 15, "name": "Purity of Spirit", "description": "Constantly under the effect of protection from evil and good." },
-          { "level": 20, "name": "Holy Nimbus", "description": "Emit sunlight that damages fiends/undead and grants advantage against their spells." }
+          {
+            "level": 3,
+            "name": "Sacred Weapon",
+            "description": "As an action, imbue a weapon with radiant light, adding your Charisma modifier to attack rolls with it."
+          },
+          {
+            "level": 3,
+            "name": "Turn the Unholy",
+            "description": "Use Channel Divinity to frighten fiends and undead."
+          },
+          {
+            "level": 7,
+            "name": "Aura of Devotion",
+            "description": "You and nearby allies can't be charmed while you're conscious."
+          },
+          {
+            "level": 15,
+            "name": "Purity of Spirit",
+            "description": "Constantly under the effect of protection from evil and good."
+          },
+          {
+            "level": 20,
+            "name": "Holy Nimbus",
+            "description": "Emit sunlight that damages fiends/undead and grants advantage against their spells."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Divine Sense", "description": "Can detect celestials, fiends, and undead nearby." }, { "name": "Lay on Hands", "description": "A pool of healing points that can be spent to heal or cure disease/poison." }] },
-      { "level": 2, "features": [{ "name": "Fighting Style", "description": "Choose a combat specialization that grants a passive combat bonus." }, { "name": "Spellcasting", "description": "Casts paladin spells using Charisma, preparing spells each day." }, { "name": "Divine Smite", "description": "Expend a spell slot on a melee hit to deal extra radiant damage." }] },
-      { "level": 3, "features": [{ "name": "Divine Health", "description": "Immune to disease." }, { "name": "Sacred Oath", "description": "Choose a subclass (Sacred Oath) that grants additional features." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [{ "name": "Extra Attack", "description": "Attack twice, instead of once, whenever you take the Attack action on your turn." }] },
-      { "level": 6, "features": [{ "name": "Aura of Protection", "description": "You and nearby allies add your Charisma modifier to saving throws." }] },
-      { "level": 7, "features": [{ "name": "Oath Feature", "description": "Gains a feature from their chosen Sacred Oath." }] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [] },
-      { "level": 10, "features": [{ "name": "Aura of Courage", "description": "You and nearby allies can't be frightened while you're conscious." }] },
-      { "level": 11, "features": [{ "name": "Improved Divine Smite", "description": "All melee weapon hits deal additional radiant damage." }] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [] },
-      { "level": 14, "features": [{ "name": "Cleansing Touch", "description": "Can expend an action to end a spell affecting yourself or a willing creature you touch." }] },
-      { "level": 15, "features": [{ "name": "Oath Feature", "description": "Gains a feature from their chosen Sacred Oath." }] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [] },
-      { "level": 18, "features": [{ "name": "Aura Improvements", "description": "Auras of Protection and Courage extend to 30 feet." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Oath Feature", "description": "Gains the capstone feature from their chosen Sacred Oath." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Divine Sense",
+            "description": "Can detect celestials, fiends, and undead nearby."
+          },
+          {
+            "name": "Lay on Hands",
+            "description": "A pool of healing points that can be spent to heal or cure disease/poison."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Fighting Style",
+            "description": "Choose a combat specialization that grants a passive combat bonus."
+          },
+          {
+            "name": "Spellcasting",
+            "description": "Casts paladin spells using Charisma, preparing spells each day."
+          },
+          {
+            "name": "Divine Smite",
+            "description": "Expend a spell slot on a melee hit to deal extra radiant damage."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Divine Health",
+            "description": "Immune to disease."
+          },
+          {
+            "name": "Sacred Oath",
+            "description": "Choose a subclass (Sacred Oath) that grants additional features."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": [
+          {
+            "name": "Extra Attack",
+            "description": "Attack twice, instead of once, whenever you take the Attack action on your turn."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Aura of Protection",
+            "description": "You and nearby allies add your Charisma modifier to saving throws."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": [
+          {
+            "name": "Oath Feature",
+            "description": "Gains a feature from their chosen Sacred Oath."
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": []
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Aura of Courage",
+            "description": "You and nearby allies can't be frightened while you're conscious."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": [
+          {
+            "name": "Improved Divine Smite",
+            "description": "All melee weapon hits deal additional radiant damage."
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": []
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Cleansing Touch",
+            "description": "Can expend an action to end a spell affecting yourself or a willing creature you touch."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": [
+          {
+            "name": "Oath Feature",
+            "description": "Gains a feature from their chosen Sacred Oath."
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": []
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Aura Improvements",
+            "description": "Auras of Protection and Courage extend to 30 feet."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Oath Feature",
+            "description": "Gains the capstone feature from their chosen Sacred Oath."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "ranger": {
     "id": "ranger",
     "name": "Ranger",
+    "description": "A hunter and wanderer of the wilds, equally at home tracking prey and battling the monsters that threaten civilization. Rangers combine woodcraft, weapon skill, and a touch of nature magic.",
     "hitDie": 10,
-    "primaryAbility": ["dex", "wis"],
-    "savingThrowProficiencies": ["str", "dex"],
-    "armorProficiencies": ["light", "medium", "shields"],
-    "weaponProficiencies": ["simple", "martial"],
-    "skillChoices": { "count": 3, "options": ["animal-handling", "athletics", "insight", "investigation", "nature", "perception", "stealth", "survival"] },
-    "startingEquipment": ["Scale mail or leather armor", "Two shortswords or two simple melee weapons", "A dungeoneer's pack or explorer's pack", "A longbow and a quiver of 20 arrows"],
-    "spellcasting": { "ability": "wis", "type": "half", "prepared": false },
-    "asiLevels": [4, 8, 12, 16, 19],
+    "primaryAbility": [
+      "dex",
+      "wis"
+    ],
+    "savingThrowProficiencies": [
+      "str",
+      "dex"
+    ],
+    "armorProficiencies": [
+      "light",
+      "medium",
+      "shields"
+    ],
+    "weaponProficiencies": [
+      "simple",
+      "martial"
+    ],
+    "skillChoices": {
+      "count": 3,
+      "options": [
+        "animal-handling",
+        "athletics",
+        "insight",
+        "investigation",
+        "nature",
+        "perception",
+        "stealth",
+        "survival"
+      ]
+    },
+    "startingEquipment": [
+      "Scale mail or leather armor",
+      "Two shortswords or two simple melee weapons",
+      "A dungeoneer's pack or explorer's pack",
+      "A longbow and a quiver of 20 arrows"
+    ],
+    "spellcasting": {
+      "ability": "wis",
+      "type": "half",
+      "prepared": false
+    },
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 3,
     "subclasses": [
       {
         "id": "hunter",
         "name": "Hunter",
         "features": [
-          { "level": 3, "name": "Hunter's Prey", "description": "Choose a combat option such as Colossus Slayer, Giant Killer, or Horde Breaker." },
-          { "level": 7, "name": "Defensive Tactics", "description": "Choose a defensive option such as Escape the Horde, Multiattack Defense, or Steel Will." },
-          { "level": 11, "name": "Multiattack", "description": "Choose Volley or Whirlwind Attack to hit many creatures at once." },
-          { "level": 15, "name": "Superior Hunter's Defense", "description": "Choose Evasion, Stand Against the Tide, or Uncanny Dodge." }
+          {
+            "level": 3,
+            "name": "Hunter's Prey",
+            "description": "Choose a combat option such as Colossus Slayer, Giant Killer, or Horde Breaker."
+          },
+          {
+            "level": 7,
+            "name": "Defensive Tactics",
+            "description": "Choose a defensive option such as Escape the Horde, Multiattack Defense, or Steel Will."
+          },
+          {
+            "level": 11,
+            "name": "Multiattack",
+            "description": "Choose Volley or Whirlwind Attack to hit many creatures at once."
+          },
+          {
+            "level": 15,
+            "name": "Superior Hunter's Defense",
+            "description": "Choose Evasion, Stand Against the Tide, or Uncanny Dodge."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Favored Enemy", "description": "Gain bonuses learning about, tracking, and recalling knowledge of a chosen creature type." }, { "name": "Natural Explorer", "description": "Gain advantages exploring and tracking within a favored terrain." }] },
-      { "level": 2, "features": [{ "name": "Fighting Style", "description": "Choose a combat specialization that grants a passive combat bonus." }, { "name": "Spellcasting", "description": "Casts ranger spells using Wisdom, knowing a limited number at once." }] },
-      { "level": 3, "features": [{ "name": "Ranger Archetype", "description": "Choose a subclass (Ranger Archetype) that grants additional features." }, { "name": "Primeval Awareness", "description": "Expend a spell slot to sense certain creature types nearby." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [{ "name": "Extra Attack", "description": "Attack twice, instead of once, whenever you take the Attack action on your turn." }] },
-      { "level": 6, "features": [{ "name": "Favored Enemy Improvement", "description": "Gain an additional favored enemy type." }, { "name": "Natural Explorer Improvement", "description": "Gain an additional favored terrain." }] },
-      { "level": 7, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Ranger Archetype." }] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }, { "name": "Land's Stride", "description": "Move through nonmagical difficult terrain at normal speed." }] },
-      { "level": 9, "features": [] },
-      { "level": 10, "features": [{ "name": "Natural Explorer Improvement", "description": "Gain a third favored terrain." }, { "name": "Hide in Plain Sight", "description": "Can spend time camouflaging to gain a large bonus to Stealth while stationary." }] },
-      { "level": 11, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Ranger Archetype." }] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [] },
-      { "level": 14, "features": [{ "name": "Favored Enemy Improvement", "description": "Gain a third favored enemy type." }, { "name": "Vanish", "description": "Can Hide as a bonus action and can't be tracked by nonmagical means." }] },
-      { "level": 15, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Ranger Archetype." }] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [] },
-      { "level": 18, "features": [{ "name": "Feral Senses", "description": "Can detect and target invisible creatures nearby without seeing them." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Foe Slayer", "description": "Add your Wisdom modifier to an attack or damage roll against a favored enemy once per turn." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Favored Enemy",
+            "description": "Gain bonuses learning about, tracking, and recalling knowledge of a chosen creature type."
+          },
+          {
+            "name": "Natural Explorer",
+            "description": "Gain advantages exploring and tracking within a favored terrain."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Fighting Style",
+            "description": "Choose a combat specialization that grants a passive combat bonus."
+          },
+          {
+            "name": "Spellcasting",
+            "description": "Casts ranger spells using Wisdom, knowing a limited number at once."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Ranger Archetype",
+            "description": "Choose a subclass (Ranger Archetype) that grants additional features."
+          },
+          {
+            "name": "Primeval Awareness",
+            "description": "Expend a spell slot to sense certain creature types nearby."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": [
+          {
+            "name": "Extra Attack",
+            "description": "Attack twice, instead of once, whenever you take the Attack action on your turn."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Favored Enemy Improvement",
+            "description": "Gain an additional favored enemy type."
+          },
+          {
+            "name": "Natural Explorer Improvement",
+            "description": "Gain an additional favored terrain."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Ranger Archetype."
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          },
+          {
+            "name": "Land's Stride",
+            "description": "Move through nonmagical difficult terrain at normal speed."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": []
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Natural Explorer Improvement",
+            "description": "Gain a third favored terrain."
+          },
+          {
+            "name": "Hide in Plain Sight",
+            "description": "Can spend time camouflaging to gain a large bonus to Stealth while stationary."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Ranger Archetype."
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": []
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Favored Enemy Improvement",
+            "description": "Gain a third favored enemy type."
+          },
+          {
+            "name": "Vanish",
+            "description": "Can Hide as a bonus action and can't be tracked by nonmagical means."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Ranger Archetype."
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": []
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Feral Senses",
+            "description": "Can detect and target invisible creatures nearby without seeing them."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Foe Slayer",
+            "description": "Add your Wisdom modifier to an attack or damage roll against a favored enemy once per turn."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "rogue": {
     "id": "rogue",
     "name": "Rogue",
+    "description": "A skilled and stealthy specialist who relies on cunning over brute force. Rogues find and exploit weaknesses, strike with devastating precision, and slip through danger unseen.",
     "hitDie": 8,
-    "primaryAbility": ["dex"],
-    "savingThrowProficiencies": ["dex", "int"],
-    "armorProficiencies": ["light"],
-    "weaponProficiencies": ["simple", "hand-crossbow", "longsword", "rapier", "shortsword"],
-    "toolProficiencies": ["thieves-tools"],
-    "skillChoices": { "count": 4, "options": ["acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "performance", "persuasion", "sleight-of-hand", "stealth"] },
-    "startingEquipment": ["A rapier or shortsword", "A shortbow and quiver of 20 arrows, or a shortsword", "A burglar's pack", "Leather armor, two daggers, and thieves' tools"],
+    "primaryAbility": [
+      "dex"
+    ],
+    "savingThrowProficiencies": [
+      "dex",
+      "int"
+    ],
+    "armorProficiencies": [
+      "light"
+    ],
+    "weaponProficiencies": [
+      "simple",
+      "hand-crossbow",
+      "longsword",
+      "rapier",
+      "shortsword"
+    ],
+    "toolProficiencies": [
+      "thieves-tools"
+    ],
+    "skillChoices": {
+      "count": 4,
+      "options": [
+        "acrobatics",
+        "athletics",
+        "deception",
+        "insight",
+        "intimidation",
+        "investigation",
+        "perception",
+        "performance",
+        "persuasion",
+        "sleight-of-hand",
+        "stealth"
+      ]
+    },
+    "startingEquipment": [
+      "A rapier or shortsword",
+      "A shortbow and quiver of 20 arrows, or a shortsword",
+      "A burglar's pack",
+      "Leather armor, two daggers, and thieves' tools"
+    ],
     "spellcasting": null,
-    "asiLevels": [4, 8, 10, 12, 16, 19],
+    "asiLevels": [
+      4,
+      8,
+      10,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 3,
     "subclasses": [
       {
         "id": "thief",
         "name": "Thief",
         "features": [
-          { "level": 3, "name": "Fast Hands", "description": "Use Cunning Action to make a Sleight of Hand check, use thieves' tools, or take the Use an Object action." },
-          { "level": 3, "name": "Second-Story Work", "description": "Climbing no longer costs extra movement, and jumping distance increases." },
-          { "level": 9, "name": "Supreme Sneak", "description": "Advantage on Stealth checks if you move no more than half your speed on the same turn." },
-          { "level": 13, "name": "Use Magic Device", "description": "Ignore class, race, and level requirements on the use of magic items." },
-          { "level": 17, "name": "Thief's Reflexes", "description": "Take two turns during the first round of combat." }
+          {
+            "level": 3,
+            "name": "Fast Hands",
+            "description": "Use Cunning Action to make a Sleight of Hand check, use thieves' tools, or take the Use an Object action."
+          },
+          {
+            "level": 3,
+            "name": "Second-Story Work",
+            "description": "Climbing no longer costs extra movement, and jumping distance increases."
+          },
+          {
+            "level": 9,
+            "name": "Supreme Sneak",
+            "description": "Advantage on Stealth checks if you move no more than half your speed on the same turn."
+          },
+          {
+            "level": 13,
+            "name": "Use Magic Device",
+            "description": "Ignore class, race, and level requirements on the use of magic items."
+          },
+          {
+            "level": 17,
+            "name": "Thief's Reflexes",
+            "description": "Take two turns during the first round of combat."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Expertise", "description": "Doubles proficiency bonus for two chosen skill proficiencies." }, { "name": "Sneak Attack", "description": "Deals an extra 1d6 damage once per turn when attacking with advantage or a nearby ally." }, { "name": "Thieves' Cant", "description": "Knows a secret mix of dialect, jargon, and code that allows hidden messages within normal conversation." }] },
-      { "level": 2, "features": [{ "name": "Cunning Action", "description": "Can Dash, Disengage, or Hide as a bonus action." }] },
-      { "level": 3, "features": [{ "name": "Roguish Archetype", "description": "Choose a subclass (Roguish Archetype) that grants additional features." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [{ "name": "Uncanny Dodge", "description": "Use a reaction to halve the damage of an attack that hits you." }] },
-      { "level": 6, "features": [{ "name": "Expertise", "description": "Two more skill proficiencies gain double proficiency bonus." }] },
-      { "level": 7, "features": [{ "name": "Evasion", "description": "Take no damage on a successful Dexterity save against area effects, half on a failure." }] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Roguish Archetype." }] },
-      { "level": 10, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 11, "features": [{ "name": "Reliable Talent", "description": "Treat any ability check d20 roll of 9 or lower as a 10, if proficient in the skill." }] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Roguish Archetype." }] },
-      { "level": 14, "features": [{ "name": "Blindsense", "description": "Aware of the location of hidden or invisible creatures within 10 feet." }] },
-      { "level": 15, "features": [{ "name": "Slippery Mind", "description": "Gain proficiency in Wisdom saving throws." }] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [{ "name": "Archetype Feature", "description": "Gains a feature from their chosen Roguish Archetype." }] },
-      { "level": 18, "features": [{ "name": "Elusive", "description": "No attack roll has advantage against you while you aren't incapacitated." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Stroke of Luck", "description": "Turn a failed attack roll or ability check into a success, once per short or long rest." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Expertise",
+            "description": "Doubles proficiency bonus for two chosen skill proficiencies."
+          },
+          {
+            "name": "Sneak Attack",
+            "description": "Deals an extra 1d6 damage once per turn when attacking with advantage or a nearby ally."
+          },
+          {
+            "name": "Thieves' Cant",
+            "description": "Knows a secret mix of dialect, jargon, and code that allows hidden messages within normal conversation."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Cunning Action",
+            "description": "Can Dash, Disengage, or Hide as a bonus action."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Roguish Archetype",
+            "description": "Choose a subclass (Roguish Archetype) that grants additional features."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": [
+          {
+            "name": "Uncanny Dodge",
+            "description": "Use a reaction to halve the damage of an attack that hits you."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Expertise",
+            "description": "Two more skill proficiencies gain double proficiency bonus."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": [
+          {
+            "name": "Evasion",
+            "description": "Take no damage on a successful Dexterity save against area effects, half on a failure."
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Roguish Archetype."
+          }
+        ]
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": [
+          {
+            "name": "Reliable Talent",
+            "description": "Treat any ability check d20 roll of 9 or lower as a 10, if proficient in the skill."
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Roguish Archetype."
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Blindsense",
+            "description": "Aware of the location of hidden or invisible creatures within 10 feet."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": [
+          {
+            "name": "Slippery Mind",
+            "description": "Gain proficiency in Wisdom saving throws."
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": [
+          {
+            "name": "Archetype Feature",
+            "description": "Gains a feature from their chosen Roguish Archetype."
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Elusive",
+            "description": "No attack roll has advantage against you while you aren't incapacitated."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Stroke of Luck",
+            "description": "Turn a failed attack roll or ability check into a success, once per short or long rest."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "sorcerer": {
     "id": "sorcerer",
     "name": "Sorcerer",
+    "description": "A wielder of innate arcane power born into their blood. Sorcerers shape raw magic with force of personality, twisting their spells with metamagic in ways studied wizards cannot.",
     "hitDie": 6,
-    "primaryAbility": ["cha"],
-    "savingThrowProficiencies": ["con", "cha"],
+    "primaryAbility": [
+      "cha"
+    ],
+    "savingThrowProficiencies": [
+      "con",
+      "cha"
+    ],
     "armorProficiencies": [],
-    "weaponProficiencies": ["dagger", "dart", "sling", "quarterstaff", "light-crossbow"],
-    "skillChoices": { "count": 2, "options": ["arcana", "deception", "insight", "intimidation", "persuasion", "religion"] },
-    "startingEquipment": ["A light crossbow and 20 bolts, or a simple weapon", "A component pouch or arcane focus", "A dungeoneer's pack or explorer's pack", "Two daggers"],
-    "spellcasting": { "ability": "cha", "type": "full", "prepared": false },
-    "asiLevels": [4, 8, 12, 16, 19],
+    "weaponProficiencies": [
+      "dagger",
+      "dart",
+      "sling",
+      "quarterstaff",
+      "light-crossbow"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "arcana",
+        "deception",
+        "insight",
+        "intimidation",
+        "persuasion",
+        "religion"
+      ]
+    },
+    "startingEquipment": [
+      "A light crossbow and 20 bolts, or a simple weapon",
+      "A component pouch or arcane focus",
+      "A dungeoneer's pack or explorer's pack",
+      "Two daggers"
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "type": "full",
+      "prepared": false
+    },
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 1,
     "subclasses": [
       {
         "id": "draconic-bloodline",
         "name": "Draconic Bloodline",
         "features": [
-          { "level": 1, "name": "Dragon Ancestor", "description": "Choose a dragon type that colors your magic; you can speak, read, and write Draconic." },
-          { "level": 1, "name": "Draconic Resilience", "description": "Extra hit points, and AC 13 + Dex modifier when not wearing armor." },
-          { "level": 6, "name": "Elemental Affinity", "description": "Add Charisma modifier to damage of spells matching your draconic damage type." },
-          { "level": 14, "name": "Dragon Wings", "description": "Can sprout dragon wings and fly." },
-          { "level": 18, "name": "Draconic Presence", "description": "Can spend an action and sorcery points to exude an aura of awe or fear." }
+          {
+            "level": 1,
+            "name": "Dragon Ancestor",
+            "description": "Choose a dragon type that colors your magic; you can speak, read, and write Draconic."
+          },
+          {
+            "level": 1,
+            "name": "Draconic Resilience",
+            "description": "Extra hit points, and AC 13 + Dex modifier when not wearing armor."
+          },
+          {
+            "level": 6,
+            "name": "Elemental Affinity",
+            "description": "Add Charisma modifier to damage of spells matching your draconic damage type."
+          },
+          {
+            "level": 14,
+            "name": "Dragon Wings",
+            "description": "Can sprout dragon wings and fly."
+          },
+          {
+            "level": 18,
+            "name": "Draconic Presence",
+            "description": "Can spend an action and sorcery points to exude an aura of awe or fear."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Spellcasting", "description": "Casts sorcerer spells using Charisma, knowing a limited number of spells at once." }, { "name": "Sorcerous Origin", "description": "Choose a subclass (Sorcerous Origin) that grants additional features." }] },
-      { "level": 2, "features": [{ "name": "Font of Magic", "description": "Gain sorcery points that can be converted to and from spell slots." }] },
-      { "level": 3, "features": [{ "name": "Metamagic", "description": "Learn two Metamagic options to twist spells to suit your needs, such as Quickened or Twinned Spell." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [] },
-      { "level": 6, "features": [{ "name": "Origin Feature", "description": "Gains a feature from their chosen Sorcerous Origin." }] },
-      { "level": 7, "features": [] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [] },
-      { "level": 10, "features": [{ "name": "Metamagic", "description": "Learn a third Metamagic option." }] },
-      { "level": 11, "features": [] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [] },
-      { "level": 14, "features": [{ "name": "Origin Feature", "description": "Gains a feature from their chosen Sorcerous Origin." }] },
-      { "level": 15, "features": [] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [{ "name": "Metamagic", "description": "Learn a fourth Metamagic option." }] },
-      { "level": 18, "features": [{ "name": "Origin Feature", "description": "Gains a feature from their chosen Sorcerous Origin." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Sorcerous Restoration", "description": "Regain 4 sorcery points on a short rest." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Spellcasting",
+            "description": "Casts sorcerer spells using Charisma, knowing a limited number of spells at once."
+          },
+          {
+            "name": "Sorcerous Origin",
+            "description": "Choose a subclass (Sorcerous Origin) that grants additional features."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Font of Magic",
+            "description": "Gain sorcery points that can be converted to and from spell slots."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Metamagic",
+            "description": "Learn two Metamagic options to twist spells to suit your needs, such as Quickened or Twinned Spell."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": []
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Origin Feature",
+            "description": "Gains a feature from their chosen Sorcerous Origin."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": []
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": []
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Metamagic",
+            "description": "Learn a third Metamagic option."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": []
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": []
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Origin Feature",
+            "description": "Gains a feature from their chosen Sorcerous Origin."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": []
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": [
+          {
+            "name": "Metamagic",
+            "description": "Learn a fourth Metamagic option."
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Origin Feature",
+            "description": "Gains a feature from their chosen Sorcerous Origin."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Sorcerous Restoration",
+            "description": "Regain 4 sorcery points on a short rest."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "warlock": {
     "id": "warlock",
     "name": "Warlock",
+    "description": "A seeker of forbidden knowledge who has struck a bargain with an otherworldly patron. Warlocks channel eldritch power through a small pool of potent, ever-recharging magic and unique invocations.",
     "hitDie": 8,
-    "primaryAbility": ["cha"],
-    "savingThrowProficiencies": ["wis", "cha"],
-    "armorProficiencies": ["light"],
-    "weaponProficiencies": ["simple"],
-    "skillChoices": { "count": 2, "options": ["arcana", "deception", "history", "intimidation", "investigation", "nature", "religion"] },
-    "startingEquipment": ["A light crossbow and 20 bolts, or a simple weapon", "A component pouch or arcane focus", "A scholar's pack or dungeoneer's pack", "Leather armor, a simple weapon, and two daggers"],
-    "spellcasting": { "ability": "cha", "type": "pact", "prepared": false },
-    "asiLevels": [4, 8, 12, 16, 19],
+    "primaryAbility": [
+      "cha"
+    ],
+    "savingThrowProficiencies": [
+      "wis",
+      "cha"
+    ],
+    "armorProficiencies": [
+      "light"
+    ],
+    "weaponProficiencies": [
+      "simple"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "arcana",
+        "deception",
+        "history",
+        "intimidation",
+        "investigation",
+        "nature",
+        "religion"
+      ]
+    },
+    "startingEquipment": [
+      "A light crossbow and 20 bolts, or a simple weapon",
+      "A component pouch or arcane focus",
+      "A scholar's pack or dungeoneer's pack",
+      "Leather armor, a simple weapon, and two daggers"
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "type": "pact",
+      "prepared": false
+    },
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 1,
     "subclasses": [
       {
         "id": "the-fiend",
         "name": "The Fiend",
         "features": [
-          { "level": 1, "name": "Dark One's Blessing", "description": "Gain temporary hit points when you reduce a hostile creature to 0 HP." },
-          { "level": 6, "name": "Dark One's Own Luck", "description": "Add a bonus to an ability check or saving throw once per short or long rest." },
-          { "level": 10, "name": "Fiendish Resilience", "description": "Choose a damage type to resist after each rest." },
-          { "level": 14, "name": "Hurl Through Hell", "description": "When you hit a creature with an attack, banish it briefly to a hellish plane for extra damage." }
+          {
+            "level": 1,
+            "name": "Dark One's Blessing",
+            "description": "Gain temporary hit points when you reduce a hostile creature to 0 HP."
+          },
+          {
+            "level": 6,
+            "name": "Dark One's Own Luck",
+            "description": "Add a bonus to an ability check or saving throw once per short or long rest."
+          },
+          {
+            "level": 10,
+            "name": "Fiendish Resilience",
+            "description": "Choose a damage type to resist after each rest."
+          },
+          {
+            "level": 14,
+            "name": "Hurl Through Hell",
+            "description": "When you hit a creature with an attack, banish it briefly to a hellish plane for extra damage."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Otherworldly Patron", "description": "Choose a subclass (Otherworldly Patron) that grants additional features." }, { "name": "Pact Magic", "description": "Casts warlock spells using Charisma from a small number of ever-recharging pact slots." }] },
-      { "level": 2, "features": [{ "name": "Eldritch Invocations", "description": "Learn two invocations that grant unique magical benefits." }] },
-      { "level": 3, "features": [{ "name": "Pact Boon", "description": "Choose a boon: Pact of the Chain, Blade, or Tome." }] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [] },
-      { "level": 6, "features": [{ "name": "Patron Feature", "description": "Gains a feature from their chosen Otherworldly Patron." }] },
-      { "level": 7, "features": [] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [] },
-      { "level": 10, "features": [{ "name": "Patron Feature", "description": "Gains a feature from their chosen Otherworldly Patron." }] },
-      { "level": 11, "features": [{ "name": "Mystic Arcanum (6th level)", "description": "Learn one 6th-level spell that can be cast once per long rest without using a spell slot." }] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [{ "name": "Mystic Arcanum (7th level)", "description": "Learn one 7th-level spell that can be cast once per long rest without using a spell slot." }] },
-      { "level": 14, "features": [{ "name": "Patron Feature", "description": "Gains a feature from their chosen Otherworldly Patron." }] },
-      { "level": 15, "features": [{ "name": "Mystic Arcanum (8th level)", "description": "Learn one 8th-level spell that can be cast once per long rest without using a spell slot." }] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [{ "name": "Mystic Arcanum (9th level)", "description": "Learn one 9th-level spell that can be cast once per long rest without using a spell slot." }] },
-      { "level": 18, "features": [] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Eldritch Master", "description": "Can beg your patron to regain all expended pact magic slots once per long rest." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Otherworldly Patron",
+            "description": "Choose a subclass (Otherworldly Patron) that grants additional features."
+          },
+          {
+            "name": "Pact Magic",
+            "description": "Casts warlock spells using Charisma from a small number of ever-recharging pact slots."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Eldritch Invocations",
+            "description": "Learn two invocations that grant unique magical benefits."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Pact Boon",
+            "description": "Choose a boon: Pact of the Chain, Blade, or Tome."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": []
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Patron Feature",
+            "description": "Gains a feature from their chosen Otherworldly Patron."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": []
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": []
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Patron Feature",
+            "description": "Gains a feature from their chosen Otherworldly Patron."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": [
+          {
+            "name": "Mystic Arcanum (6th level)",
+            "description": "Learn one 6th-level spell that can be cast once per long rest without using a spell slot."
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": [
+          {
+            "name": "Mystic Arcanum (7th level)",
+            "description": "Learn one 7th-level spell that can be cast once per long rest without using a spell slot."
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Patron Feature",
+            "description": "Gains a feature from their chosen Otherworldly Patron."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": [
+          {
+            "name": "Mystic Arcanum (8th level)",
+            "description": "Learn one 8th-level spell that can be cast once per long rest without using a spell slot."
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": [
+          {
+            "name": "Mystic Arcanum (9th level)",
+            "description": "Learn one 9th-level spell that can be cast once per long rest without using a spell slot."
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "features": []
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Eldritch Master",
+            "description": "Can beg your patron to regain all expended pact magic slots once per long rest."
+          }
+        ]
+      }
     ],
     "source": "core"
   },
   "wizard": {
     "id": "wizard",
     "name": "Wizard",
+    "description": "A scholar of the arcane who masters magic through study and a treasured spellbook. Wizards command the widest array of spells of any class, bending reality through disciplined learning.",
     "hitDie": 6,
-    "primaryAbility": ["int"],
-    "savingThrowProficiencies": ["int", "wis"],
+    "primaryAbility": [
+      "int"
+    ],
+    "savingThrowProficiencies": [
+      "int",
+      "wis"
+    ],
     "armorProficiencies": [],
-    "weaponProficiencies": ["dagger", "dart", "sling", "quarterstaff", "light-crossbow"],
-    "skillChoices": { "count": 2, "options": ["arcana", "history", "insight", "investigation", "medicine", "religion"] },
-    "startingEquipment": ["A quarterstaff or dagger", "A component pouch or arcane focus", "A scholar's pack", "A spellbook"],
-    "spellcasting": { "ability": "int", "type": "full", "prepared": true },
-    "asiLevels": [4, 8, 12, 16, 19],
+    "weaponProficiencies": [
+      "dagger",
+      "dart",
+      "sling",
+      "quarterstaff",
+      "light-crossbow"
+    ],
+    "skillChoices": {
+      "count": 2,
+      "options": [
+        "arcana",
+        "history",
+        "insight",
+        "investigation",
+        "medicine",
+        "religion"
+      ]
+    },
+    "startingEquipment": [
+      "A quarterstaff or dagger",
+      "A component pouch or arcane focus",
+      "A scholar's pack",
+      "A spellbook"
+    ],
+    "spellcasting": {
+      "ability": "int",
+      "type": "full",
+      "prepared": true
+    },
+    "asiLevels": [
+      4,
+      8,
+      12,
+      16,
+      19
+    ],
     "subclassLevel": 2,
     "subclasses": [
       {
         "id": "school-of-evocation",
         "name": "School of Evocation",
         "features": [
-          { "level": 2, "name": "Evocation Savant", "description": "Halved gold/time cost to copy evocation spells into your spellbook." },
-          { "level": 2, "name": "Sculpt Spells", "description": "Chosen allies automatically succeed on saves against your evocation spells and take no damage on a save." },
-          { "level": 6, "name": "Potent Cantrip", "description": "Creatures that save against your cantrips still take half damage." },
-          { "level": 10, "name": "Empowered Evocation", "description": "Add Intelligence modifier to the damage of your evocation spells." },
-          { "level": 14, "name": "Overchannel", "description": "Can deal maximum damage with a spell of 5th level or lower, at the risk of taking damage yourself." }
+          {
+            "level": 2,
+            "name": "Evocation Savant",
+            "description": "Halved gold/time cost to copy evocation spells into your spellbook."
+          },
+          {
+            "level": 2,
+            "name": "Sculpt Spells",
+            "description": "Chosen allies automatically succeed on saves against your evocation spells and take no damage on a save."
+          },
+          {
+            "level": 6,
+            "name": "Potent Cantrip",
+            "description": "Creatures that save against your cantrips still take half damage."
+          },
+          {
+            "level": 10,
+            "name": "Empowered Evocation",
+            "description": "Add Intelligence modifier to the damage of your evocation spells."
+          },
+          {
+            "level": 14,
+            "name": "Overchannel",
+            "description": "Can deal maximum damage with a spell of 5th level or lower, at the risk of taking damage yourself."
+          }
         ]
       }
     ],
     "levels": [
-      { "level": 1, "features": [{ "name": "Spellcasting", "description": "Casts wizard spells using Intelligence, preparing a number of spells each day from a spellbook." }, { "name": "Arcane Recovery", "description": "Once per day during a short rest, recover expended spell slots totaling up to half wizard level (rounded up)." }] },
-      { "level": 2, "features": [{ "name": "Arcane Tradition", "description": "Choose a subclass (Arcane Tradition) that grants additional features." }] },
-      { "level": 3, "features": [] },
-      { "level": 4, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 5, "features": [] },
-      { "level": 6, "features": [{ "name": "Tradition Feature", "description": "Gains a feature from their chosen Arcane Tradition." }] },
-      { "level": 7, "features": [] },
-      { "level": 8, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 9, "features": [] },
-      { "level": 10, "features": [{ "name": "Tradition Feature", "description": "Gains a feature from their chosen Arcane Tradition." }] },
-      { "level": 11, "features": [] },
-      { "level": 12, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 13, "features": [] },
-      { "level": 14, "features": [{ "name": "Tradition Feature", "description": "Gains a feature from their chosen Arcane Tradition." }] },
-      { "level": 15, "features": [] },
-      { "level": 16, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 17, "features": [] },
-      { "level": 18, "features": [{ "name": "Spell Mastery", "description": "Choose a 1st- and 2nd-level spell that can be cast at will without a spell slot." }] },
-      { "level": 19, "features": [{ "name": "Ability Score Improvement", "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)." }] },
-      { "level": 20, "features": [{ "name": "Signature Spells", "description": "Choose two 3rd-level spells that are always prepared and cost no spell slot the first time cast each rest." }] }
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Spellcasting",
+            "description": "Casts wizard spells using Intelligence, preparing a number of spells each day from a spellbook."
+          },
+          {
+            "name": "Arcane Recovery",
+            "description": "Once per day during a short rest, recover expended spell slots totaling up to half wizard level (rounded up)."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Arcane Tradition",
+            "description": "Choose a subclass (Arcane Tradition) that grants additional features."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": []
+      },
+      {
+        "level": 4,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "features": []
+      },
+      {
+        "level": 6,
+        "features": [
+          {
+            "name": "Tradition Feature",
+            "description": "Gains a feature from their chosen Arcane Tradition."
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "features": []
+      },
+      {
+        "level": 8,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "features": []
+      },
+      {
+        "level": 10,
+        "features": [
+          {
+            "name": "Tradition Feature",
+            "description": "Gains a feature from their chosen Arcane Tradition."
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "features": []
+      },
+      {
+        "level": 12,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "features": []
+      },
+      {
+        "level": 14,
+        "features": [
+          {
+            "name": "Tradition Feature",
+            "description": "Gains a feature from their chosen Arcane Tradition."
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "features": []
+      },
+      {
+        "level": 16,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "features": []
+      },
+      {
+        "level": 18,
+        "features": [
+          {
+            "name": "Spell Mastery",
+            "description": "Choose a 1st- and 2nd-level spell that can be cast at will without a spell slot."
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "features": [
+          {
+            "name": "Ability Score Improvement",
+            "description": "Increase one ability score by 2, or two ability scores by 1 each (or take a feat, if using feats)."
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "features": [
+          {
+            "name": "Signature Spells",
+            "description": "Choose two 3rd-level spells that are always prepared and cost no spell slot the first time cast each rest."
+          }
+        ]
+      }
     ],
     "source": "core"
   }

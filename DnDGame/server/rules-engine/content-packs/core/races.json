@@ -2,196 +2,452 @@
   "human": {
     "id": "human",
     "name": "Human",
-    "abilityScoreIncrease": { "all": 1 },
+    "description": "The most adaptable and ambitious of the common peoples, humans are found in nearly every land and calling. What they lack in long life or innate magic they make up for in drive, versatility, and sheer numbers.",
+    "abilityScoreIncrease": {
+      "all": 1
+    },
     "speed": 30,
     "size": "Medium",
-    "languages": ["Common", "one language of choice"],
+    "languages": [
+      "Common",
+      "one language of choice"
+    ],
     "traits": [
-      { "name": "Adaptable", "description": "Gains proficiency in one skill of choice, reflecting broad adaptability." }
+      {
+        "name": "Adaptable",
+        "description": "Gains proficiency in one skill of choice, reflecting broad adaptability."
+      }
     ],
     "source": "core"
   },
   "elf-high": {
     "id": "elf-high",
     "name": "Elf (High)",
-    "abilityScoreIncrease": { "dex": 2, "int": 1 },
+    "description": "High elves are graceful, long-lived folk with a keen mind and an innate talent for magic. They value learning and craft, and carry themselves with the poise of a people who measure their lives in centuries.",
+    "abilityScoreIncrease": {
+      "dex": 2,
+      "int": 1
+    },
     "speed": 30,
     "size": "Medium",
-    "languages": ["Common", "Elvish"],
+    "languages": [
+      "Common",
+      "Elvish"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Fey Ancestry", "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects." },
-      { "name": "Trance", "description": "Does not need to sleep; instead meditates for 4 hours to gain the benefit of a long rest." },
-      { "name": "Keen Senses", "description": "Gains proficiency in the Perception skill." },
-      { "name": "Elf Weapon Training", "description": "Proficient with longswords, shortswords, shortbows, and longbows." },
-      { "name": "Cantrip", "description": "Knows one wizard cantrip of choice, cast using Intelligence." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects."
+      },
+      {
+        "name": "Trance",
+        "description": "Does not need to sleep; instead meditates for 4 hours to gain the benefit of a long rest."
+      },
+      {
+        "name": "Keen Senses",
+        "description": "Gains proficiency in the Perception skill."
+      },
+      {
+        "name": "Elf Weapon Training",
+        "description": "Proficient with longswords, shortswords, shortbows, and longbows."
+      },
+      {
+        "name": "Cantrip",
+        "description": "Knows one wizard cantrip of choice, cast using Intelligence."
+      }
     ],
     "source": "core"
   },
   "elf-wood": {
     "id": "elf-wood",
     "name": "Elf (Wood)",
-    "abilityScoreIncrease": { "dex": 2, "wis": 1 },
+    "description": "Wood elves are swift, reclusive folk at home in deep forests. Attuned to the wild, they move silently through the trees and are masters of bow and blade, wary of outsiders who trespass their domains.",
+    "abilityScoreIncrease": {
+      "dex": 2,
+      "wis": 1
+    },
     "speed": 35,
     "size": "Medium",
-    "languages": ["Common", "Elvish"],
+    "languages": [
+      "Common",
+      "Elvish"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Fey Ancestry", "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects." },
-      { "name": "Trance", "description": "Does not need to sleep; instead meditates for 4 hours to gain the benefit of a long rest." },
-      { "name": "Mask of the Wild", "description": "Can attempt to hide even when only lightly obscured by natural phenomena." },
-      { "name": "Elf Weapon Training", "description": "Proficient with longswords, shortswords, shortbows, and longbows." },
-      { "name": "Fleet of Foot", "description": "Base walking speed increases to 35 feet." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects."
+      },
+      {
+        "name": "Trance",
+        "description": "Does not need to sleep; instead meditates for 4 hours to gain the benefit of a long rest."
+      },
+      {
+        "name": "Mask of the Wild",
+        "description": "Can attempt to hide even when only lightly obscured by natural phenomena."
+      },
+      {
+        "name": "Elf Weapon Training",
+        "description": "Proficient with longswords, shortswords, shortbows, and longbows."
+      },
+      {
+        "name": "Fleet of Foot",
+        "description": "Base walking speed increases to 35 feet."
+      }
     ],
     "source": "core"
   },
   "dwarf-hill": {
     "id": "dwarf-hill",
     "name": "Dwarf (Hill)",
-    "abilityScoreIncrease": { "con": 2, "wis": 1 },
+    "description": "Hill dwarves are hardy and wise, with keen senses and a deep-rooted resilience. Clannish and traditional, they are renowned for their toughness and their long memory for both kindness and insult.",
+    "abilityScoreIncrease": {
+      "con": 2,
+      "wis": 1
+    },
     "speed": 25,
     "size": "Medium",
-    "languages": ["Common", "Dwarvish"],
+    "languages": [
+      "Common",
+      "Dwarvish"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Dwarven Resilience", "description": "Advantage on saving throws against poison, and resistance to poison damage." },
-      { "name": "Dwarven Combat Training", "description": "Proficient with battleaxes, handaxes, light hammers, and warhammers." },
-      { "name": "Tool Proficiency", "description": "Proficient with one type of artisan's tools of choice." },
-      { "name": "Stonecunning", "description": "Doubles proficiency bonus on history checks related to stonework." },
-      { "name": "Dwarven Toughness", "description": "Maximum hit points increase by 1, and by 1 again every time a level is gained." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Dwarven Resilience",
+        "description": "Advantage on saving throws against poison, and resistance to poison damage."
+      },
+      {
+        "name": "Dwarven Combat Training",
+        "description": "Proficient with battleaxes, handaxes, light hammers, and warhammers."
+      },
+      {
+        "name": "Tool Proficiency",
+        "description": "Proficient with one type of artisan's tools of choice."
+      },
+      {
+        "name": "Stonecunning",
+        "description": "Doubles proficiency bonus on history checks related to stonework."
+      },
+      {
+        "name": "Dwarven Toughness",
+        "description": "Maximum hit points increase by 1, and by 1 again every time a level is gained."
+      }
     ],
     "source": "core"
   },
   "dwarf-mountain": {
     "id": "dwarf-mountain",
     "name": "Dwarf (Mountain)",
-    "abilityScoreIncrease": { "con": 2, "str": 2 },
+    "description": "Mountain dwarves are strong and stout, raised amid high peaks and stone halls. Trained from youth in armor and arms, they make formidable warriors and peerless smiths.",
+    "abilityScoreIncrease": {
+      "con": 2,
+      "str": 2
+    },
     "speed": 25,
     "size": "Medium",
-    "languages": ["Common", "Dwarvish"],
+    "languages": [
+      "Common",
+      "Dwarvish"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Dwarven Resilience", "description": "Advantage on saving throws against poison, and resistance to poison damage." },
-      { "name": "Dwarven Combat Training", "description": "Proficient with battleaxes, handaxes, light hammers, and warhammers." },
-      { "name": "Stonecunning", "description": "Doubles proficiency bonus on history checks related to stonework." },
-      { "name": "Dwarven Armor Training", "description": "Proficient with light and medium armor." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Dwarven Resilience",
+        "description": "Advantage on saving throws against poison, and resistance to poison damage."
+      },
+      {
+        "name": "Dwarven Combat Training",
+        "description": "Proficient with battleaxes, handaxes, light hammers, and warhammers."
+      },
+      {
+        "name": "Stonecunning",
+        "description": "Doubles proficiency bonus on history checks related to stonework."
+      },
+      {
+        "name": "Dwarven Armor Training",
+        "description": "Proficient with light and medium armor."
+      }
     ],
     "source": "core"
   },
   "halfling-lightfoot": {
     "id": "halfling-lightfoot",
     "name": "Halfling (Lightfoot)",
-    "abilityScoreIncrease": { "dex": 2, "cha": 1 },
+    "description": "Lightfoot halflings are affable and quick to hide, blending easily into crowds and slipping from notice. Cheerful and mobile, they wander farther than most of their kin.",
+    "abilityScoreIncrease": {
+      "dex": 2,
+      "cha": 1
+    },
     "speed": 25,
     "size": "Small",
-    "languages": ["Common", "Halfling"],
+    "languages": [
+      "Common",
+      "Halfling"
+    ],
     "traits": [
-      { "name": "Lucky", "description": "May reroll a natural 1 on an attack roll, ability check, or saving throw." },
-      { "name": "Brave", "description": "Advantage on saving throws against being frightened." },
-      { "name": "Nimble", "description": "Can move through the space of any creature that is a size larger." },
-      { "name": "Naturally Stealthy", "description": "Can attempt to hide even when obscured only by a creature at least one size larger." }
+      {
+        "name": "Lucky",
+        "description": "May reroll a natural 1 on an attack roll, ability check, or saving throw."
+      },
+      {
+        "name": "Brave",
+        "description": "Advantage on saving throws against being frightened."
+      },
+      {
+        "name": "Nimble",
+        "description": "Can move through the space of any creature that is a size larger."
+      },
+      {
+        "name": "Naturally Stealthy",
+        "description": "Can attempt to hide even when obscured only by a creature at least one size larger."
+      }
     ],
     "source": "core"
   },
   "halfling-stout": {
     "id": "halfling-stout",
     "name": "Halfling (Stout)",
-    "abilityScoreIncrease": { "dex": 2, "con": 1 },
+    "description": "Stout halflings are sturdier than their cousins, with a resistance to poison said to come from dwarven blood. Practical and brave, they weather hardship with an easy good humor.",
+    "abilityScoreIncrease": {
+      "dex": 2,
+      "con": 1
+    },
     "speed": 25,
     "size": "Small",
-    "languages": ["Common", "Halfling"],
+    "languages": [
+      "Common",
+      "Halfling"
+    ],
     "traits": [
-      { "name": "Lucky", "description": "May reroll a natural 1 on an attack roll, ability check, or saving throw." },
-      { "name": "Brave", "description": "Advantage on saving throws against being frightened." },
-      { "name": "Nimble", "description": "Can move through the space of any creature that is a size larger." },
-      { "name": "Stout Resilience", "description": "Advantage on saving throws against poison, and resistance to poison damage." }
+      {
+        "name": "Lucky",
+        "description": "May reroll a natural 1 on an attack roll, ability check, or saving throw."
+      },
+      {
+        "name": "Brave",
+        "description": "Advantage on saving throws against being frightened."
+      },
+      {
+        "name": "Nimble",
+        "description": "Can move through the space of any creature that is a size larger."
+      },
+      {
+        "name": "Stout Resilience",
+        "description": "Advantage on saving throws against poison, and resistance to poison damage."
+      }
     ],
     "source": "core"
   },
   "dragonborn": {
     "id": "dragonborn",
     "name": "Dragonborn",
-    "abilityScoreIncrease": { "str": 2, "cha": 1 },
+    "description": "Dragonborn are proud, draconic humanoids who walk upright and honor clan above self. Their scaled hide and elemental breath mark their draconic heritage, and they prize skill, loyalty, and personal excellence.",
+    "abilityScoreIncrease": {
+      "str": 2,
+      "cha": 1
+    },
     "speed": 30,
     "size": "Medium",
-    "languages": ["Common", "Draconic"],
+    "languages": [
+      "Common",
+      "Draconic"
+    ],
     "traits": [
-      { "name": "Draconic Ancestry", "description": "Chooses a draconic lineage (e.g. red, blue, gold) that determines breath weapon and resistance damage type." },
-      { "name": "Breath Weapon", "description": "Can exhale destructive energy in a shape and damage type determined by draconic ancestry, once per short or long rest." },
-      { "name": "Damage Resistance", "description": "Resistance to the damage type associated with draconic ancestry." }
+      {
+        "name": "Draconic Ancestry",
+        "description": "Chooses a draconic lineage (e.g. red, blue, gold) that determines breath weapon and resistance damage type."
+      },
+      {
+        "name": "Breath Weapon",
+        "description": "Can exhale destructive energy in a shape and damage type determined by draconic ancestry, once per short or long rest."
+      },
+      {
+        "name": "Damage Resistance",
+        "description": "Resistance to the damage type associated with draconic ancestry."
+      }
     ],
     "source": "core"
   },
   "gnome-forest": {
     "id": "gnome-forest",
     "name": "Gnome (Forest)",
-    "abilityScoreIncrease": { "int": 2, "dex": 1 },
+    "description": "Forest gnomes are small, secretive folk with a natural gift for illusion and an easy rapport with woodland creatures. Curious and cautious, they hide their communities deep in the wilds.",
+    "abilityScoreIncrease": {
+      "int": 2,
+      "dex": 1
+    },
     "speed": 25,
     "size": "Small",
-    "languages": ["Common", "Gnomish"],
+    "languages": [
+      "Common",
+      "Gnomish"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Gnome Cunning", "description": "Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic." },
-      { "name": "Natural Illusionist", "description": "Knows the minor illusion cantrip, cast using Intelligence." },
-      { "name": "Speak with Small Beasts", "description": "Can communicate simple ideas with Small or smaller beasts." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Gnome Cunning",
+        "description": "Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+      },
+      {
+        "name": "Natural Illusionist",
+        "description": "Knows the minor illusion cantrip, cast using Intelligence."
+      },
+      {
+        "name": "Speak with Small Beasts",
+        "description": "Can communicate simple ideas with Small or smaller beasts."
+      }
     ],
     "source": "core"
   },
   "gnome-rock": {
     "id": "gnome-rock",
     "name": "Gnome (Rock)",
-    "abilityScoreIncrease": { "int": 2, "con": 1 },
+    "description": "Rock gnomes are inventive and irrepressibly curious, forever tinkering with clockwork gadgets and alchemical devices. Their brilliance and cheer make them beloved (if exhausting) company.",
+    "abilityScoreIncrease": {
+      "int": 2,
+      "con": 1
+    },
     "speed": 25,
     "size": "Small",
-    "languages": ["Common", "Gnomish"],
+    "languages": [
+      "Common",
+      "Gnomish"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Gnome Cunning", "description": "Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic." },
-      { "name": "Artificer's Lore", "description": "Doubles proficiency bonus on history checks related to magic items, alchemical objects, or technological devices." },
-      { "name": "Tinker", "description": "Proficient with tinker's tools; can build tiny clockwork devices." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Gnome Cunning",
+        "description": "Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+      },
+      {
+        "name": "Artificer's Lore",
+        "description": "Doubles proficiency bonus on history checks related to magic items, alchemical objects, or technological devices."
+      },
+      {
+        "name": "Tinker",
+        "description": "Proficient with tinker's tools; can build tiny clockwork devices."
+      }
     ],
     "source": "core"
   },
   "half-elf": {
     "id": "half-elf",
     "name": "Half-Elf",
-    "abilityScoreIncrease": { "cha": 2, "choice": { "count": 2, "amount": 1, "except": ["cha"] } },
+    "description": "Caught between two worlds, half-elves combine human ambition with elven grace. Belonging fully to neither ancestry, they are natural diplomats and wanderers, charming and self-reliant.",
+    "abilityScoreIncrease": {
+      "cha": 2,
+      "choice": {
+        "count": 2,
+        "amount": 1,
+        "except": [
+          "cha"
+        ]
+      }
+    },
     "speed": 30,
     "size": "Medium",
-    "languages": ["Common", "Elvish", "one language of choice"],
+    "languages": [
+      "Common",
+      "Elvish",
+      "one language of choice"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Fey Ancestry", "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects." },
-      { "name": "Skill Versatility", "description": "Gains proficiency in two skills of choice." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "Advantage on saving throws against being charmed, and immune to magical sleep effects."
+      },
+      {
+        "name": "Skill Versatility",
+        "description": "Gains proficiency in two skills of choice."
+      }
     ],
     "source": "core"
   },
   "half-orc": {
     "id": "half-orc",
     "name": "Half-Orc",
-    "abilityScoreIncrease": { "str": 2, "con": 1 },
+    "description": "Half-orcs are powerful and fierce, bearing the strength and endurance of their orc heritage. Often judged by their looks, they prove themselves through deeds, and few match their raw ferocity in battle.",
+    "abilityScoreIncrease": {
+      "str": 2,
+      "con": 1
+    },
     "speed": 30,
     "size": "Medium",
-    "languages": ["Common", "Orc"],
+    "languages": [
+      "Common",
+      "Orc"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Menacing", "description": "Gains proficiency in the Intimidation skill." },
-      { "name": "Relentless Endurance", "description": "When reduced to 0 hit points but not killed outright, can drop to 1 hit point instead, once per long rest." },
-      { "name": "Savage Attacks", "description": "On a critical hit with a melee weapon, rolls one additional damage die." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Menacing",
+        "description": "Gains proficiency in the Intimidation skill."
+      },
+      {
+        "name": "Relentless Endurance",
+        "description": "When reduced to 0 hit points but not killed outright, can drop to 1 hit point instead, once per long rest."
+      },
+      {
+        "name": "Savage Attacks",
+        "description": "On a critical hit with a melee weapon, rolls one additional damage die."
+      }
     ],
     "source": "core"
   },
   "tiefling": {
     "id": "tiefling",
     "name": "Tiefling",
-    "abilityScoreIncrease": { "cha": 2, "int": 1 },
+    "description": "Descended from an infernal bloodline, tieflings bear horns, unusual eyes, and a whiff of brimstone. Mistrusted wherever they go, they grow self-reliant and sharp-witted, with a spark of innate fiendish magic.",
+    "abilityScoreIncrease": {
+      "cha": 2,
+      "int": 1
+    },
     "speed": 30,
     "size": "Medium",
-    "languages": ["Common", "Infernal"],
+    "languages": [
+      "Common",
+      "Infernal"
+    ],
     "traits": [
-      { "name": "Darkvision", "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim." },
-      { "name": "Hellish Resistance", "description": "Resistance to fire damage." },
-      { "name": "Infernal Legacy", "description": "Knows the thaumaturgy cantrip; gains hellish rebuke at level 3 and darkness at level 5 (each castable once per long rest), all using Charisma." }
+      {
+        "name": "Darkvision",
+        "description": "Can see in dim light within 60 feet as if it were bright light, and in darkness as if dim."
+      },
+      {
+        "name": "Hellish Resistance",
+        "description": "Resistance to fire damage."
+      },
+      {
+        "name": "Infernal Legacy",
+        "description": "Knows the thaumaturgy cantrip; gains hellish rebuke at level 3 and darkness at level 5 (each castable once per long rest), all using Charisma."
+      }
     ],
     "source": "core"
   }

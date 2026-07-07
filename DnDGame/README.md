@@ -1,171 +1,132 @@
 # Ledgerhall — a self-hosted D&D 5e platform
 
-A full slice of a virtual tabletop for running real D&D 5e campaigns with
-friends: a complete SRD-scope rules engine (all 9 races, all 12 classes,
-220 spells, 124 monsters, 120 weapons/armor/items), a leveling/multiclass
-character builder, and a live multiplayer game session (map/tokens,
-initiative, dice, chat, server-resolved combat, DM/Player modes, and mesh
-voice/video with screen share) — all running from a single Node server you
-control. Characters and session state persist to disk, so restarting the
-server doesn't wipe a campaign in progress.
+A complete virtual tabletop for running real D&D 5e campaigns with friends
+over any distance: a full SRD-scope rules engine, a leveling/multiclass
+character builder with spells and equipment, a live multiplayer game session
+with a battle map, **server-resolved weapon and spell combat**, DM/Player
+roles, fog of war, and mesh voice/video with screen share. Optional accounts
+tie characters to a person; everything persists to disk (or Postgres) so a
+campaign survives restarts.
 
-## Run it locally - Requires Node.js installed
+## Run it locally
+
 ```
 cd server
 npm install
 npm start
 ```
 
-Then open **http://localhost:3000**. To test multiplayer features, open a
-second browser tab/window and join the same Session ID — one as Player, one
-as Dungeon Master.
+Open **http://localhost:3000**. To try multiplayer, open a second tab and
+join the same Session ID — one as **Player**, one as **Dungeon Master**.
 
-## Host it for your actual group (not just your wifi)
+## Host it for your group
 
-The server binds to `0.0.0.0` by default, so anyone on your **local network**
-can already join by using your machine's LAN IP (e.g. `http://192.168.1.23:3000`)
-instead of `localhost`. For friends who aren't on your network, you have two
-practical options:
+The server binds to `0.0.0.0`, so anyone on your **LAN** can join at
+`http://<your-ip>:3000`. For remote friends:
 
-**Quick/temporary — a tunnel.** Run a tool like `ngrok http 3000` or a
-Cloudflare Tunnel and share the URL it gives you. Good for a one-off session,
-free, no server rental, and gives you HTTPS automatically (see below for why
-that matters).
+- **Quick:** a tunnel — `ngrok http 3000` or a Cloudflare Tunnel — gives you a
+  public HTTPS URL instantly.
+- **Permanent:** a small VPS with Docker. This repo ships a `Dockerfile`,
+  `docker-compose.yml` (app + a Caddy reverse proxy for **automatic HTTPS**),
+  and `.env.example`:
+  ```
+  cp .env.example .env   # set DOMAIN, ALLOWED_ORIGIN, TURN_*, optionally DATABASE_URL
+  docker compose up -d
+  ```
+  (The Docker build follows the standard Node pattern but wasn't runnable in
+  the sandbox it was written in — test `docker build` before relying on it.)
 
-**Permanent — a small VPS + Docker.** This repo includes a `Dockerfile` and
-`docker-compose.yml`:
+**HTTPS is required for remote voice/video** — browsers block camera/mic on
+plain HTTP for anyone but `localhost`.
 
-```
-cp .env.example .env   # fill in DOMAIN, ALLOWED_ORIGIN, TURN_* — see below
-docker compose up -d
-```
+**A TURN server is usually required for remote voice/video** to traverse home
+routers/CGNAT. Set `TURN_URLS` / `TURN_USERNAME` / `TURN_CREDENTIAL` to your
+own (self-host `coturn`, or use Twilio/Metered/Xirsys). Unset, it falls back
+to a public demo TURN server — fine for a quick test, not for a weekly game.
 
-This starts the app plus a Caddy reverse proxy that gets you **free automatic
-HTTPS** once you point a domain's DNS A record at your server. Point `DOMAIN`
-in `.env` at that domain. (I wasn't able to test the actual `docker build` in
-the sandboxed environment this was built in — no Docker daemon available —
-but it follows the standard Node/Express container pattern.)
+Env vars: `PORT` (3000), `HOST` (`0.0.0.0`), `ALLOWED_ORIGIN` (CORS lock-down),
+`TURN_*`, and `DATABASE_URL` (see Storage).
 
-**Why HTTPS matters here:** browsers block camera/mic access (`getUserMedia`)
-on plain HTTP for anyone except `localhost`. Voice/video simply won't work
-for remote players without it.
+## Storage
 
-**Why you probably need a TURN server:** STUN (used for local-network peer
-discovery) often isn't enough for two players behind different home
-routers/CGNAT to connect their video directly to each other. A TURN relay
-is what actually gets voice/video working across the internet. Set
-`TURN_URLS` / `TURN_USERNAME` / `TURN_CREDENTIAL` (comma-separate multiple
-URLs) to your own TURN server for a permanent setup — self-host `coturn` or
-use a provider like Twilio, Metered, or Xirsys. If you leave these unset,
-the app falls back to the Open Relay Project's public demo TURN server, which
-works but is unauthenticated, rate-limited, and not something to depend on
-for a real weekly campaign.
+By default, all data (characters, users, session state, homebrew) is stored as
+JSON files under `server/data/` and `content-packs/homebrew/` — durable and
+simple for a single server. Set **`DATABASE_URL`** (and `npm install pg`) to
+switch to Postgres instead; tables are created automatically. The Postgres
+adapter follows standard `pg` usage but wasn't exercised against a live
+database in the sandbox — test it before trusting a campaign to it. The file
+store is what's been used end-to-end.
 
-Other environment variables: `PORT` (default 3000), `HOST` (default
-`0.0.0.0`), `ALLOWED_ORIGIN` (CORS origin lock-down, default `*`).
+## What's implemented
 
-## What's actually implemented right now
+**Content (SRD-scope, original wording):** 13 race/subrace entries (all 9 core
+races), 12 classes with full level 1–20 progressions, subclasses, and ASI
+levels; 220 spells (65 with structured combat data for auto-resolution); 124
+monsters (CR 0–24); 120 weapons/armor/gear/magic items.
 
-- **Rules engine** (`server/rules-engine/`): JSON content packs for
-  **13 race/subrace entries** (all 9 core PHB races), **12 classes** (full
-  level 1-20 feature progression, ASI levels, one subclass each with its own
-  feature levels), **220 spells** across all 8 casting classes and levels
-  0-9, **124 monsters** spanning CR 0-24, and **120 items** (full weapon and
-  armor lists, adventuring gear, curated magic items). All original wording
-  (SRD-scope mechanics, not copied WotC text — see the legal note below).
-- **Character builder**: pick a race, one or more classes with individual
-  levels (multiclassing), a subclass once you hit the right level, ability
-  scores, equipped armor/shield, and prepared/known spells per spellcasting
-  class. The server computes HP (correct 5e first-level-max / average-per-level
-  math per class), AC (from equipped armor or unarmored), saving throws,
-  proficiency bonus, spell slots (including the proper multiclass shared
-  slot table and separate Warlock pact magic), and resolves Ability Score
-  Improvements (defaults to +2 primary ability; pass explicit choices if you
-  want). "Save character" persists it to `server/data/characters.json`.
-- **Compendium tab**: searchable, filterable browser across every race,
-  class, spell, monster, and item currently loaded (core + any homebrew) —
-  filter spells by level/class, monsters by type, items by category.
-- **Live session** (Socket.io): a Session ID puts you in a room. Map token
-  placement/movement, initiative, dice, chat, and combat sync in real time.
-  Session state (tokens/HP, logs, DM notes) is debounce-saved to
-  `server/data/sessions/<id>.json` and reloaded on the next join — a server
-  restart doesn't lose an in-progress game. Empty rooms are evicted from
-  memory (not disk) after 10 minutes.
-- **Player vs. Dungeon Master mode**: pick your role when joining a session.
-  - *Everyone*: bring a saved character in as a token (HP/AC/attack bonus
-    computed server-side), drop monster tokens from the bestiary, roll dice,
-    chat, use "Attack mode" to click an attacker then a target and resolve a
-    server-authoritative attack roll (so nobody can fake damage).
-  - *DM-only*: a DM Tools panel showing every monster token with **Hide**
-    (removes it from players' view entirely, e.g. prepping an ambush) and
-    **Reveal HP** (monster HP defaults to a coarse status word — Healthy/
-    Injured/Bloodied/Critical/Down — for players until you reveal exact
-    numbers) toggles; a **Party panel** to view any player's full saved
-    character sheet; **private DM notes**; and **secret dice rolls** (only
-    you see the result). All of this is enforced server-side — the gating
-    isn't just hidden in the UI, players' sockets are never sent the true
-    data for hidden/masked tokens.
-- **Voice & video**: mesh WebRTC (every participant connects directly to
-  every other). Mute/camera toggles and screen share (for the DM to show a
-  map or handout) are built in. ICE servers (STUN + TURN) are fetched from
-  the server so you can configure TURN once for everyone. Mesh is
-  intentionally simple and fine for a typical table (DM + 4-6 players); see
-  "Next steps" for scaling further.
-- **Homebrew import**: paste a JSON pack with any of `races`/`classes`/
-  `spells`/`monsters`/`items`. Entries are namespaced (`hb:<pack>:<id>`) so
-  they never collide with core content, and immediately show up everywhere
-  (character builder, compendium, monster/item pickers).
+**Character builder:** race, multiclassing (per-class levels), subclass at the
+right level, ability scores, equipped armor/shield/**weapons**, and
+prepared/known spells per class. Computes HP, AC, saves, proficiency, and
+spell slots (including the multiclass shared table and separate Warlock pact
+magic). Save characters to reuse them at the table.
 
-## What's simplified or not yet built
+**Compendium:** searchable, filterable browser across every race, class, spell,
+monster, and item currently loaded (core + homebrew).
 
-- **Combat is one generic attack action**, not full 5e weapon/spell-attack
-  rules: PC attack bonus is proficiency + best of Str/Dex against a generic
-  1d8 weapon (equip a real weapon from the compendium and it still won't
-  change your attack math yet); no spell attacks/saves, no reactions,
-  no conditions tracking. Monster attacks are parsed from their stat block
-  text.
-- **No accounts/auth** — identity is a per-browser random id in
-  `localStorage` plus a typed display name and a self-declared Player/DM
-  role. This is a trust model suited to a private group of friends, not a
-  public server: anyone with the Session ID can join, and role/token
-  ownership aren't cryptographically enforced.
-- **Persistence is JSON files on disk**, not a real database — correct and
-  durable for one server running one campaign at a time, not for scaling to
-  many concurrent tables across multiple server instances.
-- **No map backgrounds/images, fog of war on the grid itself, or
-  grid-square distance rules** — the hidden-token DM tool covers "the
-  players don't know this monster is here yet," but there's no
-  line-of-sight or vision system.
-- **Mesh WebRTC** won't hold up much past a full table (DM + 4-6 players);
-  see "Next steps."
+**Live session (Socket.io):** a shared battle map with screen-independent token
+positions and a 20×20 grid (5 ft/square). Drag to move, **shift-drag to measure
+distance**, click a token for a detail panel (HP editor, spell-slot tracker,
+**condition toggles**, long rest, remove). Initiative tracker, dice roller, and
+chat, all synced and persisted.
 
-## Next steps, roughly in order
+**Real combat, resolved server-side:** turn on Attack mode, click your token,
+pick from its actual attacks — **each equipped weapon** (correct to-hit and
+damage from Str/Dex/finesse), plus **spell attacks** (attack roll vs AC),
+**saving-throw spells** (the target rolls its save against your spell DC),
+**auto-hit** spells (Magic Missile), and **healing** spells. Cantrips scale
+with level, leveled spells scale with the slot you spend, and spell slots are
+tracked and consumed. Every roll happens on the server, so results are
+consistent and can't be faked by a modified client.
 
-1. **Real weapon/spell attacks** — wire equipped weapons and known spells
-   into the attack/damage math instead of the current simplified generic
-   attack, add saving-throw spells, conditions, and reactions.
-2. **A real database** — swap the JSON-file store (`server/data-store.js`)
-   for Postgres if/when you need multi-instance deployment or many
-   concurrent campaigns.
-3. **Scale the video call** — replace mesh WebRTC with an SFU (mediasoup is
-   the natural choice given the Node/Socket.io stack already in use) once
-   you need tables larger than ~4-6 people, or want recording.
-4. **Maps** — background images, fog of war, grid distance/measurement.
-5. **Accounts** — real auth would let a character/session be tied to a user
-   rather than a per-browser random id, and let token/role actions be
-   properly enforced rather than trust-based.
-6. **Homebrew UX** — homebrew import is still raw JSON; a form-based builder
-   (like the character builder) would make it usable by non-technical
-   players.
+**Player vs. Dungeon Master roles:**
+- *DM tools:* view any player's sheet, private notes, **secret dice rolls**,
+  per-monster **Hide** and **Reveal HP** toggles, and a **fog of war** map —
+  paint revealed cells, and non-PC tokens on hidden cells vanish from players
+  entirely. All enforced server-side (players' sockets never receive gated
+  data), plus a map **background image**.
+- *Players:* bring in your saved character, act only on your own PC token
+  (ownership enforced), and fight.
+
+**Voice & video:** mesh WebRTC with mute, camera toggle, and **screen share**
+(great for the DM to show a map or handout). ICE/TURN config is served from the
+backend, and connections attempt an ICE restart on failure so a brief network
+blip doesn't drop the call.
+
+**Optional accounts:** register/login (scrypt-hashed passwords). When signed in,
+your saved characters are scoped to you and only you (or the DM) can edit your
+tokens. Skip it entirely for casual local play.
+
+**Homebrew:** add a custom monster, spell, item, race, or class via a **form**
+(no JSON needed) or by pasting a raw JSON pack. Everything is namespaced and
+appears immediately in the builder and Compendium.
+
+## What's simplified or deferred
+
+- **Combat scope:** covers weapon attacks, spell attacks/saves/auto/heal, spell
+  slots, and conditions — but not every 5e wrinkle (no reactions, resistances,
+  cover, concentration checks, or multiattack automation; conditions are
+  tracked and displayed but don't auto-apply mechanical effects).
+- **Auth is lightweight:** in-memory bearer tokens (you re-login after a server
+  restart), suited to a private group — not a hardened public auth system.
+- **Voice/video is mesh**, which is right for a normal table (DM + 4–6). A
+  larger table would want an SFU (mediasoup fits the stack); that's a
+  substantial separate effort, deliberately not half-built here.
+- **Maps** have a background image and fog of war, but no multi-map library,
+  drawing tools, or dynamic line-of-sight.
 
 ## Legal note on content
 
-"Full D&D" content is bounded by Wizards of the Coast's IP. The SRD (System
-Reference Document) is released under an open license and covers core
-mechanics plus a very wide set of races, classes, spells, monsters, and
-equipment — that's the foundation this entire dataset is built on, with
-original wording throughout (not copied book text). A handful of specific
-Product-Identity-only creatures (beholder, mind flayer, displacer beast, and
-a few others) are deliberately excluded. Proprietary setting content (named
-NPCs, specific published adventures, Forgotten Realms lore, etc.) isn't
-included and would need to come from your own homebrew imports.
+Everything bundled is SRD-scope (openly licensed) with original wording, not
+copied from Wizards of the Coast books, and a few Product-Identity-only
+monsters (beholder, mind flayer, etc.) are deliberately excluded. Proprietary
+setting content would need to come from your own homebrew imports.

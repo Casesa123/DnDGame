@@ -11,7 +11,16 @@
     "classes": [
       "wizard"
     ],
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 10
+      },
+      "damageType": "fire",
+      "scales": "cantrip"
+    }
   },
   "magic-missile": {
     "id": "magic-missile",
@@ -25,7 +34,16 @@
     "classes": [
       "wizard"
     ],
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "auto",
+      "damageDice": {
+        "count": 1,
+        "sides": 4
+      },
+      "damageType": "force",
+      "scales": "slot"
+    }
   },
   "shield": {
     "id": "shield",
@@ -53,7 +71,16 @@
     "classes": [
       "cleric"
     ],
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "heal",
+      "healDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "addSpellMod": true,
+      "scales": "slot"
+    }
   },
   "guidance": {
     "id": "guidance",
@@ -88,7 +115,16 @@
     ],
     "description": "A beam of freezing air streaks toward a creature, chilling it and slowing its movement.",
     "damage": "1d8 cold, +1d8 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "cold",
+      "scales": "cantrip"
+    }
   },
   "acid-splash": {
     "id": "acid-splash",
@@ -110,7 +146,20 @@
     ],
     "description": "Hurls a bubble of acid at one or two creatures within 5 feet of each other, splattering them with caustic liquid.",
     "damage": "1d6 acid, +1d6 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 6
+      },
+      "damageType": "acid",
+      "scales": "cantrip",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "poison-spray": {
     "id": "poison-spray",
@@ -133,7 +182,20 @@
     ],
     "description": "Projects a puff of noxious gas at a creature, causing it to choke and retch.",
     "damage": "1d12 poison, +1d12 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 12
+      },
+      "damageType": "poison",
+      "scales": "cantrip",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "chill-touch": {
     "id": "chill-touch",
@@ -156,7 +218,16 @@
     ],
     "description": "A ghostly, skeletal hand reaches out to grasp a creature, dealing necrotic damage and preventing it from healing until the start of the caster's next turn. If the target is undead it also flees in fear.",
     "damage": "1d8 necrotic, +1d8 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "necrotic",
+      "scales": "cantrip"
+    }
   },
   "mage-hand": {
     "id": "mage-hand",
@@ -215,6 +286,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of fleece",
     "duration": "1 minute",
     "concentration": false,
     "ritual": false,
@@ -239,6 +311,7 @@
       "S",
       "M"
     ],
+    "materials": "a short piece of copper wire",
     "duration": "1 round",
     "concentration": false,
     "ritual": false,
@@ -261,6 +334,7 @@
       "V",
       "M"
     ],
+    "materials": "a firefly or phosphorescent moss",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -285,6 +359,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of phosphorus or wychwood, or a glowworm",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -315,7 +390,20 @@
     ],
     "description": "Flame-like radiance descends on a creature that must succeed on a Dexterity save or be seared, ignoring cover.",
     "damage": "1d8 radiant, +1d8 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "radiant",
+      "scales": "cantrip",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "thaumaturgy": {
     "id": "thaumaturgy",
@@ -368,6 +456,7 @@
       "S",
       "M"
     ],
+    "materials": "a miniature cloak",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -417,7 +506,16 @@
     ],
     "description": "A flickering flame appears in the caster's hand, sheds light, and can be hurled at a creature within 30 feet.",
     "damage": "1d8 fire, +1d8 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "fire",
+      "scales": "cantrip"
+    }
   },
   "shillelagh": {
     "id": "shillelagh",
@@ -431,6 +529,7 @@
       "S",
       "M"
     ],
+    "materials": "mistletoe, a shamrock leaf, and a club or quarterstaff",
     "duration": "Up to 1 minute",
     "concentration": false,
     "ritual": false,
@@ -458,7 +557,20 @@
     ],
     "description": "Unleashes a string of withering insults laced with subtle magic at a creature, rattling its confidence if it fails a save.",
     "damage": "1d6 psychic, +1d6 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 6
+      },
+      "damageType": "psychic",
+      "scales": "cantrip",
+      "save": {
+        "ability": "wis",
+        "onSave": "half"
+      }
+    }
   },
   "true-strike": {
     "id": "true-strike",
@@ -501,7 +613,16 @@
     ],
     "description": "A beam of crackling energy streaks toward a creature. The caster gains an additional beam at levels 5, 11, and 17, each requiring a separate attack roll.",
     "damage": "1d10 force per beam",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 10
+      },
+      "damageType": "force",
+      "scales": "cantrip"
+    }
   },
   "blade-ward": {
     "id": "blade-ward",
@@ -537,6 +658,7 @@
       "S",
       "M"
     ],
+    "materials": "a small amount of makeup applied to the face as this spell is cast",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -646,6 +768,7 @@
       "S",
       "M"
     ],
+    "materials": "two lodestones",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -680,7 +803,20 @@
     ],
     "description": "Creates a small bonfire on the ground that burns anything standing in its space and can be sustained for the duration.",
     "damage": "1d8 fire, +1d8 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "fire",
+      "scales": "cantrip",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "frostbite": {
     "id": "frostbite",
@@ -704,7 +840,20 @@
     ],
     "description": "Numbing frost seizes a creature that fails a save, dealing cold damage and giving it disadvantage on its next weapon attack roll.",
     "damage": "1d6 cold, +1d6 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 6
+      },
+      "damageType": "cold",
+      "scales": "cantrip",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "infestation": {
     "id": "infestation",
@@ -718,6 +867,7 @@
       "S",
       "M"
     ],
+    "materials": "a living flea",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -729,7 +879,20 @@
     ],
     "description": "A cloud of stinging insects briefly swarms a creature, and if it fails a save it takes poison damage and may be forced to shuffle a few feet.",
     "damage": "1d6 poison, +1d6 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 6
+      },
+      "damageType": "poison",
+      "scales": "cantrip",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "lightning-lure": {
     "id": "lightning-lure",
@@ -750,7 +913,20 @@
     ],
     "description": "A crackling whip of lightning lashes out at a nearby creature, damaging it and, if it fails a save, yanking it up to 10 feet closer.",
     "damage": "1d8 lightning, +1d8 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "lightning",
+      "scales": "cantrip",
+      "save": {
+        "ability": "str",
+        "onSave": "half"
+      }
+    }
   },
   "sword-burst": {
     "id": "sword-burst",
@@ -771,7 +947,20 @@
     ],
     "description": "A ring of spectral blades erupts around the caster, slashing at every creature nearby that fails a Dexterity save.",
     "damage": "1d6 force, +1d6 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 6
+      },
+      "damageType": "force",
+      "scales": "cantrip",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "toll-the-dead": {
     "id": "toll-the-dead",
@@ -795,7 +984,20 @@
     ],
     "description": "A sepulchral bell tolls in the mind of a creature that fails a Wisdom save, dealing more damage if the target is already wounded.",
     "damage": "1d8 or 1d12 necrotic (if target is missing hp), scaling with level",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "necrotic",
+      "scales": "cantrip",
+      "save": {
+        "ability": "wis",
+        "onSave": "half"
+      }
+    }
   },
   "word-of-radiance": {
     "id": "word-of-radiance",
@@ -808,6 +1010,7 @@
       "V",
       "M"
     ],
+    "materials": "a holy symbol",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -816,7 +1019,20 @@
     ],
     "description": "Speaking a holy word sears every creature of the caster's choice within range that fails a Constitution save.",
     "damage": "1d6 radiant, +1d6 at levels 5/11/17",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 1,
+        "sides": 6
+      },
+      "damageType": "radiant",
+      "scales": "cantrip",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "green-flame-blade": {
     "id": "green-flame-blade",
@@ -829,6 +1045,7 @@
       "S",
       "M"
     ],
+    "materials": "a melee weapon worth at least 1 sp",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -838,7 +1055,16 @@
     ],
     "description": "A melee weapon attack is wreathed in green fire; on a hit, a tongue of flame leaps to a second nearby creature.",
     "damage": "Weapon damage plus 1d8 fire (leaping damage scales with level)",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "fire",
+      "scales": "cantrip"
+    }
   },
   "booming-blade": {
     "id": "booming-blade",
@@ -851,6 +1077,7 @@
       "S",
       "M"
     ],
+    "materials": "a melee weapon worth at least 1 sp",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -860,7 +1087,16 @@
     ],
     "description": "A melee weapon attack is sheathed in a thunderous echo; if the target moves before the caster's next turn, it takes an extra burst of thunder damage.",
     "damage": "Weapon damage plus 1d8 thunder if the target moves",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "thunder",
+      "scales": "cantrip"
+    }
   },
   "healing-word": {
     "id": "healing-word",
@@ -883,7 +1119,16 @@
     "description": "A creature of the caster's choice within range regains hit points, quickly spoken as a word of restorative magic.",
     "healing": "1d4 + spellcasting modifier",
     "higherLevels": "Healing increases by 1d4 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "heal",
+      "healDice": {
+        "count": 1,
+        "sides": 4
+      },
+      "addSpellMod": true,
+      "scales": "slot"
+    }
   },
   "bless": {
     "id": "bless",
@@ -897,6 +1142,7 @@
       "S",
       "M"
     ],
+    "materials": "a sprinkling of holy water",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -928,7 +1174,16 @@
     "description": "A flash of light streaks toward a creature and explodes on impact, and the next attack made against it before the end of the caster's next turn has advantage.",
     "damage": "4d6 radiant",
     "higherLevels": "Damage increases by 1d6 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 4,
+        "sides": 6
+      },
+      "damageType": "radiant",
+      "scales": "slot"
+    }
   },
   "faerie-fire": {
     "id": "faerie-fire",
@@ -961,6 +1216,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of fine sand, rose petals, or a cricket",
     "duration": "1 minute",
     "concentration": false,
     "ritual": false,
@@ -1012,6 +1268,7 @@
       "S",
       "M"
     ],
+    "materials": "a pearl worth at least 100 gp and an owl feather",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": true,
@@ -1034,6 +1291,7 @@
       "S",
       "M"
     ],
+    "materials": "a piece of cured leather",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -1067,7 +1325,20 @@
     "description": "A wave of thunderous force ripples outward from the caster, damaging and shoving back creatures who fail a Constitution save.",
     "damage": "2d8 thunder",
     "higherLevels": "Damage increases by 1d8 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 2,
+        "sides": 8
+      },
+      "damageType": "thunder",
+      "scales": "slot",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "burning-hands": {
     "id": "burning-hands",
@@ -1090,7 +1361,20 @@
     "description": "A thin sheet of flame sweeps out from the caster's spread fingers, engulfing anything in a cone-shaped area.",
     "damage": "3d6 fire",
     "higherLevels": "Damage increases by 1d6 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 3,
+        "sides": 6
+      },
+      "damageType": "fire",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "charm-person": {
     "id": "charm-person",
@@ -1151,6 +1435,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of soot and salt",
     "duration": "1 hour",
     "concentration": false,
     "ritual": true,
@@ -1196,6 +1481,7 @@
       "S",
       "M"
     ],
+    "materials": "no material component in this version; a small crafted focus",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -1206,7 +1492,20 @@
     "description": "Hurls a loose, nonmagical object weighing up to 5 pounds toward a point, striking any creature there that fails a Dexterity save.",
     "damage": "3d8 bludgeoning, acid, cold, fire, or lightning",
     "higherLevels": "Damage increases by 1d8 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 3,
+        "sides": 8
+      },
+      "damageType": "bludgeoning",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "feather-fall": {
     "id": "feather-fall",
@@ -1219,6 +1518,7 @@
       "V",
       "M"
     ],
+    "materials": "a small feather or piece of down",
     "duration": "1 minute",
     "concentration": false,
     "ritual": false,
@@ -1242,6 +1542,7 @@
       "S",
       "M"
     ],
+    "materials": "10 gp worth of charcoal, incense, and herbs, consumed by fire in a brass brazier",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": true,
@@ -1263,6 +1564,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of dirt",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -1288,6 +1590,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of fleece",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -1311,6 +1614,7 @@
       "S",
       "M"
     ],
+    "materials": "a piece of string and a bit of wood",
     "duration": "1 hour",
     "concentration": false,
     "ritual": true,
@@ -1334,6 +1638,7 @@
       "S",
       "M"
     ],
+    "materials": "an eyelash encased in gum arabic",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -1389,7 +1694,16 @@
     "description": "Three separate rays of fire streak toward targets within range, each requiring its own attack roll.",
     "damage": "2d6 fire per ray",
     "higherLevels": "One additional ray is created for each slot level above 2nd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 2,
+        "sides": 6
+      },
+      "damageType": "fire",
+      "scales": "slot"
+    }
   },
   "web": {
     "id": "web",
@@ -1403,6 +1717,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of spiderweb",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -1425,6 +1740,7 @@
       "S",
       "M"
     ],
+    "materials": "a small, straight piece of iron",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1451,6 +1767,7 @@
       "S",
       "M"
     ],
+    "materials": "a holy symbol",
     "duration": "1 minute",
     "concentration": false,
     "ritual": false,
@@ -1460,7 +1777,16 @@
     "description": "Creates a floating spectral weapon that attacks a creature within 5 feet of it, and can be moved to strike a new target as a bonus action on later turns.",
     "damage": "1d8 force",
     "higherLevels": "Damage increases by 1d8 for every two slot levels above 2nd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 8
+      },
+      "damageType": "force",
+      "scales": "slot"
+    }
   },
   "spider-climb": {
     "id": "spider-climb",
@@ -1474,6 +1800,7 @@
       "S",
       "M"
     ],
+    "materials": "a drop of bitumen and a spider",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -1496,6 +1823,7 @@
       "V",
       "M"
     ],
+    "materials": "a snake's tongue and either a bit of honeycomb or a drop of sweet oil",
     "duration": "Up to 8 hours",
     "concentration": true,
     "ritual": false,
@@ -1563,6 +1891,7 @@
       "V",
       "M"
     ],
+    "materials": "bat fur and a drop of pitch or piece of coal",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -1586,6 +1915,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of powdered iron",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1608,6 +1938,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of tallow, a pinch of brimstone, and a dusting of powdered iron",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1618,7 +1949,20 @@
     "description": "Conjures a 5-foot-diameter ball of fire that can be rolled around the battlefield as a bonus action, burning anything it touches.",
     "damage": "2d6 fire",
     "higherLevels": "Damage increases by 1d6 for each slot level above 2nd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 2,
+        "sides": 6
+      },
+      "damageType": "fire",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "gust-of-wind": {
     "id": "gust-of-wind",
@@ -1632,6 +1976,7 @@
       "S",
       "M"
     ],
+    "materials": "a legume seed",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1655,6 +2000,7 @@
       "S",
       "M"
     ],
+    "materials": "either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -1677,6 +2023,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of fleece",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1687,7 +2034,16 @@
     ],
     "description": "Plants a phantasmal object, creature, or effect in a target's mind, which it perceives as real and which can deal psychic damage.",
     "damage": "1d6 psychic",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "auto",
+      "damageDice": {
+        "count": 1,
+        "sides": 6
+      },
+      "damageType": "psychic",
+      "scales": "none"
+    }
   },
   "ray-of-enfeeblement": {
     "id": "ray-of-enfeeblement",
@@ -1830,6 +2186,7 @@
       "S",
       "M"
     ],
+    "materials": "several seeds of any moonseed plant and a piece of opalescent feldspar",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1839,7 +2196,20 @@
     "description": "A silvery beam of pale light shines down in a 5-foot-radius cylinder, searing creatures who fail a save and can be moved as a bonus action.",
     "damage": "2d10 radiant",
     "higherLevels": "Damage increases by 1d10 for each slot level above 2nd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 2,
+        "sides": 10
+      },
+      "damageType": "radiant",
+      "scales": "slot",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "prayer-of-healing": {
     "id": "prayer-of-healing",
@@ -1860,7 +2230,16 @@
     "description": "Up to six creatures of the caster's choice regain hit points as soothing, prayerful words wash over them.",
     "healing": "2d8 + spellcasting modifier",
     "higherLevels": "Healing increases by 1d8 for each slot level above 2nd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "heal",
+      "healDice": {
+        "count": 2,
+        "sides": 8
+      },
+      "addSpellMod": true,
+      "scales": "slot"
+    }
   },
   "protection-from-poison": {
     "id": "protection-from-poison",
@@ -1897,6 +2276,7 @@
       "S",
       "M"
     ],
+    "materials": "a tiny ball of bat guano and sulfur",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -1907,7 +2287,20 @@
     "description": "A bright streak flashes to a point and erupts into a roaring ball of flame that engulfs a 20-foot-radius area.",
     "damage": "8d6 fire",
     "higherLevels": "Damage increases by 1d6 for each slot level above 3rd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 8,
+        "sides": 6
+      },
+      "damageType": "fire",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "lightning-bolt": {
     "id": "lightning-bolt",
@@ -1921,6 +2314,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of fur and a rod of amber, crystal, or glass",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -1931,7 +2325,20 @@
     "description": "A stroke of lightning blasts out from the caster in a line, striking everything in its path.",
     "damage": "8d6 lightning",
     "higherLevels": "Damage increases by 1d6 for each slot level above 3rd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 8,
+        "sides": 6
+      },
+      "damageType": "lightning",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "fly": {
     "id": "fly",
@@ -1945,6 +2352,7 @@
       "S",
       "M"
     ],
+    "materials": "a wing feather from any bird",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -1968,6 +2376,7 @@
       "S",
       "M"
     ],
+    "materials": "a shaving of licorice root",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1990,6 +2399,7 @@
       "S",
       "M"
     ],
+    "materials": "diamonds worth 300 gp, which the spell consumes",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2038,6 +2448,7 @@
       "S",
       "M"
     ],
+    "materials": "a white feather or the heart of a hen",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2062,6 +2473,7 @@
       "S",
       "M"
     ],
+    "materials": "a drop of blood, a piece of flesh, and a pinch of bone dust",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2085,6 +2497,7 @@
       "S",
       "M"
     ],
+    "materials": "a small crafted focus appropriate to the spell",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2108,6 +2521,7 @@
       "S",
       "M"
     ],
+    "materials": "a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -2131,6 +2545,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -2201,6 +2616,7 @@
       "S",
       "M"
     ],
+    "materials": "a short piece of fine copper wire",
     "duration": "1 round",
     "concentration": false,
     "ritual": false,
@@ -2224,6 +2640,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of dust and a few drops of water",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2246,6 +2663,7 @@
       "S",
       "M"
     ],
+    "materials": "burning incense",
     "duration": "10 minutes",
     "concentration": false,
     "ritual": false,
@@ -2267,6 +2685,7 @@
       "S",
       "M"
     ],
+    "materials": "a holy symbol",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -2276,7 +2695,20 @@
     "description": "Protective spirits swirl around the caster, damaging hostile creatures that enter or start their turn nearby and halving their speed.",
     "damage": "3d8 radiant or necrotic",
     "higherLevels": "Damage increases by 1d8 for each slot level above 3rd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 3,
+        "sides": 8
+      },
+      "damageType": "radiant",
+      "scales": "slot",
+      "save": {
+        "ability": "wis",
+        "onSave": "half"
+      }
+    }
   },
   "tongues": {
     "id": "tongues",
@@ -2289,6 +2721,7 @@
       "V",
       "M"
     ],
+    "materials": "a small clay model of a ziggurat",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -2324,7 +2757,16 @@
     "damage": "3d6 necrotic",
     "healing": "Half the necrotic damage dealt",
     "higherLevels": "Damage increases by 1d6 for each slot level above 3rd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 3,
+        "sides": 6
+      },
+      "damageType": "necrotic",
+      "scales": "slot"
+    }
   },
   "water-walk": {
     "id": "water-walk",
@@ -2338,6 +2780,7 @@
       "S",
       "M"
     ],
+    "materials": "a piece of cork",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -2361,6 +2804,7 @@
       "S",
       "M"
     ],
+    "materials": "an item distasteful to the target",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2387,6 +2831,7 @@
       "S",
       "M"
     ],
+    "materials": "three nutshells",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2455,6 +2900,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of dust and a few drops of water",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2466,7 +2912,20 @@
     "description": "A hail of rock-hard ice pounds a 20-foot-radius cylinder, battering creatures with bludgeoning and cold damage.",
     "damage": "2d8 bludgeoning plus 4d6 cold",
     "higherLevels": "Bludgeoning damage increases by 1d8 for each slot level above 4th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 2,
+        "sides": 8
+      },
+      "damageType": "bludgeoning",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "locate-creature": {
     "id": "locate-creature",
@@ -2480,6 +2939,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of fur from a bloodhound",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -2506,6 +2966,7 @@
       "S",
       "M"
     ],
+    "materials": "a caterpillar cocoon",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -2530,6 +2991,7 @@
       "S",
       "M"
     ],
+    "materials": "diamond dust worth 100 gp, which the spell consumes",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -2554,6 +3016,7 @@
       "S",
       "M"
     ],
+    "materials": "a small piece of phosphorus",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2565,7 +3028,20 @@
     "description": "Creates a wall of roaring flame in a line or ring that burns any creature passing through it or ending its turn nearby.",
     "damage": "5d8 fire",
     "higherLevels": "Damage increases by 1d8 for each slot level above 4th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 5,
+        "sides": 8
+      },
+      "damageType": "fire",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "arcane-eye": {
     "id": "arcane-eye",
@@ -2579,6 +3055,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of bat fur",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -2600,6 +3077,7 @@
       "S",
       "M"
     ],
+    "materials": "a piece of tentacle from a giant octopus or a giant squid",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2608,7 +3086,20 @@
     ],
     "description": "Squirming black tentacles fill a 20-foot square, seizing and crushing every creature that enters or starts its turn there.",
     "damage": "3d6 bludgeoning",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 3,
+        "sides": 6
+      },
+      "damageType": "bludgeoning",
+      "scales": "none",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "blight": {
     "id": "blight",
@@ -2632,7 +3123,20 @@
     "description": "Necromantic energy withers a creature, though plant creatures and objects made of plant material take heightened damage.",
     "damage": "8d8 necrotic",
     "higherLevels": "Damage increases by 1d8 for each slot level above 4th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 8,
+        "sides": 8
+      },
+      "damageType": "necrotic",
+      "scales": "slot",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "dimension-door": {
     "id": "dimension-door",
@@ -2668,6 +3172,7 @@
       "S",
       "M"
     ],
+    "materials": "incense and a sacrificial offering appropriate to the caster's religion, together worth at least 25 gp, which the spell consumes",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": true,
@@ -2689,6 +3194,7 @@
       "S",
       "M"
     ],
+    "materials": "a leather strap, bound around the arm or a similar appendage",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -2713,6 +3219,7 @@
       "S",
       "M"
     ],
+    "materials": "a small crafted focus appropriate to the spell",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -2734,6 +3241,7 @@
       "S",
       "M"
     ],
+    "materials": "a stone, a twig, and a bit of green plant",
     "duration": "24 hours",
     "concentration": false,
     "ritual": false,
@@ -2757,6 +3265,7 @@
       "S",
       "M"
     ],
+    "materials": "incense and a vial of holy or unholy water",
     "duration": "1 minute",
     "concentration": false,
     "ritual": true,
@@ -2799,6 +3308,7 @@
       "S",
       "M"
     ],
+    "materials": "a few grains of sugar, some kernels of grain, and a smear of fat",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -2810,7 +3320,20 @@
     "description": "A swarm of biting, stinging insects fills a 20-foot-radius sphere, lightly obscuring it and damaging creatures within.",
     "damage": "4d10 piercing",
     "higherLevels": "Damage increases by 1d10 for each slot level above 5th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 4,
+        "sides": 10
+      },
+      "damageType": "piercing",
+      "scales": "slot",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "mass-cure-wounds": {
     "id": "mass-cure-wounds",
@@ -2834,7 +3357,16 @@
     "description": "A wave of healing energy washes over up to six creatures in a 30-foot-radius area, restoring hit points to each.",
     "healing": "3d8 + spellcasting modifier per creature",
     "higherLevels": "Healing increases by 1d8 for each slot level above 5th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "heal",
+      "healDice": {
+        "count": 3,
+        "sides": 8
+      },
+      "addSpellMod": true,
+      "scales": "slot"
+    }
   },
   "awaken": {
     "id": "awaken",
@@ -2848,6 +3380,7 @@
       "S",
       "M"
     ],
+    "materials": "an agate worth at least 1,000 gp, which the spell consumes",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2870,6 +3403,7 @@
       "S",
       "M"
     ],
+    "materials": "a bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2880,7 +3414,20 @@
     "description": "A crackling bolt of lightning arcs to a primary target and then leaps to up to three additional nearby creatures.",
     "damage": "10d8 lightning",
     "higherLevels": "One additional bolt strikes a new target for each slot level above 6th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 10,
+        "sides": 8
+      },
+      "damageType": "lightning",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "circle-of-death": {
     "id": "circle-of-death",
@@ -2894,6 +3441,7 @@
       "S",
       "M"
     ],
+    "materials": "the powder of a crushed black pearl worth at least 500 gp",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2904,7 +3452,20 @@
     "description": "A sphere of negative energy bursts outward in a 60-foot radius, withering everything caught within it.",
     "damage": "8d6 necrotic",
     "higherLevels": "Damage increases by 2d6 for each slot level above 6th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 8,
+        "sides": 6
+      },
+      "damageType": "necrotic",
+      "scales": "slot",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "cone-of-cold": {
     "id": "cone-of-cold",
@@ -2918,6 +3479,7 @@
       "S",
       "M"
     ],
+    "materials": "a small crystal or glass cone",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2928,7 +3490,20 @@
     "description": "A blast of frigid air erupts from the caster's hands, coating everything in the cone with rime and biting cold.",
     "damage": "8d8 cold",
     "higherLevels": "Damage increases by 1d8 for each slot level above 5th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 8,
+        "sides": 8
+      },
+      "damageType": "cold",
+      "scales": "slot",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "contingency": {
     "id": "contingency",
@@ -2942,6 +3517,7 @@
       "S",
       "M"
     ],
+    "materials": "a statuette of the caster carved from ivory and decorated with gems worth at least 1,500 gp",
     "duration": "10 days",
     "concentration": false,
     "ritual": false,
@@ -2963,6 +3539,7 @@
       "S",
       "M"
     ],
+    "materials": "a lodestone and a pinch of dust",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2973,7 +3550,20 @@
     "description": "A thin green ray disintegrates a creature or object that fails to withstand it, reducing a slain creature to fine dust.",
     "damage": "10d6 + 40 force",
     "higherLevels": "Damage increases by 3d6 for each slot level above 6th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 10,
+        "sides": 6
+      },
+      "damageType": "force",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "dominate-person": {
     "id": "dominate-person",
@@ -3032,6 +3622,7 @@
       "V",
       "M"
     ],
+    "materials": "a snake's tongue and either a bit of honeycomb or a drop of sweet oil",
     "duration": "24 hours",
     "concentration": false,
     "ritual": false,
@@ -3056,6 +3647,7 @@
       "S",
       "M"
     ],
+    "materials": "an ointment for the eyes worth 25 gp made from mushroom powder, saffron, and fat, which the spell consumes",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -3081,6 +3673,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of powder made by grinding a clear gemstone",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -3102,6 +3695,7 @@
       "S",
       "M"
     ],
+    "materials": "a tiny ball of bat guano and sulfur",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -3112,7 +3706,20 @@
     "description": "A fiery bead hovers at a point, growing more destructive each round it lingers before detonating in a fiery explosion.",
     "damage": "12d6 fire",
     "higherLevels": "Damage increases by 1d6 for each slot level above 7th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 12,
+        "sides": 6
+      },
+      "damageType": "fire",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "finger-of-death": {
     "id": "finger-of-death",
@@ -3134,7 +3741,20 @@
     ],
     "description": "Negative energy pierces a creature, and a humanoid slain by it rises as a zombie under the caster's control on its next turn.",
     "damage": "7d8 + 30 necrotic",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 7,
+        "sides": 8
+      },
+      "damageType": "necrotic",
+      "scales": "none",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "forcecage": {
     "id": "forcecage",
@@ -3148,6 +3768,7 @@
       "S",
       "M"
     ],
+    "materials": "ruby dust worth 1,500 gp, which the spell consumes",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -3170,6 +3791,7 @@
       "S",
       "M"
     ],
+    "materials": "a forked, metal rod worth at least 250 gp, attuned to a particular plane of existence",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3195,6 +3817,7 @@
       "S",
       "M"
     ],
+    "materials": "a small replica of the caster made from materials worth at least 5 gp",
     "duration": "Up to 1 day",
     "concentration": true,
     "ritual": false,
@@ -3217,6 +3840,7 @@
       "S",
       "M"
     ],
+    "materials": "a prayer wheel and holy water",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -3226,7 +3850,16 @@
     ],
     "description": "A touched creature regains hit points and slowly regrows severed limbs and organs over the course of the spell's duration.",
     "healing": "4d8 + 15 initially, then 1 hp per minute for the duration",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "heal",
+      "healDice": {
+        "count": 4,
+        "sides": 8
+      },
+      "addSpellMod": false,
+      "scales": "none"
+    }
   },
   "reverse-gravity": {
     "id": "reverse-gravity",
@@ -3240,6 +3873,7 @@
       "S",
       "M"
     ],
+    "materials": "a lodestone and iron filings",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -3263,6 +3897,7 @@
       "S",
       "M"
     ],
+    "materials": "fire and a piece of sunstone",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3272,7 +3907,20 @@
     ],
     "description": "Brilliant sunlight blazes out in a 60-foot radius, blinding creatures and searing them with radiant energy.",
     "damage": "12d6 radiant",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 12,
+        "sides": 6
+      },
+      "damageType": "radiant",
+      "scales": "none",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "teleport": {
     "id": "teleport",
@@ -3330,6 +3978,7 @@
       "S",
       "M"
     ],
+    "materials": "a handful of clay, crystal, glass, or mineral spheres",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3341,7 +3990,20 @@
     ],
     "description": "A blast of mental energy assaults a creature, and if it fails a save its Intelligence and Charisma scores are shattered to 1.",
     "damage": "4d6 psychic",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 4,
+        "sides": 6
+      },
+      "damageType": "psychic",
+      "scales": "none",
+      "save": {
+        "ability": "int",
+        "onSave": "half"
+      }
+    }
   },
   "foresight": {
     "id": "foresight",
@@ -3355,6 +4017,7 @@
       "S",
       "M"
     ],
+    "materials": "a hummingbird feather",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -3401,6 +4064,7 @@
       "S",
       "M"
     ],
+    "materials": "a small crafted focus appropriate to the spell",
     "duration": "10 minutes",
     "concentration": false,
     "ritual": false,
@@ -3422,6 +4086,7 @@
       "S",
       "M"
     ],
+    "materials": "a diamond worth at least 1,000 gp, which the spell consumes",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3443,6 +4108,7 @@
       "S",
       "M"
     ],
+    "materials": "a magnifying glass",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -3453,7 +4119,20 @@
     ],
     "description": "A line of radiant light flashes out from the caster's hand, searing and possibly blinding creatures it touches, and can be fired again on later turns.",
     "damage": "6d8 radiant",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 6,
+        "sides": 8
+      },
+      "damageType": "radiant",
+      "scales": "none",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "gate": {
     "id": "gate",
@@ -3467,6 +4146,7 @@
       "S",
       "M"
     ],
+    "materials": "a diamond worth at least 5,000 gp, which the spell consumes",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -3519,7 +4199,20 @@
     ],
     "description": "Four blazing orbs streak down to chosen points, each exploding in a fiery, rocky burst that devastates a wide area.",
     "damage": "20d6 fire plus 20d6 bludgeoning per orb",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 20,
+        "sides": 6
+      },
+      "damageType": "fire",
+      "scales": "none",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "power-word-kill": {
     "id": "power-word-kill",
@@ -3575,6 +4268,7 @@
       "S",
       "M"
     ],
+    "materials": "a sprinkle of holy water and diamonds worth at least 25,000 gp, which the spell consumes",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3617,6 +4311,7 @@
       "S",
       "M"
     ],
+    "materials": "a vellum depiction or a carved statuette of the target, and a special component that varies according to the version of the spell chosen, worth at least 500 gp per Hit Die of the target",
     "duration": "Until dispelled",
     "concentration": false,
     "ritual": false,
@@ -3639,6 +4334,7 @@
       "S",
       "M"
     ],
+    "materials": "a jade circlet worth at least 1,500 gp, which the caster must place on the head before casting",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -3661,6 +4357,7 @@
       "S",
       "M"
     ],
+    "materials": "a tiny strip of white cloth",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -3751,6 +4448,7 @@
       "S",
       "M"
     ],
+    "materials": "ashes from a burned leaf of mistletoe and a sprig of spruce",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -3773,6 +4471,7 @@
       "S",
       "M"
     ],
+    "materials": "a handful of oak bark",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -3795,6 +4494,7 @@
       "S",
       "M"
     ],
+    "materials": "holy water or powdered silver and iron, which the spell consumes",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -3921,6 +4621,7 @@
       "S",
       "M"
     ],
+    "materials": "a sprig of mistletoe",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3987,6 +4688,7 @@
       "S",
       "M"
     ],
+    "materials": "a diamond worth at least 50 gp",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3997,7 +4699,16 @@
     "description": "Hurls a two-inch sphere of energy of a chosen damage type at a creature, the sphere's color reflecting the element chosen.",
     "damage": "3d8 (acid, cold, fire, lightning, poison, or thunder)",
     "higherLevels": "Damage increases by 1d8 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 3,
+        "sides": 8
+      },
+      "damageType": "acid",
+      "scales": "slot"
+    }
   },
   "witch-bolt": {
     "id": "witch-bolt",
@@ -4011,6 +4722,7 @@
       "S",
       "M"
     ],
+    "materials": "a twig from a tree that has been struck by lightning",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -4022,7 +4734,16 @@
     "description": "A twisting arc of lightning strikes a creature and forms a sustained beam, dealing damage again each turn the caster maintains it.",
     "damage": "1d12 lightning",
     "higherLevels": "Initial damage increases by 1d12 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "attack",
+      "damageDice": {
+        "count": 1,
+        "sides": 12
+      },
+      "damageType": "lightning",
+      "scales": "slot"
+    }
   },
   "animal-friendship": {
     "id": "animal-friendship",
@@ -4036,6 +4757,7 @@
       "S",
       "M"
     ],
+    "materials": "a morsel of food",
     "duration": "24 hours",
     "concentration": false,
     "ritual": false,
@@ -4091,7 +4813,20 @@
     "description": "Tendrils of dark energy erupt from the caster, damaging every creature nearby and briefly preventing them from taking reactions.",
     "damage": "2d6 necrotic",
     "higherLevels": "Damage increases by 1d6 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 2,
+        "sides": 6
+      },
+      "damageType": "necrotic",
+      "scales": "slot",
+      "save": {
+        "ability": "str",
+        "onSave": "half"
+      }
+    }
   },
   "hellish-rebuke": {
     "id": "hellish-rebuke",
@@ -4113,7 +4848,20 @@
     "description": "Cast in response to being damaged by a creature, wreathing that creature in hellish flame unless it succeeds on a Dexterity save.",
     "damage": "2d10 fire",
     "higherLevels": "Damage increases by 1d10 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 2,
+        "sides": 10
+      },
+      "damageType": "fire",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "armor-of-agathys": {
     "id": "armor-of-agathys",
@@ -4127,6 +4875,7 @@
       "S",
       "M"
     ],
+    "materials": "a cup of water",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -4151,6 +4900,7 @@
       "S",
       "M"
     ],
+    "materials": "a drop of water if creating water, or a few grains of sand if destroying it",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -4174,6 +4924,7 @@
       "S",
       "M"
     ],
+    "materials": "a sliver of glass",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -4183,7 +4934,16 @@
     ],
     "description": "Fills the air with spinning daggers in a 5-foot cube, slashing any creature that enters or ends its turn there.",
     "damage": "4d4 slashing",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "auto",
+      "damageDice": {
+        "count": 4,
+        "sides": 4
+      },
+      "damageType": "slashing",
+      "scales": "slot"
+    }
   },
   "shatter": {
     "id": "shatter",
@@ -4197,6 +4957,7 @@
       "S",
       "M"
     ],
+    "materials": "a chip of mica",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -4208,7 +4969,20 @@
     "description": "A sudden ringing noise painfully loud erupts from a point, damaging every creature in a 10-foot-radius sphere.",
     "damage": "3d8 thunder",
     "higherLevels": "Damage increases by 1d8 for each slot level above 2nd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 3,
+        "sides": 8
+      },
+      "damageType": "thunder",
+      "scales": "slot",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "see-invisibility": {
     "id": "see-invisibility",
@@ -4222,6 +4996,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of talc and a small sprinkling of powdered silver",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -4265,6 +5040,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of powdered iron or a lodestone",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -4287,6 +5063,7 @@
       "S",
       "M"
     ],
+    "materials": "a small, straight piece of iron",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -4312,6 +5089,7 @@
       "S",
       "M"
     ],
+    "materials": "burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -4334,6 +5112,7 @@
       "S",
       "M"
     ],
+    "materials": "one holly berry per creature summoned",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -4385,7 +5164,20 @@
     "description": "A storm cloud forms overhead, and the caster can call down a bolt of lightning to strike a point beneath it each turn.",
     "damage": "3d10 lightning",
     "higherLevels": "Damage increases by 1d10 for each slot level above 3rd.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 3,
+        "sides": 10
+      },
+      "damageType": "lightning",
+      "scales": "slot",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "daylight": {
     "id": "daylight",
@@ -4468,6 +5260,7 @@
       "S",
       "M"
     ],
+    "materials": "a small block of granite",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -4490,6 +5283,7 @@
       "S",
       "M"
     ],
+    "materials": "a diamond worth at least 500 gp, which the spell consumes",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -4513,6 +5307,7 @@
       "S",
       "M"
     ],
+    "materials": "a focus worth at least 1,000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -4548,7 +5343,20 @@
     "description": "A creature that fails a Wisdom save is magically compelled to follow a course of conduct the caster describes, suffering psychic damage each time it disobeys.",
     "damage": "5d10 psychic (on disobedience)",
     "higherLevels": "The duration becomes a year and a day when cast using an 8th-level slot.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 5,
+        "sides": 10
+      },
+      "damageType": "psychic",
+      "scales": "none",
+      "save": {
+        "ability": "wis",
+        "onSave": "half"
+      }
+    }
   },
   "planar-ally": {
     "id": "planar-ally",
@@ -4613,7 +5421,20 @@
     ],
     "description": "Violent, unnatural energy ravages a creature's body, dealing devastating necrotic damage and reducing its hit point maximum until it recovers.",
     "damage": "14d6 necrotic",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 14,
+        "sides": 6
+      },
+      "damageType": "necrotic",
+      "scales": "none",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "wall-of-ice": {
     "id": "wall-of-ice",
@@ -4627,6 +5448,7 @@
       "S",
       "M"
     ],
+    "materials": "a small piece of quartz",
     "duration": "Up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -4636,7 +5458,20 @@
     "description": "Creates a wall of ice on a solid surface, which can be smashed to create a freezing shockwave that damages nearby creatures.",
     "damage": "10d6 cold (if a section is destroyed)",
     "higherLevels": "Damage and wall hit points increase for each slot level above 6th.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 10,
+        "sides": 6
+      },
+      "damageType": "cold",
+      "scales": "slot",
+      "save": {
+        "ability": "con",
+        "onSave": "half"
+      }
+    }
   },
   "prismatic-spray": {
     "id": "prismatic-spray",
@@ -4658,7 +5493,20 @@
     ],
     "description": "Eight rays of shimmering, multicolored light flash from the caster's hand, each ray randomly determined and inflicting a different dangerous effect.",
     "damage": "10d6 (varies by ray color: acid, cold, fire, lightning, poison, or force)",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 10,
+        "sides": 6
+      },
+      "damageType": "fire",
+      "scales": "none",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "simulacrum": {
     "id": "simulacrum",
@@ -4672,6 +5520,7 @@
       "S",
       "M"
     ],
+    "materials": "snow or ice in quantities sufficient to make a life-size copy of the target, and some hair, fingernail clippings, or other piece of the target's body placed inside the snow or ice, and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell",
     "duration": "Until dispelled",
     "concentration": false,
     "ritual": false,
@@ -4763,7 +5612,20 @@
     ],
     "description": "Roaring flames spread through ten contiguous 10-foot cubes, burning creatures within and optionally leaving the ground scorched and free of plant life.",
     "damage": "7d10 fire",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 7,
+        "sides": 10
+      },
+      "damageType": "fire",
+      "scales": "none",
+      "save": {
+        "ability": "dex",
+        "onSave": "half"
+      }
+    }
   },
   "antimagic-field": {
     "id": "antimagic-field",
@@ -4777,6 +5639,7 @@
       "S",
       "M"
     ],
+    "materials": "a pinch of powdered iron or iron filings",
     "duration": "Up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -4799,6 +5662,7 @@
       "S",
       "M"
     ],
+    "materials": "a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint's robe or a piece of parchment from a religious text",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -4863,6 +5727,7 @@
       "S",
       "M"
     ],
+    "materials": "a lead-based ink worth at least 10 gp, which the spell consumes",
     "duration": "10 days",
     "concentration": false,
     "ritual": true,
@@ -4893,7 +5758,20 @@
     "description": "Whispers a discordant melody only one creature can hear, dealing psychic damage and causing it to flee if it fails a Wisdom save.",
     "damage": "3d6 psychic",
     "higherLevels": "Damage increases by 1d6 for each slot level above 1st.",
-    "source": "core"
+    "source": "core",
+    "combat": {
+      "kind": "save",
+      "damageDice": {
+        "count": 3,
+        "sides": 6
+      },
+      "damageType": "psychic",
+      "scales": "slot",
+      "save": {
+        "ability": "wis",
+        "onSave": "half"
+      }
+    }
   },
   "bane": {
     "id": "bane",
@@ -4907,6 +5785,7 @@
       "S",
       "M"
     ],
+    "materials": "a drop of blood",
     "duration": "Up to 1 minute",
     "concentration": true,
     "ritual": false,

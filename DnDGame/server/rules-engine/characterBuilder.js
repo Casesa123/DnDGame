@@ -66,6 +66,24 @@ function applyAbilityScoreImprovements(scores, classLevels, classesData, asiChoi
   return result;
 }
 
+// Collects any feats chosen at ASI slots, in the same slot order as the ASI
+// application, so they can be shown on the sheet.
+function collectFeats(classLevels, classesData, asiChoices) {
+  const feats = [];
+  let choiceIndex = 0;
+  for (const cl of classLevels) {
+    const klass = classesData[cl.classId];
+    if (!klass || !klass.asiLevels) continue;
+    for (const asiLevel of klass.asiLevels) {
+      if (cl.level < asiLevel) continue;
+      const explicit = asiChoices && asiChoices[choiceIndex];
+      choiceIndex++;
+      if (explicit && explicit.feat && explicit.feat.name) feats.push(explicit.feat);
+    }
+  }
+  return feats;
+}
+
 function computeMaxHp(classLevels, classesData, conMod) {
   let hp = 0;
   let isFirstLevelEver = true;
@@ -245,6 +263,7 @@ function buildCharacter(input, contentStore) {
 
   let finalScores = applyRaceBonuses(baseAbilityScores, race);
   finalScores = applyAbilityScoreImprovements(finalScores, classLevels, contentStore.classes, input.asiChoices);
+  const feats = collectFeats(classLevels, contentStore.classes, input.asiChoices);
 
   const conMod = abilityModifier(finalScores.con);
   const proficiencyBonus = proficiencyBonusForLevel(charLevel);
@@ -281,6 +300,9 @@ function buildCharacter(input, contentStore) {
   const equipment = equipmentIds.map((id) => contentStore.items[id]).filter(Boolean);
   const startingEquipmentText = [...new Set(classLevels.flatMap((cl) => contentStore.classes[cl.classId].startingEquipment || []))];
 
+  const equippedWeaponIds = (input.equippedWeaponIds || []).filter((id) => contentStore.items[id] && contentStore.items[id].itemType === "weapon");
+  const equippedWeapons = equippedWeaponIds.map((id) => ({ id, name: contentStore.items[id].name }));
+
   const character = {
     id: input.id,
     name: name.trim(),
@@ -297,10 +319,13 @@ function buildCharacter(input, contentStore) {
     savingThrows,
     raceTraits: race.traits || [],
     classFeatures,
+    feats,
     startingEquipment: startingEquipmentText,
     equipment,
     equippedArmor: equippedArmor ? { id: equippedArmor.id, name: equippedArmor.name } : null,
     equippedShield: equippedShield ? { id: equippedShield.id, name: equippedShield.name } : null,
+    equippedWeaponIds,
+    equippedWeapons,
     spellcasting,
   };
 
